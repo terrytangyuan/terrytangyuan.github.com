@@ -6,7 +6,7 @@ email: terrytangyuan@gmail.com
 description: ""
 keyword: ""
 url: "http://terrytangyuan.github.io"              # your host, for absolute URL
-baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: "/about"                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
