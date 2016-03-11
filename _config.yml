@@ -7,8 +7,7 @@ description: ""
 keyword: ""
 url: "http://terrytangyuan.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
-
-
+gems: [jekyll-paginate]
 
 # SNS settings
 RSS: false
@@ -72,22 +71,19 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 
 
-# Friends
-friends: [
+# Affliations
+affliations: [
     {
-        title: "Yuan Blog",
-        href: "http://terrytangyuan.github.io"
+        title: "Uptake",
+        href: "www.uptake.com"
     },{
-        title: "Foo",
-        href: "#"
+        title: "DataNovo",
+        href: "www.datanovo.com"
     },{
-        title: "Bar",
-        href: "#"
+        title: "Analytical Flavor Systems",
+        href: "www.gastrograph.com"
     },{
-        title: "Example Friends",
-        href: "#"
-    },{
-        title: "It helps SEO",
-        href: "#"
+        title: "Penn State University",
+        href: "www.psu.edu/"
     }
 ]
