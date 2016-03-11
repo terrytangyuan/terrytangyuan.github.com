@@ -75,15 +75,15 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 affliations: [
     {
         title: "Uptake",
-        href: "www.uptake.com"
+        href: "http://uptake.com"
     },{
         title: "DataNovo",
-        href: "www.datanovo.com"
+        href: "http://datanovo.com"
     },{
         title: "Analytical Flavor Systems",
-        href: "www.gastrograph.com"
+        href: "http://gastrograph.com"
     },{
         title: "Penn State University",
-        href: "www.psu.edu/"
+        href: "http://psu.edu/"
     }
 ]
