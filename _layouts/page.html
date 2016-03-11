@@ -98,6 +98,14 @@ layout: default
                 </section>
                 {% endif %}
 
+                <!-- Projects -->
+                {% if site.featured-tags %}
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="{{/projects/ | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
+                </section>
+                {% endif %}
+
                 <!-- Short About -->
                 <section class="visible-md visible-lg">
                     <hr><h5><a href="{{/about/ | prepend: site.baseurl }}">ABOUT ME</a></h5>

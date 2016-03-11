@@ -1,0 +1,46 @@
+---
+layout: page
+title: "Projects"
+description: "A list of contributed open-source projects."
+header-img: "img/tag-bg.jpg"
+---
+<h2>Contributed Projects</h2>
+
+<div class="row">
+    <div class="col-md-3">
+      <h2><a href="https://github.com/dmlc/mxnet">MXNet</a></h2>
+      <iframe src="https://ghbtns.com/github-btn.html?user=dmlc&repo=mxnet&type=star&count=true&v=2"
+      frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+        <iframe src="https://ghbtns.com/github-btn.html?user=dmlc&repo=mxnet&type=fork&count=true&v=2"
+      frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+        <br>
+      <p> Flexible and Efficient Deep Learning Library on Heterogeneous
+      Distributed Systems</p>
+    </div>
+    <div class="col-md-3">
+      <h2><a href="https://github.com/dmlc/xgboost" >XGBoost</a></h2>
+      <iframe src="https://ghbtns.com/github-btn.html?user=dmlc&repo=xgboost&type=star&count=true&v=2"
+      frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+        <iframe src="https://ghbtns.com/github-btn.html?user=dmlc&repo=xgboost&type=fork&count=true&v=2"
+      frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+      <p>General purpose gradient boosting library, including
+        generalized linear model and gradient boosted decision trees
+      </p>
+    </div>
+</div>
+
+<!-- Handle Language Change -->
+<script type="text/javascript">
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    function onLanChange(index){
+        if(index == 0){
+            $zh.style.display = "block";
+            $en.style.display = "none";
+        }else{
+            $en.style.display = "block";
+            $zh.style.display = "none";
+        }
+    }
+    onLanChange(0);
+</script>
