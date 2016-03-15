@@ -14,13 +14,13 @@ tags:
     - Machine Learning
 ---
 
-In November, 2015, Google open-sourced its numerical computation library using data flow graphs. Its flexible implementation and architecture enables you to focus on building the computation graph and deploy the model with little efforts on heterogeous platforms such as mobile devices, hundreds of machines, or thousands of computational devices. 
+In November, 2015, Google open-sourced its numerical computation library called [TensorFlow](https://www.tensorflow.org/) using data flow graphs. Its flexible implementation and architecture enables you to focus on building the computation graph and deploy the model with little efforts on heterogeous platforms such as mobile devices, hundreds of machines, or thousands of computational devices. 
 
 TensorFlow is generally very straightforward to use in a sense that most of the researchers in the research area without experience of using this library could understand what's happening behind the code blocks. TensorFlow provides a good backbone for building different shapes of machine learning applications. 
 
 However, there's a large number of potential users, including some researchers, data scientists, and students who may be familiar with many data science concepts/algorithms already but who never get involved in deep learning research/applications, may found it really hard to start hacking. That's where Scikit Flow comes in to help. 
 
-Scikit Flow is a simplified interface for TensorFlow, to get people started on predictive analytics and data mining. It helps smooth the transition from the Scikit-learn world of one-liner machine learning into the more open world of building different shapes of ML models. You can start by using fit/predict and slide into TensorFlow APIs as you are getting comfortable. 
+[Scikit Flow](https://github.com/tensorflow/skflow) is a simplified interface for TensorFlow, to get people started on predictive analytics and data mining. It helps smooth the transition from the [Scikit-learn](http://scikit-learn.org/stable/) world of one-liner machine learning into the more open world of building different shapes of ML models. You can start by using fit/predict and slide into TensorFlow APIs as you are getting comfortable. It's Scikit-learn compatible so you can also benefit from Scikit-learn features like `GridSearch` and `Pipeline`.
 
 
 ## Deep Learning Models
