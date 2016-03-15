@@ -11,6 +11,7 @@ tags:
     - Scikit Flow
     - Technology
     - Open Source
+    - Machine Learning
 ---
 
 In November, 2015, Google open-sourced its numerical computation library using data flow graphs. Its flexible implementation and architecture enables you to focus on building the computation graph and deploy the model with little efforts on heterogeous platforms such as mobile devices, hundreds of machines, or thousands of computational devices. 
@@ -22,10 +23,10 @@ However, there's a large number of potential users, including some researchers, 
 Scikit Flow is a simplified interface for TensorFlow, to get people started on predictive analytics and data mining. It helps smooth the transition from the Scikit-learn world of one-liner machine learning into the more open world of building different shapes of ML models. You can start by using fit/predict and slide into TensorFlow APIs as you are getting comfortable. 
 
 
-# Deep Learning Models
+## Deep Learning Models
 Scikit Flow provides a set of high level model classes that you can use to easily integrate with your existing Scikit-learn pipeline code. 
 
-## Deep Neural Network
+### Deep Neural Network
 Here's an example of 3 layer deep neural network with 10, 20 and 10 hidden units in each layer respectively:
 
 ```python
@@ -39,7 +40,7 @@ score = metrics.accuracy_score(iris.target, classifier.predict(iris.data))
 print("Accuracy: %f" % score)
 ```
 
-## Custom Model
+### Custom Model
 Scikit Flow grows as TensorFlow grows. You can basically insert any TensorFlow code into a custom model function that accepts predictors `X` and target `y` and returns predictions and losses, and then pass it to `skflow.TensorFlowEstimator`. Here's an example of how to pass a custom model to `TensorFlowEstimator`, utilizing some built-in `losses_ops` from Scikit Flow. More advanced examples can be found in [examples](https://github.com/tensorflow/skflow/tree/master/examples) folder, such as [deep residual network](http://arxiv.org/pdf/1512.03385.pdf) that seemlessly uses TensorFlow code. 
 
 ```python
@@ -59,7 +60,7 @@ score = metrics.accuracy_score(iris.target, classifier.predict(iris.data))
 print("Accuracy: %f" % score)
 ```
 
-## Recurrent Neural Network
+### Recurrent Neural Network
 Recurrent neural networks is widely used for many areas, such as text classification, sentiment analysis, etc. Using Scikit Flow, all you need to do is to provide some processing function `input_op_fn` that manipultes the input data into the right shape (we will not cover them here, see [examples](https://github.com/tensorflow/skflow/tree/master/examples) folder on Github), change a few parameters, and call `fit` as usual. Currently Scikit Flow provides high level APIs for variants of RNNs. 
 
 * Various recurrent units, e.g. GRU, RNN, LSTM
@@ -75,7 +76,7 @@ classifier = skflow.TensorFlowRNNClassifier(rnn_size=EMBEDDING_SIZE,
     steps=1000, optimizer='Adam', learning_rate=0.01, continue_training=True)
 ```
 
-## Convolutional Neural Network
+### Convolutional Neural Network
 
 Convolutional Neural Network is widely used in areas like computer vision. Here let's take a look at the MNIST image classification example from [TensorFlow tutorial - Deep MNIST for Experts](https://www.tensorflow.org/versions/r0.7/tutorials/mnist/pros/index.html) but using more concise interface provided by Scikit Flow. `Import` statements and additional comments are ignored in this blogpost but you can found them in [examples](https://github.com/tensorflow/skflow/tree/master/examples) folder. A custom model called `conv_model` with convolutional and densely connected layers specified is passed into `skflow.TensorFlowEstimator`. You get all other built-in parameters such as `learning_rate` and `batch_size` for free at the same time without getting into writing repeated code using TensorFlow low level APIs. 
 
@@ -113,11 +114,11 @@ classifier = skflow.TensorFlowEstimator(
     learning_rate=0.001)
 ```
 
-# Modelling Techniques
+## Modelling Techniques
 
 Many data science modelling techniques, including early stopping that's used very often in Kaggle competition and custom learning rate decay can be used easily. 
 
-## Early Stopping
+### Early Stopping
 You can provide `early_stopping_rounds` in `skflow.monitors.ValidationMonitor` object and pass into `fit` function to monitors the training and stops the training if validation loss stops decreasing. 
 
 ```python
@@ -132,7 +133,7 @@ classifier = skflow.TensorFlowDNNClassifier(hidden_units=[10, 20, 10],
 classifier.fit(X_train, y_train, val_monitor) 
 ```
 
-## Custom Decay Function for Learning Rate 
+### Custom Decay Function for Learning Rate 
 Here we give an example of using TensorFlow's [exponential decay function](https://www.tensorflow.org/versions/r0.7/api_docs/python/train.html#exponential_decay). 
 
 ```python
@@ -148,11 +149,13 @@ classifier = skflow.TensorFlowDNNClassifier(hidden_units=[10, 20, 10],
                                             learning_rate=exp_decay)
 ```
 
-# Additional Features
+More features related to modelling techniques are also available such as multi-output regression/classification, custom class weights, dropout probability, batch normalization, etc. We will continue adding more examples on Github in the future. 
+
+## Additional Features
 
 Scikit Flow provides many additional features to help you easy and streamline your model building experience. It's evolving very rapidly. We are actively seeking suggestions/ideas and welcoming any pull requests. Join our [Gitter](https://gitter.im/tensorflow/skflow?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) to discuss your ideas or drop your feature requests at [Github issues](https://github.com/tensorflow/skflow/issues).
 
-## Flexible Automatic Input Handling
+### Flexible Automatic Input Handling
 We try to make your life easier with automatic handling of various data types, such as the following:
 
 * Numpy matrix/array
@@ -179,7 +182,7 @@ score = metrics.accuracy_score(y_test.compute(), predictions)
 ```
 
 
-## Model Persistence
+### Model Persistence
 
 We try to make it easy for you to save the model every once a while and continue training it any time in the future. 
 
@@ -194,7 +197,7 @@ new_classifier = TensorFlowEstimator.restore('/tmp/tf_examples/my_model_2')
 new_classifier.predict(...)
 ```
 
-## Summaries/TensorBoard
+### Summaries/TensorBoard
 
 To get nice visualizations and summaries you can use ``logdir`` parameter on ``fit``. It will start writing summaries for ``loss`` and histograms for variables in your model. You can also add custom summaries in your custom model function by calling ``tf.summary`` and passing Tensors to report.
 
@@ -216,15 +219,20 @@ and follow reported url in your console to open the tensorboard.
 
 
 
-Other Examples can be found on [Github]([examples](https://github.com/tensorflow/skflow)):
+More Examples and applications can be found on [Github]([examples](https://github.com/tensorflow/skflow)):
 
 * Text classification (RNN & Convolution, word and character-level)
 * Digits & MNIST (Conv, more Conv and ResNet)
 * Language models
 * Neural Translation Model
 
+More blogposts about Scikit Flow:
 
+* [Introduction to Scikit Flow and why you want to start learning TensorFlow](https://medium.com/@ilblackdragon/tensorflow-tutorial-part-1-c559c63c0cb1)
+* [DNNs, custom model and Digit recognition examples](https://medium.com/@ilblackdragon/tensorflow-tutorial-part-2-9ffe47049c92)
+* [Categorical variables: One hot vs Distributed representation](https://medium.com/@ilblackdragon/tensorflow-tutorial-part-3-c5fc0662bc08)
+* [Scikit Flow: Easy Deep Learning with TensorFlow and Scikit-learn](http://www.kdnuggets.com/2016/02/scikit-flow-easy-deep-learning-tensorflow-scikit-learn.html)
 
+More exciting things are happening! Spoiler alert: [we are moving to TensorFlow soon](https://github.com/tensorflow/tensorflow/pull/1445)! Stay tuned!  
 
-
-Copyright Reserved Yuan Tang 2016
+<br><b>Copyright Reserved Yuan Tang 2016</b>
