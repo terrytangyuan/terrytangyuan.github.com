@@ -156,12 +156,8 @@ More features related to modelling techniques are also available such as multi-o
 Scikit Flow provides many additional features to help you easy and streamline your model building experience. It's evolving very rapidly. We are actively seeking suggestions/ideas and welcoming any pull requests. Join our [Gitter](https://gitter.im/tensorflow/skflow?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) to discuss your ideas or drop your feature requests at [Github issues](https://github.com/tensorflow/skflow/issues).
 
 ### Flexible Automatic Input Handling
-We try to make your life easier with automatic handling of various data types, such as the following:
+We try to make your life easier with automatic handling of various data types, such as numpy array/matrices, pandas/dask data frames, and iterators. 
 
-* Numpy matrix/array
-* Pandas
-* Dask
-* Iterators
 
 For example, sometimes when your dataset is too large to hold in the memory you may want to load it into a out-of-core dataframe with the help of dask library to firstly draw sample batches and then load into memory for training. 
 
@@ -233,6 +229,6 @@ More blogposts about Scikit Flow:
 * [Categorical variables: One hot vs Distributed representation](https://medium.com/@ilblackdragon/tensorflow-tutorial-part-3-c5fc0662bc08)
 * [Scikit Flow: Easy Deep Learning with TensorFlow and Scikit-learn](http://www.kdnuggets.com/2016/02/scikit-flow-easy-deep-learning-tensorflow-scikit-learn.html)
 
-More exciting things are happening! Spoiler alert: [we are moving to TensorFlow soon](https://github.com/tensorflow/tensorflow/pull/1445)! Stay tuned!  
+More exciting things are happening! Spoiler alert: [we are moving to TensorFlow soon](https://github.com/tensorflow/tensorflow/pull/1445)! Stay tuned! 
 
 <br><b>Copyright Reserved Yuan Tang 2016</b>
