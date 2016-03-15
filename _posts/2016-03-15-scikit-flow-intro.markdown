@@ -4,7 +4,7 @@ title:      "Introduction to Scikit Flow"
 subtitle:   "A Simplified Interface to TensorFlow"
 date:       2016-03-14
 author:     "Yuan Tang"
-header-img: "img/tensorflow-bg.jpg"
+header-img: "img/inblog/tensorflow-bg.jpg"
 tags:
     - Deep Learning
     - TensorFlow
