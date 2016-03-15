@@ -210,8 +210,8 @@ tensorboard --logdir=/tmp/tf_examples/my_model_1
 
 and follow reported url in your console to open the tensorboard.
 
-<img class="shadow" width="1000" src="/img/text_classification_rnn_graph.png" />
-<img class="shadow" width="500" src="/img/text_classification_rnn_loss.png" />
+<img class="shadow" width="1000" src="/img/inblog/text_classification_rnn_graph.png" />
+<img class="shadow" width="500" src="/img/inblog/text_classification_rnn_loss.png" />
 
 
 
