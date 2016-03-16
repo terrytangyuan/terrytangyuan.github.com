@@ -119,7 +119,7 @@ classifier = skflow.TensorFlowEstimator(
 Many data science modelling techniques, including early stopping that's used very often in Kaggle competition and custom learning rate decay can be used easily. 
 
 ### Early Stopping
-You can provide `early_stopping_rounds` in `skflow.monitors.ValidationMonitor` object and pass into `fit` function to monitors the training and stops the training if validation loss stops decreasing. 
+You can provide `early_stopping_rounds` in `skflow.monitors.ValidationMonitor` object and pass into `fit` function to monitor the training and stop the training when validation loss stops decreasing for several continuous rounds. 
 
 ```python
 val_monitor = skflow.monitors.ValidationMonitor(X_val, y_val,
