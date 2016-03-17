@@ -73,6 +73,9 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Affliations
 affliations: [
     {
+        title: "DMLC",
+        href: "http://dmlc.ml/"
+    },{
         title: "Uptake",
         href: "http://uptake.com"
     },{
