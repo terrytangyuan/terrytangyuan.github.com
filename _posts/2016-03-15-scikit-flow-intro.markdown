@@ -30,7 +30,7 @@ Scikit Flow provides a set of high level model classes that you can use to easil
 Here's an example of 3 layer deep neural network with 10, 20 and 10 hidden units in each layer respectively:
 
 ```python
-import skflow
+import tensorflow.contrib.learn as skflow
 from sklearn import datasets, metrics
 
 iris = datasets.load_iris()
@@ -44,7 +44,6 @@ print("Accuracy: %f" % score)
 Scikit Flow grows as TensorFlow grows. You can basically insert any TensorFlow code into a custom model function that accepts predictors `X` and target `y` and returns predictions and losses, and then pass it to `skflow.TensorFlowEstimator`. Here's an example of how to pass a custom model to `TensorFlowEstimator`, utilizing some built-in `losses_ops` from Scikit Flow. More advanced examples can be found in [examples](https://github.com/tensorflow/skflow/tree/master/examples) folder, such as [deep residual network](http://arxiv.org/pdf/1512.03385.pdf) that seemlessly uses TensorFlow code. 
 
 ```python
-import skflow
 from sklearn import datasets, metrics
 
 iris = datasets.load_iris()
@@ -230,5 +229,7 @@ More blogposts about Scikit Flow:
 * [Scikit Flow: Easy Deep Learning with TensorFlow and Scikit-learn](http://www.kdnuggets.com/2016/02/scikit-flow-easy-deep-learning-tensorflow-scikit-learn.html)
 
 More exciting things are happening! Spoiler alert: [we are moving to TensorFlow soon](https://github.com/tensorflow/tensorflow/pull/1445)! Stay tuned! 
+
+Update: skflow has been merged to TensorFlow as its [TensorFlow Learn module](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/learn/python/learn). Please find most updated examples [here](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/skflow). 
 
 <br><b>Copyright Reserved Yuan Tang 2016</b>
