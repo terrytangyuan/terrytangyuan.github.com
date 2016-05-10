@@ -79,10 +79,13 @@ affliations: [
         title: "Uptake",
         href: "http://uptake.com"
     },{
+        title: "TensorFlow",
+        href: "https://github.com/tensorflow"
+    },{
         title: "DataNovo",
         href: "http://datanovo.com"
     },{
-        title: "Analytical Flavor Systems",
+        title: "Gastrograph",
         href: "http://gastrograph.com"
     },{
         title: "Penn State University",
