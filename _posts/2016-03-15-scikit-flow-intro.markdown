@@ -10,6 +10,7 @@ tags:
     - TensorFlow
     - Open Source
     - Machine Learning
+    - Python
 ---
 
 In November, 2015, Google open-sourced its numerical computation library called [TensorFlow](https://www.tensorflow.org/) using data flow graphs. Its flexible implementation and architecture enables you to focus on building the computation graph and deploy the model with little efforts on heterogeous platforms such as mobile devices, hundreds of machines, or thousands of computational devices. 
