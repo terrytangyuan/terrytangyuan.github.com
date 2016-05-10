@@ -20,7 +20,7 @@ TensorFlow is generally very straightforward to use in a sense that most of the 
 
 However, there's a large number of potential users, including some researchers, data scientists, and students who may be familiar with many data science concepts/algorithms already but who never get involved in deep learning research/applications, may found it really hard to start hacking. That's where Scikit Flow comes in to help. 
 
-[Scikit Flow](https://github.com/tensorflow/skflow) is a simplified interface for TensorFlow, to get people started on predictive analytics and data mining. It helps smooth the transition from the [Scikit-learn](http://scikit-learn.org/stable/) world of one-liner machine learning into the more open world of building different shapes of ML models. You can start by using fit/predict and slide into TensorFlow APIs as you are getting comfortable. It's Scikit-learn compatible so you can also benefit from Scikit-learn features like `GridSearch` and `Pipeline`.
+[Scikit Flow](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/learn/python/learn) is a simplified interface for TensorFlow, to get people started on predictive analytics and data mining. It helps smooth the transition from the [Scikit-learn](http://scikit-learn.org/stable/) world of one-liner machine learning into the more open world of building different shapes of ML models. You can start by using fit/predict and slide into TensorFlow APIs as you are getting comfortable. It's Scikit-learn compatible so you can also benefit from Scikit-learn features like `GridSearch` and `Pipeline`.
 
 
 ## Deep Learning Models
