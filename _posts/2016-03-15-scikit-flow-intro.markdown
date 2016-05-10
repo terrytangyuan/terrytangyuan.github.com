@@ -8,8 +8,6 @@ header-img: "img/inblog/tensorflow-bg.jpg"
 tags:
     - Deep Learning
     - TensorFlow
-    - Scikit Flow
-    - Technology
     - Open Source
     - Machine Learning
 ---
