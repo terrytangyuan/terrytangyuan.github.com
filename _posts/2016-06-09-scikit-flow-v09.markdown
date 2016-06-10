@@ -104,6 +104,6 @@ estimator.fit(input_fn=boston_input_fn, steps=21,
 
 Note: a work-in-progress documentation page can be found [here](https://www.tensorflow.org/versions/master/api_docs/python/contrib.learn.html). 
 
-We welcome any contributions to this exciting project. No matter if it's simple typos, bug fixes/reports, or suggestions on enhancements and future directions. Do not hesitate to ask me if you'd like to see certain tings in my future blogs. 
+We welcome any contributions to this exciting project. No matter if it's simple typos, bug fixes/reports, or suggestions on enhancements and future directions. Do not hesitate to ask me if you'd like to see certain things in my future blogs. 
 
 <br><b>Copyright Reserved Yuan Tang 2016</b>
