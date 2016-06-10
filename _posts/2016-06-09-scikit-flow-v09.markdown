@@ -51,6 +51,22 @@ predictions = classifier.predict(x_test)
 
 To explain some details, you can now utilize high-level APIs in `contrib.layers` to `stack`various `fully_connected` layers with different layer specifications, such as number of hidden units, together with `contrib.layers.optimize_loss` to provide appropriate and highly flexible optimization details for your custom model. To have a quick glance at [`contrib.layers`](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/layers), you can see many commonly used layers such as `batch_norm`, `convolution2d`, `dropout`, and `fully_connected`, etc. Different optimizers, regularizers, can also be used. Note that all these high-level APIs in contrib will be moved to TensorFlow core python module at some point in the future. 
 
+You can also provide a customized learning rate function such as exponential learning rate decay and specify that by providing a custom optimizer as shown below. 
+
+```python
+# setup exponential decay function
+def exp_decay(global_step):
+    return tf.train.exponential_decay(
+        learning_rate=0.1, global_step=global_step,
+        decay_steps=100, decay_rate=0.001)
+
+# use customized decay function in learning_rate
+optimizer = tf.train.AdagradOptimizer(learning_rate=exp_decay)
+classifier = tf.contrib.learn.DNNClassifier(hidden_units=[10, 20, 10],
+                                            n_classes=3,
+                                            optimizer=optimizer)
+```
+
 
 ## Distributed Estimator
 
