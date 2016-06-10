@@ -18,6 +18,16 @@ Since Scikit Flow has been included in [v0.8](https://github.com/tensorflow/tens
 In this post, I will explain some major changes introduced since [v0.9](https://github.com/tensorflow/tensorflow/releases/tag/v0.9.0rc0) to help existing users understand the code better as well as a call for contributors for this exciting and rapid growing project. To share some of my passion towards building and contributing open-source softwares, please take a look at this [interview blog](http://uptake.com/5-questions-with-uptake-data-scientist-and-scikit-flow-co-creator-yuan-tang/) from my company. 
 
 
+## Distributed Estimator
+
+With the great addtion of [graph_actions module](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/learn/python/learn/graph_actions.py) that handles most of the complicated distributed logics of model training and evaluation, the [estimators](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/learn/python/learn/estimators) now incorporates `Supervisor` and `QueueRunner` logics to train models in a distributed fasion. `Estimator` now accepts custom model function that accepts various signatures, such as the following:
+
+* `(features, targets) -> (predictions, loss, train_op)`
+* `(features, targets, mode) -> (predictions, loss, train_op)`
+* `(features, targets, mode, params) -> (predictions, loss, train_op)`
+
+Basically `train_op` can be specified instead of using `learn.trainer` internally so users are able to specify more customized things and a lot of high-levels in `contrib` folder can be utilized as well. You can inherit from basic estimator and build your own estimators that suit your needs without worrying about implementation details on communications between different threads and setting up a master supervisor. Please see the documentation for `Estimator` for most updated docs. You can find the work-in-progress API guides [here](https://www.tensorflow.org/versions/master/api_docs/python/contrib.learn.html). We haven't updated the examples yet but you can find a lot of unit tests that serve as most recent examples.
+
 ## Customized Model
 
 For example, you can now build higly customized models like the following:
@@ -66,17 +76,6 @@ classifier = tf.contrib.learn.DNNClassifier(hidden_units=[10, 20, 10],
                                             n_classes=3,
                                             optimizer=optimizer)
 ```
-
-
-## Distributed Estimator
-
-With the great addtion of [graph_actions module](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/learn/python/learn/graph_actions.py) that handles most of the complicated distributed logics of model training and evaluation, the [estimators](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/learn/python/learn/estimators) now incorporates `Supervisor` and `QueueRunner` logics to train models in a distributed fasion. `Estimator` now accepts custom model function that accepts various signatures, such as the following:
-
-* `(features, targets) -> (predictions, loss, train_op)`
-* `(features, targets, mode) -> (predictions, loss, train_op)`
-* `(features, targets, mode, params) -> (predictions, loss, train_op)`
-
-Basically `train_op` can be specified instead of using `learn.trainer` internally so users are able to specify more customized things and a lot of high-levels in `contrib` folder can be utilized as well. You can inherit from basic estimator and build your own estimators that suit your needs without worrying about implementation details on communications between different threads and setting up a master supervisor. Please see the documentation for `Estimator` for most updated docs. You can find the work-in-progress API guides [here](https://www.tensorflow.org/versions/master/api_docs/python/contrib.learn.html). We haven't updated the examples yet but you can find a lot of unit tests that serve as most recent examples.
 
 ## TensorFlow DataFrame
 
