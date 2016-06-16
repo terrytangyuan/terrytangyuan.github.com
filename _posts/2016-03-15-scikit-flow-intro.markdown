@@ -13,6 +13,8 @@ tags:
     - Python
 ---
 
+(This blog is featured in DataScienceWeekly [here](http://us3.campaign-archive1.com/?u=71a2b2a38789d4d25b738462f&id=22ea37da40))
+
 In November, 2015, Google open-sourced its numerical computation library called [TensorFlow](https://www.tensorflow.org/) using data flow graphs. Its flexible implementation and architecture enables you to focus on building the computation graph and deploy the model with little efforts on heterogeous platforms such as mobile devices, hundreds of machines, or thousands of computational devices. 
 
 TensorFlow is generally very straightforward to use in a sense that most of the researchers in the research area without experience of using this library could understand what's happening behind the code blocks. TensorFlow provides a good backbone for building different shapes of machine learning applications. 

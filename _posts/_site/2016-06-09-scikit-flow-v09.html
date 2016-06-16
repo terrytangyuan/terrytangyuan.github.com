@@ -1,0 +1,94 @@
+<p>Since Scikit Flow has been included in <a href="https://github.com/tensorflow/tensorflow/releases/tag/v0.8.0rc0">v0.8</a> as its <a href="https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/learn/python/learn">TensorFlow Learn module</a>, it has been under rapid development both internally and externally to push it towards distributed and work more seemlessly with TensorFlow’s internals. As mentioned in its recent release <a href="https://github.com/tensorflow/tensorflow/releases/tag/v0.9.0rc0">v0.9</a>, it now works nicely with its other high-level internal modules, such as <code class="highlighter-rouge">contrib.layers</code>, <code class="highlighter-rouge">contrib.losses</code>, and <code class="highlighter-rouge">contrib.metrics</code>. There are many exciting changes since my <a href="http://terrytangyuan.github.io/2016/03/14/scikit-flow-intro/">last post on introduction to Scikit Flow</a>.</p>
+
+<p>In this post, I will explain some major changes introduced since <a href="https://github.com/tensorflow/tensorflow/releases/tag/v0.9.0rc0">v0.9</a> to help existing users understand the code better as well as a call for contributors for this exciting and rapid growing project. To share some of my passion towards building and contributing open-source softwares, please take a look at this <a href="http://uptake.com/5-questions-with-uptake-data-scientist-and-scikit-flow-co-creator-yuan-tang/">interview blog</a> from my company.</p>
+
+<h2 id="distributed-estimator">Distributed Estimator</h2>
+
+<p>With the great addtion of <a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/learn/python/learn/graph_actions.py">graph_actions module</a> that handles most of the complicated distributed logics of model training and evaluation, the <a href="https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/learn/python/learn/estimators">estimators</a> now incorporates <code class="highlighter-rouge">Supervisor</code> and <code class="highlighter-rouge">QueueRunner</code> logics to train models in a distributed fasion. <code class="highlighter-rouge">Estimator</code> now accepts custom model function that accepts various signatures, such as the following:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">(features, targets) -&gt; (predictions, loss, train_op)</code></li>
+  <li><code class="highlighter-rouge">(features, targets, mode) -&gt; (predictions, loss, train_op)</code></li>
+  <li><code class="highlighter-rouge">(features, targets, mode, params) -&gt; (predictions, loss, train_op)</code></li>
+</ul>
+
+<p>Basically <code class="highlighter-rouge">train_op</code> can be specified instead of using <code class="highlighter-rouge">learn.trainer</code> internally so users are able to specify more customized things and a lot of high-levels in <code class="highlighter-rouge">contrib</code> folder can be utilized as well. You can inherit from basic estimator and build your own estimators that suit your needs without worrying about implementation details on communications between different threads and setting up a master supervisor. Please see the documentation for <code class="highlighter-rouge">Estimator</code> for most updated docs. You can find the work-in-progress API guides <a href="https://www.tensorflow.org/versions/master/api_docs/python/contrib.learn.html">here</a>. We haven’t updated the examples yet but you can find a lot of unit tests that serve as most recent examples.</p>
+
+<h2 id="customized-model">Customized Model</h2>
+
+<p>For example, you can now build higly customized models like the following:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">datasets</span><span class="p">,</span> <span class="n">metrics</span><span class="p">,</span> <span class="n">cross_validation</span>
+<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
+<span class="kn">from</span> <span class="nn">tensorflow.contrib</span> <span class="kn">import</span> <span class="n">layers</span>
+<span class="kn">from</span> <span class="nn">tensorflow.contrib</span> <span class="kn">import</span> <span class="n">learn</span>
+
+<span class="k">def</span> <span class="nf">my_model</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+  <span class="n">target</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">one_hot</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+  <span class="n">features</span> <span class="o">=</span> <span class="n">layers</span><span class="o">.</span><span class="n">stack</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">layers</span><span class="o">.</span><span class="n">fully_connected</span><span class="p">,</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">])</span>
+  <span class="n">prediction</span><span class="p">,</span> <span class="n">loss</span> <span class="o">=</span> <span class="p">(</span>
+      <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">learn</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">logistic_regression_zero_init</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
+  <span class="p">)</span>
+  <span class="n">train_op</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">optimize_loss</span><span class="p">(</span>
+      <span class="n">loss</span><span class="p">,</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">framework</span><span class="o">.</span><span class="n">get_global_step</span><span class="p">(),</span> <span class="n">optimizer</span><span class="o">=</span><span class="s">'Adagrad'</span><span class="p">,</span>
+      <span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+  <span class="k">return</span> <span class="p">{</span><span class="s">'class'</span><span class="p">:</span> <span class="n">tf</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">prediction</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="s">'prob'</span><span class="p">:</span> <span class="n">prediction</span><span class="p">},</span> <span class="n">loss</span><span class="p">,</span> <span class="n">train_op</span>
+
+<span class="n">iris</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span><span class="p">()</span>
+<span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">cross_validation</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">(</span>
+  <span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">35</span><span class="p">)</span>
+
+<span class="n">classifier</span> <span class="o">=</span> <span class="n">learn</span><span class="o">.</span><span class="n">Estimator</span><span class="p">(</span><span class="n">model_fn</span><span class="o">=</span><span class="n">my_model</span><span class="p">)</span>
+<span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">steps</span><span class="o">=</span><span class="mi">700</span><span class="p">)</span>
+
+<span class="n">predictions</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_test</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>To explain some details, you can now utilize high-level APIs in <code class="highlighter-rouge">contrib.layers</code> to <code class="highlighter-rouge">stack</code>various <code class="highlighter-rouge">fully_connected</code> layers with different layer specifications, such as number of hidden units, together with <code class="highlighter-rouge">contrib.layers.optimize_loss</code> to provide appropriate and highly flexible optimization details for your custom model. To have a quick glance at <a href="https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/layers"><code class="highlighter-rouge">contrib.layers</code></a>, you can see many commonly used layers such as <code class="highlighter-rouge">batch_norm</code>, <code class="highlighter-rouge">convolution2d</code>, <code class="highlighter-rouge">dropout</code>, and <code class="highlighter-rouge">fully_connected</code>, etc. Different optimizers, regularizers, can also be used. Note that all these high-level APIs in contrib will be moved to TensorFlow core python module at some point in the future.</p>
+
+<p>You can also provide a customized learning rate function such as exponential learning rate decay and specify that by providing a custom optimizer as shown below.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c"># setup exponential decay function</span>
+<span class="k">def</span> <span class="nf">exp_decay</span><span class="p">(</span><span class="n">global_step</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">tf</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">exponential_decay</span><span class="p">(</span>
+        <span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">global_step</span><span class="o">=</span><span class="n">global_step</span><span class="p">,</span>
+        <span class="n">decay_steps</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">decay_rate</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
+
+<span class="c"># use customized decay function in learning_rate</span>
+<span class="n">optimizer</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">AdagradOptimizer</span><span class="p">(</span><span class="n">learning_rate</span><span class="o">=</span><span class="n">exp_decay</span><span class="p">)</span>
+<span class="n">classifier</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">learn</span><span class="o">.</span><span class="n">DNNClassifier</span><span class="p">(</span><span class="n">hidden_units</span><span class="o">=</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+                                            <span class="n">n_classes</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+                                            <span class="n">optimizer</span><span class="o">=</span><span class="n">optimizer</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<h2 id="tensorflow-dataframe">TensorFlow DataFrame</h2>
+
+<p>Similar to libraries like Pandas, a high-level <a href="https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/learn/python/learn/dataframe">DataFrame module</a> was included in TensorFlow Learn to facilitate many common data reading/parsing tasks from various resources such as <code class="highlighter-rouge">tensorflow.Examples</code>, <code class="highlighter-rouge">pandas.DataFrame</code>, etc. It also includes functions like <code class="highlighter-rouge">FeedingQueueRunner</code> to fetch data batches and put them in a queue so training and data feeding can now be performed at the same time in different threads to avoid wasting a lot of time waiting for data batchs to get fetched. Old <code class="highlighter-rouge">data_feeder</code> module will be deprecated soon. Again, if you are interested, please take a look at the unit tests for DataFrame that also serve as most recent examples.</p>
+
+<h2 id="monitors">Monitors</h2>
+
+<p>Major refactoring and enhancements have been added to monitors as well. You can now provide multiple highly customized monitors to perform different types of monitoring for things like validation, debugging, and unit testing. When you <code class="highlighter-rouge">fit()</code> the model, you can append a list of monitors to observe the training process.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">estimator</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">learn</span><span class="o">.</span><span class="n">Estimator</span><span class="p">(</span><span class="n">model_fn</span><span class="o">=</span><span class="n">linear_model_fn</span><span class="p">)</span>
+<span class="n">estimator</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">input_fn</span><span class="o">=</span><span class="n">boston_input_fn</span><span class="p">,</span> <span class="n">steps</span><span class="o">=</span><span class="mi">21</span><span class="p">,</span> 
+        <span class="n">monitors</span><span class="o">=</span><span class="p">[</span><span class="n">ValidationMonitor</span><span class="p">(),</span> <span class="n">DebuggingMonitor</span><span class="p">()])</span>
+</code></pre>
+</div>
+
+<h2 id="more-resources">More Resources:</h2>
+
+<ul>
+  <li><a href="https://medium.com/@ilblackdragon/tensorflow-tutorial-part-1-c559c63c0cb1">Introduction to Scikit Flow and why you want to start learning TensorFlow</a></li>
+  <li><a href="https://medium.com/@ilblackdragon/tensorflow-tutorial-part-2-9ffe47049c92">DNNs, custom model and Digit recognition examples</a></li>
+  <li><a href="https://medium.com/@ilblackdragon/tensorflow-tutorial-part-3-c5fc0662bc08">Categorical variables: One hot vs Distributed representation</a></li>
+  <li><a href="http://www.kdnuggets.com/2016/02/scikit-flow-easy-deep-learning-tensorflow-scikit-learn.html">Scikit Flow: Easy Deep Learning with TensorFlow and Scikit-learn</a></li>
+  <li><a href="http://terrytangyuan.github.io/2016/03/14/scikit-flow-intro/">Key Features of Scikit Flow Illustrated</a></li>
+</ul>
+
+<p>Note: a work-in-progress documentation page can be found <a href="https://www.tensorflow.org/versions/master/api_docs/python/contrib.learn.html">here</a>.</p>
+
+<p>We welcome any contributions to this exciting project. No matter if it’s simple typos, bug fixes/reports, or suggestions on enhancements and future directions. Do not hesitate to ask me if you’d like to see certain tings in my future blogs.</p>
+
+<p><br /><b>Copyright Reserved Yuan Tang 2016</b></p>

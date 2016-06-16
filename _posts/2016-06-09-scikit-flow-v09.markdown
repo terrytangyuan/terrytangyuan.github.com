@@ -13,6 +13,8 @@ tags:
     - Python
 --- 
 
+(This blog is featured in DataScienceWeekly [here](http://us3.campaign-archive2.com/?u=71a2b2a38789d4d25b738462f&id=ad8783e5dc&e=33631457e6))
+
 Since Scikit Flow has been included in [v0.8](https://github.com/tensorflow/tensorflow/releases/tag/v0.8.0rc0) as its [TensorFlow Learn module](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/learn/python/learn), it has been under rapid development both internally and externally to push it towards distributed and work more seemlessly with TensorFlow's internals. As mentioned in its recent release [v0.9](https://github.com/tensorflow/tensorflow/releases/tag/v0.9.0rc0), it now works nicely with its other high-level internal modules, such as `contrib.layers`, `contrib.losses`, and `contrib.metrics`. There are many exciting changes since my [last post on introduction to Scikit Flow](http://terrytangyuan.github.io/2016/03/14/scikit-flow-intro/). 
 
 In this post, I will explain some major changes introduced since [v0.9](https://github.com/tensorflow/tensorflow/releases/tag/v0.9.0rc0) to help existing users understand the code better as well as a call for contributors for this exciting and rapid growing project. To share some of my passion towards building and contributing open-source softwares, please take a look at this [interview blog](http://uptake.com/5-questions-with-uptake-data-scientist-and-scikit-flow-co-creator-yuan-tang/) from my company. 

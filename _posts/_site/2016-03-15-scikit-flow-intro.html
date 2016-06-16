@@ -1,0 +1,221 @@
+<p>(This blog is featured in DataScienceWeekly <a href="http://us3.campaign-archive1.com/?u=71a2b2a38789d4d25b738462f&amp;id=22ea37da40">here</a>)</p>
+
+<p>In November, 2015, Google open-sourced its numerical computation library called <a href="https://www.tensorflow.org/">TensorFlow</a> using data flow graphs. Its flexible implementation and architecture enables you to focus on building the computation graph and deploy the model with little efforts on heterogeous platforms such as mobile devices, hundreds of machines, or thousands of computational devices.</p>
+
+<p>TensorFlow is generally very straightforward to use in a sense that most of the researchers in the research area without experience of using this library could understand what’s happening behind the code blocks. TensorFlow provides a good backbone for building different shapes of machine learning applications.</p>
+
+<p>However, there’s a large number of potential users, including some researchers, data scientists, and students who may be familiar with many data science concepts/algorithms already but who never get involved in deep learning research/applications, may found it really hard to start hacking. That’s where Scikit Flow comes in to help.</p>
+
+<p><a href="https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/learn/python/learn">Scikit Flow</a> is a simplified interface for TensorFlow, to get people started on predictive analytics and data mining. It helps smooth the transition from the <a href="http://scikit-learn.org/stable/">Scikit-learn</a> world of one-liner machine learning into the more open world of building different shapes of ML models. You can start by using fit/predict and slide into TensorFlow APIs as you are getting comfortable. It’s Scikit-learn compatible so you can also benefit from Scikit-learn features like <code class="highlighter-rouge">GridSearch</code> and <code class="highlighter-rouge">Pipeline</code>.</p>
+
+<h2 id="deep-learning-models">Deep Learning Models</h2>
+<p>Scikit Flow provides a set of high level model classes that you can use to easily integrate with your existing Scikit-learn pipeline code.</p>
+
+<h3 id="deep-neural-network">Deep Neural Network</h3>
+<p>Here’s an example of 3 layer deep neural network with 10, 20 and 10 hidden units in each layer respectively:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">tensorflow.contrib.learn</span> <span class="kn">as</span> <span class="nn">skflow</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">datasets</span><span class="p">,</span> <span class="n">metrics</span>
+
+<span class="n">iris</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span><span class="p">()</span>
+<span class="n">classifier</span> <span class="o">=</span> <span class="n">skflow</span><span class="o">.</span><span class="n">TensorFlowDNNClassifier</span><span class="p">(</span><span class="n">hidden_units</span><span class="o">=</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="n">n_classes</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">)</span>
+<span class="n">score</span> <span class="o">=</span> <span class="n">metrics</span><span class="o">.</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">,</span> <span class="n">classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Accuracy: </span><span class="si">%</span><span class="s">f"</span> <span class="o">%</span> <span class="n">score</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<h3 id="custom-model">Custom Model</h3>
+<p>Scikit Flow grows as TensorFlow grows. You can basically insert any TensorFlow code into a custom model function that accepts predictors <code class="highlighter-rouge">X</code> and target <code class="highlighter-rouge">y</code> and returns predictions and losses, and then pass it to <code class="highlighter-rouge">skflow.TensorFlowEstimator</code>. Here’s an example of how to pass a custom model to <code class="highlighter-rouge">TensorFlowEstimator</code>, utilizing some built-in <code class="highlighter-rouge">losses_ops</code> from Scikit Flow. More advanced examples can be found in <a href="https://github.com/tensorflow/skflow/tree/master/examples">examples</a> folder, such as <a href="http://arxiv.org/pdf/1512.03385.pdf">deep residual network</a> that seemlessly uses TensorFlow code.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">datasets</span><span class="p">,</span> <span class="n">metrics</span>
+
+<span class="n">iris</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">my_model</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="s">"""This is DNN with 10, 20, 10 hidden layers, and dropout of 0.5 probability."""</span>
+    <span class="n">layers</span> <span class="o">=</span> <span class="n">skflow</span><span class="o">.</span><span class="n">ops</span><span class="o">.</span><span class="n">dnn</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="n">keep_prob</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">skflow</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">logistic_regression</span><span class="p">(</span><span class="n">layers</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="n">classifier</span> <span class="o">=</span> <span class="n">skflow</span><span class="o">.</span><span class="n">TensorFlowEstimator</span><span class="p">(</span><span class="n">model_fn</span><span class="o">=</span><span class="n">my_model</span><span class="p">,</span> <span class="n">n_classes</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">)</span>
+<span class="n">score</span> <span class="o">=</span> <span class="n">metrics</span><span class="o">.</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">,</span> <span class="n">classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Accuracy: </span><span class="si">%</span><span class="s">f"</span> <span class="o">%</span> <span class="n">score</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<h3 id="recurrent-neural-network">Recurrent Neural Network</h3>
+<p>Recurrent neural networks is widely used for many areas, such as text classification, sentiment analysis, etc. Using Scikit Flow, all you need to do is to provide some processing function <code class="highlighter-rouge">input_op_fn</code> that manipultes the input data into the right shape (we will not cover them here, see <a href="https://github.com/tensorflow/skflow/tree/master/examples">examples</a> folder on Github), change a few parameters, and call <code class="highlighter-rouge">fit</code> as usual. Currently Scikit Flow provides high level APIs for variants of RNNs.</p>
+
+<ul>
+  <li>Various recurrent units, e.g. GRU, RNN, LSTM</li>
+  <li>Bidirectional RNN</li>
+  <li>Multi-layer RNN</li>
+</ul>
+
+<p>Example:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">classifier</span> <span class="o">=</span> <span class="n">skflow</span><span class="o">.</span><span class="n">TensorFlowRNNClassifier</span><span class="p">(</span><span class="n">rnn_size</span><span class="o">=</span><span class="n">EMBEDDING_SIZE</span><span class="p">,</span> 
+    <span class="n">n_classes</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">cell_type</span><span class="o">=</span><span class="s">'gru'</span><span class="p">,</span> <span class="n">input_op_fn</span><span class="o">=</span><span class="n">input_op_fn</span><span class="p">,</span>
+    <span class="n">num_layers</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bidirectional</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">sequence_length</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+    <span class="n">steps</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">optimizer</span><span class="o">=</span><span class="s">'Adam'</span><span class="p">,</span> <span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">continue_training</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<h3 id="convolutional-neural-network">Convolutional Neural Network</h3>
+
+<p>Convolutional Neural Network is widely used in areas like computer vision. Here let’s take a look at the MNIST image classification example from <a href="https://www.tensorflow.org/versions/r0.7/tutorials/mnist/pros/index.html">TensorFlow tutorial - Deep MNIST for Experts</a> but using more concise interface provided by Scikit Flow. <code class="highlighter-rouge">Import</code> statements and additional comments are ignored in this blogpost but you can found them in <a href="https://github.com/tensorflow/skflow/tree/master/examples">examples</a> folder. A custom model called <code class="highlighter-rouge">conv_model</code> with convolutional and densely connected layers specified is passed into <code class="highlighter-rouge">skflow.TensorFlowEstimator</code>. You get all other built-in parameters such as <code class="highlighter-rouge">learning_rate</code> and <code class="highlighter-rouge">batch_size</code> for free at the same time without getting into writing repeated code using TensorFlow low level APIs.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c"># Loading MNIST data</span>
+<span class="n">mnist</span> <span class="o">=</span> <span class="n">input_data</span><span class="o">.</span><span class="n">read_data_sets</span><span class="p">(</span><span class="s">'MNIST_data'</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">max_pool_2x2</span><span class="p">(</span><span class="n">tensor_in</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">max_pool</span><span class="p">(</span><span class="n">tensor_in</span><span class="p">,</span> <span class="n">ksize</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">strides</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+        <span class="n">padding</span><span class="o">=</span><span class="s">'SAME'</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">conv_model</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="c"># reshape X to 4d tensor with 2nd and 3rd dimensions being image width and height</span>
+    <span class="c"># final dimension being the number of color channels</span>
+    <span class="n">X</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+    <span class="c"># first conv layer will compute 32 features for each 5x5 patch</span>
+    <span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">variable_scope</span><span class="p">(</span><span class="s">'conv_layer1'</span><span class="p">):</span>
+        <span class="n">h_conv1</span> <span class="o">=</span> <span class="n">skflow</span><span class="o">.</span><span class="n">ops</span><span class="o">.</span><span class="n">conv2d</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">n_filters</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">filter_shape</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> 
+                                    <span class="n">bias</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">relu</span><span class="p">)</span>
+        <span class="n">h_pool1</span> <span class="o">=</span> <span class="n">max_pool_2x2</span><span class="p">(</span><span class="n">h_conv1</span><span class="p">)</span>
+    <span class="c"># second conv layer will compute 64 features for each 5x5 patch</span>
+    <span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">variable_scope</span><span class="p">(</span><span class="s">'conv_layer2'</span><span class="p">):</span>
+        <span class="n">h_conv2</span> <span class="o">=</span> <span class="n">skflow</span><span class="o">.</span><span class="n">ops</span><span class="o">.</span><span class="n">conv2d</span><span class="p">(</span><span class="n">h_pool1</span><span class="p">,</span> <span class="n">n_filters</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">filter_shape</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> 
+                                    <span class="n">bias</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">relu</span><span class="p">)</span>
+        <span class="n">h_pool2</span> <span class="o">=</span> <span class="n">max_pool_2x2</span><span class="p">(</span><span class="n">h_conv2</span><span class="p">)</span>
+        <span class="c"># reshape tensor into a batch of vectors</span>
+        <span class="n">h_pool2_flat</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">h_pool2</span><span class="p">,</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span> <span class="o">*</span> <span class="mi">7</span> <span class="o">*</span> <span class="mi">64</span><span class="p">])</span>
+    <span class="c"># densely connected layer with 1024 neurons</span>
+    <span class="n">h_fc1</span> <span class="o">=</span> <span class="n">skflow</span><span class="o">.</span><span class="n">ops</span><span class="o">.</span><span class="n">dnn</span><span class="p">(</span><span class="n">h_pool2_flat</span><span class="p">,</span> <span class="p">[</span><span class="mi">1024</span><span class="p">],</span> <span class="n">activation</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">relu</span><span class="p">,</span> <span class="n">keep_prob</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">skflow</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">logistic_regression</span><span class="p">(</span><span class="n">h_fc1</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="c"># Training and predicting</span>
+<span class="n">classifier</span> <span class="o">=</span> <span class="n">skflow</span><span class="o">.</span><span class="n">TensorFlowEstimator</span><span class="p">(</span>
+    <span class="n">model_fn</span><span class="o">=</span><span class="n">conv_model</span><span class="p">,</span> <span class="n">n_classes</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">steps</span><span class="o">=</span><span class="mi">20000</span><span class="p">,</span>
+    <span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<h2 id="modelling-techniques">Modelling Techniques</h2>
+
+<p>Many data science modelling techniques, including early stopping that’s used very often in Kaggle competition and custom learning rate decay can be used easily.</p>
+
+<h3 id="early-stopping">Early Stopping</h3>
+<p>You can provide <code class="highlighter-rouge">early_stopping_rounds</code> in <code class="highlighter-rouge">skflow.monitors.ValidationMonitor</code> object and pass into <code class="highlighter-rouge">fit</code> function to monitor the training and stop the training when validation loss stops decreasing for several continuous rounds.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">val_monitor</span> <span class="o">=</span> <span class="n">skflow</span><span class="o">.</span><span class="n">monitors</span><span class="o">.</span><span class="n">ValidationMonitor</span><span class="p">(</span><span class="n">X_val</span><span class="p">,</span> <span class="n">y_val</span><span class="p">,</span>
+                                                <span class="n">early_stopping_rounds</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span>
+                                                <span class="n">n_classes</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+                                                <span class="n">print_steps</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<span class="c"># classifier with early stopping on validation data</span>
+<span class="n">classifier</span> <span class="o">=</span> <span class="n">skflow</span><span class="o">.</span><span class="n">TensorFlowDNNClassifier</span><span class="p">(</span><span class="n">hidden_units</span><span class="o">=</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+                                             <span class="n">n_classes</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">steps</span><span class="o">=</span><span class="mi">2000</span><span class="p">)</span>
+<span class="c"># provide a validation monitor with early stopping rounds and validation set</span>
+<span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">val_monitor</span><span class="p">)</span> 
+</code></pre>
+</div>
+
+<h3 id="custom-decay-function-for-learning-rate">Custom Decay Function for Learning Rate</h3>
+<p>Here we give an example of using TensorFlow’s <a href="https://www.tensorflow.org/versions/r0.7/api_docs/python/train.html#exponential_decay">exponential decay function</a>.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c"># setup exponential decay function</span>
+<span class="k">def</span> <span class="nf">exp_decay</span><span class="p">(</span><span class="n">global_step</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">tf</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">exponential_decay</span><span class="p">(</span>
+        <span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">global_step</span><span class="o">=</span><span class="n">global_step</span><span class="p">,</span>
+        <span class="n">decay_steps</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">decay_rate</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
+
+<span class="c"># use customized decay function in learning_rate</span>
+<span class="n">classifier</span> <span class="o">=</span> <span class="n">skflow</span><span class="o">.</span><span class="n">TensorFlowDNNClassifier</span><span class="p">(</span><span class="n">hidden_units</span><span class="o">=</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+                                            <span class="n">n_classes</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">steps</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span>
+                                            <span class="n">learning_rate</span><span class="o">=</span><span class="n">exp_decay</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>More features related to modelling techniques are also available such as multi-output regression/classification, custom class weights, dropout probability, batch normalization, etc. We will continue adding more examples on Github in the future.</p>
+
+<h2 id="additional-features">Additional Features</h2>
+
+<p>Scikit Flow provides many additional features to help you easy and streamline your model building experience. It’s evolving very rapidly. We are actively seeking suggestions/ideas and welcoming any pull requests. Join our <a href="https://gitter.im/tensorflow/skflow?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge">Gitter</a> to discuss your ideas or drop your feature requests at <a href="https://github.com/tensorflow/skflow/issues">Github issues</a>.</p>
+
+<h3 id="flexible-automatic-input-handling">Flexible Automatic Input Handling</h3>
+<p>We try to make your life easier with automatic handling of various data types, such as numpy array/matrices, pandas/dask data frames, and iterators.</p>
+
+<p>For example, sometimes when your dataset is too large to hold in the memory you may want to load it into a out-of-core dataframe with the help of dask library to firstly draw sample batches and then load into memory for training.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c"># We can load data into pandas.DataFrame</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="p">[</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="p">[</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">]]</span>
+<span class="c"># Or load data into dask.DataFrame, details see: http://dask.pydata.org/en/latest/dataframe.html</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="p">[</span><span class="n">dd</span><span class="o">.</span><span class="n">from_pandas</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">npartitions</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="p">[</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">]]</span>
+
+<span class="n">classifier</span> <span class="o">=</span> <span class="n">skflow</span><span class="o">.</span><span class="n">TensorFlowLinearClassifier</span><span class="p">(</span><span class="n">n_classes</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="c"># Make predictions on each partitions of testing data</span>
+<span class="n">predictions</span> <span class="o">=</span> <span class="n">X_test</span><span class="o">.</span><span class="n">map_partitions</span><span class="p">(</span><span class="n">classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">)</span><span class="o">.</span><span class="n">compute</span><span class="p">()</span>
+<span class="c"># Calculate accuracy</span>
+<span class="n">score</span> <span class="o">=</span> <span class="n">metrics</span><span class="o">.</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">compute</span><span class="p">(),</span> <span class="n">predictions</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<h3 id="model-persistence">Model Persistence</h3>
+
+<p>We try to make it easy for you to save the model every once a while and continue training it any time in the future.</p>
+
+<p>Each estimator has a <code class="highlighter-rouge">save</code> method which takes folder path where all model information will be saved. For restoring you can just call <code class="highlighter-rouge">skflow.TensorFlowEstimator.restore(path)</code> and it will return object of your class.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">classifier</span> <span class="o">=</span> <span class="n">skflow</span><span class="o">.</span><span class="n">TensorFlowLinearRegression</span><span class="p">()</span>
+<span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="n">classifier</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s">'/tmp/tf_examples/my_model_1/'</span><span class="p">)</span>
+
+<span class="n">new_classifier</span> <span class="o">=</span> <span class="n">TensorFlowEstimator</span><span class="o">.</span><span class="n">restore</span><span class="p">(</span><span class="s">'/tmp/tf_examples/my_model_2'</span><span class="p">)</span>
+<span class="n">new_classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<h3 id="summariestensorboard">Summaries/TensorBoard</h3>
+
+<p>To get nice visualizations and summaries you can use <code class="highlighter-rouge">logdir</code> parameter on <code class="highlighter-rouge">fit</code>. It will start writing summaries for <code class="highlighter-rouge">loss</code> and histograms for variables in your model. You can also add custom summaries in your custom model function by calling <code class="highlighter-rouge">tf.summary</code> and passing Tensors to report.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">classifier</span> <span class="o">=</span> <span class="n">skflow</span><span class="o">.</span><span class="n">TensorFlowLinearRegression</span><span class="p">()</span>
+<span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">logdir</span><span class="o">=</span><span class="s">'/tmp/tf_examples/my_model_1/'</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>Then run next command in command line:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>tensorboard --logdir<span class="o">=</span>/tmp/tf_examples/my_model_1
+</code></pre>
+</div>
+
+<p>and follow reported url in your console to open the tensorboard.</p>
+
+<p><img class="shadow" width="1000" src="/img/inblog/text_classification_rnn_graph.png" />
+<img class="shadow" width="500" src="/img/inblog/text_classification_rnn_loss.png" /></p>
+
+<p>More Examples and applications can be found on <a href="[examples](https://github.com/tensorflow/skflow)">Github</a>:</p>
+
+<ul>
+  <li>Text classification (RNN &amp; Convolution, word and character-level)</li>
+  <li>Digits &amp; MNIST (Conv, more Conv and ResNet)</li>
+  <li>Language models</li>
+  <li>Neural Translation Model</li>
+</ul>
+
+<p>More blogposts about Scikit Flow:</p>
+
+<ul>
+  <li><a href="https://medium.com/@ilblackdragon/tensorflow-tutorial-part-1-c559c63c0cb1">Introduction to Scikit Flow and why you want to start learning TensorFlow</a></li>
+  <li><a href="https://medium.com/@ilblackdragon/tensorflow-tutorial-part-2-9ffe47049c92">DNNs, custom model and Digit recognition examples</a></li>
+  <li><a href="https://medium.com/@ilblackdragon/tensorflow-tutorial-part-3-c5fc0662bc08">Categorical variables: One hot vs Distributed representation</a></li>
+  <li><a href="http://www.kdnuggets.com/2016/02/scikit-flow-easy-deep-learning-tensorflow-scikit-learn.html">Scikit Flow: Easy Deep Learning with TensorFlow and Scikit-learn</a></li>
+</ul>
+
+<p>More exciting things are happening! Spoiler alert: <a href="https://github.com/tensorflow/tensorflow/pull/1445">we are moving to TensorFlow soon</a>! Stay tuned!</p>
+
+<p>Update: skflow has been merged to TensorFlow as its <a href="https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/learn/python/learn">TensorFlow Learn module</a>. Please find most updated examples <a href="https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/skflow">here</a>.</p>
+
+<p><br /><b>Copyright Reserved Yuan Tang 2016</b></p>
