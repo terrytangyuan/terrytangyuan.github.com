@@ -22,7 +22,7 @@ In this post, I will explain some major changes introduced since [v0.9](https://
 
 ## Distributed Estimator
 
-With the great addtion of [graph_actions module](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/learn/python/learn/graph_actions.py) that handles most of the complicated distributed logics of model training and evaluation, the [estimators](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/learn/python/learn/estimators) now incorporates `Supervisor` and `Coordinator` logics to train models in a distributed fasion. `Estimator` now accepts custom model function that accepts various signatures, such as the following:
+With the great addition of [graph_actions module](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/learn/python/learn/graph_actions.py) that handles most of the complicated distributed logics of model training and evaluation, the [estimators](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/learn/python/learn/estimators) now incorporates `Supervisor` and `Coordinator` logics to train models in a distributed fasion. `Estimator` now accepts custom model function that accepts various signatures, such as the following:
 
 * `(features, targets) -> (predictions, loss, train_op)`
 * `(features, targets, mode) -> (predictions, loss, train_op)`
