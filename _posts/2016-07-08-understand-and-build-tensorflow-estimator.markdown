@@ -27,9 +27,11 @@ In the meantime, `BaseEstimator` intializes the settings for monitors, checkpoin
 
 `Estimator` implemented in the module is the perfect example of how to implement those functions that are left to be overriden by sub-classes of `BaseEstimator`. 
 
-For example, `_get_train_ops()` in `Estimator` takes `features` and `targets` as inputs, and then returns a tuple of train `Operation` and loss `Tensor`, using the customized model function. If you want to implement your own estimator, this also gives you freedom to decide whether `targets` can be ignored if the estimator can be trained in unsupervised fashion. Similarly, `_get_eval_ops()` lets a sub-class to use customized metrics to evaluate a training step. 
+For example, `_get_train_ops()` in `Estimator` takes `features` and `targets` as inputs, and then returns a tuple of train `Operation` and loss `Tensor`, using the customized model function. If you want to implement your own estimator, this also gives you freedom to decide whether `targets` can be ignored if the estimator can be trained in unsupervised fashion. 
 
-A list of available metrics can be found in a couple of high-level modules in TensorFlow. `_get_predict_ops()` is implemented to customize predictions, e.g. probability v.s. actual prediction output. 
+Similarly, `_get_eval_ops()` lets a sub-class to use customized metrics to evaluate each training step. A list of available metrics can be found in a couple of high-level modules in TensorFlow. It should return a dictionary of `Tensor` object that represents the evaluation ops for the metrics specified.
+
+`_get_predict_ops()` is implemented to customize predictions, e.g. probability v.s. actual prediction output. It returns a `Tensor` or a dictionary of `Tensor` object that represents prediction ops. You can then easily use super-class's `predict()` to achieve functionalities like `transform()` similar to the one in Scikit-learn for unsupervised problems. 
 
 
 ## Examples of Estimators
