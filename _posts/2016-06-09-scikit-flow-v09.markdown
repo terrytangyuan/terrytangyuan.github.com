@@ -98,14 +98,17 @@ estimator.fit(input_fn=boston_input_fn, steps=21,
 
 ## More Resources:
 
+* [Key Features of Scikit Flow Illustrated](http://terrytangyuan.github.io/2016/03/14/scikit-flow-intro/)
+* [Building Machine Learning Estimator in TensorFlow](http://terrytangyuan.github.io/2016/07/08/understand-and-build-tensorflow-estimator/)
 * [Introduction to Scikit Flow and why you want to start learning TensorFlow](https://medium.com/@ilblackdragon/tensorflow-tutorial-part-1-c559c63c0cb1)
 * [DNNs, custom model and Digit recognition examples](https://medium.com/@ilblackdragon/tensorflow-tutorial-part-2-9ffe47049c92)
 * [Categorical variables: One hot vs Distributed representation](https://medium.com/@ilblackdragon/tensorflow-tutorial-part-3-c5fc0662bc08)
 * [Scikit Flow: Easy Deep Learning with TensorFlow and Scikit-learn](http://www.kdnuggets.com/2016/02/scikit-flow-easy-deep-learning-tensorflow-scikit-learn.html)
-* [Key Features of Scikit Flow Illustrated](http://terrytangyuan.github.io/2016/03/14/scikit-flow-intro/)
+
 
 Note: a work-in-progress documentation page can be found [here](https://www.tensorflow.org/versions/master/api_docs/python/contrib.learn.html). 
 
 We welcome any contributions to this exciting project. No matter if it's simple typos, bug fixes/reports, or suggestions on enhancements and future directions. Do not hesitate to ask me if you'd like to see certain things in my future blogs. 
 
 <br><b>Copyright Reserved Yuan Tang 2016</b>
+<br><b>Banner Credit to TensorFlow Org</b>

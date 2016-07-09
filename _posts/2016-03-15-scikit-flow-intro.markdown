@@ -224,13 +224,17 @@ More Examples and applications can be found on [Github]([examples](https://githu
 
 More blogposts about Scikit Flow:
 
+* [Building Machine Learning Estimator in TensorFlow](http://terrytangyuan.github.io/2016/07/08/understand-and-build-tensorflow-estimator/)
+* [High-level Learn Module in TensorFlow](2016/06/09/scikit-flow-v09/)
 * [Introduction to Scikit Flow and why you want to start learning TensorFlow](https://medium.com/@ilblackdragon/tensorflow-tutorial-part-1-c559c63c0cb1)
 * [DNNs, custom model and Digit recognition examples](https://medium.com/@ilblackdragon/tensorflow-tutorial-part-2-9ffe47049c92)
 * [Categorical variables: One hot vs Distributed representation](https://medium.com/@ilblackdragon/tensorflow-tutorial-part-3-c5fc0662bc08)
 * [Scikit Flow: Easy Deep Learning with TensorFlow and Scikit-learn](http://www.kdnuggets.com/2016/02/scikit-flow-easy-deep-learning-tensorflow-scikit-learn.html)
+
 
 More exciting things are happening! Spoiler alert: [we are moving to TensorFlow soon](https://github.com/tensorflow/tensorflow/pull/1445)! Stay tuned! 
 
 Update: skflow has been merged to TensorFlow as its [TensorFlow Learn module](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/learn/python/learn). Please find most updated examples [here](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/skflow). 
 
 <br><b>Copyright Reserved Yuan Tang 2016</b>
+<br><b>Banner Credit to TensorFlow Org</b>
