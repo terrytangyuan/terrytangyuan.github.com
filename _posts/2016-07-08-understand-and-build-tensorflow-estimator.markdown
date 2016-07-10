@@ -85,7 +85,7 @@ Please do not hesitate to leave a message if you have any questions.
 ## More Resources:
 
 * [Key Features of Scikit Flow Illustrated](http://terrytangyuan.github.io/2016/03/14/scikit-flow-intro/)
-* [High-level Learn Module in TensorFlow](2016/06/09/scikit-flow-v09/)
+* [High-level Learn Module in TensorFlow](http://terrytangyuan.github.io/2016/06/09/scikit-flow-v09/)
 * [Introduction to Scikit Flow and why you want to start learning TensorFlow](https://medium.com/@ilblackdragon/tensorflow-tutorial-part-1-c559c63c0cb1)
 * [DNNs, custom model and Digit recognition examples](https://medium.com/@ilblackdragon/tensorflow-tutorial-part-2-9ffe47049c92)
 * [Categorical variables: One hot vs Distributed representation](https://medium.com/@ilblackdragon/tensorflow-tutorial-part-3-c5fc0662bc08)
