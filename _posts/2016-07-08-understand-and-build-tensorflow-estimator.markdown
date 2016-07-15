@@ -13,6 +13,8 @@ tags:
     - Python
 --- 
 
+(This blog is featured in DataScienceWeekly [here](http://www.datascienceweekly.org/newsletters/data-science-weekly-newsletter-issue-138))
+
 Have you ever wondered what's the magic behind the tutorials on [Large-scale Linear Models](https://www.tensorflow.org/versions/master/tutorials/linear/overview.html#large-scale-linear-models-with-tensorflow) and [Wide & Deep Learning](https://www.tensorflow.org/versions/master/tutorials/wide_and_deep/index.html#tensorflow-wide-deep-learning-tutorial)? I hope this post would at least point you to the right direction. 
 
 Please take a look at my previous blog posts to understanding some basics of TensorFlow Learn and its integration with other high-level TensorFlow modules. 
