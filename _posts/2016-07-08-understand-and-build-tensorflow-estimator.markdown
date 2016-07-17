@@ -13,7 +13,7 @@ tags:
     - Python
 --- 
 
-(This blog is featured in DataScienceWeekly [here](http://www.datascienceweekly.org/newsletters/data-science-weekly-newsletter-issue-138) and Chinese translation [here(中文)](http://mp.weixin.qq.com/s?__biz=MzI0MDIxMDM0MQ==&mid=2247483708&idx=1&sn=825a95910aeb14a9b0b769a9321d4177#wechat_redirect) by Xiatian)
+(This blog is featured in DataScienceWeekly [here](http://www.datascienceweekly.org/newsletters/data-science-weekly-newsletter-issue-138) and Chinese translation [here (中文)](http://mp.weixin.qq.com/s?__biz=MzI0MDIxMDM0MQ==&mid=2247483708&idx=1&sn=825a95910aeb14a9b0b769a9321d4177#wechat_redirect) by Xiatian)
 
 Have you ever wondered what's the magic behind the tutorials on [Large-scale Linear Models](https://www.tensorflow.org/versions/master/tutorials/linear/overview.html#large-scale-linear-models-with-tensorflow) and [Wide & Deep Learning](https://www.tensorflow.org/versions/master/tutorials/wide_and_deep/index.html#tensorflow-wide-deep-learning-tutorial)? I hope this post would at least point you to the right direction. 
 
