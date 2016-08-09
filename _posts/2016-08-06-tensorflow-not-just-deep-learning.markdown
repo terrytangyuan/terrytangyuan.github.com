@@ -13,6 +13,8 @@ tags:
     - Python
 ---
 
+(Chinese translation [here](http://mp.weixin.qq.com/s?__biz=MzI0MDIxMDM0MQ==&mid=2247483724&idx=1&sn=3a8456395595ce20a8c826b40611961b&scene=0#wechat_redirect) by Xiatian)
+
 One time when I was illustrating the [code base](https://github.com/tensorflow/tensorflow) and [architecture](http://arxiv.org/pdf/1603.04467.pdf) of [TensorFlow](https://www.tensorflow.org/) to my friends, they were quite surprised by how much more code was introduced since TensorFlow's first open-source release. They were only expecting several popular types of deep learning algorithms from the code base as heard from other people and social media. 
 
 **Yet, TensorFlow is not just for deep learning**. It provides a great variety of building blocks for general numerical computation and machine learning. In this blog post, I will introduce the wide range of general machine learning algorithms and their building blocks provided by TensorFlow in `tf.contrib`. Note that many of the modules in `tf.contrib` will be moved to the main TensorFlow module once their interfaces are more stable. 
