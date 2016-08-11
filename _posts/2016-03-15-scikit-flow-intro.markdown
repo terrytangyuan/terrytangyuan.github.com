@@ -42,7 +42,7 @@ print("Accuracy: %f" % score)
 ```
 
 ### Custom Model
-Scikit Flow grows as TensorFlow grows. You can basically insert any TensorFlow code into a custom model function that accepts predictors `X` and target `y` and returns predictions and losses, and then pass it to `skflow.TensorFlowEstimator`. Here's an example of how to pass a custom model to `TensorFlowEstimator`, utilizing some built-in `losses_ops` from Scikit Flow. More advanced examples can be found in [examples](https://github.com/tensorflow/skflow/tree/master/examples) folder, such as [deep residual network](http://arxiv.org/pdf/1512.03385.pdf) that seemlessly uses TensorFlow code. 
+Scikit Flow grows as TensorFlow grows. You can basically insert any TensorFlow code into a custom model function that accepts predictors `X` and target `y` and returns predictions and losses, and then pass it to `skflow.TensorFlowEstimator`. Here's an example of how to pass a custom model to `TensorFlowEstimator`, utilizing some built-in `losses_ops` from Scikit Flow. More advanced examples can be found in [examples](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/skflow) folder, such as [deep residual network](http://arxiv.org/pdf/1512.03385.pdf) that seemlessly uses TensorFlow code. 
 
 ```python
 from sklearn import datasets, metrics
@@ -61,7 +61,7 @@ print("Accuracy: %f" % score)
 ```
 
 ### Recurrent Neural Network
-Recurrent neural networks is widely used for many areas, such as text classification, sentiment analysis, etc. Using Scikit Flow, all you need to do is to provide some processing function `input_op_fn` that manipultes the input data into the right shape (we will not cover them here, see [examples](https://github.com/tensorflow/skflow/tree/master/examples) folder on Github), change a few parameters, and call `fit` as usual. Currently Scikit Flow provides high level APIs for variants of RNNs. 
+Recurrent neural networks is widely used for many areas, such as text classification, sentiment analysis, etc. Using Scikit Flow, all you need to do is to provide some processing function `input_op_fn` that manipultes the input data into the right shape (we will not cover them here, see [examples](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/skflow) folder on Github), change a few parameters, and call `fit` as usual. Currently Scikit Flow provides high level APIs for variants of RNNs. 
 
 * Various recurrent units, e.g. GRU, RNN, LSTM
 * Bidirectional RNN
@@ -78,7 +78,7 @@ classifier = skflow.TensorFlowRNNClassifier(rnn_size=EMBEDDING_SIZE,
 
 ### Convolutional Neural Network
 
-Convolutional Neural Network is widely used in areas like computer vision. Here let's take a look at the MNIST image classification example from [TensorFlow tutorial - Deep MNIST for Experts](https://www.tensorflow.org/versions/r0.7/tutorials/mnist/pros/index.html) but using more concise interface provided by Scikit Flow. `Import` statements and additional comments are ignored in this blogpost but you can found them in [examples](https://github.com/tensorflow/skflow/tree/master/examples) folder. A custom model called `conv_model` with convolutional and densely connected layers specified is passed into `skflow.TensorFlowEstimator`. You get all other built-in parameters such as `learning_rate` and `batch_size` for free at the same time without getting into writing repeated code using TensorFlow low level APIs. 
+Convolutional Neural Network is widely used in areas like computer vision. Here let's take a look at the MNIST image classification example from [TensorFlow tutorial - Deep MNIST for Experts](https://www.tensorflow.org/versions/r0.7/tutorials/mnist/pros/index.html) but using more concise interface provided by Scikit Flow. `Import` statements and additional comments are ignored in this blogpost but you can found them in [examples](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/skflow) folder. A custom model called `conv_model` with convolutional and densely connected layers specified is passed into `skflow.TensorFlowEstimator`. You get all other built-in parameters such as `learning_rate` and `batch_size` for free at the same time without getting into writing repeated code using TensorFlow low level APIs. 
 
 ```python
 # Loading MNIST data
@@ -153,7 +153,7 @@ More features related to modelling techniques are also available such as multi-o
 
 ## Additional Features
 
-Scikit Flow provides many additional features to help you easy and streamline your model building experience. It's evolving very rapidly. We are actively seeking suggestions/ideas and welcoming any pull requests. Join our [Gitter](https://gitter.im/tensorflow/skflow?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) to discuss your ideas or drop your feature requests at [Github issues](https://github.com/tensorflow/skflow/issues).
+Scikit Flow provides many additional features to help you easy and streamline your model building experience. It's evolving very rapidly. We are actively seeking suggestions/ideas and welcoming any pull requests. Join our [Gitter](https://gitter.im/tensorflow/skflow?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) to discuss your ideas or drop your feature requests at [Github issues](https://github.com/tensorflow/tensorflow/issues).
 
 ### Flexible Automatic Input Handling
 We try to make your life easier with automatic handling of various data types, such as numpy array/matrices, pandas/dask data frames, and iterators. 
@@ -215,7 +215,7 @@ and follow reported url in your console to open the tensorboard.
 
 
 
-More Examples and applications can be found on [Github]([examples](https://github.com/tensorflow/skflow)):
+More Examples and applications can be found on [Github]([examples](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/skflow)):
 
 * Text classification (RNN & Convolution, word and character-level)
 * Digits & MNIST (Conv, more Conv and ResNet)
