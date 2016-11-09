@@ -9,8 +9,8 @@ tags:
     - Interview
 ---
 
-<meta http-equiv="refresh" content="0; URL='http://www.jiqizhixin.com/article/1788'" />
+<meta http-equiv="refresh" content="3; URL='http://www.jiqizhixin.com/article/1788'" />
 
 这次对话中聊到了自己在开源上的人生经历和经验，对开源社区以及深度学习开源项目的一些想法和看法。
 
-Redirecting...
+Redirecting to jiqizhixin.com in 3 seconds...
