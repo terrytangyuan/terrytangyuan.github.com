@@ -73,11 +73,14 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Affliations
 affliations: [
     {
+        title: "Uptake",
+        href: "http://uptake.com" 
+    },{
+        title: "RStudio",
+        href: "http://rstudio.com/"
+    },{
         title: "DMLC",
         href: "http://dmlc.ml/"
-    },{
-        title: "Uptake",
-        href: "http://uptake.com"
     },{
         title: "TensorFlow",
         href: "https://github.com/tensorflow"
