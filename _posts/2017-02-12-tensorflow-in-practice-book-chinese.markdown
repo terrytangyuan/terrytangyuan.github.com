@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "新书：TensorFlow实战"
-subtitle:   "New Book: TensorFlow in Practice by Wenjian Huang and Yuan Tang"
+title:      "TensorFlow实战：一本书掌握谷歌深度学习框架"
+subtitle:   "TensorFlow in Practice: Google Deep Learning Framework in One Book"
 date:       2017-02-12
 author:     "Yuan Tang"
 header-img: "img/inblog/tensorflow-bg.jpg"
