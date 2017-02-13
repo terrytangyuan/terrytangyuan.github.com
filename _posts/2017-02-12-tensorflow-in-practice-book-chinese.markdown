@@ -31,7 +31,7 @@ tags:
 * RNN（LSTM，Bi-RNN）
 * Deep Reinforcement Learning（Policy Network、Value Network）
 * 详述TensorBoard、多GPU并行、分布式并行等组件的使用方法
-* TL.Learn从入门到精通，TF.Contrib详解
+* TF.Learn从入门到精通，TF.Contrib详解
 
 ## 内容简介
 
