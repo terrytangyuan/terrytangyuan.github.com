@@ -236,5 +236,5 @@ More exciting things are happening! Spoiler alert: [we are moving to TensorFlow 
 
 Update: skflow has been merged to TensorFlow as its [TensorFlow Learn module](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/learn/python/learn). Please find most updated examples [here](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/learn). 
 
-<br><b>Copyright Reserved Yuan Tang 2016</b>
+<br><b>Copyright Reserved Yuan Tang 2016-2017</b>
 <br><b>Banner Credit to TensorFlow Org</b>

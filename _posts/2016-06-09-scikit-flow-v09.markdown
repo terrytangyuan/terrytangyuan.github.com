@@ -110,5 +110,5 @@ Note: a work-in-progress documentation page can be found [here](https://www.tens
 
 We welcome any contributions to this exciting project. No matter if it's simple typos, bug fixes/reports, or suggestions on enhancements and future directions. Do not hesitate to ask me if you'd like to see certain things in my future blogs. 
 
-<br><b>Copyright Reserved Yuan Tang 2016</b>
+<br><b>Copyright Reserved Yuan Tang 2016-2017</b>
 <br><b>Banner Credit to TensorFlow Org</b>
