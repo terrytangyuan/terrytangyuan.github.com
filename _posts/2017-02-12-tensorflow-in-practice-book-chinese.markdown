@@ -15,23 +15,13 @@ tags:
 ---
 
 
-**Google TensorFlow研发团队内部推荐的首本中文教程——《TensorFlow实战》，由TensorFlow Contributor、Committer倾力编写，获TensorFlow工程研发总监、计算机视觉资深专家颜水成赞誉好评。**
+**Google TensorFlow研发团队内部推荐的首本中文教程——《TensorFlow实战》，由TensorFlow Contributor、Committer倾力编写，获TensorFlow工程研发总监、计算机视觉资深专家颜水成等专家赞誉好评。**
 
 
 **适读人群**：希望快速上手TensorFlow、了解深度学习技术及其应用实践的人士，以及机器学习、分布式计算领域的学生、从业者。特别是对正在学习深度学习技术，立志从事AI相关行业，成为数据科学家的人来说，本书更是非常实用的工具书。
 
 **《TensorFlow实战》** 是由**PPmoney大数据算法总监黄文坚**和**美国Uptake数据科学家唐源**倾力编写的新书。本书是Google TensorFlow研发团队内部推荐的教程，两位作者均是TensorFlow开发者，其中唐源是TensorFlow研发团队的Committer。本书结合了大量代码实例，深入浅出地介绍了如何使用TensorFlow。
 
-* 代码基于TensorFlow 1.0版API
-* 深度剖析如何用TensorFlow实现主流神经网络：
-* AutoEncoder
-* MLP
-* CNN（AlexNet，VGGNet，Inception Net，ResNet）
-* Word2Vec
-* RNN（LSTM，Bi-RNN）
-* Deep Reinforcement Learning（Policy Network、Value Network）
-* 详述TensorBoard、多GPU并行、分布式并行等组件的使用方法
-* TF.Learn从入门到精通，TF.Contrib详解
 
 ## 内容简介
 
