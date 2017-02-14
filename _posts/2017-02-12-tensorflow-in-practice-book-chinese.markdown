@@ -25,8 +25,7 @@ tags:
 
 **预售链接: [京东](http://item.jd.com/12125568.html); [互动出版网](http://product.china-pub.com/5174364); [亚马逊](https://www.amazon.cn/dp/B06X8Z4BS9/ref=sr_1_1?ie=UTF8&qid=1487039577&sr=8-1&keywords=TensorFlow%E5%AE%9E%E6%88%98)**
 
-![cover](../../../../../img/tfbook-front-cover.jpg)
-
+![front-cover](../../../../../img/inblog/tfbook-front-cover.jpg)
 
 
 ## 内容简介
