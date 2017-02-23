@@ -7,6 +7,8 @@ author:     "Yuan Tang"
 tags:
     - Open Source
     - Interview
+    - Deep Learning
+    - Machine Learning
 ---
 
 转自机器之心，[原文链接](http://www.jiqizhixin.com/article/1788)。
