@@ -10,7 +10,6 @@ baseurl: ""                             # for example, '/blog' if your blog host
 gems: [jekyll-paginate]
 
 # SNS settings
-RSS: true
 weibo_username:     唐源Terry
 #zhihu_username:     terrytangyuan
 github_username:    terrytangyuan
@@ -18,6 +17,7 @@ twitter_username:  terrytangyuan
 #facebook_username:  terrytangyuan
 email_username:  terrytangyuan@gmail.com
 linkedin_visitor_id: yuan-terry-tang-117ba962
+RSS: true
 
 
 # Build settings
