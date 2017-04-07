@@ -76,3 +76,21 @@ tags:
 **机器之心：谷歌、Facebook 作为大公司，他们的 TensorFlow、Torch7 好像更受欢迎，这是不是资源优势造成的呢？你如何看待现在业界的反 TensorFlow 呼声以及支持 TensorFlow 的呼声？**
 
 **唐源：**资源优势确实影响到了受欢迎程度，但也不是绝对的，因为最终的受欢迎程度是需要经过时间的考验的，最终的决定权还是在用户手上，有着不同需求的用户群体可以更好地全面地测试不同的框架，不管是大公司支持的还是草根阶级的，都会有着竞争的机会，不会被完全垄断的。我觉得不用太在意这些，自己了解自己项目的需求，然后考虑一下学习成本，看看哪个框架更适合自己就好。比如说很多人就不太喜欢学新的编程语言就仅仅为了使用 Torch7，很多统计学家熟悉 R 的话可以直接使用 MXNet 的 R 接口，等等。
+
+
+
+**机器之心，创办于2014年3月，是中国领先的人工智能垂直媒体。机器之心关注人工智能，机器人，神经认知科学等前沿科技，通过提供专业、权威的信息让读者紧跟科技潮流。在专注技术内容的同时，机器之心也关注人与科技之间的深度思考，启发读者充分想象科技发展与人类进程的关联，构建良好的创新环境。**
+
+**机器之心是业界公认的最专业的专注于人工智能的华语新媒体；作为一个针对业界的AI主题垂直媒体，机器之心打破了垂直业界媒体的影响力瓶颈与局限，异军突起。目前机器之心已经覆盖了微信、今日头条、百度百家、腾讯内容开放平台等多个大型内容平台，并运营着自己的官方网站；现已拥有超过11w微信订阅用户， 百度、今日头条等其他内容平台每天的浏览量合计超过3W.**
+
+**2015年，机器之心获得「虎嗅2015年度十佳作者」和「今日头条2015年度最佳自媒体」的奖项，并成为 APEC GIC 「全球VR峰会」首席科技媒体，瑞士洛桑The Brain Forum唯一受邀进行报道的中国媒体。 2016年，机器之心是WithTheBest AI Conference唯一来自中国的官方合作伙伴。**
+
+**与此同时机器之心作为联想之星Comet Labs全球资源平台的一份子，携手联想之星Comet Labs共同为人工智能领域的参与者提供产业及创业加速服务。**
+
+
+
+**Synced (www.jiqizhixin.com) was founded in March 2014. It is the first Chinese media company that focuses on the news and insights of cutting-edge technologies. As the industry's most influential media leader, we provide professional, authoritative, and inspiring content in the fields of Artificial Intelligence, robotics, neuroscience and bio-medicine to our readers. Our readers are those who wish to learn more about the cutting-edge technologies and the upcoming technological revolution. Our vision goes beyond merely inspiring the readers' imagination and creativity; it is to help them gaze into the future interactions between mankind and technologies.**
+
+**As of the spring of 2016, over 100,000 readers have subscribed Synced's WeChat channel, hosted by the largest Chinese social networking and content sharing platform. The daily visits average 22,000. On top of that we also have a combined 30,000 daily page views via other internet platforms, including Baidu and Tou Tiao.com. The feedback collected from our subscribers and third parties indicates that our topic selection, quality-control, professionalism, practicality, and thoughtfulness are recognized and praised by the executives of major Chinese technology companies, as well as many experts, scholars, investors, industry practitioners, students, and technology enthusiasts. As the key content provider to Tencent, Baidu, and Tou Tiao, we have won the title of Huxiu’s Top Ten Content Provider of 2015 and Tou Tiao’s Best Vertical Media of 2015. We have also served as APEC Global VR Summit’s chief technology media.**
+
+**Synced has conducted in-depth interviews with numerous domestic and international experts, such as Deng Li (Microsoft Research’s Chief Artificial Intelligence Scientist), Richard Sutton (University of Alberta, RLAI), Hsiao-Wuen Hon (President of MSRA), Randy Schekman (Nobel Prize Laureate), and John Markoff (New York Times senior technology reporter and the author of Machines of Loving Grace). We have also covered IBM, Microsoft, Baidu, as well as many other outstanding AI and robotics companies and start-ups in China and around the world.**

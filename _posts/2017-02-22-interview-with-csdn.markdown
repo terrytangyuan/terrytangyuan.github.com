@@ -13,6 +13,7 @@ tags:
 
 转自极客头条，[原文链接](http://geek.csdn.net/news/detail/139455)。
 
+
 自 2015 年底开源到如今更快、更灵活、更方便的 1.0 版本正式发布，由 Google 推出的第二代分布式机器学习系统 TensorFlow 一直在为我们带来惊喜，一方面是技术层面持续的迭代演进，从分布式版本、服务框架 TensorFlow Serving、上层封装 TF.Learn 到 Windows 支持、JIT 编译器 XLA、动态计算图框架 Fold 等，以及 Inception Net、SyntaxNet 等数不胜数的经典模型实现，TensorFlow 已然已经成为深度学习框架的事实标准之一。
 
 而另一方面，在开源一年多的时间里，TensorFlow 已经帮助了包括研究人员、工程师、艺术家、学生等在内的诸多用户在各个领域取得了卓越进展，据 Google 官方统计，目前人们已经在 6000 多个在线开放代码存储区中使用 TensorFlow。那么，在业务场景及个人摸索实践中，我们可以如何更好地使用 TensorFlow？以及掌握与运用深度学习、机器学习的正确姿势？带着诸多问题，我们特别采访了 TensorFlow 项目贡献者——美国 Uptake 数据科学家唐源，一起聊聊深度学习框架的那些事儿。
@@ -81,3 +82,10 @@ DataNovo 是我在上斯坦福公开课的时候和几个小伙伴成立的公�
 **CSDN：在开发人员读完《TensorFlow 实战》之后，可能需更进一步的提升，您是否有下一步相关著作的计划？或者有其他的学习途径可以推荐？**
 
 **唐源：**我们这次虽然大部分的例子都是基于最新的 1.0 版本，但是 TensorFlow 的发展特别快，我们会在下一版介绍更多的新的功能，也会根据读者的反馈意见来更好地帮助大家学习。其他的学习途径，可以参考官方的一些例子，一般都是和代码比较兼容的，然后 Github 上面也有很多值得学习的代码和例子，如果对源代码比较感兴趣，也鼓励大家积极参与贡献。
+
+
+
+**CSDN（www.csdn.net）创立于1999年，是中国最大的IT社区与服务平台，为中国的软件开发者和IT从业者提供知识传播、职业发展、软件开发等全生命周期服务，满足他们在职业发展中学习及共享知识和信息、建立职业发展社交圈、通过软件开发实现技术商业化等刚性需求。拥有超过5000万注册会员、60万注册企业及合作伙伴，旗下包含csdn.net、ITeye、《程序员》杂志、CSDN CODE等。并多次举办各类大型技术会议，如中国软件开发技术大会（SDCC）、中国云计算技术大会（CCTC）、移动开发者大会（MDCC）、中国大数据技术大会（BDTC）等。**
+ 
+ 
+**CSDN is the largest Chinese-language IT technology community (www.csdn.net), including csdn.net, ITeye and Programmer magazine, with more than 50 million registered users. Depending on a unique model of community-based media, it is the most influential and authoritative media in software industry which covers more than 90% of Chinese software developers. It has hosted a variety of large-scale meetings, such as China Software Developer Conference (SDCC), China Cloud Computing Conference (CCCC) , Mobile Developer Conference China (MDCC), etc.**
