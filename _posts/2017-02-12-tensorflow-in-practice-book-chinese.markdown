@@ -42,6 +42,14 @@ Google近日发布了TensorFlow 1.0候选版，这第一个稳定版将是深度
 
 ## 精彩书评
 
+*"TensorFlow很好地降低了人工智能时代的入门门槛，提高了开发效率。这本书的作者有丰富的TensorFlow实战经验，对框架有深刻理解。作为入门教材，这本书不可多得，值得有志于人工智能研发的学生和从业人员阅读。"*
+
+-- **李开复**
+
+*"AI and machine learning are going to be a key part of the future of many, many industries and areas of human endeavor.  We built and open-sourced TensorFlow because we wanted everyone to be able to benefit from these technologies, and for the world to have a common language for expressing machine learning ideas.  As part of this, we were hoping the community would work together to provide materials describing the concepts behind TensorFlow in a wide variety of languages, and this book is a great example of that."*
+
+-- **Jeff Dean, Google Senior Fellow, leader of Google Brain team**
+
 *“AI and Machine Learning are going to be a key part of our future. We made TensorFlow open source to bring these technologies to everyone and help move the world forward. This book is a great example of the TensorFlow community giving back to multiply everyone’s efforts. ”*
 
 -- **Engineering Director of TensorFlow，Rajat Monga**
