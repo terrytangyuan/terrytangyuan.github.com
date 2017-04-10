@@ -15,7 +15,7 @@ tags:
 ---
 
 
-**Google TensorFlow研发团队内部推荐的首本中文教程——《TensorFlow实战》，由TensorFlow Contributor、Committer倾力编写，获TensorFlow工程研发总监、计算机视觉资深专家颜水成等专家赞誉好评。**
+**Google TensorFlow研发团队内部推荐的首本中文教程——《TensorFlow实战》，由TensorFlow Contributor、Committer倾力编写，获Jeff Dean, TensorFlow工程研发总监、李开复等专家赞誉好评。**
 
 
 **适读人群**：希望快速上手TensorFlow、了解深度学习技术及其应用实践的人士，以及机器学习、分布式计算领域的学生、从业者。特别是对正在学习深度学习技术，立志从事AI相关行业，成为数据科学家的人来说，本书更是非常实用的工具书。
@@ -44,11 +44,11 @@ Google近日发布了TensorFlow 1.0候选版，这第一个稳定版将是深度
 
 *"TensorFlow很好地降低了人工智能时代的入门门槛，提高了开发效率。这本书的作者有丰富的TensorFlow实战经验，对框架有深刻理解。作为入门教材，这本书不可多得，值得有志于人工智能研发的学生和从业人员阅读。"*
 
--- **李开复**
+-- **创新工场董事长兼首席执行官，李开复**
 
-*"AI and machine learning are going to be a key part of the future of many, many industries and areas of human endeavor.  We built and open-sourced TensorFlow because we wanted everyone to be able to benefit from these technologies, and for the world to have a common language for expressing machine learning ideas.  As part of this, we were hoping the community would work together to provide materials describing the concepts behind TensorFlow in a wide variety of languages, and this book is a great example of that."*
+*"AI and machine learning are going to be a key part of the future of many, many industries and areas of human endeavor.  We built and open-sourced TensorFlow because we wanted everyone to be able to benefit from these technologies, and for the world to have a common language for expressing machine learning ideas.  As part of this, we were hoping the community would work together to provide materials describing the concepts behind TensorFlow in a wide variety of languages, and this book is a great example of that. "*
 
--- **Jeff Dean, Google Senior Fellow, leader of Google Brain team**
+-- **Google Senior Fellow and Leader of Google Brain Team, Jeff Dean**
 
 *“AI and Machine Learning are going to be a key part of our future. We made TensorFlow open source to bring these technologies to everyone and help move the world forward. This book is a great example of the TensorFlow community giving back to multiply everyone’s efforts. ”*
 
