@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "TensorFlow实战：掌握谷歌深度学习框架"
-subtitle:   "TensorFlow in Practice: Google Deep Learning Framework"
+subtitle:   "TensorFlow in Practice: First Book on TensorFlow in Chinese"
 date:       2017-02-12
 author:     "Yuan Tang"
 header-img: "img/inblog/tensorflow-bg.jpg"
