@@ -1,6 +1,6 @@
 
 
-*Cross posted from [www.jiqizhixin.com](www.jiqizhixin.com), original Chinese post can be found [here](http://www.jiqizhixin.com/article/1788). Translated by Wenxuan Li.*
+*This interview transcription, translated by Wenxuan Li, is cross-posted from [www.jiqizhixin.com](www.jiqizhixin.com). The original Chinese post can be found [here](http://www.jiqizhixin.com/article/1788).*
 
 *During this interview, Yuan Tang talked about his experience with open-source. Further, he mentioned his opinions and thoughts on open-source community and deep learning projects.*
 
