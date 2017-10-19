@@ -35,16 +35,10 @@ To use **tfestimators**, you need to install both the **tfestimators** R package
 First, install the tfestimators R package as follows:
 
 ```r
-devtools::install_github("rstudio/tfestimators", ref = "v1.3.0")
+devtools::install_github("rstudio/tfestimators")
 ```
 
-Then, use the `install_tensorflow()` function to install TensorFlow (note that the current tfestimators package requires version 1.3.0 of TensorFlow so even if you already have TensorFlow installed you should update if you are running a previous version):
-
- 
-```r
-install_tensorflow(version = "1.3.0")
-```
-
+Then, use the `install_tensorflow()` function to install TensorFlow. Note that if you already have TensorFlow installed you should update if you are running a previous version):
  
 ```r
 library(tfestimators)
