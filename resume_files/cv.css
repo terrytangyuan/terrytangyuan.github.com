@@ -1,0 +1,247 @@
+/*-------page level styling--------*/
+body {
+    font-family: sans-serif;
+}
+
+.cv-inline-list {
+    padding: 0px;
+    margin: 0px;
+}
+
+.cv-inline-list li {
+    display: inline;
+}
+
+.info-section-name {
+    font-size: 1.5em
+}
+
+.cv-section-title {
+    font-size: 1.5em;
+    padding: 3px 10px;
+    color: #820000;  
+    /*border-top: 2px solid #e4c264;*/
+    border-bottom: 2px solid #8C1515;
+}
+
+.theme-color {
+    color: #820000 !important;
+}
+
+.cv-link, .cv-link:visited {
+    color: #820000;
+}
+
+/*---------specific styling--------*/
+table td{
+    min-width: 100px;
+}
+
+table thead {
+    white-space: nowrap;
+}
+
+.web-only {
+    display: initial;
+}
+
+.print-only {
+    display: none;
+}
+
+.mobile-only {
+    display: none;
+}
+
+body {
+    /*background-color: #262626;*/
+    background-color: #EFEFEF;
+}
+
+.cv-container {
+    /*--------layout---------*/
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: -10px 10px 30px #9F9F9F;
+    max-width: 70%;
+
+    /*--------inner style---------*/
+/*    background-color: #2B2B2B;
+    color: #dfdfdf;
+*/    
+    background-color: #FFFFFF;
+    color: #444444;
+}
+
+.go-back {
+    position: fixed;
+    left: 3%;
+    top: 30px;
+}
+
+.info-section {
+    text-align: center;
+    color: #820000;
+}
+
+.cv-section {
+    padding: 10px;
+}
+
+.cv-section-body {
+    margin: 5px 10px;
+}
+
+.cv-section-item {
+    margin: 20px 0px;
+}
+
+.cv-section-item-title {
+    font-weight: bold;
+    color: #333333;
+}
+
+.cv-section-time {
+    font-size: 0.9em;
+    float: right;
+    color: #9f9f9f;
+}
+
+.cv-section-smaller {
+    font-size: 0.9em;
+    color: #666666;
+}
+
+.cv-section-smallest {
+    margin-top: 5px;
+    font-size: 0.8em;
+    color: #666666;
+}
+
+
+/*---------------print-----------------*/
+@page  
+{ 
+    /* auto is the initial value */ 
+    size: auto;   
+
+    /* this affects the margin in the printer settings */ 
+    /*margin: 0.35in 0.35in;*/
+    margin: 1in 0.75in;
+} 
+
+
+@media print {
+    .web-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
+    .print-only {
+        display: initial;
+    }
+
+
+    body {
+        margin: 0in;
+    }
+
+    /*-----general layout----------*/
+
+    .cv-container {
+        max-width: 100%;
+        box-shadow: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .info-section {
+        font-size: 12px;
+    }
+
+    /*------individual section--------*/
+    .cv-section * {
+        font-size: 12px;
+    }
+
+    .cv-section-title {
+        page-break-inside: avoid;
+        font-size: 16px;
+    }
+
+    .cv-section-body {
+        margin: 0px;
+        color: #999999;
+    }
+
+    .cv-section-item {
+        page-break-inside: avoid;
+        margin: 0.1in;
+    }
+
+    .cv-section-item-course {
+        page-break-inside: auto;
+    }
+
+    .cv-section-item-title {
+        color: #333333;
+    }
+
+    .cv-section-smaller {
+        font-size: 1em;
+    }
+
+    .cv-section-smallest {
+        font-size: 10.5px;
+        color: #AAAAAA;
+    }
+
+    /*-------- section specific publication-----------*/
+    .cv-publication-author, .cv-publication-venue {
+        color: #AAAAAA;
+    }
+}
+
+
+/*------------mobile--------------*/
+@media only screen and (max-device-width: 480px) {
+    .mobile-only {
+        display: initial;
+    }
+
+    .web-only {
+        display: none;
+    }
+
+    .print-only {
+        display: none;
+    }
+
+    .cv-container {
+        /*--------layout---------*/
+        max-width: 95%;
+        padding: 20px 5px;
+        margin: 15px auto;
+    }
+
+    .info-section {
+        margin: 10px 0px;
+    }
+
+    .info-section div {
+        margin-top: 5px;
+    }
+
+    .cv-section {
+        padding: 5px;
+    }
+
+    .cv-section-time {
+        width: 100%;
+        display: block;
+    }
+
+}

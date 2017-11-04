@@ -1,0 +1,48 @@
+/*---------------print-----------------*/
+@page  
+{ 
+    size: auto;   /* auto is the initial value */ 
+
+    /* this affects the margin in the printer settings */ 
+    margin: 0.25in 0.35in
+} 
+@media print {
+    * {
+        font-size: 0.99em;
+    }
+
+    body {
+        margin: 0in;
+        /*padding: 0.005in 0.01in;*/
+    }
+
+    .cv-section, .cv-section-item, .cv-section-smallest{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .cv-section-title {
+        font-size: 1em;
+        border-top: none;
+    }
+
+    .cv-section-smaller {
+        font-size: 0.8em;
+    }
+
+    .cv-section-smallest {
+        /*font-size: 0.8em;*/
+    }
+
+    .cv-section {
+        margin-top: 0;
+    }
+
+    .cv-section-body {
+        margin: 0.01in 0.1in;
+    }
+
+    .cv-section-item {
+        margin-top: 0.02in
+    }
+}
