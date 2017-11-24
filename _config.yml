@@ -74,6 +74,9 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Affliations
 affliations: [
     {
+        title: "H2O.AI",
+        href: "http://h2o.ai"
+    },{
         title: "Uptake",
         href: "http://uptake.com" 
     },{
@@ -88,9 +91,6 @@ affliations: [
     },{
         title: "DataNovo",
         href: "http://datanovo.com"
-    },{
-        title: "Gastrograph",
-        href: "http://gastrograph.com"
     },{
         title: "Penn State University",
         href: "http://psu.edu/"

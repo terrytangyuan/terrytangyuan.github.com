@@ -6,33 +6,28 @@ header-img: "img/about-bg.jpg"
 ---
 
 <!-- Language Selector -->
-<!--
 <select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
     <option value="0"> 中文 Chinese </option>
     <option value="1" selected> 英语 English </option>
 </select>
--->
 
-<!-- Chinese Version -->
-<div class="zh">
+
+<!-- English Version -->
+<div class="en">
     <blockquote>
         The more you give, the more you receive.
     </blockquote>
 
     <p>
-        I will be joining <a href="https://www.h2o.ai/" style="color:green;">H2O.ai</a> as a senior AI platform engineer in December. 
+        I will be joining <a href="https://www.h2o.ai/" style="color:green;">H2O.AI</a> as a senior AI platform engineer in December. 
     </p>
 
-    <p> I am currently a data scientist at <a href="http://uptake.com" style="color:green;">Uptake</a>. I led a small team of software engineers and data scientists to build our scalable data science platform to enable data scientists to build, deploy, and monitor our models that run in real-time at scale. </p>
+    <p> Before joining H2O.AI, I was a data scientist at <a href="http://uptake.com" style="color:green;">Uptake</a>. I led a small team of software engineers and data scientists to build our scalable data science platform to enable data scientists to build, deploy, and monitor our models that run in real-time at scale, monitoring the condition of IoT assets from industries like rail, aviation, and energy.</p>
 
-    <p>Meanwhile, I am an active contributor to numerous open-source softwares, including TensorFlow, XGBoost, etc. Please check out my <a href="http://terrytangyuan.github.io/projects/" style="color:green";>projects page</a> and <a href="http://terrytangyuan.github.io/about/" style="color:green";>Github page</a> for more information.
+    <p>Meanwhile, I am an active contributor to numerous popular open-source softwares, including TensorFlow, XGBoost, etc. Please check out my <a href="http://terrytangyuan.github.io/projects/" style="color:green";>projects page</a> and <a href="http://terrytangyuan.github.io/about/" style="color:green";>Github page</a> for more information. I am also an award-winning author of best-selling book <i>TensorFlow in Practice </i> which is the first book teaching TensorFlow in Chinese and has becoming training material for many companies and research labs in China. 
     </p>
 
-    <p>Before joining Uptake, I was a full-time data scientist at <a href="http://gastrograph.com" style="color:green;">Analytical Flavor Systems</a> 
-        and my focus was on predictive condition monitoring and flaw detection on artisan beverages such as coffee and beer using sensory science 
-        and machine learning. </p>
-
-    <p>I graduated from the <a href="http://psu.edu" style="color:green;">Pennsylvania State University</a> in Mathematics with honors. Since my senior year at Penn State, I've been a founding member of <a href="http://datanovo.com" style="color:green;">DataNovo</a>, 
+    <p>I graduated from the <a href="http://psu.edu" style="color:green;">Pennsylvania State University</a> in Mathematics with honors. Since my senior year at Penn State, I've been a founding data scientist of <a href="http://datanovo.com" style="color:green;">DataNovo</a>, 
         a legal analytics company that provides predictive insights, keywordless prior art search, and product assessment on infringement 
         for law firms, patent attorneys, etc. </p>
 
@@ -42,32 +37,52 @@ header-img: "img/about-bg.jpg"
 
 </div>
 
-<!-- English Version -->
-<div class="en">
+<!-- Chinese Version -->
+<div class="zh">
     <blockquote>
-        The more you give, the more you receive.
+        给予越多，收获更多。
     </blockquote>
 
     <p>
-        To be added content for English version.
+        目前任职 Uptake 数据科学家的唐源（Terry Tang）正在带领团队研发用于多个物联网垂直领域的数据科学引擎；同时，他也是开源软件社区内一位非常活跃的贡献者，是 TensorFlow、XGBoost、MXNet 等软件的 committer, 也是 Scikit Flow、ggfortify、metric-learn 等软件的作者。他曾因自己对开源社区的贡献而获得过谷歌 Open Source Peer Bonus，此外还获得过多项高校和企业编程竞赛的奖项。
     </p>
 
 </div>
 
 <!-- Handle Language Change -->
 <script type="text/javascript">
+    // get nodes
     var $zh = document.querySelector(".zh");
     var $en = document.querySelector(".en");
-    function onLanChange(index){
-        if(index == 0){
-            $zh.style.display = "block";
-            $en.style.display = "none";
-        }else{
+    var $select = document.querySelector("select");
+    // bind hashchange event
+    window.addEventListener('hashchange', _render);
+    // handle render
+    function _render(){
+        var _hash = window.location.hash;
+        // en
+        if(_hash == "#en"){
+            $select.selectedIndex = 1;
             $en.style.display = "block";
             $zh.style.display = "none";
+        // zh by default
+        }else{
+            // not trigger onChange, otherwise cause a loop call.
+            $select.selectedIndex = 0;
+            $zh.style.display = "block";
+            $en.style.display = "none";
         }
     }
-    onLanChange(0);
+    // handle select change
+    function onLanChange(index){
+        if(index == 0){
+            window.location.hash = "#zh"
+        }else{
+            window.location.hash = "#en"
+        }
+    }
+    // init
+    _render();
 </script>
 
 
