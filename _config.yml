@@ -7,7 +7,7 @@ description: ""
 keyword: ""
 url: "http://terrytangyuan.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 # SNS settings
 weibo_username:     唐源Terry
@@ -61,7 +61,7 @@ ga_domain: terrytangyuan.github.io
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Live deeply, live fully, and live with love."
-sidebar-avatar: /img/final_prof_pic_2.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/terry_profile_pic_dec_2017.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
