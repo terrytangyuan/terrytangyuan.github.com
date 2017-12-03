@@ -7,7 +7,7 @@ description: ""
 keyword: ""
 url: "http://terrytangyuan.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 # SNS settings
 weibo_username:     唐源Terry
