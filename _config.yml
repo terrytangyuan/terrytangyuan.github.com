@@ -89,9 +89,6 @@ affliations: [
         title: "TensorFlow",
         href: "https://github.com/tensorflow"
     },{
-        title: "DataNovo",
-        href: "http://datanovo.com"
-    },{
         title: "Penn State University",
         href: "http://psu.edu/"
     }
