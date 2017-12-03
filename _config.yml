@@ -83,6 +83,9 @@ affliations: [
         title: "RStudio",
         href: "http://rstudio.com/"
     },{
+        title: "DataNovo",
+        href: "http://datanovo.com"
+    },{
         title: "DMLC",
         href: "http://dmlc.ml/"
     },{
