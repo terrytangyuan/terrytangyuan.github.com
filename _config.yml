@@ -10,7 +10,7 @@ baseurl: ""                             # for example, '/blog' if your blog host
 plugins: [jekyll-paginate]
 
 # SNS settings
-weibo_username:     唐源Terry
+# weibo_username:     唐源Terry
 #zhihu_username:     terrytangyuan
 github_username:    terrytangyuan
 twitter_username:  terrytangyuan
@@ -83,14 +83,14 @@ affliations: [
         title: "RStudio",
         href: "http://rstudio.com/"
     },{
+        title: "DataNovo",
+        href: "http://datanovo.com"
+    },{
         title: "DMLC",
         href: "http://dmlc.ml/"
     },{
         title: "TensorFlow",
         href: "https://github.com/tensorflow"
-    },{
-        title: "DataNovo",
-        href: "http://datanovo.com"
     },{
         title: "Penn State University",
         href: "http://psu.edu/"
