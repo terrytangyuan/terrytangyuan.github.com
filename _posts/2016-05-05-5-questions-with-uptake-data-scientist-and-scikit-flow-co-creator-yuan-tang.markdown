@@ -11,11 +11,12 @@ tags:
     - Open Source
     - Machine Learning
     - Python
+    - Interview
 ---
 
 **Note**: This interview was conducted by Uptake team and the original blog was posted [here](https://www.uptake.com/blog/5-questions-with-uptake-data-scientist-and-scikit-flow-co-creator-yuan-tang). Scikit Flow was renamed to be [TensorFlow Estimators](https://arxiv.org/pdf/1708.02637.pdf) and is now part of TensorFlow core. 
 
-Yuan collaborated with Google researcher and co-creator Illia Polosuhkin, and their contributions are making a significant impact on the data science field.
+Yuan Tang, a data scientist at Uptake and top contributor to TensorFlow. Yuan collaborated with Google researcher and co-creator Illia Polosuhkin, and their contributions are making a significant impact on the data science field.
 
 For the uninitiated, [TensorFlow](https://www.tensorflow.org/) is a machine learning library that’s mostly used to apply deep learning to everything from speech recognition to email filtering. When the library was recently open-sourced by Google Brain, Yuan Tang, a data scientist at Uptake and top contributor to TensorFlow, worked to simplify the library’s interface. The result is [Scikit Flow](https://arxiv.org/pdf/1708.02637.pdf), and it’s making deep learning more accessible than ever before.
 
