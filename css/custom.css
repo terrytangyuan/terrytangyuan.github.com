@@ -5,7 +5,7 @@
      height: 0;
      overflow: auto;
      -webkit-overflow-scrolling:touch;
-     border: solid black 1px;
+     border: solid white 1px;
 }
 .myIframe iframe {
      position: absolute;

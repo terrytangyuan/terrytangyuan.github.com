@@ -174,7 +174,7 @@ Instead they can spend more time on their work and research. The source code of 
  In the future, we'll try to support a much wider range of objects through a larger coverage in `ggfortify`.
  If you find any new use cases, please don't hesitate to submit an issue on Github and join us in the development!
 
- ## Additional Resources
+## Additional Resources
 
 * [autoplotly Github repository](https://github.com/terrytangyuan/autoplotly)
 * [ggfortify Github repository](https://github.com/sinhrks/ggfortify)
