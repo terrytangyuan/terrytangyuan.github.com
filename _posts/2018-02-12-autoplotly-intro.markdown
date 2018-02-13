@@ -10,9 +10,14 @@ tags:
     - R
 ---
 
-<h><b>Note: this is NOT ready on mobile yet. Please switch to use a desktop browser.</b></h>
 
 <link rel="stylesheet" href="/css/custom.css">
+
+<head>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+
 
 ## Background
 
@@ -21,7 +26,6 @@ Often times users only want to quickly iterate the process of exploring data, bu
 The [ggfortify package](https://CRAN.R-project.org/package=ggfortify) provides a unified interface with one single `autoplot()` function for plotting many statistics and machine learning packages and functions in order to help these users achieve reproducibility goals with minimal effort. `ggfortify` package has a very easy-to-use and uniform programming interface that enables users to use one line of code to visualize statistical results of many popular R packages using `ggplot2` as building blocks. This helps statisticians, data scientists, and researchers avoid both repetitive work and the need to identify the correct `ggplot2` syntax to achieve what they need. Users are able to generate beautiful visualizations of their statistical results produced by popular packages with minimal effort.
 
 The [autoplotly package](https://github.com/terrytangyuan/autoplotly) is an extension built on top of `ggplot2`, [plotly](https://plot.ly/), and `ggfortify` to provide functionalities to automatically generate interactive visualizations for many popular statistical results supported by `ggfortify` package in `plotly` and `ggplot2` styles. The generated visualizations can also be easily extended using `ggplot2` and `plotly` syntax while staying interactive.
-
 
 ## Get Started
 
@@ -32,6 +36,7 @@ A couple hints for you to facilitate your exploration:
 * Simply drag and draw to zoom in your area of interest
 * Double-click to zoom back out
 * Hover your mouse over to see more options, e.g. lasso/box select, download as PNG, etc.
+
 
 ### Installation
 
@@ -52,8 +57,13 @@ p <- autoplotly(prcomp(iris[c(1, 2, 3, 4)]), data = iris,
 p
 ```
 
-<div class="myIframe"><iframe src="/data/plots/autoplotly/pca-ggplot2-composable.html"></iframe></div>
-
+<div><h id="pca-ggplot2-composable"></h></div>
+<script>
+$.getJSON("/data/plots/autoplotly/json/pca-ggplot2-composable.json", function(json) {
+  ele = document.getElementById('pca-ggplot2-composable');
+  Plotly.plot(ele, json.data, json.layout);
+   });
+</script>
 
 
 Visualization of the change points with optimal positioning for the `AirPassengers` data set
@@ -64,8 +74,13 @@ library(changepoint)
 autoplotly(cpt.meanvar(AirPassengers))
 ```
 
-<div class="myIframe"><iframe src="/data/plots/autoplotly/changepoint.html"></iframe></div>
-
+<div><h id="changepoint"></h></div>
+<script>
+$.getJSON("/data/plots/autoplotly/json/changepoint.json", function(json) {
+  ele = document.getElementById('changepoint');
+  Plotly.plot(ele, json.data, json.layout);
+   });
+</script>
 
 
 Visualization of the original and smoothed line from Kalman filter function in `dlm` package:
@@ -80,9 +95,13 @@ filtered <- dlmFilter(Nile, model)
 autoplotly(filtered)
 ```
 
-<div class="myIframe"><iframe src="/data/plots/autoplotly/dlm.html"></iframe></div>
-
-
+<div><h id="dlm"></h></div>
+<script>
+$.getJSON("/data/plots/autoplotly/json/dlm.json", function(json) {
+  ele = document.getElementById('dlm');
+  Plotly.plot(ele, json.data, json.layout);
+   });
+</script>
 
 Visualization of optimal break points where possible structural changes happen in the
 regression models built by `strucchange::breakpoints`:
@@ -92,7 +111,14 @@ library(strucchange)
 autoplotly(breakpoints(Nile ~ 1), ts.colour = "blue", ts.linetype = "dashed",
            cpt.colour = "dodgerblue3", cpt.linetype = "solid")
 ```
-<div class="myIframe"><iframe src="/data/plots/autoplotly/strucchange.html"></iframe></div>
+
+<div><h id="strucchange"></h></div>
+<script>
+$.getJSON("/data/plots/autoplotly/json/strucchange.json", function(json) {
+  ele = document.getElementById('strucchange');
+  Plotly.plot(ele, json.data, json.layout);
+   });
+</script>
 
 
 
@@ -101,9 +127,16 @@ from `splines::ns`:
 
 ```
 library(splines)
-autoplotly(ns(diamonds$price, df = 6))
+autoplotly(ns(ggplot2::diamonds$price, df = 6))
 ```
-<div class="myIframe"><iframe src="/data/plots/autoplotly/splines.html"></iframe></div>
+
+<div><h id="splines"></h></div>
+<script>
+$.getJSON("/data/plots/autoplotly/json/splines.json", function(json) {
+  ele = document.getElementById('splines');
+  Plotly.plot(ele, json.data, json.layout);
+   });
+</script>
 
 You can find a complete list of supported objects by `autoplotly` [here](https://github.com/sinhrks/ggfortify#coverage).
 
@@ -120,7 +153,14 @@ autoplotly(
   ggplot2::labs(y = "Second Principal Components", x = "First Principal Components")
 ```
 
-<div class="myIframe"><iframe src="/data/plots/autoplotly/pca-ggplot2-composable-2.html"></iframe></div>
+<div><h id="pca-ggplot2-composable-2"></h></div>
+<script>
+$.getJSON("/data/plots/autoplotly/json/pca-ggplot2-composable-2.json", function(json) {
+  ele = document.getElementById('pca-ggplot2-composable-2');
+  Plotly.plot(ele, json.data, json.layout);
+   });
+</script>
+
 
 Similarly, we can add additional interactive components using `plotly`. The following
 example adds a custom `plotly` annotation element placed to the center of the plot with an arrow:
@@ -141,7 +181,14 @@ p %>% plotly::layout(annotations = list(
   showarrow = TRUE))
 ```
 
-<div class="myIframe"><iframe src="/data/plots/autoplotly/pca-plotly-composable.html"></iframe></div>
+<div><h id="pca-plotly-composable"></h></div>
+<script>
+$.getJSON("/data/plots/autoplotly/json/pca-plotly-composable.json", function(json) {
+  ele = document.getElementById('pca-plotly-composable');
+  Plotly.plot(ele, json.data, json.layout);
+   });
+</script>
+
 
 In addition, Tyler's excellent post [PCA in a tidy(verse) framework](https://tbradley1013.github.io/2018/02/01/pca-in-a-tidy-verse-framework/)
 does a great job demonstrating the extensibility using the combination of `broom`, `ggplot2`, and `ggfortify`.
@@ -153,10 +200,17 @@ are stacked into one single view in the following example:
 ```
 library(splines)
 subplot(
-  autoplotly(ns(diamonds$price, df = 6)),
-  autoplotly(ns(diamonds$price, df = 3)), nrows = 2, margin = 0.03)
+  autoplotly(ns(ggplot2::diamonds$price, df = 6)),
+  autoplotly(ns(ggplot2::diamonds$price, df = 3)), nrows = 2, margin = 0.03)
 ```
-<div class="myIframe"><iframe src="/data/plots/autoplotly/splines-subplots.html"></iframe></div>
+
+<div><h id="splines-subplots"></h></div>
+<script>
+$.getJSON("/data/plots/autoplotly/json/splines-subplots.json", function(json) {
+  ele = document.getElementById('splines-subplots');
+  Plotly.plot(ele, json.data, json.layout);
+   });
+</script>
 
 The snapshots of the interactive visualizations generated via `autoplotly()` can be exported using
 a simple `export()` function, for example:
@@ -165,6 +219,12 @@ export(p, "/tmp/result.png")
 ```
 
 It builds on top of `RSelenium` package for exporting WebGL plots and uses `webshot` package for non-WebGL formats such as JPEG, PNG, PDF, etc.
+
+We can also write out the plot object to a JSON file like the following:
+```
+plotly::plotly_json(p, jsonedit = FALSE)
+```
+and then generate the plot later using plotly's Javascript API.
 
 
 ## Future Development
