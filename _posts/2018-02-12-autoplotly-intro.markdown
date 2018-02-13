@@ -27,7 +27,7 @@ The [autoplotly package](https://github.com/terrytangyuan/autoplotly) is an exte
 
 ## Get Started
 
-You can either try out the following examples in your RStudio or play around with the interactive visualizations embedded on this post. Note that a desktop browser is recommended to play around with the visualizations.
+You can either try out the following examples in your RStudio or play around with the interactive visualizations embedded on this post. Note that it is recommended to use a desktop browser to play around with the embedded visualizations.
 
 A couple hints for you to facilitate your exploration:
 
