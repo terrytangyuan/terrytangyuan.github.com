@@ -10,13 +10,16 @@ tags:
     - R
 ---
 
+**(Note that it's better to read this article on your laptop since some of the
+visualizations are not optimized for mobile devices yet)**
+
 <link rel="stylesheet" href="/css/custom.css">
 
 ## Background
 
 Often times users only want to quickly iterate the process of exploring data, building statistical models, and visualizing the model results, especially the models that focus on common tasks such as clustering and time series analysis. Some of these packages provide default visualizations for the data and models they generate. However, they look out-of-fashion and these components require additional transformation and clean-up before using them in [ggplot2](http://ggplot2.tidyverse.org/) and each of those transformation steps must be replicated by others when they wish to produce similar charts in their analyses. Creating a central repository for common/popular transformations and default plotting idioms would reduce the amount of effort needed by all to create compelling, consistent and informative charts. The [ggfortify package](https://CRAN.R-project.org/package=ggfortify) provides a unified interface with one single `autoplot()` function for plotting many statistics and machine learning packages and functions in order to help these users achieve reproducibility goals with minimal effort. `ggfortify` package has a very easy-to-use and uniform programming interface that enables users to use one line of code to visualize statistical results of many popular R packages using `ggplot2` as building blocks. This helps statisticians, data scientists, and researchers avoid both repetitive work and the need to identify the correct `ggplot2` syntax to achieve what they need. Users are able to generate beautiful visualizations of their statistical results produced by popular packages with minimal effort.
 
-The `autoplotly` package is an extension built on top of `ggplot2`, [plotly](https://plot.ly/), and `ggfortify` to provide functionalities to automatically generate interactive visualizations for many popular statistical results supported by `ggfortify` package in `plotly` and `ggplot2` styles. The generated visualizations can also be easily extended using `ggplot2` and `plotly` syntax while staying interactive.
+The [autoplotly package](https://github.com/terrytangyuan/autoplotly) is an extension built on top of `ggplot2`, [plotly](https://plot.ly/), and `ggfortify` to provide functionalities to automatically generate interactive visualizations for many popular statistical results supported by `ggfortify` package in `plotly` and `ggplot2` styles. The generated visualizations can also be easily extended using `ggplot2` and `plotly` syntax while staying interactive.
 
 
 ## Get Started
@@ -37,6 +40,7 @@ devtools::install_github('sinhrks/ggfortify')
 
 ### Examples
 
+
 The `autoplotly()` function works for the two essential classes of objects for principal component analysis (PCA) obtained from `stats` package: `stats::prcomp` and `stats::princomp`, for example:
 
 ```
@@ -45,7 +49,7 @@ p <- autoplotly(prcomp(iris[c(1, 2, 3, 4)]), data = iris,
 p
 ```
 
-<div class="myIframe"><iframe src="/data/plots/autoplotly/pca-ggplot2-composable.html"></iframe></div>
+<div class="myIframe hidden-sm"><iframe src="/data/plots/autoplotly/pca-ggplot2-composable.html"></iframe></div>
 
 
 
@@ -57,7 +61,7 @@ library(changepoint)
 autoplotly(cpt.meanvar(AirPassengers))
 ```
 
-<div class="myIframe"><iframe src="/data/plots/autoplotly/changepoint.html"></iframe></div>
+<div class="myIframe hidden-sm"><iframe src="/data/plots/autoplotly/changepoint.html"></iframe></div>
 
 
 
@@ -73,7 +77,7 @@ filtered <- dlmFilter(Nile, model)
 autoplotly(filtered)
 ```
 
-<div class="myIframe"><iframe src="/data/plots/autoplotly/dlm.html"></iframe></div>
+<div class="myIframe hidden-sm"><iframe src="/data/plots/autoplotly/dlm.html"></iframe></div>
 
 
 
@@ -85,7 +89,7 @@ library(strucchange)
 autoplotly(breakpoints(Nile ~ 1), ts.colour = "blue", ts.linetype = "dashed",
            cpt.colour = "dodgerblue3", cpt.linetype = "solid")
 ```
-<div class="myIframe"><iframe src="/data/plots/autoplotly/strucchange.html"></iframe></div>
+<div class="myIframe hidden-sm"><iframe src="/data/plots/autoplotly/strucchange.html"></iframe></div>
 
 
 
@@ -96,7 +100,7 @@ from `splines::ns`:
 library(splines)
 autoplotly(ns(diamonds$price, df = 6))
 ```
-<div class="myIframe"><iframe src="/data/plots/autoplotly/splines.html"></iframe></div>
+<div class="myIframe hidden-sm"><iframe src="/data/plots/autoplotly/splines.html"></iframe></div>
 
 You can find a complete list of supported objects by `autoplotly` [here](https://github.com/sinhrks/ggfortify#coverage).
 
@@ -113,7 +117,7 @@ autoplotly(
   ggplot2::labs(y = "Second Principal Components", x = "First Principal Components")
 ```
 
-<div class="myIframe"><iframe src="/data/plots/autoplotly/pca-ggplot2-composable-2.html"></iframe></div>
+<div class="myIframe hidden-sm"><iframe src="/data/plots/autoplotly/pca-ggplot2-composable-2.html"></iframe></div>
 
 Similarly, we can add additional interactive components using `plotly`. The following
 example adds a custom `plotly` annotation element placed to the center of the plot with an arrow:
@@ -134,7 +138,7 @@ p %>% plotly::layout(annotations = list(
   showarrow = TRUE))
 ```
 
-<div class="myIframe"><iframe src="/data/plots/autoplotly/pca-plotly-composable.html"></iframe></div>
+<div class="myIframe hidden-sm"><iframe src="/data/plots/autoplotly/pca-plotly-composable.html"></iframe></div>
 
 We can also stack multiple plots generated from `autoplotly()` together in a single view
 using `subplot()`, two interactive splines visualizations with different degree of freedom
@@ -146,7 +150,7 @@ subplot(
   autoplotly(ns(diamonds$price, df = 6)),
   autoplotly(ns(diamonds$price, df = 3)), nrows = 2, margin = 0.03)
 ```
-<div class="myIframe"><iframe src="/data/plots/autoplotly/splines-subplots.html"></iframe></div>
+<div class="myIframe hidden-sm"><iframe src="/data/plots/autoplotly/splines-subplots.html"></iframe></div>
 
 The snapshots of the interactive visualizations generated via `autoplotly()` can be exported using
 a simple `export()` function, for example:
