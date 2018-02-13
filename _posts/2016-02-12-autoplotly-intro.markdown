@@ -14,6 +14,8 @@ tags:
 visualizations are not optimized for mobile devices yet)**
 
 <link rel="stylesheet" href="/css/custom.css">
+<link rel="stylesheet" type="text/css" href="/cv_files/cv.css">
+<link rel="stylesheet" type="text/css" href="/cv_files/resume.css">
 
 ## Background
 
@@ -49,7 +51,7 @@ p <- autoplotly(prcomp(iris[c(1, 2, 3, 4)]), data = iris,
 p
 ```
 
-<div class="myIframe hidden-sm"><iframe src="/data/plots/autoplotly/pca-ggplot2-composable.html"></iframe></div>
+<div class="myIframe web-only"><iframe src="/data/plots/autoplotly/pca-ggplot2-composable.html"></iframe></div>
 
 
 
@@ -61,7 +63,7 @@ library(changepoint)
 autoplotly(cpt.meanvar(AirPassengers))
 ```
 
-<div class="myIframe hidden-sm"><iframe src="/data/plots/autoplotly/changepoint.html"></iframe></div>
+<div class="myIframe web-only"><iframe src="/data/plots/autoplotly/changepoint.html"></iframe></div>
 
 
 
@@ -77,7 +79,7 @@ filtered <- dlmFilter(Nile, model)
 autoplotly(filtered)
 ```
 
-<div class="myIframe hidden-sm"><iframe src="/data/plots/autoplotly/dlm.html"></iframe></div>
+<div class="myIframe web-only"><iframe src="/data/plots/autoplotly/dlm.html"></iframe></div>
 
 
 
@@ -89,7 +91,7 @@ library(strucchange)
 autoplotly(breakpoints(Nile ~ 1), ts.colour = "blue", ts.linetype = "dashed",
            cpt.colour = "dodgerblue3", cpt.linetype = "solid")
 ```
-<div class="myIframe hidden-sm"><iframe src="/data/plots/autoplotly/strucchange.html"></iframe></div>
+<div class="myIframe web-only"><iframe src="/data/plots/autoplotly/strucchange.html"></iframe></div>
 
 
 
@@ -100,7 +102,7 @@ from `splines::ns`:
 library(splines)
 autoplotly(ns(diamonds$price, df = 6))
 ```
-<div class="myIframe hidden-sm"><iframe src="/data/plots/autoplotly/splines.html"></iframe></div>
+<div class="myIframe web-only"><iframe src="/data/plots/autoplotly/splines.html"></iframe></div>
 
 You can find a complete list of supported objects by `autoplotly` [here](https://github.com/sinhrks/ggfortify#coverage).
 
@@ -117,7 +119,7 @@ autoplotly(
   ggplot2::labs(y = "Second Principal Components", x = "First Principal Components")
 ```
 
-<div class="myIframe hidden-sm"><iframe src="/data/plots/autoplotly/pca-ggplot2-composable-2.html"></iframe></div>
+<div class="myIframe web-only"><iframe src="/data/plots/autoplotly/pca-ggplot2-composable-2.html"></iframe></div>
 
 Similarly, we can add additional interactive components using `plotly`. The following
 example adds a custom `plotly` annotation element placed to the center of the plot with an arrow:
@@ -138,7 +140,7 @@ p %>% plotly::layout(annotations = list(
   showarrow = TRUE))
 ```
 
-<div class="myIframe hidden-sm"><iframe src="/data/plots/autoplotly/pca-plotly-composable.html"></iframe></div>
+<div class="myIframe web-only"><iframe src="/data/plots/autoplotly/pca-plotly-composable.html"></iframe></div>
 
 We can also stack multiple plots generated from `autoplotly()` together in a single view
 using `subplot()`, two interactive splines visualizations with different degree of freedom
@@ -150,7 +152,7 @@ subplot(
   autoplotly(ns(diamonds$price, df = 6)),
   autoplotly(ns(diamonds$price, df = 3)), nrows = 2, margin = 0.03)
 ```
-<div class="myIframe hidden-sm"><iframe src="/data/plots/autoplotly/splines-subplots.html"></iframe></div>
+<div class="myIframe web-only"><iframe src="/data/plots/autoplotly/splines-subplots.html"></iframe></div>
 
 The snapshots of the interactive visualizations generated via `autoplotly()` can be exported using
 a simple `export()` function, for example:
@@ -184,3 +186,26 @@ Instead they can spend more time on their work and research. The source code of 
 * [ggfortify Github repository](https://github.com/sinhrks/ggfortify)
 * [ggfortify R Journal paper](https://journal.r-project.org/archive/2016-2/tang-horikoshi-li.pdf)
 * [一行R代码实现繁琐的可视化](https://terrytangyuan.github.io/2015/11/24/ggfortify-intro/)
+
+<!--
+<script>
+https://stackoverflow.com/questions/27580672/load-all-iframes-on-blog-asynchronously -->
+<!-- https://stackoverflow.com/questions/35970914/settimeout-inside-iframe-load-event-doesnt-seem-to-wait-x-seconds-as-expected
+var src = new Array();
+var list = document.getElementsByClassName("myIframe");
+for (var i = 0; i < list.length; i++) {
+    var url = list[i].getElementsByTagName("iframe")[0].getAttribute('src');
+    src.push(url);
+};
+$(window).load(function() {
+    for (var i = 0; i < src.length; i++) {
+        var theIframe = $('.myIframe')[i].getElementsByTagName("iframe")[0]
+        theIframe.setAttribute('onload', function() {
+          setTimeout(function doSomething() {
+              alert("it should have wait 10000 milliseconds, instead it triggers immediately");
+          }, 10000)
+          theIframe.setAttribute('src', src[i]);
+        });
+    };
+});
+</script> -->
