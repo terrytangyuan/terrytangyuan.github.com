@@ -1,0 +1,205 @@
+{
+  "data": [
+    {
+      "x": [1871, 1872, 1873, 1874, 1875, 1876, 1877, 1878, 1879, 1880, 1881, 1882, 1883, 1884, 1885, 1886, 1887, 1888, 1889, 1890, 1891, 1892, 1893, 1894, 1895, 1896, 1897, 1898, 1899, 1900, 1901, 1902, 1903, 1904, 1905, 1906, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942, 1943, 1944, 1945, 1946, 1947, 1948, 1949, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970],
+      "y": [1120, 1160, 963, 1210, 1160, 1160, 813, 1230, 1370, 1140, 995, 935, 1110, 994, 1020, 960, 1180, 799, 958, 1140, 1100, 1210, 1150, 1250, 1260, 1220, 1030, 1100, 774, 840, 874, 694, 940, 833, 701, 916, 692, 1020, 1050, 969, 831, 726, 456, 824, 702, 1120, 1100, 832, 764, 821, 768, 845, 864, 862, 698, 845, 744, 796, 1040, 759, 781, 865, 845, 944, 984, 897, 822, 1010, 771, 676, 649, 846, 812, 742, 801, 1040, 860, 874, 848, 890, 744, 749, 838, 1050, 918, 986, 797, 923, 975, 815, 1020, 906, 901, 1170, 912, 746, 919, 718, 714, 740],
+      "text": ["value: 1120<br />Index: 1871", "value: 1160<br />Index: 1872", "value:  963<br />Index: 1873", "value: 1210<br />Index: 1874", "value: 1160<br />Index: 1875", "value: 1160<br />Index: 1876", "value:  813<br />Index: 1877", "value: 1230<br />Index: 1878", "value: 1370<br />Index: 1879", "value: 1140<br />Index: 1880", "value:  995<br />Index: 1881", "value:  935<br />Index: 1882", "value: 1110<br />Index: 1883", "value:  994<br />Index: 1884", "value: 1020<br />Index: 1885", "value:  960<br />Index: 1886", "value: 1180<br />Index: 1887", "value:  799<br />Index: 1888", "value:  958<br />Index: 1889", "value: 1140<br />Index: 1890", "value: 1100<br />Index: 1891", "value: 1210<br />Index: 1892", "value: 1150<br />Index: 1893", "value: 1250<br />Index: 1894", "value: 1260<br />Index: 1895", "value: 1220<br />Index: 1896", "value: 1030<br />Index: 1897", "value: 1100<br />Index: 1898", "value:  774<br />Index: 1899", "value:  840<br />Index: 1900", "value:  874<br />Index: 1901", "value:  694<br />Index: 1902", "value:  940<br />Index: 1903", "value:  833<br />Index: 1904", "value:  701<br />Index: 1905", "value:  916<br />Index: 1906", "value:  692<br />Index: 1907", "value: 1020<br />Index: 1908", "value: 1050<br />Index: 1909", "value:  969<br />Index: 1910", "value:  831<br />Index: 1911", "value:  726<br />Index: 1912", "value:  456<br />Index: 1913", "value:  824<br />Index: 1914", "value:  702<br />Index: 1915", "value: 1120<br />Index: 1916", "value: 1100<br />Index: 1917", "value:  832<br />Index: 1918", "value:  764<br />Index: 1919", "value:  821<br />Index: 1920", "value:  768<br />Index: 1921", "value:  845<br />Index: 1922", "value:  864<br />Index: 1923", "value:  862<br />Index: 1924", "value:  698<br />Index: 1925", "value:  845<br />Index: 1926", "value:  744<br />Index: 1927", "value:  796<br />Index: 1928", "value: 1040<br />Index: 1929", "value:  759<br />Index: 1930", "value:  781<br />Index: 1931", "value:  865<br />Index: 1932", "value:  845<br />Index: 1933", "value:  944<br />Index: 1934", "value:  984<br />Index: 1935", "value:  897<br />Index: 1936", "value:  822<br />Index: 1937", "value: 1010<br />Index: 1938", "value:  771<br />Index: 1939", "value:  676<br />Index: 1940", "value:  649<br />Index: 1941", "value:  846<br />Index: 1942", "value:  812<br />Index: 1943", "value:  742<br />Index: 1944", "value:  801<br />Index: 1945", "value: 1040<br />Index: 1946", "value:  860<br />Index: 1947", "value:  874<br />Index: 1948", "value:  848<br />Index: 1949", "value:  890<br />Index: 1950", "value:  744<br />Index: 1951", "value:  749<br />Index: 1952", "value:  838<br />Index: 1953", "value: 1050<br />Index: 1954", "value:  918<br />Index: 1955", "value:  986<br />Index: 1956", "value:  797<br />Index: 1957", "value:  923<br />Index: 1958", "value:  975<br />Index: 1959", "value:  815<br />Index: 1960", "value: 1020<br />Index: 1961", "value:  906<br />Index: 1962", "value:  901<br />Index: 1963", "value: 1170<br />Index: 1964", "value:  912<br />Index: 1965", "value:  746<br />Index: 1966", "value:  919<br />Index: 1967", "value:  718<br />Index: 1968", "value:  714<br />Index: 1969", "value:  740<br />Index: 1970"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1871, 1872, 1873, 1874, 1875, 1876, 1877, 1878, 1879, 1880, 1881, 1882, 1883, 1884, 1885, 1886, 1887, 1888, 1889, 1890, 1891, 1892, 1893, 1894, 1895, 1896, 1897, 1898, 1899, 1900, 1901, 1902, 1903, 1904, 1905, 1906, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942, 1943, 1944, 1945, 1946, 1947, 1948, 1949, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970],
+      "y": [1118.31161575087, 1140.10806138911, 1072.31973394491, 1116.97287909685, 1129.7327835756, 1138.28446945786, 1048.74931027649, 1097.94140341843, 1171.22175204296, 1162.84621259332, 1117.91834239398, 1069.0136744958, 1079.96476380061, 1057.00374303181, 1047.12192039044, 1023.85835801217, 1065.54957978938, 994.380462600303, 984.666975166358, 1026.14014335907, 1045.8602820687, 1089.68449876505, 1105.78831736648, 1144.29180563653, 1175.18505499995, 1187.15031818865, 1145.19233478605, 1133.1263132405, 1037.24222755692, 984.580003598274, 955.055956259865, 885.355937058404, 899.945499699122, 882.071544003635, 833.726774491071, 855.6931201397, 811.988261915336, 867.525864920273, 916.245115888611, 930.330281644409, 903.80982756564, 856.335912374854, 749.449170443804, 769.35369320377, 751.370752875391, 849.792048561086, 916.595729938941, 894.009292712359, 859.297768491938, 849.072546195428, 827.426773095965, 832.118695331554, 840.630769015591, 846.33619640014, 806.731523790316, 816.948925263069, 797.47209915861, 797.079059518652, 861.937162606869, 834.453697860126, 820.181953977574, 832.148042382201, 835.579420469281, 864.526917173986, 896.425350906552, 896.578777984796, 876.666793200172, 912.265778016262, 874.548855073098, 821.537772188017, 775.4714569786, 794.302058839764, 799.027278863799, 783.801415156619, 788.393310719567, 855.570444805661, 856.753103438795, 861.357897874803, 857.791437463078, 866.390886589216, 833.713420728379, 811.095560927286, 818.278848129497, 880.146690094696, 890.253245220013, 915.816924001997, 884.093679845785, 894.481380956876, 915.979259583856, 889.018540533106, 923.989626121346, 919.186528359643, 914.330859149614, 982.592637903198, 963.744923180365, 905.60863140336, 909.184028251454, 858.139299918923, 819.655167778315, 798.387824283603],
+      "text": ["value: 1118.3116<br />Index: 1871", "value: 1140.1081<br />Index: 1872", "value: 1072.3197<br />Index: 1873", "value: 1116.9729<br />Index: 1874", "value: 1129.7328<br />Index: 1875", "value: 1138.2845<br />Index: 1876", "value: 1048.7493<br />Index: 1877", "value: 1097.9414<br />Index: 1878", "value: 1171.2218<br />Index: 1879", "value: 1162.8462<br />Index: 1880", "value: 1117.9183<br />Index: 1881", "value: 1069.0137<br />Index: 1882", "value: 1079.9648<br />Index: 1883", "value: 1057.0037<br />Index: 1884", "value: 1047.1219<br />Index: 1885", "value: 1023.8584<br />Index: 1886", "value: 1065.5496<br />Index: 1887", "value:  994.3805<br />Index: 1888", "value:  984.6670<br />Index: 1889", "value: 1026.1401<br />Index: 1890", "value: 1045.8603<br />Index: 1891", "value: 1089.6845<br />Index: 1892", "value: 1105.7883<br />Index: 1893", "value: 1144.2918<br />Index: 1894", "value: 1175.1851<br />Index: 1895", "value: 1187.1503<br />Index: 1896", "value: 1145.1923<br />Index: 1897", "value: 1133.1263<br />Index: 1898", "value: 1037.2422<br />Index: 1899", "value:  984.5800<br />Index: 1900", "value:  955.0560<br />Index: 1901", "value:  885.3559<br />Index: 1902", "value:  899.9455<br />Index: 1903", "value:  882.0715<br />Index: 1904", "value:  833.7268<br />Index: 1905", "value:  855.6931<br />Index: 1906", "value:  811.9883<br />Index: 1907", "value:  867.5259<br />Index: 1908", "value:  916.2451<br />Index: 1909", "value:  930.3303<br />Index: 1910", "value:  903.8098<br />Index: 1911", "value:  856.3359<br />Index: 1912", "value:  749.4492<br />Index: 1913", "value:  769.3537<br />Index: 1914", "value:  751.3708<br />Index: 1915", "value:  849.7920<br />Index: 1916", "value:  916.5957<br />Index: 1917", "value:  894.0093<br />Index: 1918", "value:  859.2978<br />Index: 1919", "value:  849.0725<br />Index: 1920", "value:  827.4268<br />Index: 1921", "value:  832.1187<br />Index: 1922", "value:  840.6308<br />Index: 1923", "value:  846.3362<br />Index: 1924", "value:  806.7315<br />Index: 1925", "value:  816.9489<br />Index: 1926", "value:  797.4721<br />Index: 1927", "value:  797.0791<br />Index: 1928", "value:  861.9372<br />Index: 1929", "value:  834.4537<br />Index: 1930", "value:  820.1820<br />Index: 1931", "value:  832.1480<br />Index: 1932", "value:  835.5794<br />Index: 1933", "value:  864.5269<br />Index: 1934", "value:  896.4254<br />Index: 1935", "value:  896.5788<br />Index: 1936", "value:  876.6668<br />Index: 1937", "value:  912.2658<br />Index: 1938", "value:  874.5489<br />Index: 1939", "value:  821.5378<br />Index: 1940", "value:  775.4715<br />Index: 1941", "value:  794.3021<br />Index: 1942", "value:  799.0273<br />Index: 1943", "value:  783.8014<br />Index: 1944", "value:  788.3933<br />Index: 1945", "value:  855.5704<br />Index: 1946", "value:  856.7531<br />Index: 1947", "value:  861.3579<br />Index: 1948", "value:  857.7914<br />Index: 1949", "value:  866.3909<br />Index: 1950", "value:  833.7134<br />Index: 1951", "value:  811.0956<br />Index: 1952", "value:  818.2788<br />Index: 1953", "value:  880.1467<br />Index: 1954", "value:  890.2532<br />Index: 1955", "value:  915.8169<br />Index: 1956", "value:  884.0937<br />Index: 1957", "value:  894.4814<br />Index: 1958", "value:  915.9793<br />Index: 1959", "value:  889.0185<br />Index: 1960", "value:  923.9896<br />Index: 1961", "value:  919.1865<br />Index: 1962", "value:  914.3309<br />Index: 1963", "value:  982.5926<br />Index: 1964", "value:  963.7449<br />Index: 1965", "value:  905.6086<br />Index: 1966", "value:  909.1840<br />Index: 1967", "value:  858.1393<br />Index: 1968", "value:  819.6552<br />Index: 1969", "value:  798.3878<br />Index: 1970"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(255,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  "layout": {
+    "margin": {
+      "t": 30.1039728469221,
+      "r": 7.30593607305936,
+      "b": 29.4464386003467,
+      "l": 34.337899543379
+    },
+    "plot_bgcolor": "rgba(235,235,235,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "type": "linear",
+      "autorange": false,
+      "range": [1866.05, 1974.95],
+      "tickmode": "array",
+      "ticktext": ["1875", "1900", "1925", "1950"],
+      "tickvals": [1875, 1900, 1925, 1950],
+      "categoryorder": "array",
+      "categoryarray": ["1875", "1900", "1925", "1950"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": null,
+      "gridwidth": 0,
+      "zeroline": false,
+      "anchor": "y",
+      "title": "",
+      "titlefont": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 14.6118721461187
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "type": "linear",
+      "autorange": false,
+      "range": [410.3, 1415.7],
+      "tickmode": "array",
+      "ticktext": ["600", "800", "1000", "1200", "1400"],
+      "tickvals": [600, 800, 1000, 1200, 1400],
+      "categoryorder": "array",
+      "categoryarray": ["600", "800", "1000", "1200", "1400"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": null,
+      "gridwidth": 0,
+      "zeroline": false,
+      "anchor": "x",
+      "title": "",
+      "titlefont": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 14.6118721461187
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": false,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  "config": {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": [
+      {
+        "name": "Collaborate",
+        "icon": {
+          "width": 1000,
+          "ascent": 500,
+          "descent": -50,
+          "path": "M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"
+        },
+        "click": "function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"
+      }
+    ],
+    "cloud": false
+  },
+  "source": "A",
+  "attrs": {
+    "ddd34e7b968c": {
+      "y": {},
+      "x": {},
+      "type": "scatter"
+    },
+    "ddd313d8e995": {
+      "y": {},
+      "x": {}
+    }
+  },
+  "cur_data": "ddd34e7b968c",
+  "visdat": {
+    "ddd34e7b968c": ["function (y) ", "x"],
+    "ddd313d8e995": ["function (y) ", "x"]
+  },
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    }
+  },
+  "base_url": "https://plot.ly"
+}
