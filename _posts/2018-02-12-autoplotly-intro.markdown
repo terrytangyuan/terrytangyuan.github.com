@@ -11,8 +11,6 @@ tags:
 ---
 
 
-<link rel="stylesheet" href="/css/custom.css">
-
 <head>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
@@ -29,7 +27,7 @@ The [autoplotly package](https://github.com/terrytangyuan/autoplotly) is an exte
 
 ## Get Started
 
-You can either try out the following examples in your RStudio or play around with the interactive visualizations embedded on this post.
+You can either try out the following examples in your RStudio or play around with the interactive visualizations embedded on this post. Note that a desktop browser is recommended to play around with the visualizations.
 
 A couple hints for you to facilitate your exploration:
 
@@ -64,6 +62,7 @@ $.getJSON("/data/plots/autoplotly/json/pca-ggplot2-composable.json", function(js
   Plotly.plot(ele, json.data, json.layout);
    });
 </script>
+
 
 
 Visualization of the change points with optimal positioning for the `AirPassengers` data set
@@ -214,18 +213,19 @@ $.getJSON("/data/plots/autoplotly/json/splines-subplots.json", function(json) {
 
 The snapshots of the interactive visualizations generated via `autoplotly()` can be exported using
 a simple `export()` function, for example:
+
 ```
 export(p, "/tmp/result.png")
 ```
 
 It builds on top of `RSelenium` package for exporting WebGL plots and uses `webshot` package for non-WebGL formats such as JPEG, PNG, PDF, etc.
 
-We can also write out the plot object to a JSON file like the following:
+In addition, we can also write out the plot object to a JSON object:
+
 ```
 plotly::plotly_json(p, jsonedit = FALSE)
 ```
-and then generate the plot later using plotly's Javascript API.
-
+and then use plotly's Javascript API [plotly.js](https://plot.ly/javascript/) to extend further and embed in any website.
 
 ## Future Development
 
@@ -261,24 +261,4 @@ community even better!
 demonstrating the extensibility using the combination of `broom`, `ggplot2`, and `ggfortify`.
 * [一行R代码实现繁琐的可视化](https://terrytangyuan.github.io/2015/11/24/ggfortify-intro/)
 
-
-<!-- <script>
-
-var src = new Array();
-var list = document.getElementsByClassName("myIframe");
-for (var i = 0; i < list.length; i++) {
-    var url = list[i].getElementsByTagName("iframe")[0].getAttribute('src');
-    src.push(url);
-};
-$(window).load(function() {
-    for (var i = 0; i < src.length; i++) {
-        var theIframe = $('.myIframe')[i].getElementsByTagName("iframe")[0]
-        theIframe.setAttribute('onload', function() {
-          setTimeout(function doSomething() {
-              alert("it should have wait 10000 milliseconds, instead it triggers immediately");
-          }, 10000)
-          theIframe.setAttribute('src', src[i]);
-        });
-    };
-});
-</script> -->
+<br><b>Copyright Reserved Yuan Tang 2018</b>
