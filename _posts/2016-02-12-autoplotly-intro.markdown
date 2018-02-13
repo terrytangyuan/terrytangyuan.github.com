@@ -10,7 +10,7 @@ tags:
     - R
 ---
 
-**Note: the visualizations are NOT ready on mobile yet. Please switch to use a desktop browser.**
+**Note: this is NOT ready on mobile yet. Please switch to use a desktop browser.**
 
 <link rel="stylesheet" href="/css/custom.css">
 
