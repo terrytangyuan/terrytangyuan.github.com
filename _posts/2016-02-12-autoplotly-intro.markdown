@@ -186,7 +186,7 @@ Instead they can spend more time on their work and research. The source code of 
 
 ## Acknowledgement
 
-Nothing could be done without all the efforts from developers of ggplot2, plotly, and ggfortify. I would like to thank
+Nothing could be done without all the efforts from developers of `ggplot2`, `plotly`, and `ggfortify`. I would like to thank
 everyone for their time and efforts spent on visualizations in R and encourage others to join us to make our open-source
 community even better!
 
