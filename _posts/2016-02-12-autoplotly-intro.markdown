@@ -143,6 +143,9 @@ p %>% plotly::layout(annotations = list(
 
 <div class="myIframe"><iframe src="/data/plots/autoplotly/pca-plotly-composable.html"></iframe></div>
 
+In addition, Tyler's excellent post [PCA in a tidy(verse) framework](https://tbradley1013.github.io/2018/02/01/pca-in-a-tidy-verse-framework/)
+does a great job demonstrating the extensibility using the combination of `broom`, `ggplot2`, and `ggfortify`.
+
 We can also stack multiple plots generated from `autoplotly()` together in a single view
 using `subplot()`, two interactive splines visualizations with different degree of freedom
 are stacked into one single view in the following example:
@@ -180,6 +183,14 @@ Instead they can spend more time on their work and research. The source code of 
  issues and pull requests to help us make this package better for the R community.
  In the future, we'll try to support a much wider range of objects through a larger coverage in `ggfortify`.
  If you find any new use cases, please don't hesitate to submit an issue on Github and join us in the development!
+
+## Acknowledgement
+
+Nothing could be done without all the efforts from developers of ggplot2, plotly, and ggfortify. I would like to thank
+everyone for their time and efforts spent on visualizations in R and encourage others to join us to make our open-source
+community even better!
+
+*The more you give, the more you receive.*
 
 ## Additional Resources
 
