@@ -10,31 +10,35 @@ tags:
     - R
 ---
 
-**Note: this is NOT ready on mobile yet. Please switch to use a desktop browser.**
+<h><b>Note: this is NOT ready on mobile yet. Please switch to use a desktop browser.</b></h>
 
 <link rel="stylesheet" href="/css/custom.css">
 
 ## Background
 
-Often times users only want to quickly iterate the process of exploring data, building statistical models, and visualizing the model results, especially the models that focus on common tasks such as clustering and time series analysis. Some of these packages provide default visualizations for the data and models they generate. However, they look out-of-fashion and these components require additional transformation and clean-up before using them in [ggplot2](http://ggplot2.tidyverse.org/) and each of those transformation steps must be replicated by others when they wish to produce similar charts in their analyses. Creating a central repository for common/popular transformations and default plotting idioms would reduce the amount of effort needed by all to create compelling, consistent and informative charts. The [ggfortify package](https://CRAN.R-project.org/package=ggfortify) provides a unified interface with one single `autoplot()` function for plotting many statistics and machine learning packages and functions in order to help these users achieve reproducibility goals with minimal effort. `ggfortify` package has a very easy-to-use and uniform programming interface that enables users to use one line of code to visualize statistical results of many popular R packages using `ggplot2` as building blocks. This helps statisticians, data scientists, and researchers avoid both repetitive work and the need to identify the correct `ggplot2` syntax to achieve what they need. Users are able to generate beautiful visualizations of their statistical results produced by popular packages with minimal effort.
+Often times users only want to quickly iterate the process of exploring data, building statistical models, and visualizing the model results, especially the models that focus on common tasks such as clustering and time series analysis. Some of these packages provide default visualizations for the data and models they generate. However, they look out-of-fashion and these components require additional transformation and clean-up before using them in [ggplot2](http://ggplot2.tidyverse.org/) and each of those transformation steps must be replicated by others when they wish to produce similar charts in their analyses. Creating a central repository for common/popular transformations and default plotting idioms would reduce the amount of effort needed by all to create compelling, consistent and informative charts.
+
+The [ggfortify package](https://CRAN.R-project.org/package=ggfortify) provides a unified interface with one single `autoplot()` function for plotting many statistics and machine learning packages and functions in order to help these users achieve reproducibility goals with minimal effort. `ggfortify` package has a very easy-to-use and uniform programming interface that enables users to use one line of code to visualize statistical results of many popular R packages using `ggplot2` as building blocks. This helps statisticians, data scientists, and researchers avoid both repetitive work and the need to identify the correct `ggplot2` syntax to achieve what they need. Users are able to generate beautiful visualizations of their statistical results produced by popular packages with minimal effort.
 
 The [autoplotly package](https://github.com/terrytangyuan/autoplotly) is an extension built on top of `ggplot2`, [plotly](https://plot.ly/), and `ggfortify` to provide functionalities to automatically generate interactive visualizations for many popular statistical results supported by `ggfortify` package in `plotly` and `ggplot2` styles. The generated visualizations can also be easily extended using `ggplot2` and `plotly` syntax while staying interactive.
 
 
 ## Get Started
 
+You can either try out the following examples in your RStudio or play around with the interactive visualizations embedded on this post.
+
+A couple hints for you to facilitate your exploration:
+
+* Simply drag and draw to zoom in your area of interest
+* Double-click to zoom back out
+* Hover your mouse over to see more options, e.g. lasso/box select, download as PNG, etc.
+
 ### Installation
 
 Install the latest stable release from CRAN:
 
 ```
-install.packages('ggfortify')
-```
-
-Install the development version from Github:
-
-```
-devtools::install_github('sinhrks/ggfortify')
+install.packages('autoplotly')
 ```
 
 ### Examples
@@ -184,10 +188,9 @@ Instead they can spend more time on their work and research. The source code of 
 * [ggfortify R Journal paper](https://journal.r-project.org/archive/2016-2/tang-horikoshi-li.pdf)
 * [一行R代码实现繁琐的可视化](https://terrytangyuan.github.io/2015/11/24/ggfortify-intro/)
 
-<!--
-<script>
-https://stackoverflow.com/questions/27580672/load-all-iframes-on-blog-asynchronously -->
-<!-- https://stackoverflow.com/questions/35970914/settimeout-inside-iframe-load-event-doesnt-seem-to-wait-x-seconds-as-expected
+
+<!-- <script>
+
 var src = new Array();
 var list = document.getElementsByClassName("myIframe");
 for (var i = 0; i < list.length; i++) {
