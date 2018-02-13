@@ -10,12 +10,9 @@ tags:
     - R
 ---
 
-**(Note that it's better to read this article on your laptop since some of the
-visualizations are not optimized for mobile devices yet)**
+**Note: the visualizations are NOT ready on mobile yet. Please switch to use a desktop browser.**
 
 <link rel="stylesheet" href="/css/custom.css">
-<link rel="stylesheet" type="text/css" href="/cv_files/cv.css">
-<link rel="stylesheet" type="text/css" href="/cv_files/resume.css">
 
 ## Background
 
@@ -51,7 +48,7 @@ p <- autoplotly(prcomp(iris[c(1, 2, 3, 4)]), data = iris,
 p
 ```
 
-<div class="myIframe web-only"><iframe src="/data/plots/autoplotly/pca-ggplot2-composable.html"></iframe></div>
+<div class="myIframe"><iframe src="/data/plots/autoplotly/pca-ggplot2-composable.html"></iframe></div>
 
 
 
@@ -63,7 +60,7 @@ library(changepoint)
 autoplotly(cpt.meanvar(AirPassengers))
 ```
 
-<div class="myIframe web-only"><iframe src="/data/plots/autoplotly/changepoint.html"></iframe></div>
+<div class="myIframe"><iframe src="/data/plots/autoplotly/changepoint.html"></iframe></div>
 
 
 
@@ -79,7 +76,7 @@ filtered <- dlmFilter(Nile, model)
 autoplotly(filtered)
 ```
 
-<div class="myIframe web-only"><iframe src="/data/plots/autoplotly/dlm.html"></iframe></div>
+<div class="myIframe"><iframe src="/data/plots/autoplotly/dlm.html"></iframe></div>
 
 
 
@@ -91,7 +88,7 @@ library(strucchange)
 autoplotly(breakpoints(Nile ~ 1), ts.colour = "blue", ts.linetype = "dashed",
            cpt.colour = "dodgerblue3", cpt.linetype = "solid")
 ```
-<div class="myIframe web-only"><iframe src="/data/plots/autoplotly/strucchange.html"></iframe></div>
+<div class="myIframe"><iframe src="/data/plots/autoplotly/strucchange.html"></iframe></div>
 
 
 
@@ -102,7 +99,7 @@ from `splines::ns`:
 library(splines)
 autoplotly(ns(diamonds$price, df = 6))
 ```
-<div class="myIframe web-only"><iframe src="/data/plots/autoplotly/splines.html"></iframe></div>
+<div class="myIframe"><iframe src="/data/plots/autoplotly/splines.html"></iframe></div>
 
 You can find a complete list of supported objects by `autoplotly` [here](https://github.com/sinhrks/ggfortify#coverage).
 
@@ -119,7 +116,7 @@ autoplotly(
   ggplot2::labs(y = "Second Principal Components", x = "First Principal Components")
 ```
 
-<div class="myIframe web-only"><iframe src="/data/plots/autoplotly/pca-ggplot2-composable-2.html"></iframe></div>
+<div class="myIframe"><iframe src="/data/plots/autoplotly/pca-ggplot2-composable-2.html"></iframe></div>
 
 Similarly, we can add additional interactive components using `plotly`. The following
 example adds a custom `plotly` annotation element placed to the center of the plot with an arrow:
@@ -140,7 +137,7 @@ p %>% plotly::layout(annotations = list(
   showarrow = TRUE))
 ```
 
-<div class="myIframe web-only"><iframe src="/data/plots/autoplotly/pca-plotly-composable.html"></iframe></div>
+<div class="myIframe"><iframe src="/data/plots/autoplotly/pca-plotly-composable.html"></iframe></div>
 
 We can also stack multiple plots generated from `autoplotly()` together in a single view
 using `subplot()`, two interactive splines visualizations with different degree of freedom
@@ -152,7 +149,7 @@ subplot(
   autoplotly(ns(diamonds$price, df = 6)),
   autoplotly(ns(diamonds$price, df = 3)), nrows = 2, margin = 0.03)
 ```
-<div class="myIframe web-only"><iframe src="/data/plots/autoplotly/splines-subplots.html"></iframe></div>
+<div class="myIframe"><iframe src="/data/plots/autoplotly/splines-subplots.html"></iframe></div>
 
 The snapshots of the interactive visualizations generated via `autoplotly()` can be exported using
 a simple `export()` function, for example:
