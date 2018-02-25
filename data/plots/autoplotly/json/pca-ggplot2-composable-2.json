@@ -195,7 +195,7 @@
       "gridwidth": 0,
       "zeroline": false,
       "anchor": "y",
-      "title": "First Principal Components",
+      "title": "First Principal Component",
       "titlefont": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -233,7 +233,7 @@
       "gridwidth": 0,
       "zeroline": false,
       "anchor": "x",
-      "title": "Second Principal Components",
+      "title": "Second Principal Component",
       "titlefont": {
         "color": "rgba(0,0,0,1)",
         "family": "",

@@ -149,7 +149,7 @@ originally generated plot using `ggplot2::ggtitle` and `ggplot2::labs`:
 autoplotly(
   prcomp(iris[c(1, 2, 3, 4)]), data = iris, colour = 'Species', frame = TRUE) +
   ggplot2::ggtitle("Principal Components Analysis") +
-  ggplot2::labs(y = "Second Principal Components", x = "First Principal Components")
+  ggplot2::labs(y = "Second Principal Component", x = "First Principal Component")
 ```
 
 <div><h id="pca-ggplot2-composable-2"></h></div>
