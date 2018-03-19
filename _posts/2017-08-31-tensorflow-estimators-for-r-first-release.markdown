@@ -11,16 +11,16 @@ tags:
     - Open Source
     - Machine Learning
     - R
---- 
+---
 
 
-The [tfestimators package](https://tensorflow.rstudio.com/tfestimators) is an R interface to TensorFlow Estimators, a high-level API that provides implementations of many different model types including linear models and deep neural networks. 
+The [tfestimators package](https://tensorflow.rstudio.com/tfestimators) is an R interface to TensorFlow Estimators, a high-level API that provides implementations of many different model types including linear models and deep neural networks.
 
 More models are coming soon such as state saving recurrent neural networks, dynamic recurrent neural networks, support vector machines, random forest, KMeans clustering, etc. TensorFlow estimators also provides a flexible framework for defining arbitrary new model types as custom estimators.
 
-The framework balances the competing demands for flexibility and simplicity by offering APIs at different levels of abstraction, making common model architectures available out of the box, while providing a library of utilities designed to speed up experimentation with model architectures. 
+The framework balances the competing demands for flexibility and simplicity by offering APIs at different levels of abstraction, making common model architectures available out of the box, while providing a library of utilities designed to speed up experimentation with model architectures.
 
-These abstractions guide developers to write models in ways conducive to productionization as well as making it possible to write downstream infrastructure for distributed training or parameter tuning independent of the model implementation. 
+These abstractions guide developers to write models in ways conducive to productionization as well as making it possible to write downstream infrastructure for distributed training or parameter tuning independent of the model implementation.
 
 To make out of the box models flexible and usable across a wide range of problems, **tfestimators** provides canned Estimators that are are parameterized not only over traditional hyperparameters, but also using feature columns, a declarative specification describing how to interpret input data.
 
@@ -34,7 +34,7 @@ To use **tfestimators**, you need to install both the **tfestimators** R package
 
 First, install the tfestimators R package as follows:
 
-```r
+```
 devtools::install_github("rstudio/tfestimators")
 ```
 
@@ -48,17 +48,17 @@ Let's create a simple linear regression model with the [mtcars dataset](https://
 
 #### Input Function
 
-Estimators can receive data through input functions. Input functions take an arbitrary data source (in-memory data sets, streaming data, custom data format, and so on) and generate Tensors that can be supplied to TensorFlow models. The **tfestimators** package includes an `input_fn()` function that can create TensorFlow input functions from common R data sources (e.g. data frames and matrices). It’s also possible to write a fully custom input function. 
+Estimators can receive data through input functions. Input functions take an arbitrary data source (in-memory data sets, streaming data, custom data format, and so on) and generate Tensors that can be supplied to TensorFlow models. The **tfestimators** package includes an `input_fn()` function that can create TensorFlow input functions from common R data sources (e.g. data frames and matrices). It’s also possible to write a fully custom input function.
 
 Here, we define a helper function that will return an input function for a subset of our `mtcars` data set.
 
-```r
+```
 library(tfestimators)
 
-# return an input_fn for a given subset of data
+# Function that returns an input_fn for a given subset of data
 mtcars_input_fn <- function(data) {
-  input_fn(data, 
-           features = c("disp", "cyl"), 
+  input_fn(data,
+           features = c("disp", "cyl"),
            response = "mpg")
 }
 ```
@@ -69,7 +69,7 @@ Next, we define the feature columns for our model. Feature columns are used to s
 
 Here, we create a list of feature columns containing two numeric variables - `disp` and `cyl`:
 
-```r
+```
 cols <- feature_columns(
   column_numeric("disp"),
   column_numeric("cyl")
@@ -78,8 +78,8 @@ cols <- feature_columns(
 
 You can also define multiple feature columns at once:
 
-```r
-cols <- feature_columns( 
+```
+cols <- feature_columns(
   column_numeric("disp", "cyl")
 )
 ```
@@ -90,7 +90,7 @@ By using the family of feature column functions we can define various transforma
 
 Next, we create the estimator by calling the `linear_regressor()` function and passing it a set of feature columns:
 
-```r
+```
 model <- linear_regressor(feature_columns = cols)
 ```
 
@@ -99,7 +99,7 @@ model <- linear_regressor(feature_columns = cols)
 
 We're now ready to train our model, using the `train()` function. We'll partition the `mtcars` data set into separate training and validation data sets, and feed the training data set into `train()`. We'll hold 20% of the data aside for validation.
 
-```r
+```
 indices <- sample(1:nrow(mtcars), size = 0.80 * nrow(mtcars))
 train <- mtcars[indices, ]
 test  <- mtcars[-indices, ]
@@ -112,7 +112,7 @@ model %>% train(mtcars_input_fn(train))
 
 We can evaluate the model's accuracy using the `evaluate()` function, using our 'test' data set for validation.
 
-```r
+```
 model %>% evaluate(mtcars_input_fn(test))
 ```
 
@@ -120,7 +120,7 @@ model %>% evaluate(mtcars_input_fn(test))
 
 After we've finished training out model, we can use it to generate predictions from new data.
 
-```r
+```
 new_obs <- mtcars[1:3, ]
 model %>% predict(mtcars_input_fn(new_obs))
 ```
@@ -149,5 +149,3 @@ main {
   hyphens: inherit;
 }
 </style>
-
-
