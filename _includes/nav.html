@@ -30,7 +30,7 @@
                     </li>
                     {% endif %}{% endfor %}
                     <li>
-                      <a href="https://github.com/terrytangyuan/terrytangyuan.github.com">
+                      <a id="github-url">
                         <span class="fa fa-github"></span>
                       </a>
                     </li>
@@ -42,6 +42,33 @@
     <!-- /.container -->
 </nav>
 <script>
+
+    var a = document.getElementById('github-url');
+    a.href = window.location.href
+
+    var getLocation = function(href) {
+        var l = document.createElement("a");
+        l.href = href;
+        return l;
+    };
+    var pathname = getLocation(window.location.href).pathname;
+    var githubCodePath = "https://github.com/terrytangyuan/terrytangyuan.github.com/tree/master/";
+    if (pathname == "/") {
+      // Home
+      a.href = githubCodePath;
+    } else if (pathname.match(/\d+/g) != null) {
+      // Posts
+      a.href = githubCodePath + "_posts/" + pathname.replace(/\//g, "-").slice(1, -1) + ".markdown";
+    } else {
+      if (pathname.includes("html")) {
+        // Custom html such as cv.html
+        a.href = githubCodePath.slice(0, -1) + pathname;
+      } else {
+        // About, Projects, etc.
+        a.href = (githubCodePath + pathname).slice(0, -1) + ".html";
+      }
+    }
+
     // Drop Bootstarp low-performance Navbar
     // Use customize navbar with high-quality material design animation
     // in high-perf jank-free CSS3 implementation
@@ -58,11 +85,11 @@
             // wait until animation end.
             setTimeout(function(){
                 // prevent frequently toggle
-                if($navbar.className.indexOf('in') < 0) {
+                if ($navbar.className.indexOf('in') < 0) {
                     $collapse.style.height = "0px"
                 }
             },400)
-        }else{
+        } else {
         // OPEN
             $collapse.style.height = "auto"
             $navbar.className += " in";
