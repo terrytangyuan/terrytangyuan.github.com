@@ -42,10 +42,7 @@
     <!-- /.container -->
 </nav>
 <script>
-
-    var a = document.getElementById('github-url');
-    a.href = window.location.href
-
+    var githubEditURL = document.getElementById('github-url');
     var getLocation = function(href) {
         var l = document.createElement("a");
         l.href = href;
@@ -55,17 +52,17 @@
     var githubCodePath = "https://github.com/terrytangyuan/terrytangyuan.github.com/tree/master/";
     if (pathname == "/") {
       // Home
-      a.href = githubCodePath;
+      githubEditURL.href = githubCodePath;
     } else if (pathname.match(/\d+/g) != null) {
       // Posts
-      a.href = githubCodePath + "_posts/" + pathname.replace(/\//g, "-").slice(1, -1) + ".markdown";
+      githubEditURL.href = githubCodePath + "_posts/" + pathname.replace(/\//g, "-").slice(1, -1) + ".markdown";
     } else {
       if (pathname.includes("html")) {
         // Custom html such as cv.html
-        a.href = githubCodePath.slice(0, -1) + pathname;
+        githubEditURL.href = githubCodePath.slice(0, -1) + pathname;
       } else {
         // About, Projects, etc.
-        a.href = (githubCodePath + pathname).slice(0, -1) + ".html";
+        githubEditURL.href = (githubCodePath + pathname).slice(0, -1) + ".html";
       }
     }
 
