@@ -18,8 +18,8 @@ body {
 
 .cv-section-title {
     font-size: 1.5em;
-    padding: 3px 10px;
-    color: #820000;  
+    padding: 7px 10px;
+    color: #820000;
     /*border-top: 2px solid #e4c264;*/
     border-bottom: 2px solid #8C1515;
 }
@@ -68,7 +68,7 @@ body {
     /*--------inner style---------*/
 /*    background-color: #2B2B2B;
     color: #dfdfdf;
-*/    
+*/
     background-color: #FFFFFF;
     color: #444444;
 }
@@ -120,15 +120,15 @@ body {
 
 
 /*---------------print-----------------*/
-@page  
-{ 
-    /* auto is the initial value */ 
-    size: auto;   
+@page
+{
+    /* auto is the initial value */
+    size: auto;
 
-    /* this affects the margin in the printer settings */ 
+    /* this affects the margin in the printer settings */
     /*margin: 0.35in 0.35in;*/
     margin: 1in 0.75in;
-} 
+}
 
 
 @media print {
