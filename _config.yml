@@ -64,6 +64,9 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Affliations
 affliations: [
     {
+        title: "Ant Financial",
+        href: "https://www.antfin.com/"
+    },{
         title: "H2O.ai",
         href: "http://h2o.ai"
     },{
