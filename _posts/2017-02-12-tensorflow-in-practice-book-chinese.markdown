@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "TensorFlow实战：掌握谷歌深度学习框架"
+title:      "《TensorFlow实战》- 掌握谷歌深度学习框架"
 subtitle:   "TensorFlow in Practice: First Book on TensorFlow in Chinese"
 date:       2017-02-12
 author:     "Yuan Tang"
@@ -134,7 +134,9 @@ TensorFlow在2015年年底一出现就受到了极大的关注，在一个月内
 * 11.3 性能分析器tfprof 293
 * 参考文献	297
 
+## 源代码
 
+本书的源代码实现在请点[这里](https://github.com/terrytangyuan/tensorflow-in-practice-code)。
 
 <br><b>Copyright Reserved Yuan Tang 2016-2017</b>
 <br><b>Banner Credit to TensorFlow Org</b>
