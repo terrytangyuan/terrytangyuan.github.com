@@ -68,16 +68,16 @@ affliations: [
         href: "https://www.antfin.com/"
     },{
         title: "H2O.ai",
-        href: "http://h2o.ai"
+        href: "https://h2o.ai"
     },{
         title: "Uptake",
-        href: "http://uptake.com"
-    },{
-        title: "RStudio",
-        href: "http://rstudio.com/"
+        href: "https://uptake.com"
     },{
         title: "DataNovo",
         href: "http://datanovo.com"
+    },{
+        title: "Kubeflow",
+        href: "https://www.kubeflow.org/"
     },{
         title: "DMLC",
         href: "http://dmlc.ml/"
@@ -86,6 +86,6 @@ affliations: [
         href: "https://github.com/tensorflow"
     },{
         title: "Penn State University",
-        href: "http://psu.edu/"
+        href: "https://psu.edu/"
     }
 ]
