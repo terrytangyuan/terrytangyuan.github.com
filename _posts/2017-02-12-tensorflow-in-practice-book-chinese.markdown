@@ -136,7 +136,7 @@ TensorFlow在2015年年底一出现就受到了极大的关注，在一个月内
 
 ## 源代码
 
-本书的源代码实现在请点[这里](https://github.com/terrytangyuan/tensorflow-in-practice-code)。
+本书的源代码实现请点[这里](https://github.com/terrytangyuan/tensorflow-in-practice-code)。
 
 <br><b>Copyright Reserved Yuan Tang 2016-2017</b>
 <br><b>Banner Credit to TensorFlow Org</b>
