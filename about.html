@@ -8,9 +8,46 @@ header-img: "img/clouds.jpg"
 <!-- Language Selector -->
 <select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
     <option value="0"> 中文 Chinese </option>
-    <option value="1" selected> 英语 English </option>
+    <option value="1"> 英语 English </option>
+    <option value="2" selected> 简介 Brief Intro </option>
 </select>
 
+<!-- Short Version -->
+<div class="short">
+    <blockquote>
+        The more you give, the more you receive. 给予越多，收获越多。
+    </blockquote>
+
+    <p>
+        Yuan is currently a senior software engineer at
+        <a href="https://www.antfin.com/" style="color:green;">
+          Ant Financial,
+        </a>
+        building AI infrastructure and AutoML platform.
+
+        He's a committer of TensorFlow, XGBoost, Apache MXNet, and author of numerous open source softwares. He's also the author of
+        <a href="../2017/02/12/tensorflow-in-practice-book-chinese/" style="color:green;">
+          <i>TensorFlow in Practice </i>
+        </a> which is the first book teaching TensorFlow in Chinese and has been translated to several other languages
+      such as traditional Chinese and Korean.
+    </p>
+
+    <p>
+        唐源，现任
+        <a href="https://www.antfin.com/" style="color:green;">
+          蚂蚁金服
+        </a>
+        技术专家，目前专注于建立 AI 基础架构和自动机器学习平台。
+
+        一直积极参与开源软件的开发，是多个开源软件的作者，TensorFlow、XGBoost、以及 Apache MXNet 的 Committer。同时也是畅销书
+      <a href="../2017/02/12/tensorflow-in-practice-book-chinese/" style="color:green;">
+        <i> TensorFlow实战</i>
+      </a>的作者，这本书是第一本教 TensorFlow 的中文书，并且已被翻译成繁体中文、韩语等其他语言。
+    </p>
+
+    <a href="../cv.html" class="btn btn-success btn-xs" role="button">Curriculum Vitae 履历</a>
+
+</div>
 
 <!-- English Version -->
 <div class="en">
@@ -23,7 +60,7 @@ header-img: "img/clouds.jpg"
         <a href="https://www.antfin.com/" style="color:green;">
           Ant Financial,
         </a>
-        building our AI infrastructure and AutoML platform.
+        building AI infrastructure and AutoML platform.
     </p>
 
     <p>Meanwhile, I've authored and contributed numerous popular open-source
@@ -82,8 +119,6 @@ header-img: "img/clouds.jpg"
     </p>
 
     <a href="../cv.html" class="btn btn-success btn-xs" role="button">Curriculum Vitae</a>
-
-
 
 </div>
 
@@ -158,6 +193,7 @@ header-img: "img/clouds.jpg"
     // get nodes
     var $zh = document.querySelector(".en");
     var $en = document.querySelector(".zh");
+    var $short = document.querySelector(".short");
     var $select = document.querySelector("select");
     // bind hashchange event
     window.addEventListener('hashchange', _render);
@@ -165,24 +201,34 @@ header-img: "img/clouds.jpg"
     function _render(){
         var _hash = window.location.hash;
         // zh
-        if(_hash == "#zh"){
+        if (_hash == "#zh") {
             $select.selectedIndex = 0;
             $en.style.display = "block";
             $zh.style.display = "none";
-        // en by default
-        }else{
+            $short.style.display = "none";
+        } else if (_hash == "#en") {
             // not trigger onChange, otherwise cause a loop call.
             $select.selectedIndex = 1;
             $zh.style.display = "block";
             $en.style.display = "none";
+            $short.style.display = "none";
+        // short by default
+        } else {
+            // not trigger onChange, otherwise cause a loop call.
+            $select.selectedIndex = 2;
+            $zh.style.display = "none";
+            $en.style.display = "none";
+            $short.style.display = "block";
         }
     }
     // handle select change
     function onLanChange(index){
-        if(index == 0){
+        if (index == 0) {
             window.location.hash = "#zh"
-        }else{
+        } else if (index == 1) {
             window.location.hash = "#en"
+        } else {
+            window.location.hash = "#short"
         }
     }
     // init
