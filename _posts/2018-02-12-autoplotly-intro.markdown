@@ -261,4 +261,6 @@ community even better!
 demonstrating the extensibility using the combination of `broom`, `ggplot2`, and `ggfortify`.
 * [一行R代码实现繁琐的可视化](https://terrytangyuan.github.io/2015/11/24/ggfortify-intro/)
 
-<br><b>Copyright Reserved Yuan Tang 2018</b>
+<p class="copyright text-muted">
+  Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+</p>

@@ -149,3 +149,7 @@ main {
   hyphens: inherit;
 }
 </style>
+
+<p class="copyright text-muted">
+  Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+</p>

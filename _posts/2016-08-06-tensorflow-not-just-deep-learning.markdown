@@ -66,5 +66,7 @@ Note that I only highlighted a few important components to help you get a sense 
 * [Scikit Flow: Easy Deep Learning with TensorFlow and Scikit-learn](http://www.kdnuggets.com/2016/02/scikit-flow-easy-deep-learning-tensorflow-scikit-learn.html)
 
 
-<br><b>Copyright Reserved Yuan Tang 2016-2017</b>
+<p class="copyright text-muted">
+	Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+</p>
 <br><b>Banner Credit to TensorFlow Org</b>

@@ -90,3 +90,7 @@ DataNovo 是我在上斯坦福公开课的时候和几个小伙伴成立的公�
  
  
 **CSDN is the largest Chinese-language IT technology community (www.csdn.net), including csdn.net, ITeye and Programmer magazine, with more than 50 million registered users. Depending on a unique model of community-based media, it is the most influential and authoritative media in software industry which covers more than 90% of Chinese software developers. It has hosted a variety of large-scale meetings, such as China Software Developer Conference (SDCC), China Cloud Computing Conference (CCCC) , Mobile Developer Conference China (MDCC), etc.**
+
+<p class="copyright text-muted">
+	Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+</p>

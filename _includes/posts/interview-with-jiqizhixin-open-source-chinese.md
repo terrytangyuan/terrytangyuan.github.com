@@ -74,3 +74,7 @@
 **2015年，机器之心获得「虎嗅2015年度十佳作者」和「今日头条2015年度最佳自媒体」的奖项，并成为 APEC GIC 「全球VR峰会」首席科技媒体，瑞士洛桑The Brain Forum唯一受邀进行报道的中国媒体。 2016年，机器之心是WithTheBest AI Conference唯一来自中国的官方合作伙伴。**
 
 **与此同时机器之心作为联想之星Comet Labs全球资源平台的一份子，携手联想之星Comet Labs共同为人工智能领域的参与者提供产业及创业加速服务。**
+
+<p class="copyright text-muted">
+	Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+</p>

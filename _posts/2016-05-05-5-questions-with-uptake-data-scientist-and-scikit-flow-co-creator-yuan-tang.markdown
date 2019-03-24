@@ -55,4 +55,6 @@ We embrace that same sense of collaboration here at Uptake, and it’s played a 
 
 Interested learning about TensorFlow from Yuan? He will be discussing TensorFlow for Machine Learning at an upcoming American Statistics Association event at Uptake in March.
 
-<br><b>Copyright Reserved Yuan Tang 2016-2017</b>
+<p class="copyright text-muted">
+	Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+</p>

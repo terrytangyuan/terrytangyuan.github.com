@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "DeepMind TF-Replicator Simplifies Model Deployment on Cluster Architectures"
-subtitle:   "My Thoughts on DeepMind TF-Replicator with Synced"
+subtitle:   "Thoughts on DeepMind TF-Replicator with Synced"
 date:       2019-03-20
 author:     "Yuan Tang"
 tags:
@@ -58,4 +58,7 @@ The paper *TF-Replicator: Distributed Machine Learning for Researchers* is on [a
 
 The Synced Insight Partner Program is an invitation-only program that brings together influential organizations, companies, academic experts and industry leaders to share professional experiences and insights through interviews and public speaking engagements, etc. Synced invites all industry experts, professionals, analysts, and others working in AI technologies and machine learning to participate.
 
-<br><b>Copyright Reserved Yuan Tang 2019</b>
+
+<p class="copyright text-muted">
+	Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+</p>
