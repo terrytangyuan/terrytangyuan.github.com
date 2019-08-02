@@ -10,11 +10,11 @@ baseurl: ""                             # for example, '/blog' if your blog host
 plugins: [jekyll-paginate]
 
 # SNS settings
-# weibo_username:     唐源Terry
-#zhihu_username:     terrytangyuan
+# weibo_username:     xxx
+#zhihu_username:     xxx
 github_username:    terrytangyuan
 twitter_username:  terrytangyuan
-#facebook_username:  terrytangyuan
+#facebook_username:  xxx
 email_username:  terrytangyuan@gmail.com
 linkedin_visitor_id: terrytangyuan
 RSS: true
@@ -67,23 +67,17 @@ affliations: [
         title: "Ant Financial",
         href: "https://www.antfin.com/"
     },{
-        title: "H2O.ai",
-        href: "https://h2o.ai"
-    },{
-        title: "Uptake",
-        href: "https://uptake.com"
-    },{
-        title: "DataNovo",
-        href: "http://datanovo.com"
-    },{
         title: "Kubeflow",
-        href: "https://www.kubeflow.org/"
-    },{
-        title: "DMLC",
-        href: "http://dmlc.ml/"
+        href: "https://www.kubeflow.org"
     },{
         title: "TensorFlow",
-        href: "https://github.com/tensorflow"
+        href: "https://tensorflow.org"
+    },{
+        title: "Apache Software Foundation",
+        href: "https://apache.org"
+    },{
+        title: "Georgia Tech",
+        href: "https://gatech.edu"
     },{
         title: "Penn State University",
         href: "https://psu.edu/"
