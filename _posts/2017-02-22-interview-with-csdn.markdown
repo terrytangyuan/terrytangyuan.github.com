@@ -11,7 +11,7 @@ tags:
     - Machine Learning
 ---
 
-转自极客头条，[原文链接](http://geek.csdn.net/news/detail/139455)。
+转自CSDN，[原文链接](https://mp.weixin.qq.com/s/1x56oHcPEXUWv7pljvJJ8g)。
 
 
 自 2015 年底开源到如今更快、更灵活、更方便的 1.0 版本正式发布，由 Google 推出的第二代分布式机器学习系统 TensorFlow 一直在为我们带来惊喜，一方面是技术层面持续的迭代演进，从分布式版本、服务框架 TensorFlow Serving、上层封装 TF.Learn 到 Windows 支持、JIT 编译器 XLA、动态计算图框架 Fold 等，以及 Inception Net、SyntaxNet 等数不胜数的经典模型实现，TensorFlow 已然已经成为深度学习框架的事实标准之一。
