@@ -35,7 +35,7 @@ Even though it was open-sourced less than six months ago, it’s quickly becomin
 
 We chose to work with TensorFlow because it has a stable, easy-to-use API that Google’s using for research and production. TensorFlow is arguably easier to learn given knowledge of similar libraries, but there is a learning curve to its unfamiliar syntax.
 
-We bring the best of TensorFlow and scitkit-learn in Scikit Flow. Scikit Flow combines the concise, well-known scikit-learn interface and the power of TensorFlow’s deep learning library. It’s a simple and familiar interface for data scientists.
+We bring the best of TensorFlow and scikit-learn in Scikit Flow. Scikit Flow combines the concise, well-known scikit-learn interface and the power of TensorFlow’s deep learning library. It’s a simple and familiar interface for data scientists.
 
 **What sparked collaboration with Illia on this project?**
 
