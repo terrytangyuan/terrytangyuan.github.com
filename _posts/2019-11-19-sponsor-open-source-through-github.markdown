@@ -2,7 +2,7 @@
 layout:     post
 title:      "Sponsoring My Open Source Efforts through Github"
 subtitle:   ""
-date:       2019-11-15
+date:       2019-11-19
 author:     "Yuan Tang"
 tags:
     - Open Source
