@@ -8,7 +8,7 @@ tags:
     - Open Source
 ---
 
-Hi everyone! This is Yuan. I recently opened up [my Github Sponsors profile](https://github.com/sponsors/terrytangyuan). Your support would be really appreciated and would encourage my on-going involvements in the open source community!
+Hi everyone! This is Yuan. I recently opened up [my Github Sponsors page](https://github.com/sponsors/terrytangyuan). Your support would be really appreciated and would encourage my on-going involvements in the open source community!
 
 Here below is a brief summary of my roles and contributions to the open source projects I've been involved in.
 
