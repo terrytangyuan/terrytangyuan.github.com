@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Sponsoring My Open Source Efforts through Github"
+title:      "Sponsoring My Open Source Efforts through GitHub"
 subtitle:   ""
 date:       2019-11-19
 author:     "Yuan Tang"
@@ -8,7 +8,7 @@ tags:
     - Open Source
 ---
 
-Hi everyone! This is Yuan. I recently opened up [my Github Sponsors page](https://github.com/sponsors/terrytangyuan). Your support would be really appreciated and would encourage my on-going involvements in the open source community!
+Hi everyone! This is Yuan. I recently opened up [my GitHub Sponsors page](https://github.com/sponsors/terrytangyuan). Your support would be really appreciated and would encourage my on-going involvements in the open source community!
 
 Here below is a brief summary of my roles and contributions to the open source projects I've been involved in.
 
@@ -27,7 +27,7 @@ Additionally, I (co-)authored the following open source projects grouped by area
 * Tools: [reticulate](https://github.com/rstudio/reticulate) and [jpmml-sparkml-lightgbm](https://github.com/alipay/jpmml-sparkml-lightgbm).
 
 
-There are other projects that I have contributed to as I come across areas of improvements. Please visit my [projects page](https://terrytangyuan.github.io/projects/) and [Github page](http://github.com/terrytangyuan/) for more details.
+There are other projects that I have contributed to as I come across areas of improvements. Please visit my [projects page](https://terrytangyuan.github.io/projects/) and [GitHub page](http://github.com/terrytangyuan/) for more details.
 
 Other things related to open source worth mentioning here are:
 * I am an editor of [Journal of Open Source Software](https://joss.theoj.org/) on areas of machine learning, distributed systems, and cloud computing.
