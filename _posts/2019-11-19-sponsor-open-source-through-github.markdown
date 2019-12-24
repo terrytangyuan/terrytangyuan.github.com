@@ -22,9 +22,9 @@ In the meantime, I am also a [committer](https://www.apache.org/foundation/gloss
 * [Kubeflow](https://github.com/kubeflow/kubeflow) where I am the maintainer of [Kubeflow Common](https://github.com/kubeflow/common), [MPI Operator](https://github.com/kubeflow/mpi-operator), and [XGBoost Operator](https://github.com/kubeflow/xgboost-operator).
 
 Additionally, I (co-)authored the following open source projects grouped by area:
-* Machine learning: [TensorFlow in R](https://tensorflow.rstudio.com/), [scikit-learn-contrib/metric-learn](https://github.com/scikit-learn-contrib/metric-learn), [dml](https://github.com/terrytangyuan/dml), [lfda](https://github.com/terrytangyuan/lfda), and [onnx-r](https://github.com/onnx/onnx-r).
+* Machine learning: [TensorFlow in R](https://tensorflow.rstudio.com/), [scikit-learn-contrib/metric-learn](https://github.com/scikit-learn-contrib/metric-learn), [dml](https://github.com/terrytangyuan/dml), and [lfda](https://github.com/terrytangyuan/lfda).
 * Data visualization: [ggfortify](https://github.com/sinhrks/ggfortify) and [autoplotly](https://github.com/terrytangyuan/autoplotly).
-* Tools: [reticulate](https://github.com/rstudio/reticulate) and [jpmml-sparkml-lightgbm](https://github.com/alipay/jpmml-sparkml-lightgbm).
+* Tools: [reticulate](https://github.com/rstudio/reticulate), [jpmml-sparkml-lightgbm](https://github.com/alipay/jpmml-sparkml-lightgbm), and [onnx-r](https://github.com/onnx/onnx-r).
 
 
 There are other projects that I have contributed to as I come across areas of improvements. Please visit my [projects page](https://terrytangyuan.github.io/projects/) and [GitHub page](http://github.com/terrytangyuan/) for more details.
