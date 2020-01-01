@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "5 Questions with Uptake Data Scientist and Scikit Flow Co-creator Yuan Tang"
-subtitle:   ""
+subtitle:   "An Interview with Uptake"
 date:       2016-05-05
 author:     "Yuan Tang"
 header-img: "img/inblog/tensorflow-bg.jpg"
