@@ -6,6 +6,14 @@ date:       2019-11-19
 author:     "Yuan Tang"
 tags:
     - Open Source
+    - TensorFlow
+    - Kubernetes
+    - Kubeflow
+    - Machine Learning
+    - Deep Learning
+    - Visualization
+    - R
+    - Python
 ---
 
 Hi everyone! This is Yuan. I recently opened up [my GitHub Sponsors page](https://github.com/sponsors/terrytangyuan). Your support would be really appreciated and would encourage my on-going involvements in the open source community!

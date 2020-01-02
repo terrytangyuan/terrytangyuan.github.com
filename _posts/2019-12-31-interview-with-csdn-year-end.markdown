@@ -5,10 +5,15 @@ subtitle:   "An Interview with CSDN (www.csdn.net)"
 date:       2019-12-31
 author:     "CSDN"
 tags:
-    - Open Source
     - Interview
+    - Open Source
+    - TensorFlow
+    - Kubernetes
+    - Kubeflow
     - Machine Learning
+    - Deep Learning
     - Visualization
+    - Book
 ---
 
 转自CSDN，[原文链接](https://mp.weixin.qq.com/s/2zmON31l1QNY3_tiHls05Q)。
