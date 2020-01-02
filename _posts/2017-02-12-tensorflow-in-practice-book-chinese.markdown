@@ -15,7 +15,7 @@ tags:
 ---
 
 
-**Google TensorFlow研发团队内部推荐的首本中文教程——《TensorFlow实战》，由TensorFlow Contributor、Committer倾力编写，获Jeff Dean, TensorFlow工程研发总监、李开复等专家赞誉好评。**
+**Google TensorFlow研发团队内部推荐的首本中文教程——《TensorFlow实战》，由TensorFlow Contributor、Committer倾力编写，获Jeff Dean、TensorFlow工程研发总监 Rajat Monga、李开复等专家赞誉好评。**
 
 
 **适读人群**：希望快速上手TensorFlow、了解深度学习技术及其应用实践的人士，以及机器学习、分布式计算领域的学生、从业者。特别是对正在学习深度学习技术，立志从事AI相关行业，成为数据科学家的人来说，本书更是非常实用的工具书。
@@ -87,51 +87,51 @@ TensorFlow在2015年年底一出现就受到了极大的关注，在一个月内
 
 ## 目录
 * 1    TensorFlow基础	1
-* 1.1  TensorFlow概要	1
-* 1.2  TensorFlow编程模型简介	4
+	* 1.1  TensorFlow概要	1
+	* 1.2  TensorFlow编程模型简介	4
 * 2    TensorFlow和其他深度学习框架的对比	18
-* 2.1  主流深度学习框架对比	18
-* 2.2  各深度学习框架简介	20
+	* 2.1  主流深度学习框架对比	18
+	* 2.2  各深度学习框架简介	20
 * 3    TensorFlow第一步	39
-* 3.1  TensorFlow的编译及安装	39
-* 3.2  TensorFlow实现SoftmaxRegression识别手写数字	46
+	* 3.1  TensorFlow的编译及安装	39
+	* 3.2  TensorFlow实现SoftmaxRegression识别手写数字	46
 * 4    TensorFlow实现自编码器及多层感知机	55
-* 4.1  自编码器简介	55
-* 4.2  TensorFlow实现自编码器	59
-* 4.3  多层感知机简介	66
-* 4.4  TensorFlow实现多层感知机	70
+	* 4.1  自编码器简介	55
+	* 4.2  TensorFlow实现自编码器	59
+	* 4.3  多层感知机简介	66
+	* 4.4  TensorFlow实现多层感知机	70
 * 5    TensorFlow实现卷积神经网络	74
-* 5.1  卷积神经网络简介	74
-* 5.2  TensorFlow实现简单的卷积网络	80
-* 5.3  TensorFlow实现进阶的卷积网络	83
+	* 5.1  卷积神经网络简介	74
+	* 5.2  TensorFlow实现简单的卷积网络	80
+	* 5.3  TensorFlow实现进阶的卷积网络	83
 * 6    TensorFlow实现经典卷积神经网络	95
-* 6.1  TensorFlow实现AlexNet	97
-* 6.2  TensorFlow实现VGGNet	108
-* 6.3  TensorFlow实现GoogleInceptionNet	119
-* 6.4  TensorFlow实现ResNet	143
-* 6.5  卷积神经网络发展趋势	156
+	* 6.1  TensorFlow实现AlexNet	97
+	* 6.2  TensorFlow实现VGGNet	108
+	* 6.3  TensorFlow实现GoogleInceptionNet	119
+	* 6.4  TensorFlow实现ResNet	143
+	* 6.5  卷积神经网络发展趋势	156
 * 7    TensorFlow实现循环神经网络及Word2Vec	159
-* 7.1  TensorFlow实现Word2Vec	159
-* 7.2  TensorFlow实现基于LSTM的语言模型	173
-* 7.3  TensorFlow实现BidirectionalLSTMClassifier	188
+	* 7.1  TensorFlow实现Word2Vec	159
+	* 7.2  TensorFlow实现基于LSTM的语言模型	173
+	* 7.3  TensorFlow实现BidirectionalLSTMClassifier	188
 * 8    TensorFlow实现深度强化学习	195
-* 8.1  深度强化学习简介	195
-* 8.2  TensorFlow实现策略网络	201
-* 8.3  TensorFlow实现估值网络	213
+	* 8.1  深度强化学习简介	195
+	* 8.2  TensorFlow实现策略网络	201
+	* 8.3  TensorFlow实现估值网络	213
 * 9    TensorBoard、多GPU并行及分布式并行	233
-* 9.1  TensorBoard	233
-* 9.2  多GPU并行	243
-* 9.3  分布式并行	249
+	* 9.1  TensorBoard	233
+	* 9.2  多GPU并行	243
+	* 9.3  分布式并行	249
 * 10    TF.Learn从入门到精通	259
-* 10.1  分布式Estimator	259
-* 10.2  深度学习Estimator	267
-* 10.3  机器学习Estimator	272
-* 10.4  DataFrame	278
-* 10.5  监督器Monitors	279
+	* 10.1  分布式Estimator	259
+	* 10.2  深度学习Estimator	267
+	* 10.3  机器学习Estimator	272
+	* 10.4  DataFrame	278
+	* 10.5  监督器Monitors	279
 * 11    TF.Contrib的其他组件	283
-* 11.1  统计分布	283
-* 11.2  Layer模块	285
-* 11.3 性能分析器tfprof 293
+	* 11.1  统计分布	283
+	* 11.2  Layer模块	285
+	* 11.3 性能分析器tfprof 293
 * 参考文献	297
 
 ## 源代码
