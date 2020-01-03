@@ -41,7 +41,8 @@ Other things related to open source worth mentioning here are:
 * I am an editor of [Journal of Open Source Software](https://joss.theoj.org/) on areas of machine learning, distributed systems, and cloud computing.
 * I served as mentor of [Google Summer of Code](https://summerofcode.withgoogle.com/) for [TensorFlow in 2019](https://summerofcode.withgoogle.com/archive/2019/projects/5358647872323584/) and [R Project for Statistical Computing in 2016](https://summerofcode.withgoogle.com/archive/2016/projects/5199297624670208/).
 * I was awarded [Google Open Source Peer Bonus](https://opensource.googleblog.com/2016/09/google-open-source-peer-bonus-program.html) in 2016 for my contributions to TensorFlow.
-* I authored the book [*TensorFlow in Practice*](http://terrytangyuan.github.io/2017/02/12/tensorflow-in-practice-book-chinese/) which is the first book teaching TensorFlow in Chinese and has been translated to several other languages. I also write blogs on open source technologies and share my thoughts [here](https://terrytangyuan.github.io/).
+* I authored the book [*TensorFlow in Practice*](http://terrytangyuan.github.io/2017/02/12/tensorflow-in-practice-book-chinese/) which is the first book teaching TensorFlow in Chinese and has been translated to several other languages.
+* I write on open source technologies [here](https://terrytangyuan.github.io/) and share my thoughts via [media interviews](https://terrytangyuan.github.io/tags/#Interview).
 * I maintain two [CRAN task views](https://cran.r-project.org/web/views/): [Model Deployment](https://github.com/terrytangyuan/ctv-model-deployment) and [Databases](https://github.com/terrytangyuan/ctv-databases) with R.
 
 <p class="copyright text-muted">
