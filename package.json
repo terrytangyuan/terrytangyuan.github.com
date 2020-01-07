@@ -1,9 +1,9 @@
 {
-    "name": "hux-blog",
-    "title": "Hux Blog",
-    "version": "1.0.0",
-    "homepage": "http://huxpro.github.io",
-    "author": "Hux",
+    "name": "yuan-blog",
+    "title": "Yuan Blog",
+    "version": "2.0.0",
+    "homepage": "http://terrytangyuan.github.io",
+    "author": "Yuan Tang",
     "devDependencies": {
         "grunt": "~0.4.5",
         "grunt-contrib-less": "~0.11.4",
@@ -13,7 +13,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/Huxpro/huxpro.github.io"
+        "url": "https://github.com/terrytangyuan/terrytangyuan.github.io"
     },
     "scripts": {
         "preview": "cd _site; python -m SimpleHTTPServer 8020",
