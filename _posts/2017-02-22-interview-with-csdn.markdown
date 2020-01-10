@@ -3,7 +3,7 @@ layout:     post
 title:      "CSDN专访：掌握 Google 深度学习框架的正确姿势"
 subtitle:   "An Interview with CSDN (www.csdn.net)"
 date:       2017-02-22
-author:     "Yuan Tang"
+author:     "CSDN"
 tags:
     - Open Source
     - Interview
