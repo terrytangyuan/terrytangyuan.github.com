@@ -34,8 +34,7 @@ Additionally, I (co-)authored the following open source projects grouped by area
 * Data visualization: [ggfortify](https://github.com/sinhrks/ggfortify) and [autoplotly](https://github.com/terrytangyuan/autoplotly).
 * Tools: [reticulate](https://github.com/rstudio/reticulate), [scaffolder](https://github.com/terrytangyuan/scaffolder), [jpmml-sparkml-lightgbm](https://github.com/alipay/jpmml-sparkml-lightgbm), and [onnx-r](https://github.com/onnx/onnx-r).
 
-
-There are other projects that I have contributed to as I come across areas of improvements. Please visit my [projects page](https://terrytangyuan.github.io/projects/) and [GitHub page](http://github.com/terrytangyuan/) for more details.
+There are other projects that I have made non-trivial contributions to as I come across areas of improvements, e.g. [H2O](https://github.com/h2oai/h2o-3), [SQLFlow](https://github.com/sql-machine-learning/sqlflow), [pandas](https://github.com/pandas-dev/pandas), [MMLSpark](https://github.com/Azure/mmlspark), etc. Please visit my [projects page](https://terrytangyuan.github.io/projects/) and [GitHub page](http://github.com/terrytangyuan/) for more details.
 
 Other things related to open source worth mentioning here are:
 * I am an editor of [Journal of Open Source Software](https://joss.theoj.org/) on areas of machine learning, distributed systems, and cloud computing.
