@@ -25,12 +25,12 @@ I am a [PMC](https://www.apache.org/foundation/glossary.html#PMC) member with of
 * [Apache MXNet](https://github.com/apache/incubator-mxnet) where I co-authored the Scala package.
 
 In the meantime, I am also a [committer](https://www.apache.org/foundation/glossary.html#Committer) of the following projects:
-* [TensorFlow](https://github.com/tensorflow/tensorflow) where I am one of the main developers of [TensorFlow Estimators](https://arxiv.org/pdf/1708.02637.pdf) and maintainer of [TensorFlow I/O](https://github.com/tensorflow/io).
+* [TensorFlow](https://github.com/tensorflow/tensorflow) where I am one of the core developers of [TensorFlow Estimators](https://arxiv.org/abs/1708.02637) and maintainer of [TensorFlow I/O](https://github.com/tensorflow/io).
 * [ElasticDL](https://github.com/sql-machine-learning/elasticdl) where I have designed and implemented several major components of the system.
 * [Kubeflow](https://github.com/kubeflow/kubeflow) where I am the maintainer of [Kubeflow Common](https://github.com/kubeflow/common), [MPI Operator](https://github.com/kubeflow/mpi-operator), and [XGBoost Operator](https://github.com/kubeflow/xgboost-operator).
 
 Additionally, I (co-)authored the following open source projects grouped by area:
-* Machine learning: [TensorFlow in R](https://tensorflow.rstudio.com/), [scikit-learn-contrib/metric-learn](https://github.com/scikit-learn-contrib/metric-learn), [dml](https://github.com/terrytangyuan/dml), and [lfda](https://github.com/terrytangyuan/lfda).
+* Machine learning: [TensorFlow in R](https://tensorflow.rstudio.com/), [metric-learn](https://github.com/scikit-learn-contrib/metric-learn), [dml](https://github.com/terrytangyuan/dml), and [lfda](https://github.com/terrytangyuan/lfda).
 * Data visualization: [ggfortify](https://github.com/sinhrks/ggfortify) and [autoplotly](https://github.com/terrytangyuan/autoplotly).
 * Tools: [reticulate](https://github.com/rstudio/reticulate), [scaffolder](https://github.com/terrytangyuan/scaffolder), [jpmml-sparkml-lightgbm](https://github.com/alipay/jpmml-sparkml-lightgbm), and [onnx-r](https://github.com/onnx/onnx-r).
 
