@@ -20,7 +20,7 @@ Hi everyone! Your support would be really appreciated and would encourage my on-
 
 Here below is a brief summary of my roles and contributions to the open source projects I've been involved in.
 
-I am a [PMC](https://www.apache.org/foundation/glossary.html#PMC) member with official oversight responsibilities to the following two projects:
+I am a [Project Management Committee (PMC)](https://www.apache.org/foundation/glossary.html#PMC) member of the following two projects:
 * [XGBoost](https://github.com/dmlc/xgboost) where I maintain the Python and R packages.
 * [Apache MXNet](https://github.com/apache/incubator-mxnet) where I co-authored the Scala package.
 
