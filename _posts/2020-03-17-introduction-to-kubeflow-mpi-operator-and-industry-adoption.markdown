@@ -170,7 +170,7 @@ For more details, please check out [the design doc for MPI Operator](https://git
 
 # Industry Adoption
 
-At the time of writing, there are [12 disclosed industry adopters](https://github.com/kubeflow/mpi-operator/blob/master/ADOPTERS.md) and many others who&#39;ve been working closely with the community to reach where we are today. We&#39;d like to showcase some of the use cases of MPI Operator in several companies. If your company would like to be included in the list of adopters, please send us a pull request [on GitHub](https://github.com/kubeflow/mpi-operator)!
+At the time of writing, there are [13 disclosed industry adopters](https://github.com/kubeflow/mpi-operator/blob/master/ADOPTERS.md) and many others who&#39;ve been working closely with the community to reach where we are today. We&#39;d like to showcase some of the use cases of MPI Operator in several companies. If your company would like to be included in the list of adopters, please send us a pull request [on GitHub](https://github.com/kubeflow/mpi-operator)!
 
 ## Ant Financial
 
