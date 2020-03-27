@@ -11,6 +11,7 @@ tags:
     - Machine Learning
     - Deep Learning
 ---
+(This blog is also available [on Medium](https://medium.com/kubeflow/introduction-to-kubeflow-mpi-operator-and-industry-adoption-296d5f2e6edc) and [on KDnuggets](https://www.kdnuggets.com/2020/03/introduction-kubeflow-mpi-operator-industry-adoption.html))
 
 Authors: [Yuan Tang](https://twitter.com/TerryTangYuan) (Ant Financial), [Wei Yan](https://www.linkedin.com/in/wei-yan-a6037337/) (Ant Financial), and [Rong Ou](https://www.linkedin.com/in/rongou/) (NVIDIA)
 
