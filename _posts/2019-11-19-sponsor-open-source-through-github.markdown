@@ -16,7 +16,7 @@ tags:
     - Python
 ---
 
-Hi everyone! Your support would be really appreciated and would encourage my on-going involvements in the open source community! Follow me [on Twitter](https://twitter.com/TerryTangYuan) for updates!
+Hi everyone! I recently opened my [GitHub Sponsors page](https://github.com/sponsors/terrytangyuan). Your support would be really appreciated and would encourage my on-going involvements in the open source community! Follow me [on Twitter](https://twitter.com/TerryTangYuan) for updates!
 
 Here below is a brief summary of my roles and contributions to the open source projects I've been involved in.
 
