@@ -32,7 +32,7 @@ In the meantime, I am also a [committer](https://www.apache.org/foundation/gloss
 Additionally, I (co-)authored the following open source projects grouped by area:
 * Machine learning: [TensorFlow in R](https://github.com/rstudio/tensorflow), [metric-learn](https://github.com/scikit-learn-contrib/metric-learn), [dml](https://github.com/terrytangyuan/dml), [lfda](https://github.com/terrytangyuan/lfda), and [ftlib](https://github.com/caicloud/ftlib).
 * Data visualization: [ggfortify](https://github.com/sinhrks/ggfortify) and [autoplotly](https://github.com/terrytangyuan/autoplotly).
-* Tools: [reticulate](https://github.com/rstudio/reticulate), [scaffolder](https://github.com/terrytangyuan/scaffolder), [jpmml-sparkml-lightgbm](https://github.com/alipay/jpmml-sparkml-lightgbm), and [onnx-r](https://github.com/onnx/onnx-r).
+* Tools: [reticulate](https://github.com/rstudio/reticulate), [scaffolder](https://github.com/terrytangyuan/scaffolder), [maintainer-tools](https://github.com/terrytangyuan/maintainer-tools), [jpmml-sparkml-lightgbm](https://github.com/alipay/jpmml-sparkml-lightgbm), and [onnx-r](https://github.com/onnx/onnx-r).
 
 There are other projects that I have made non-trivial contributions to as I come across areas of improvements, namely [H2O](https://github.com/h2oai/h2o-3), [SQLFlow](https://github.com/sql-machine-learning/sqlflow), [pandas](https://github.com/pandas-dev/pandas), [MMLSpark](https://github.com/Azure/mmlspark), etc. Please visit my [projects page](https://terrytangyuan.github.io/projects/) and [GitHub page](http://github.com/terrytangyuan/) for more details.
 
