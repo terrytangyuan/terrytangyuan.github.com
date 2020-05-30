@@ -44,7 +44,7 @@ There are also other projects that I have made non-trivial contributions to as I
 * I write [blogposts](https://terrytangyuan.github.io/) related to open source technologies and sometimes share my thoughts via [media interviews](https://terrytangyuan.github.io/tags/#Interview) to broader audience.
 * I maintain two [CRAN task views](https://cran.r-project.org/web/views/): [Model Deployment](https://github.com/terrytangyuan/ctv-model-deployment) and [Databases](https://github.com/terrytangyuan/ctv-databases) with R.
 
-## How would your sponsorship would support my work?
+## How would your sponsorship support my work?
 
 Your sponsorship will go directly towards to necessary expenses for developing, maintaining, and growing the projects, which includes but not limited to the following:
 * Continuous integration, cloud services, and computing resources for testing related changes.
