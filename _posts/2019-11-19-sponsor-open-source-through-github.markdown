@@ -46,7 +46,7 @@ There are also other projects that I have made non-trivial contributions to as I
 
 ## How would your sponsorship support my work?
 
-Your sponsorship will go directly towards to necessary expenses for developing, maintaining, and growing the projects, which includes but not limited to the following:
+Your sponsorship will contribute directly to cover necessary expenses for developing, maintaining, and growing the projects, which includes but not limited to the following:
 * Continuous integration, cloud services, and computing resources for testing related changes.
 * Travel expenses for speaking at local meetups, universities, and conferences.
 * Domains and hosting services for project websites.
