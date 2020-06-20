@@ -39,7 +39,7 @@ There are also other projects that I have made non-trivial contributions to as I
 ## What else am I involved in besides writing code?
 
 * I am an editor of [Journal of Open Source Software](https://joss.theoj.org/) on areas of machine learning, distributed systems, and cloud computing.
-* I served as mentor of [Google Summer of Code](https://summerofcode.withgoogle.com/) for [Kubeflow in 2020](https://summerofcode.withgoogle.com/projects/#5507335985823744), [TensorFlow in 2019](https://summerofcode.withgoogle.com/archive/2019/projects/5358647872323584/), and [R Project for Statistical Computing in 2016](https://summerofcode.withgoogle.com/archive/2016/projects/5199297624670208/).
+* I served as mentor of [Google Summer of Code](https://summerofcode.withgoogle.com/) for [Kubeflow in 2020](https://terrytangyuan.github.io/data/docs/GSoC-Kubeflow-2020.png), [TensorFlow in 2019](https://terrytangyuan.github.io/data/docs/GSoC-TensorFlow-2019.png), and [R Project for Statistical Computing in 2016](https://terrytangyuan.github.io/data/docs/GSoC-MXNet-2016.png).
 * I authored the book [*TensorFlow in Practice*](http://terrytangyuan.github.io/2017/02/12/tensorflow-in-practice-book-chinese/) which is the first book teaching TensorFlow in Chinese and has been translated to several other languages.
 * I write [blogposts](https://terrytangyuan.github.io/) related to open source technologies and sometimes share my thoughts via [media interviews](https://terrytangyuan.github.io/tags/#Interview) to broader audience.
 * I maintain two [CRAN task views](https://cran.r-project.org/web/views/): [Model Deployment](https://github.com/terrytangyuan/ctv-model-deployment) and [Databases](https://github.com/terrytangyuan/ctv-databases) with R.
