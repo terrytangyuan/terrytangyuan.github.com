@@ -15,7 +15,7 @@ tags:
 ---
 
 
-**Google TensorFlow研发团队内部推荐的首本中文教程——《TensorFlow实战》，由TensorFlow Contributor、Committer倾力编写，获Jeff Dean、TensorFlow工程研发总监 Rajat Monga、李开复等专家赞誉好评。**
+**Google TensorFlow研发团队内部推荐的首本中文教程——《TensorFlow实战》，由TensorFlow Contributor、Committer倾力编写，获Jeff Dean、TensorFlow工程研发总监 Rajat Monga、李开复等专家赞誉好评，已成为许多中国公司和研究机构的教导材料的首选，并且已被翻译成韩语等多种语言。**
 
 
 **适读人群**：希望快速上手TensorFlow、了解深度学习技术及其应用实践的人士，以及机器学习、分布式计算领域的学生、从业者。特别是对正在学习深度学习技术，立志从事AI相关行业，成为数据科学家的人来说，本书更是非常实用的工具书。
