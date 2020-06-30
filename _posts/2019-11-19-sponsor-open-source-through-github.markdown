@@ -30,7 +30,7 @@ In addition, I am a [Project Management Committee (PMC)](https://www.apache.org/
 * [Apache MXNet](https://github.com/apache/incubator-mxnet) where I co-authored the Scala package.
 
 In the meantime, I am also a [committer](https://www.apache.org/foundation/glossary.html#Committer) of the following projects:
-* [TensorFlow](https://github.com/tensorflow/tensorflow) where I am one of the core developers of [TensorFlow Estimators](https://arxiv.org/abs/1708.02637) and maintainer of [TensorFlow I/O](https://github.com/tensorflow/io). I was also honored to receive the [Google Open Source Peer Bonus in 2016](https://opensource.googleblog.com/2016/09/google-open-source-peer-bonus-program.html) for my contributions to TensorFlow.
+* [TensorFlow](https://github.com/tensorflow/tensorflow) where I am one of the core developers of [TensorFlow Estimators](https://arxiv.org/abs/1708.02637) and maintainer of [TensorFlow I/O](https://github.com/tensorflow/io). I was also honored to receive the [Google Open Source Peer Bonus in 2016](https://terrytangyuan.github.io/data/docs/google-open-source-peer-bonus-program.png) for my contributions to TensorFlow.
 * [ElasticDL](https://github.com/sql-machine-learning/elasticdl) where I have designed and implemented several major components of the system.
 * [Kubeflow](https://github.com/kubeflow/kubeflow) where I am the maintainer of [Kubeflow Common](https://github.com/kubeflow/common), [MPI Operator](https://github.com/kubeflow/mpi-operator), [XGBoost Operator](https://github.com/kubeflow/xgboost-operator), and [MXNet Operator](https://github.com/kubeflow/mxnet-operator).
 
