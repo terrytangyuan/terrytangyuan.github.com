@@ -10,8 +10,8 @@ baseurl: ""                             # for example, '/blog' if your blog host
 plugins: [jekyll-paginate]
 
 # SNS settings
-# weibo_username:     xxx
-#zhihu_username:     xxx
+weibo_username:     5681818134
+zhihu_username:     terrytangyuan
 github_username:    terrytangyuan
 twitter_username:  terrytangyuan
 #facebook_username:  xxx
