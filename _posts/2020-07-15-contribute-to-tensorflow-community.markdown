@@ -12,18 +12,24 @@ tags:
     - Deep Learning
 ---
 
-作为最早一批非谷歌的TensorFlow社区贡献者，同时也是 TensorFlow committer + SIG IO maintainer，我将在这篇文章里分享一下自己贡献 TensorFlow 的经历，希望能对大家有启发，鼓励大家一起参与进来。大家如果感兴趣可以去我的 [GitHub](https//github.com/terrytangyuan) [1] 查找相关的贡献，以及关注我的 [Twitter](https//twitter.com/terrytangyuan) [2] 来得到第一时间的更新。
+作为最早一批非谷歌的TensorFlow社区贡献者，同时也是 TensorFlow committer + SIG IO maintainer，我将在这篇文章里分享一下自己贡献 TensorFlow 的经历，希望能对大家有启发，鼓励大家一起参与进来。大家如果感兴趣可以去我的 [GitHub](https//github.com/terrytangyuan) [1] 查找相关的贡献，以及关注我的 [Twitter](https//twitter.com/terrytangyuan) [2] 来得到第一时间的更新。参与 TensorFlow 社区进行贡献有多种形式，这里我围绕 4 个方面来谈谈我对 TensorFlow 社区的贡献：
+
+* 贡献 TensorFlow 高阶 API 代码
+* 积极参与 TensorFlow 社区的管理
+* 贡献 TensorFlow 延伸出来的开源项目
+* 传播知识和分享经验
+
 
 
 ## 从用户到贡献者
 
 TensorFlow 是在2015年年底开源在 GitHub 上的，在这之前我一直在参与贡献 [Apache MXNet](https://github.com/apache/incubator-mxnet) [3] 的 Scala API，在深度学习系统的设计方面也有了一定经验的积累，那个时候平常工作主要是使用 R 和 Python 来实现各种算法，所以 TensorFlow 这种一开始就比较注重 Python 的框架一下子就吸引到了我们团队的注意力，我也开始利用业余时间尝试使用 TensorFlow 搭建一些简单的神经网络以及传统的机器学习算法。当时在早期的 TensorFlow 版本中都是需要对低阶的 API 有深度的理解才能实现这些。数据科学从事者没有必要为了使用最新的算法和技术花许多时间来学习这些实现的细节，通过这一套高阶的 API，他们可以很快地直接将这些使用在工作和研究中。当时作为数据科学从事者的一员，看到了这一块的需求，即使自己比较熟悉 TensorFlow 也仍然感到实现算法特别繁琐。
 
-不久后，[tensorflow/skflow](https://github.com/tensorflow/skflow) (Scikit Flow) [4] 开源了，这是当时谷歌工程师 Illia Polosukhin 最早在谷歌内部创立的项目，这个项目的目的是降低大家使用分布式机器学习和深度学习的门槛，让大家可以像使用 Scikit-learn 那样快速地搭建自己的机器学习和深度学习模型，用仅仅几行代码就能使用 TensorFlow 实现的深度学习算法，甚至是传统的机器学习算法，比如逻辑回归、随机森林、等等。我也作为种子用户开始试用，发现很多的功能还不成熟，也缺少很多实用的 API，于是我在项目很早期的时候就开始参与贡献，主要设计和贡献了许多新的 API 来提升用户体验，
+不久后，[tensorflow/skflow](https://github.com/tensorflow/skflow) (Scikit Flow) [4] 开源了，这是当时谷歌工程师 Illia Polosukhin 最早在谷歌内部创立的项目，这个项目的目的是降低大家使用分布式机器学习和深度学习的门槛，让大家可以像使用 Scikit-learn 那样快速地搭建自己的机器学习和深度学习模型，用仅仅几行代码就能使用 TensorFlow 实现的深度学习算法，甚至是传统的机器学习算法，比如逻辑回归、随机森林、等等。我也作为种子用户开始试用，发现很多的功能还不成熟，也缺少很多实用的 API，于是我在项目很早期的时候就开始参与贡献，主要设计和贡献了许多新的 API 来提升用户体验。
 
 ## 获得支持和认可
 
-TensorFlow 团队也逐渐意识到了高阶 API 对社区用户的重要性，在他们的支持下，我们把 Scikit Flow 贡献到了 [tf.estimator 模块](https://www.tensorflow.org/guide/estimator) [5]，TensorFlow 团队也开始积极地参与进来，改进了很多分布式训练的逻辑，添加了 feature_column、layers 等新的模块，能够更好地和 TensorFlow 生态融合，也在谷歌内部各个项目和场景中开始使用和落地，比如 YouTube Watch Next 的推荐系统。关于模块的设计和一些经验的分享，可以参考我们在2017年 KDD 会议上发表的文章 [《TensorFlow Estimators: Managing Simplicity vs. Flexibility in High-Level Machine Learning Frameworks》](https://arxiv.org/abs/1708.02637) [6]。当时也因为我对 TensorFlow 的贡献，谷歌开源部门在2016年颁给了我 [Open Source Peer Bonus](https://opensource.googleblog.com/2016/09/google-open-source-peer-bonus-program.html) [7]，这个是由内部员工提名推荐，然后再经过内部审核和讨论得到最后的获奖人名单，我通过持续对 TensorFlow 的贡献吸引到了他们的注意最后得到肯定，这在当时对我来说是很大的鼓励和认可，在这里也鼓励大家重在坚持，相信一切的付出都是值得的。
+TensorFlow 团队也逐渐意识到了高阶 API 对社区用户的重要性，在他们的支持下，我们把 Scikit Flow 贡献到了 [tf.estimator 模块](https://tensorflow.google.cn/guide/estimator) [5]，TensorFlow 团队也开始积极地参与进来，改进了很多分布式训练的逻辑，添加了 feature_column、layers 等新的模块。为了能够更好地和 TensorFlow 生态融合，他们也在谷歌内部各个项目和场景中开始使用和落地，比如 YouTube Watch Next 的推荐系统。关于模块的设计和一些经验的分享，可以参考我们在2017年 KDD 会议上发表的文章 [《TensorFlow Estimators: Managing Simplicity vs. Flexibility in High-Level Machine Learning Frameworks》](https://arxiv.org/abs/1708.02637) [6]。当时也因为我对 TensorFlow 的贡献，谷歌开源部门在2016年颁给了我 [Open Source Peer Bonus](https://opensource.googleblog.com/2016/09/google-open-source-peer-bonus-program.html) [7]。这个奖项是由内部员工提名推荐，然后再经过内部审核和讨论得到最后的获奖人名单，我通过持续对 TensorFlow 的贡献吸引到了他们的注意最后得到肯定，这在当时对我来说是很大的鼓励和认可，在这里也鼓励大家重在坚持，相信一切的付出都是值得的。
 
 <img src="../../../../../img/inblog/open-source-peer-bonus-letter.png" alt="open-source-peer-bonus-letter" width="500"/>
 
@@ -72,7 +78,7 @@ TensorFlow 在 Twitter 上也非常活跃，重要的通知以及好的案例也
 * [2] https//twitter.com/terrytangyuan
 * [3] https://github.com/apache/incubator-mxnet
 * [4] https://github.com/tensorflow/skflow
-* [5] https://www.tensorflow.org/guide/estimator
+* [5] https://tensorflow.google.cn/guide/estimator
 * [6] https://arxiv.org/abs/1708.02637
 * [7] https://opensource.googleblog.com/2016/09/google-open-source-peer-bonus-program.html
 * [8] https://github.com/tensorflow/io
