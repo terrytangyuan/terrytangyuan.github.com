@@ -64,7 +64,7 @@ TensorFlow 在 Twitter 上也非常活跃，重要的通知以及好的案例也
 
 <img src="../../../../../img/inblog/tfbook-front-cover-new.jpg" alt="tf-book-front-cover" width="400"/>
 
-最近也参与了[《动手学深度学习》英文版](https://www.d2l.ai/) [18] 的 TensorFlow 实现，这是一本结合算法、图示和代码的深度学习教材，每个章节就是一个可执行的 Jupyter Notebook，可在本地执行或者 Google Colab 等云上环境运行，目前已经有至少85所大学使用它作为教材，包括斯坦福、伯克利、清华、北大、浙大、等等。项目开源在 [d2l-ai/d2l-en](https://github.com/d2l-ai/d2l-en) [19]，在这里也鼓励大家一起参与进来，让好的知识和技术能够得到更好更快地传播。
+最近也参与了[《动手学深度学习》英文版](https://www.d2l.ai/) [18] 的 TensorFlow 实现，这是一本结合算法、图示和代码的深度学习教材，每个章节就是一个可执行的 Jupyter Notebook，可在本地执行或者 Google Colab 等云上环境运行，目前已经有至少 85 所大学使用它作为教材，包括斯坦福、伯克利、清华、北大、浙大、等等。项目开源在 [d2l-ai/d2l-en](https://github.com/d2l-ai/d2l-en) [19]，在这里也鼓励大家一起参与进来，让好的知识和技术能够得到更好更快地传播。
 
 
 ## 作者介绍
@@ -88,7 +88,7 @@ TensorFlow 在 Twitter 上也非常活跃，重要的通知以及好的案例也
 * [12] https://github.com/kubeflow/tf-operator
 * [13] https://github.com/kubeflow/mpi-operator
 * [14] https://github.com/sql-machine-learning/elasticdl
-* [15] https://tensorflow.rstudio.com/) 
+* [15] https://tensorflow.rstudio.com/
 * [16] https://terrytangyuan.github.io/2017/02/12/tensorflow-in-practice-book-chinese/
 * [17] https://terrytangyuan.github.io/2019/12/31/interview-with-csdn-year-end/
 * [18] https://www.d2l.ai/
