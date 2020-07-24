@@ -16,7 +16,7 @@ tags:
 
 「[知乎原文链接](TBA)」 「[TensorFlow 微信公众号文章链接](TBA)」
 
-作者：唐源，现任蚂蚁集团技术专家，目前专注于建立 AI 基础架构和自动机器学习平台。 一直积极参与开源软件的开发，是多个开源软件的作者，XGBoost 和 Apache MXNet 的 PMC 成员， TensorFlow、Kubeflow、以及 ElasticDL 的 Committer，同时也是 《TensorFlow实战》的作者。
+作者：唐源，现任蚂蚁集团技术专家，目前专注于建立 AI 基础架构和自动机器学习平台。
 
 了解更多：http://https//github.com/terrytangyuan
 
@@ -37,7 +37,7 @@ TensorFlow 是在2015年年底开源在 GitHub 上的，在这之前我一直在
 
 ## 获得支持和认可
 
-TensorFlow 团队也逐渐意识到了高阶 API 对社区用户的重要性，在他们的支持下，我们把 Scikit Flow 贡献到了 [tf.estimator 模块](https://tensorflow.google.cn/guide/estimator) [5]，TensorFlow 团队也开始积极地参与进来，改进了很多分布式训练的逻辑，添加了 feature_column、layers 等新的模块。为了能够更好地和 TensorFlow 生态融合，他们也在谷歌内部各个项目和场景中开始使用和落地，比如 YouTube Watch Next 的推荐系统。关于模块的设计和一些经验的分享，可以参考我们在2017年 KDD 会议上发表的文章 [《TensorFlow Estimators: Managing Simplicity vs. Flexibility in High-Level Machine Learning Frameworks》](https://arxiv.org/abs/1708.02637) [6]。当时也因为我对 TensorFlow 的贡献，谷歌开源部门在2016年颁给了我 [Open Source Peer Bonus](https://opensource.googleblog.com/2016/09/google-open-source-peer-bonus-program.html) [7]。这个奖项是由内部员工提名推荐，然后再经过内部审核和讨论得到最后的获奖人名单，我通过持续对 TensorFlow 的贡献吸引到了他们的注意最后得到肯定，这在当时对我来说是很大的鼓励和认可，在这里也鼓励大家重在坚持，相信一切的付出都是值得的。
+TensorFlow 团队也逐渐意识到了高阶 API 对社区用户的重要性，在他们的支持下，我们把 Scikit Flow 贡献到了 [tf.estimator 模块](https://tensorflow.google.cn/guide/estimator) [5]，TensorFlow 团队也开始积极地参与进来，改进了很多分布式训练的逻辑，添加了 feature_column、layers 等新的模块。为了能够更好地和 TensorFlow 生态融合，他们也在谷歌内部各个项目和场景中开始使用和落地，比如 YouTube Watch Next 的推荐系统。关于模块的设计和一些经验的分享，可以参考我们在 2017 年 KDD 会议上发表的文章 [《TensorFlow Estimators: Managing Simplicity vs. Flexibility in High-Level Machine Learning Frameworks》](https://arxiv.org/abs/1708.02637) [6]。当时也因为我对 TensorFlow 的贡献，谷歌开源部门在 2016 年颁给了我 [Open Source Peer Bonus](https://opensource.googleblog.com/2016/09/google-open-source-peer-bonus-program.html) [7]。这个奖项是由内部员工提名推荐，然后再经过内部审核和讨论得到最后的获奖人名单，我通过持续对 TensorFlow 的贡献吸引到了他们的注意最后得到肯定，这在当时对我来说是很大的鼓励和认可，在这里也鼓励大家重在坚持，相信一切的付出都是值得的。
 
 <img src="../../../../../img/inblog/open-source-peer-bonus-letter.png" alt="open-source-peer-bonus-letter" width="500"/>
 
@@ -68,14 +68,18 @@ TensorFlow 在 Twitter 上也非常活跃，重要的通知以及好的案例也
 
 ## 技术推广和知识传播
 
-由于当时 TensorFlow 刚开源不久，官方文档以及用例还不完善，一些网上的学习资源也都是以英文为主，与国外相比，国内学习条件乃至中文版的学习课程与资源、专业图书、都非常匮乏。为了帮助更多国内的学习者学习，让 TensorFlow 能在国内更好地推广，我写了当时第一本 TensorFlow 中文教材[《TensorFlow实战》](https://terrytangyuan.github.io/2017/02/12/tensorflow-in-practice-book-chinese/) [16]，在当时也很荣幸地获得了 Jeff Dean 以及 TensorFlow 团队的推荐，更多的背景可以参考 [CSDN 的专访](https://terrytangyuan.github.io/2019/12/31/interview-with-csdn-year-end/) [17]。
+由于当时 TensorFlow 刚开源不久，官方文档以及用例还不完善，一些网上的学习资源也都是以英文为主，与国外相比，国内学习条件乃至中文版的学习课程与资源、专业图书、都非常匮乏。为了帮助更多国内的学习者学习，让 TensorFlow 能在国内更好地推广，我在写了当时第一本 TensorFlow 中文教材[《TensorFlow实战》](https://terrytangyuan.github.io/2017/02/12/tensorflow-in-practice-book-chinese/) [16]，在当时也很荣幸地获得了 Jeff Dean 以及 TensorFlow 团队的推荐，更多的背景可以参考 [CSDN 的专访](https://terrytangyuan.github.io/2019/12/31/interview-with-csdn-year-end/) [17]。
 
 <img src="../../../../../img/inblog/tfbook-front-cover-new.jpg" alt="tf-book-front-cover" width="400"/>
 
 最近也参与了[《动手学深度学习》英文版](https://www.d2l.ai/) [18] 的 TensorFlow 实现，这是一本结合算法、图示和代码的深度学习教材，每个章节就是一个可执行的 Jupyter Notebook，可在本地执行或者 Google Colab 等云上环境运行，目前已经有至少 85 所大学使用它作为教材，包括斯坦福、伯克利、清华、北大、浙大、等等。项目开源在 [d2l-ai/d2l-en](https://github.com/d2l-ai/d2l-en) [19]，在这里也鼓励大家一起参与进来，让好的知识和技术能够得到更好更快地传播。
 
 
-## 相关链接
+## 关于作者
+
+唐源，现任蚂蚁集团技术专家，目前专注于建立 AI 基础架构和自动机器学习平台。 一直积极参与开源软件的开发，是多个开源软件的作者，XGBoost 和 Apache MXNet 的 PMC 成员， 同时也是 TensorFlow、Kubeflow、以及 ElasticDL 的 Committer，著有《TensorFlow实战》。
+
+如果您想详细了解 本文讨论 的相关内容，请参阅以下文档。这些文档深入探讨了这篇文章中提及的许多主题：
 
 * [1] https//github.com/terrytangyuan
 * [2] https//twitter.com/terrytangyuan
