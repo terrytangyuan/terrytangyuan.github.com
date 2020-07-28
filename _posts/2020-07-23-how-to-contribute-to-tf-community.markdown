@@ -37,7 +37,7 @@ TensorFlow 是在2015年年底开源在 GitHub 上的，在这之前我一直在
 
 ## 获得支持和认可
 
-TensorFlow 团队也逐渐意识到了高阶 API 对社区用户的重要性，在他们的支持下，我们把 Scikit Flow 贡献到了 [tf.estimator 模块](https://tensorflow.google.cn/guide/estimator) [5]，TensorFlow 团队也开始积极地参与进来，改进了很多分布式训练的逻辑，添加了 feature_column、layers 等新的模块。为了能够更好地和 TensorFlow 生态融合，他们也在谷歌内部各个项目和场景中开始使用和落地，比如 YouTube Watch Next 的推荐系统。关于模块的设计和一些经验的分享，可以参考我们在 2017 年 KDD 会议上发表的文章 [《TensorFlow Estimators: Managing Simplicity vs. Flexibility in High-Level Machine Learning Frameworks》](https://arxiv.org/abs/1708.02637) [6]。当时也因为我对 TensorFlow 的贡献，谷歌开源部门在 2016 年颁给了我 [Open Source Peer Bonus](https://opensource.googleblog.com/2016/09/google-open-source-peer-bonus-program.html) [7]。这个奖项是由内部员工提名推荐，然后再经过内部审核和讨论得到最后的获奖人名单，我通过持续对 TensorFlow 的贡献吸引到了他们的注意最后得到肯定，这在当时对我来说是很大的鼓励和认可，在这里也鼓励大家重在坚持，相信一切的付出都是值得的。
+TensorFlow 团队也逐渐意识到了高阶 API 对社区用户的重要性，在他们的支持下，我们把 Scikit Flow 贡献到了 [tf.estimator 模块](https://tensorflow.google.cn/guide/estimator) [5]，TensorFlow 团队也开始积极地参与进来，改进了很多分布式训练的逻辑，添加了 feature_column、layers 等新的模块。为了能够更好地和 TensorFlow 生态融合，他们也在谷歌内部各个项目和场景中开始使用和落地，比如 YouTube Watch Next 的推荐系统。关于模块的设计和一些经验的分享，可以参考我们在 2017 年 KDD 会议上发表的文章 [《TensorFlow Estimators: Managing Simplicity vs. Flexibility in High-Level Machine Learning Frameworks》](https://arxiv.org/abs/1708.02637) [6]。当时也因为我对 TensorFlow 的贡献，谷歌开源部门在 2016 年颁给了我 [Open Source Peer Bonus](https://opensource.googleblog.com/2016/09/google-open-source-peer-bonus-program.html) [7]。这个奖项是由内部员工提名推荐，然后再经过内部审核和讨论得到最后的获奖人名单，我通过持续对 TensorFlow 的贡献吸引到了他们的注意并得到肯定，这在当时对我来说是很大的鼓励和认可。在这里我也鼓励大家重在坚持，相信一切的付出都是值得的。
 
 <img src="../../../../../img/inblog/open-source-peer-bonus-letter.png" alt="open-source-peer-bonus-letter" width="500"/>
 
@@ -50,29 +50,31 @@ TensorFlow 社区现在也分为了很多子项目以及不同的特别兴趣小
 
 <img src="../../../../../img/inblog/tf-rfc-example.png" alt="tf-rfc-example" width="600"/>
 
-除此之外，社区的不同 SIG 也会定期有社区的会议，感兴趣的开发者可以一起加入讨论遇到的问题、潜在的跨公司、跨社区之间的合作、等等。
+除此之外，社区的不同 SIG 也会定期举办社区会议，感兴趣的开发者可以一起加入讨论遇到的问题、这也会带来潜在的跨公司、跨社区之间的交流与合作等等。
 
-TensorFlow 在 Twitter 上也非常活跃，重要的通知以及好的案例也会在上面推广，社区的 SIG 管理者也会经常在上面宣布新的版本发布以及和社区互动。下图是我们在 Twitter 上宣布 TensorFlow IO v0.11.0 版本发布的一个例子。
+TensorFlow 在 Twitter 上也非常活跃，重要通知以及新颖与优质的案例也会在上面推广，社区的 SIG 管理者也会经常在上面宣布新的版本发布并与社区互动。下图是我们在 Twitter 上宣布 TensorFlow IO v0.11.0 版本发布的一个例子。
 
 <img src="../../../../../img/inblog/tfio-twitter-example.png" alt="tfio-twitter-example" width="500"/>
 
 
 ## 贡献开源社区生态
 
-参与 TensorFlow 社区贡献，也不仅仅限于 TensorFlow GitHub 组织下的项目，在这我也简单介绍一下在加入 TensorFlow 社区之后围绕 TensorFlow 生态做的许多的工作。
+参与 TensorFlow 社区贡献，也不仅仅限于 TensorFlow GitHub 组织下的项目，在这我也简单介绍一下在加入 TensorFlow 社区之后围绕 TensorFlow 生态做的一些工作。
 
 *  [Kubeflow](https://github.com/kubeflow/) [11] 支持在 Kubernetes 集群上很方便地运行各种机器学习框架，这其中也包括通过 [TF Operator](https://github.com/kubeflow/tf-operator) [12] 执行 TensorFlow 原生分布式训练、通过 [MPI Operator](https://github.com/kubeflow/mpi-operator) [13] 执行 Horovod 支持的 TensorFlow 分布式训练。
 * [ElasticDL](https://github.com/sql-machine-learning/elasticdl) [14] 支持在 Kubernetes 集群上运行 TensorFlow，并且支持容错和弹性调度，提升集群利用率。
-* 和 RStudio 合作的 [TensorFlow in R](https://tensorflow.rstudio.com/) [15]，提供了非常友好的 API 让用户能够使用 R 语言来调用 TensorFlow，包括所有的低阶 API，也包括 tf.keras、tf.data、tf.estimator 等等。
+* 和 RStudio 合作的 [TensorFlow in R](https://tensorflow.rstudio.com/) [15]，提供了非常友好的 API 让用户能够使用 R 语言来调用 TensorFlow，支持包括所有的低阶 API，也包括 tf.keras、tf.data、tf.estimator 等等。
 
 
 ## 技术推广和知识传播
 
-由于当时 TensorFlow 刚开源不久，官方文档以及用例还不完善，一些网上的学习资源也都是以英文为主，与国外相比，国内学习条件乃至中文版的学习课程与资源、专业图书、都非常匮乏。为了帮助更多国内的学习者学习，让 TensorFlow 能在国内更好地推广，我在写了当时第一本 TensorFlow 中文教材[《TensorFlow实战》](https://terrytangyuan.github.io/2017/02/12/tensorflow-in-practice-book-chinese/) [16]，在当时也很荣幸地获得了 Jeff Dean 以及 TensorFlow 团队的推荐，更多的背景可以参考 [CSDN 的专访](https://terrytangyuan.github.io/2019/12/31/interview-with-csdn-year-end/) [17]。
+由于当时 TensorFlow 刚开源不久，官方文档以及用例还不完善，一些网上的学习资源也都是以英文为主。与国外相比，国内学习条件乃至中文版的学习课程与资源、专业图书、都非常匮乏。
+
+为了帮助更多国内的爱好者学习，让 TensorFlow 能在国内更好地推广，我在写了当时第一本 TensorFlow 中文教材[《TensorFlow实战》](https://terrytangyuan.github.io/2017/02/12/tensorflow-in-practice-book-chinese/) [16]，在当时也很荣幸地获得了 Jeff Dean 以及 TensorFlow 团队的推荐，更多的背景可以参考 [CSDN 的专访](https://terrytangyuan.github.io/2019/12/31/interview-with-csdn-year-end/) [17]。
 
 <img src="../../../../../img/inblog/tfbook-front-cover-new.jpg" alt="tf-book-front-cover" width="400"/>
 
-最近也参与了[《动手学深度学习》英文版](https://www.d2l.ai/) [18] 的 TensorFlow 实现，这是一本结合算法、图示和代码的深度学习教材，每个章节就是一个可执行的 Jupyter Notebook，可在本地执行或者 Google Colab 等云上环境运行，目前已经有至少 85 所大学使用它作为教材，包括斯坦福、伯克利、清华、北大、浙大、等等。项目开源在 [d2l-ai/d2l-en](https://github.com/d2l-ai/d2l-en) [19]，在这里也鼓励大家一起参与进来，让好的知识和技术能够得到更好更快地传播。
+最近我也参与了[《动手学深度学习》英文版](https://www.d2l.ai/) [18] 的 TensorFlow 实现，这是一本结合算法、图示和代码的深度学习教材，每个章节就是一个可执行的 Jupyter Notebook，可在本地执行或者 Google Colab 等云上环境运行。目前已经有至少 85 所大学使用它作为教材，包括斯坦福、伯克利、清华、北大、浙大、等等。项目开源在 [d2l-ai/d2l-en](https://github.com/d2l-ai/d2l-en) [19]，在这里我也鼓励大家一起参与进来，让有用的知识和技术能够得到更好更快地传播。
 
 
 ## 关于作者
