@@ -21,7 +21,7 @@ Hi everyone! I recently opened my [GitHub Sponsors page](https://github.com/spon
 ## What projects am I working on?
 
 I (co-)authored the following open source projects grouped by area:
-* Machine learning: [TensorFlow in R](https://github.com/rstudio/tensorflow), [metric-learn](https://github.com/scikit-learn-contrib/metric-learn), [couler](https://github.com/couler-proj/couler), [dml](https://github.com/terrytangyuan/dml), [lfda](https://github.com/terrytangyuan/lfda), and [ftlib](https://github.com/kleveross/ftlib).
+* Machine learning: [Couler](https://github.com/couler-proj/couler), [TensorFlow in R](https://github.com/rstudio/tensorflow), [metric-learn](https://github.com/scikit-learn-contrib/metric-learn), [dml](https://github.com/terrytangyuan/dml), [lfda](https://github.com/terrytangyuan/lfda), and [ftlib](https://github.com/kleveross/ftlib).
 * Data visualization: [ggfortify](https://github.com/sinhrks/ggfortify) and [autoplotly](https://github.com/terrytangyuan/autoplotly).
 * Tools: [reticulate](https://github.com/rstudio/reticulate), [scaffolder](https://github.com/terrytangyuan/scaffolder), [maintainer-tools](https://github.com/terrytangyuan/maintainer-tools), [jpmml-sparkml-lightgbm](https://github.com/alipay/jpmml-sparkml-lightgbm), and [onnx-r](https://github.com/onnx/onnx-r).
 
