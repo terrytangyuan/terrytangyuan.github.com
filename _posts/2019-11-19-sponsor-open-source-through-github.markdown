@@ -21,7 +21,7 @@ Hi everyone! I recently opened my [GitHub Sponsors page](https://github.com/spon
 ## What projects am I working on?
 
 I (co-)authored the following open source projects grouped by area:
-* Machine learning: [Couler](https://github.com/couler-proj/couler), [TensorFlow in R](https://github.com/rstudio/tensorflow), [metric-learn](https://github.com/scikit-learn-contrib/metric-learn), [dml](https://github.com/terrytangyuan/dml), [lfda](https://github.com/terrytangyuan/lfda), and [ftlib](https://github.com/kleveross/ftlib).
+* Machine learning: [TensorFlow in R](https://github.com/rstudio/tensorflow), [metric-learn](https://github.com/scikit-learn-contrib/metric-learn), [dml](https://github.com/terrytangyuan/dml), [lfda](https://github.com/terrytangyuan/lfda), and [ftlib](https://github.com/kleveross/ftlib).
 * Data visualization: [ggfortify](https://github.com/sinhrks/ggfortify) and [autoplotly](https://github.com/terrytangyuan/autoplotly).
 * Tools: [reticulate](https://github.com/rstudio/reticulate), [scaffolder](https://github.com/terrytangyuan/scaffolder), [maintainer-tools](https://github.com/terrytangyuan/maintainer-tools), [jpmml-sparkml-lightgbm](https://github.com/alipay/jpmml-sparkml-lightgbm), and [onnx-r](https://github.com/onnx/onnx-r).
 
@@ -31,8 +31,9 @@ In addition, I am a [Project Management Committee (PMC)](https://www.apache.org/
 
 In the meantime, I am also a [committer](https://www.apache.org/foundation/glossary.html#Committer) of the following projects:
 * [TensorFlow](https://github.com/tensorflow/tensorflow) where I am one of the core developers of [TensorFlow Estimators](https://arxiv.org/abs/1708.02637) and maintainer of [TensorFlow I/O](https://github.com/tensorflow/io). I was also honored to receive the [Google Open Source Peer Bonus in 2016](https://terrytangyuan.github.io/data/docs/google-open-source-peer-bonus-program.png) for my contributions to TensorFlow.
-* [ElasticDL](https://github.com/sql-machine-learning/elasticdl) where I have designed and implemented several major components of the system.
 * [Kubeflow](https://github.com/kubeflow/kubeflow) where I am the co-chair of Distributed Training Working Group and the maintainer of various Kubernetes operators.
+* [Couler](https://github.com/couler-proj/couler) where I designed the core APIs and implemented the initial implementation of the system.
+* [ElasticDL](https://github.com/sql-machine-learning/elasticdl) where I have designed and implemented several major components of the system.
 
 There are also other projects that I have made non-trivial contributions to as I come across areas of improvements, namely [H2O](https://github.com/h2oai/h2o-3), [SQLFlow](https://github.com/sql-machine-learning/sqlflow), [pandas](https://github.com/pandas-dev/pandas), [MMLSpark](https://github.com/Azure/mmlspark), [Argo](https://github.com/argoproj/argo), etc. Please visit my [projects page](https://terrytangyuan.github.io/projects/) and [GitHub page](http://github.com/terrytangyuan/) for more details.
 
