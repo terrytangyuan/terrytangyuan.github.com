@@ -32,7 +32,7 @@ In addition, I am a [Project Management Committee (PMC)](https://www.apache.org/
 In the meantime, I am also a [committer](https://www.apache.org/foundation/glossary.html#Committer) of the following projects:
 * [TensorFlow](https://github.com/tensorflow/tensorflow) where I am one of the core developers of [TensorFlow Estimators](https://arxiv.org/abs/1708.02637) and maintainer of [TensorFlow I/O](https://github.com/tensorflow/io). I was also honored to receive the [Google Open Source Peer Bonus in 2016](https://terrytangyuan.github.io/data/docs/google-open-source-peer-bonus-program.png) for my contributions to TensorFlow.
 * [Kubeflow](https://github.com/kubeflow/kubeflow) where I am the co-chair of Distributed Training Working Group and the maintainer of various Kubernetes operators.
-* [Couler](https://github.com/couler-proj/couler) where I designed the core APIs and implemented the initial implementation of the system.
+* [Couler](https://github.com/couler-proj/couler) where I designed the unified interface and contributed to many major components of the system.
 * [ElasticDL](https://github.com/sql-machine-learning/elasticdl) where I have designed and implemented several major components of the system.
 
 There are also other projects that I have made non-trivial contributions to as I come across areas of improvements, namely [H2O](https://github.com/h2oai/h2o-3), [SQLFlow](https://github.com/sql-machine-learning/sqlflow), [pandas](https://github.com/pandas-dev/pandas), [MMLSpark](https://github.com/Azure/mmlspark), [Argo](https://github.com/argoproj/argo), etc. Please visit my [projects page](https://terrytangyuan.github.io/projects/) and [GitHub page](http://github.com/terrytangyuan/) for more details.
