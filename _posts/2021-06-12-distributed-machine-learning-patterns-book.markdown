@@ -1,10 +1,9 @@
 ---
 layout:     post
-title:      "New book: Distributed Machine Learning Patterns"
+title:      "Announcing New Book: Distributed Machine Learning Patterns"
 subtitle:   "Building Large Scale Machine Learning Systems"
 date:       2021-06-12
 author:     "Yuan Tang"
-header-img: "img/inblog/book-front-cover.png"
 tags:
     - Deep Learning
     - TensorFlow
@@ -21,9 +20,9 @@ tags:
 
 Excited to announce that a new book *Distributed Machine Learning Patterns* from [Manning Publications](https://www.manning.com/) by [Yuan Tang](https://github.com/terrytangyuan)!
 
-:fire: **[The book is now available on the Manning Early Access Program](https://bit.ly/2RKv8Zo)**. You can read the book chapter-by-chapter while it's being written and get the final eBook as soon as it's finished. If you pre-order the pBook, you'll get it long before it's available in stores.
+**[The book is now available on the Manning Early Access Program](https://bit.ly/2RKv8Zo)**. You can read the book chapter-by-chapter while it's being written and get the final eBook as soon as it's finished. If you pre-order the pBook, you'll get it long before it's available in stores.
 
-:bell: Stay tuned for any updates and announcements by following the author on [Twitter](https://twitter.com/TerryTangYuan) and [LinkedIn](https://www.linkedin.com/in/terrytangyuan/).
+Stay tuned for any updates and announcements by following the author on [Twitter](https://twitter.com/TerryTangYuan) and [LinkedIn](https://www.linkedin.com/in/terrytangyuan/).
 
 In *Distributed Machine Learning Patterns* you will learn how to:
 
