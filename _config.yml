@@ -64,8 +64,8 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Affliations
 affliations: [
     {
-        title: "Alibaba and Ant Group",
-        href: "https://www.antgroup.com/"
+        title: "Alibaba Group",
+        href: "https://www.alibabagroup.com/"
     },{
         title: "Argo",
         href: "https://github.com/argoproj"
