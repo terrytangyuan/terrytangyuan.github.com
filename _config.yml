@@ -64,8 +64,8 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Affliations
 affliations: [
     {
-        title: "Alibaba Group",
-        href: "https://www.alibabagroup.com/"
+        title: "Akuity",
+        href: "https://akuity.io"
     },{
         title: "Argo",
         href: "https://github.com/argoproj"
@@ -81,8 +81,5 @@ affliations: [
     },{
         title: "Georgia Institute of Technology",
         href: "https://gatech.edu"
-    },{
-        title: "Penn State University",
-        href: "https://psu.edu/"
     }
 ]
