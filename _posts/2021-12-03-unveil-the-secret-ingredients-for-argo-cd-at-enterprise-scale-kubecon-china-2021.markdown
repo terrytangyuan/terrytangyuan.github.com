@@ -12,7 +12,7 @@ tags:
     - KubeCon
 ---
 
-**Authors: Yuan Tang (Akuity), Hong Wang (Akuity), and Alexander Matyushentsev (Intuit)**
+**Authors: [Yuan Tang](https://terrytangyuan.github.io/about/) (Akuity), [Hong Wang](https://www.linkedin.com/in/hwang8/) (Akuity), and [Alexander Matyushentsev](https://www.linkedin.com/in/amatyushentsev/) (Intuit)**
 
 > This is a recap from our [KubeCon China 2021 talk](https://kccncosschn21.sched.com/event/pccf). If you are interested in learning more about Argo or our products at [Akuity](https://akuity.io/), you can find all our past and upcoming conference talks [here](https://akuity.io/resources).
 
