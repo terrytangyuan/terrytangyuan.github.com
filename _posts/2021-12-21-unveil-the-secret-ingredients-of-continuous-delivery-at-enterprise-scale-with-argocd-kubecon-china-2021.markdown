@@ -9,7 +9,7 @@ tags:
     - DevOps
     - Kubernetes
     - Argo
-    - KubeCon
+    - Conferences
 ---
 
 **Authors: [Yuan Tang](https://terrytangyuan.github.io/about/) (Akuity), [Hong Wang](https://www.linkedin.com/in/hwang8/) (Akuity), and [Alexander Matyushentsev](https://www.linkedin.com/in/amatyushentsev/) (Intuit)**
