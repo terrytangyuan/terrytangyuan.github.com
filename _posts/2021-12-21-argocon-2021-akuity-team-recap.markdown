@@ -2,7 +2,7 @@
 layout:     post
 title:      "ArgoCon 2021 Akuity Team Recap"
 subtitle:   "Impressive Numbers From This Conference and Recap on the 4 Sessions From the Akuity Team"
-date:       2021-12-22
+date:       2021-12-21
 author:     "Yuan Tang"
 tags:
     - Open Source
