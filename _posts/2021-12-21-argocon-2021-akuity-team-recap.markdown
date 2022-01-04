@@ -114,8 +114,8 @@ A lot has happened with the Argo project in 2021 and there are some impressive s
 
 But of course the most important statistic of all, is that **500 Argo plushies** were delivered at KubeCon. To see the recap, as well as what's in store for 2022, watch the recordings of the maintainers updates:
 
-Argo CD and Rollouts: https://youtu.be/wn6OOLoHvQg
-Argo Workflows and Events: https://youtu.be/FUekn40l9-A
+* Argo CD and Rollouts: https://youtu.be/wn6OOLoHvQg
+* Argo Workflows and Events: https://youtu.be/FUekn40l9-A
 
 ## Additional Resources
 
