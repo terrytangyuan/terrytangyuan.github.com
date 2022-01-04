@@ -3,7 +3,7 @@ layout:     post
 title:      "ArgoCon 2021 Akuity Team Recap"
 subtitle:   "Impressive Numbers From This Conference and Recap on the 4 Sessions From the Akuity Team"
 date:       2021-12-21
-author:     "Yuan Tang"
+author:     "Akuity Team"
 tags:
     - Open Source
     - DevOps
@@ -12,7 +12,9 @@ tags:
     - Argo
 ---
 
-We just concluded the inaugural ArgoCon! We'd like to share some impressive numbers from this conference and recap on the 4 sessions from the Akuity team.
+# ArgoCon 2021 Akuity Team Recap
+
+We just concluded the inaugural ArgoCon! We'd like to share some impressive numbers from this conference and recap on the four sessions from the Akuity team.
 
 ## The Numbers
 
@@ -58,14 +60,9 @@ Speakers:
 * Hui Kang - Platform Engineer at Salesforce
 * [Jesse Suen](https://www.linkedin.com/in/jessesuen/) - Argo Project Lead, Co-founder and CTO at Akuity
 
+In this talk, Argo Rollouts maintainers Jesse Suen and Hui Kang speak about the performance and scalability testing they conducted on Argo Rollouts when compared against the native Kubernetes Deployment kind. The talk begins with some background on Argo Rollouts architecture. It discusses the methodology of the experiments, and the final results. The results uncovered some bottlenecks which were subsequenltly fixed bringing the performance back on par with Deployments.
 
-TODO(jesse): More concise summary of the talk and some screenshots
-
-Abstract: Argo-Rollouts enables advanced deployment capabilities to Kubernetes such as blue-green/canary update strategy, automated rollback and promotion, configurable update steps, and fine-grained, weighted traffic control. As Argo-Rollouts reaches its first major release of v1.0, companies are working rapidly to adopt Argo-Rollouts into their continuous deployment infrastructure. Further, work is underway to prove Argo-Rollouts’ scalability.
-
-In this talk, we present our methodology of benchmarking Argo-Rollouts controller to manage the life cycle of a large number of Rollout custom resources in a realistic cloud environment. For this purpose, we developed a load-generation and performance measurement tool argo-rollouts-benchmark to emulate users, making continuous requests using k8s API with defined quantities and concurrency (e.g., create 100 rollouts in the cluster by 10 concurrent users). While the Argo-rollouts controller under test reconciles these Rollout CRs to the desired state, the benchmark tool collects the following metrics: convergence latency (The amount of time between the rollout CR is received by the controller and reaches a conclusive phase such as healthy, degraded, paused) in percentile distribution, timeout error rate (the percentage of degraded rollouts due to timeout), and throughput.
-
-We will share the latest results from our experiments, as well as how these results help improve the overall scalability of Argo-Rollouts. We then looked at ways, such as predetermined t-shirt sizes and autoscaling, to optimize the resource provision of Argo-Rollouts to accommodate various customer demands. Based on these findings, we can define the SLO for our deployment capability offerings built atop Argo-Rollouts. Finally, the talk shows how to evaluate the Argo-Rollouts performance in your own clusters.
+![](https://i.imgur.com/jYRPtf5.png)
 
 Recording: https://youtu.be/rCEhxJ2NSTI
 
@@ -79,20 +76,47 @@ In this talk, Yuan provides an overview of the Python scientific system, machine
 
 Recording: https://youtu.be/muM7IErh1S0
 
-### Maintainer Update on Argo CD and Rollouts
+### Argo Maintainer Updates
 
-Speaker: [Jesse Suen](https://www.linkedin.com/in/jessesuen/) - Argo Project Lead, Co-founder and CTO at Akuity
+Speakers:
+* [Jesse Suen](https://www.linkedin.com/in/jessesuen/) - Argo Project Lead, Co-founder and CTO at Akuity
+* [Alex Collins](https://www.linkedin.com/in/alexecollins/) - Argo Project Lead, Principal Software Engineer at Intuit
 
-TODO(jesse): Summary of the talk (both maintainer update sessions), screenshots
+A lot has happened with the Argo project in 2021 and there are some impressive stats to back that up:
 
-Jesse provided an update on ..
+#### Argo CD
+* 262 contributors
+* 175 features, 408 bug fixes
+* 896 commits
+* 7,778 stars (68% YoY)
+* 38k monthly visitors (120% YoY)
 
-If you are interested in updates on Argo Workflows, check out xxx
-TODO: Perhaps change this to just maintainer update.
+#### Argo Rollouts
+* 60 contributors
+* 63 features, 119 bug fixes
+* 263 commits
+* 1,251 stars (81% YoY)
+* 5k monthly visitors (100% YoY)
 
-Recording: https://youtu.be/wn6OOLoHvQg
+#### Argo Events
+* 63 contributors
+* 42 new features, 71 bug fixes
+* 189 commits
+* 1,251 stars (30% YoY)
+* 4k monthly visitors
 
-workflows update: https://youtu.be/FUekn40l9-A
+#### Argo Workflows
+* 200 contributors
+* 167 new features
+* 508 bug fixes
+* 954 commits
+* 9,921 stars
+* 44k monthly visitors
+
+But of course the most important statistic of all, is that **500 Argo plushies** were delivered at KubeCon. To see the recap, as well as what's in store for 2022, watch the recordings of the maintainers updates:
+
+Argo CD and Rollouts: https://youtu.be/wn6OOLoHvQg
+Argo Workflows and Events: https://youtu.be/FUekn40l9-A
 
 ## Additional Resources
 
@@ -101,7 +125,6 @@ You can find all the past and upcoming talks at various conferences from our tea
 In addition, there's also a [curated list of projects and resources related to Argo](https://github.com/terrytangyuan/awesome-argo) if you'd like to learn more about the Argo core projects and ecosystem projects.
 
 Join our growing Argo community by [finding us at regular community meetings, conferences, and Slack](https://github.com/terrytangyuan/awesome-argo#community)!
-
 
 <p class="copyright text-muted">
 	Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
