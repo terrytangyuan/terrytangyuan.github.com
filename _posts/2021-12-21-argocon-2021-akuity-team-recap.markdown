@@ -14,7 +14,7 @@ tags:
 
 # ArgoCon 2021 Akuity Team Recap
 
-We just concluded the inaugural ArgoCon! We'd like to share some impressive numbers from this conference and recap on the four sessions from the Akuity team.
+We just concluded [the inaugural ArgoCon](https://argoproj.github.io/argocon21/)! We'd like to share some impressive numbers from this conference and recap on the four sessions from the Akuity team.
 
 ## The Numbers
 
@@ -42,7 +42,6 @@ Who's excited for the upcoming ArgoCon 2022? Be on the lookout for the ArgoCon 2
 
 ## Akuity Talks Recap
 
-TODO(terry): Embeded YouTube links https://medium.com/embeds/how-to-embed-a-youtube-video-52e8aecd7fd
 
 ### Argo: The Present, Past, and Future
 
