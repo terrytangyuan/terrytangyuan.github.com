@@ -3,7 +3,7 @@ layout:     post
 title:      "ArgoCon 2021 Akuity Team Recap"
 subtitle:   "Impressive Numbers From This Conference and Recap on the 4 Sessions From the Akuity Team"
 date:       2021-12-21
-author:     "Akuity Team"
+author:     "Yuan Tang"
 tags:
     - Open Source
     - DevOps
@@ -119,7 +119,7 @@ But of course the most important statistic of all, is that **500 Argo plushies**
 
 ## Additional Resources
 
-You can find all the past and upcoming talks at various conferences from our team [here](https://akuity.io/resources). If you missed any of the ArgoCon sessions, [all the recordings are available on GitHub](https://www.youtube.com/playlist?list=PLGHfqDpnXFXKwNGO_8usFuTO-rIHNyefC)!
+You can find all the past and upcoming talks at various conferences from our team [here](https://akuity.io/resources). If you missed any of the ArgoCon sessions, [all the recordings are available on YouTube](https://www.youtube.com/playlist?list=PLGHfqDpnXFXKwNGO_8usFuTO-rIHNyefC)!
 
 In addition, there's also a [curated list of projects and resources related to Argo](https://github.com/terrytangyuan/awesome-argo) if you'd like to learn more about the Argo core projects and ecosystem projects.
 
