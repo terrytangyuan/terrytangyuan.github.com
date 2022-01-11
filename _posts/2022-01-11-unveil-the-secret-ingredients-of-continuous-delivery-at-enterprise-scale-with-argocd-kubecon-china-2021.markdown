@@ -2,7 +2,7 @@
 layout:     post
 title:      "Unveil the Secret Ingredients of Continuous Delivery at Enterprise Scale with Argo CD"
 subtitle:   "Deep Dive into Argo CD and Best Practices for Operating at Enterprise-Scale"
-date:       2021-12-21
+date:       2022-01-11
 author:     "Yuan Tang"
 tags:
     - Open Source
