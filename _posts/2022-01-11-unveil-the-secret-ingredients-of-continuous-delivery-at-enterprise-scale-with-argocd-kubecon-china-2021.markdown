@@ -28,7 +28,7 @@ We have a very strong community, the product has been recognized and used by a l
 
 ![argo-community](../../../../../img/inblog/argo-community.png)
 
-We got accepted as the CNCF incubator project. The project has accumulated than 20 thousand GitHub stars, 600 contributors, also 350 end user companies. We are very proud of the current progress and enjoy being part of the open source community. We are working actively towards the CNCF graduation.
+We got accepted as the CNCF incubator project. The project has accumulated more than 20 thousand GitHub stars, 600 contributors, as well as 350 end user companies. We are very proud of the current progress and enjoy being part of the open source community. We are working actively towards the CNCF graduation.
 
 ## GitOps Operator
 
@@ -41,15 +41,15 @@ That means any GitOps operator needs to automate the following steps in sequence
 
 ![argocd-gitops](../../../../../img/inblog/argocd-gitops.png)
 
-This is exactly what Argo CD is doing. The GitOps workflow does not seem to be too difficult, however the devil is in the details. Let's go ahead and find out what can go wrong when implementing this GitOps workflow and what you can do about it.
+This is exactly what Argo CD does. The GitOps workflow does not seem to be too difficult, however the devil is in the details. Let's go ahead and find out what can go wrong when implementing this GitOps workflow and what you can do about it.
 
 ## Argo CD Architecture
 
 First, let's take a look at Argo CD architecture. It has three main components: one for each GitOps operator function:
 
-* ArgoCD repo server is responsible for cloning the git repository and extracting the Kubernetes resources manifests.
-* ArgoCD application controller fetches the managed Kubernetes cluster resources and compares the live resources manifests with Git manifests for each application.
-* ArgoCD API server presents the diffing result (between live manifests and manifests stored in git) to the end user.
+* Argo CD repo server is responsible for cloning the git repository and extracting the Kubernetes resources manifests.
+* Argo CD application controller fetches the managed Kubernetes cluster resources and compares the live resources manifests with Git manifests for each application.
+* Argo CD API server presents the diffing result (between live manifests and manifests stored in git) to the end user.
 
 ![argocd-architecture](../../../../../img/inblog/argocd-architecture.png)
 
@@ -63,7 +63,7 @@ The reason is that Argo CD is delivering GitOps functionality as a service to mu
 
 In other words, you can enable GitOps for application engineers in your company without having to ask them to run and manage any additional software.
 
-This is very very important, especially if your organization is adopting Kubernetes and application developers are not Kubernetes experts yet. This GitOps as a service approach allows to not just enforce best practices but also reduces the number of questions/issues the support team receives from the developers to enable self-service.
+This is **extremely important**, especially if your organization is adopting Kubernetes and application developers are not Kubernetes experts yet. The GitOps-as-a-service approach allows to not just enforce best practices but also reduces the number of questions/issues the support team receives from the developers to enable self-service.
 
 ## Scalability
 
@@ -73,7 +73,7 @@ The good news is that Argo CD scales really well out of the box. Argo CD is opti
 
 ![argocd-scalability](../../../../../img/inblog/argocd-scalability.png)
 
-The screenshot above visualizes metrics exposed by real Argo CD. As you can see it manages almost 23 hundred applications deployed across 26 clusters with manifests stored in 5 hundred Git repositories. That means hundreds of application developer teams are using that instance and leveraging GitOps without much overhead.
+The screenshot above visualizes metrics exposed by an existing Argo CD instance. As you can see it manages almost 23 hundred applications deployed across 26 clusters with manifests stored in 5 hundred Git repositories. That means hundreds of application developer teams are using that instance and leveraging GitOps without much overhead.
 
 Unfortunately, no application can scale infinitely and at some point, you might need to tune your configurations to save resources and get better performance in some edge cases. Let's get started and walk through some of the Argo CD configurations that you might need to tweak.
 
@@ -97,7 +97,7 @@ With more and more applications, the controller is going to consume more memory 
 
 Unlike stateless web applications it is impossible to just run multiple instances of Kubernetes controller. The challenging part for Argo CD is that controller needs to know the state of the whole managed Kubernetes cluster to properly reconcile application resources. However you may be running multiple controller instances where each instance is responsible for a subset of Kubernetes clusters.
 
-Sharding can be enabled by increasing number replicas in the argocd-application-controller stateful set. Don’t forgot this update the `ARGOCD_CONTROLLER_REPLICAS` with the same value. This is required for the controller instances to know the total number of replicas and to trigger restart to rebalance the work based on updated configurations. As a result, each controller instances will do less work and consume less memory and CPU resources.
+Sharding can be enabled by increasing the number of replicas in the argocd-application-controller stateful set. Don’t forgot this update the `ARGOCD_CONTROLLER_REPLICAS` with the same value. This is required for the controller instances to know the total number of replicas and to trigger restart to rebalance the work based on updated configurations. As a result, each controller instances will do less work and consume less memory and CPU resources.
 
 ![argocd-controller-replicas](../../../../../img/inblog/argocd-controller-replicas.png)
 
