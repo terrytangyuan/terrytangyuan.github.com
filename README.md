@@ -1,4 +1,5 @@
-Run `gem install jekyll; gem install jekyll-paginate` to install jekyll dependencies
+Run `gem install jekyll; gem install jekyll-paginate` to install `jekyll` dependencies.
+* Run `brew link --force openssl` if seeing `'openssl/ssl.h' file not found` when installing `jekyll`.
 
 Run `jekyll s` to view in local host: http://127.0.0.1:4000/
 
@@ -25,3 +26,18 @@ export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig"
 Run `gem install webrick` if seeing `require': cannot load such file -- webrick (LoadError)`.
 
 If an old version of Ruby is used even though `which ruby` and `ruby -v` seem correct. Use the specific binary `/opt/homebrew/lib/ruby/gems/3.0.0/bin/jekyll s` instead.
+
+
+# Additional Ruby issues
+
+For additional issues with Ruby, e.g. Ruby might be too old, check out [this question](https://stackoverflow.com/questions/38194032/how-to-update-ruby-version-2-0-0-to-the-latest-version-in-mac-osx-yosemite).
+
+Install `rvm` to manage Ruby versions if needed:
+```
+curl -sSL https://raw.githubusercontent.com/rvm/rvm/master/binscripts/rvm-installer | bash -s stable
+rvm install ruby@latest
+rvm list known
+
+ruby -v
+rvm use ruby-3.0.0 --default
+```
