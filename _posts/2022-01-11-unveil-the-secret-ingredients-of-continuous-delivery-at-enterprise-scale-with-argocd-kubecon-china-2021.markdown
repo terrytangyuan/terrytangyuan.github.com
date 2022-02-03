@@ -12,6 +12,8 @@ tags:
     - Conferences
 ---
 
+(This blog is [featured in the CNCF Blog](https://www.cncf.io/blog/2022/01/27/unveil-the-secret-ingredients-of-continuous-delivery-at-enterprise-scale-with-argo-cd/) and is [available in Chinese](https://mp.weixin.qq.com/s/v1HHyR6GnbHJn-1E-pqUgA))
+
 **Authors: [Yuan Tang](https://terrytangyuan.github.io/about/) (Akuity), [Hong Wang](https://www.linkedin.com/in/hwang8/) (Akuity), and [Alexander Matyushentsev](https://www.linkedin.com/in/amatyushentsev/) (Intuit)**
 
 > This is a recap from our [KubeCon China 2021 talk](https://github.com/terrytangyuan/public-talks/tree/main/talks/unveil-the-secret-ingredients-for-argo-cd-at-enterprise-scale-kubecon-china-2021). If you are interested in learning more about Argo or [Akuity](https://akuity.io/)'s products and services, you can find all our past and upcoming conference talks on [our website](https://akuity.io/resources).
