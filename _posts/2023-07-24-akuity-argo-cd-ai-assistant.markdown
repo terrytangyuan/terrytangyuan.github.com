@@ -3,7 +3,7 @@ layout:     post
 title:      "Introducing the AI Assistant for Argo CD inside Akuity Platform"
 subtitle:   "Argo CD extension to help developers quickly analyze any issues in your Argo CD Applications"
 date:       2023-07-24
-author:     "Yuan Tang"
+author:     "Yuan Tang and Alexander Matyushentsev"
 tags:
     - Open Source
     - Kubernetes
@@ -11,18 +11,18 @@ tags:
     - Machine Learning
 ---
 
-**Authors: Yuan Tang and Alexander Matyushentsev**
+*Originally posted on [Akuity Blog](https://akuity.io/blog/).*
 
-We are thrilled to announce that the AI Assistant for Argo CD is now available inside the Akuity Platform. It integrates cutting-edge AI functionality into our product, powered by GPT (Generative Pre-trained Transformer).
+We are thrilled to announce that the AI Assistant for Argo CD is now available inside the [Akuity Platform](https://akuity.io/akuity-platform/). It integrates cutting-edge AI functionality into our product, powered by GPT (Generative Pre-trained Transformer).
 
-## What's the Argo CD AI Assistant?
+## What's the AI Assistant for Argo CD?
 
 The AI Assistant is an Argo CD extension to help developers quickly analyze any issues with the Kubernetes resources and Argo CD Application tracks. Users can interact with the assistant by asking custom questions, clicking pre-defined prompts, and triggering Argo CD actions.
 
 ![assistant-hello](../../../../../img/inblog/akuity-argo-cd-ai-assistant/assistant-hello.png)
 
 
-### Why Did We Do This??
+### Why Did We Do This?
 
 Developers spend a tremondous amount of time trying to figure out why their Argo CD Applications are unhealthy. They often need to identify root causes for each of the Kubernetes resources that are failing, which requires a lot of manual inspection on the live K8s manifests, events, logs, etc.
 
