@@ -2,7 +2,7 @@
 layout:     post
 title:      "Introducing the AI Assistant for Argo CD inside Akuity Platform"
 subtitle:   "Argo CD extension to help developers quickly analyze any issues in your Argo CD Applications"
-date:       2023-07-24
+date:       2023-07-25
 author:     "Yuan Tang and Alexander Matyushentsev"
 tags:
     - Open Source
@@ -11,7 +11,7 @@ tags:
     - Machine Learning
 ---
 
-*Originally posted on [Akuity Blog](https://akuity.io/blog/).*
+*Originally posted on Akuity Blog [here](https://akuity.io/blog/akuity-argo-ai-assistant/).*
 
 We are thrilled to announce that the AI Assistant for Argo CD is now available inside the [Akuity Platform](https://akuity.io/akuity-platform/). It integrates cutting-edge AI functionality into our product, powered by GPT (Generative Pre-trained Transformer).
 
