@@ -11,7 +11,7 @@ tags:
     - Machine Learning
 ---
 
-*Originally posted on Akuity Blog [here](https://akuity.io/blog/akuity-argo-ai-assistant/). Also featured on [Business Wire](https://www.businesswire.com/news/home/20230725088248/en/Akuity-Launches-an-AI-Assistant-for-Argo-CD-to-Help-Troubleshoot-Common-Kubernetes-Deployment-Issues)*
+*Originally posted on [Akuity Blog](https://akuity.io/blog/akuity-argo-ai-assistant/). Also mentioned on [Business Wire](https://www.businesswire.com/news/home/20230725088248/en/Akuity-Launches-an-AI-Assistant-for-Argo-CD-to-Help-Troubleshoot-Common-Kubernetes-Deployment-Issues).*
 
 We are thrilled to announce that the AI Assistant for Argo CD is now available inside the [Akuity Platform](https://akuity.io/akuity-platform/). It integrates cutting-edge AI functionality into our product, powered by GPT (Generative Pre-trained Transformer).
 
