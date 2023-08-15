@@ -11,7 +11,7 @@ tags:
 ---
 
 
-We are thrilled to announce that the release candidate for [Argo Workflows v3.5](https://github.com/argoproj/argo-workflows/releases/tag/v3.5-rc1) is now available for testing!
+We are thrilled to announce that the release candidate for [Argo Workflows v3.5](https://github.com/argoproj/argo-workflows/releases/tag/v3.5.0-rc1) is now available for testing!
 
 
 We have rolled out a long list of exciting new features, ranging from improvements to existing UI/UX, CLI, controller performance optimizations, additional fields and parameters in workflow/template spec, authentication, monitoring, and more. 
