@@ -69,6 +69,7 @@ We can see additional link to the list of completed workflows and a new column "
 
 Additionally, thanks to [#10145](https://github.com/argoproj/argo-workflows/pull/10145) by [Isitha Subasinghe](https://github.com/isubasinghe), the Argo Workflows UI can parse JSON structured logs.
 
+We'll be continuously improving the UI/UX. If you are interested in contributing, please check out the [UI/UX improvements project board](https://github.com/orgs/argoproj/projects/29).
 
 ### CLI
 
@@ -131,7 +132,7 @@ We also exposed a new argument `--cron-workflow-workers` to specify the number o
 
 Client-side throttling logging has been improved by [@Jack-R-lantern](https://github.com/Jack-R-lantern) in [#11437](https://github.com/argoproj/argo-workflows/pull/11437).
 
-### Development
+### Local Development
 
 Developers of Argo Workflows can now use [Nix](https://nixos.org/) to make the local development easier. Nix is a package manager and build tool which focuses on reproducible build environments. Check out how to use it [here](https://github.com/argoproj/argo-workflows/blob/master/docs/running-nix.md). Thanks to [#10999](https://github.com/argoproj/argo-workflows/pull/10999) by [Isitha Subasinghe](https://github.com/isubasinghe).
 
