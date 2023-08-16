@@ -53,7 +53,7 @@ In this release, users can also add customized navigation links and columns. Tha
 
 ```
 data: 
-  links:
+  links: |
     - name: Completed Workflows
       scope: workflow-list
       url: http://workflows?label=workflows.argoproj.io/completed=true
@@ -143,5 +143,5 @@ Thanks to everyone who filed issues or helped resolve them, asked and answered q
 
 We also host monthly community meetings where we and the community showcase demos and discuss the current and future state of the project. Feel free to [join us](https://github.com/argoproj/argo-workflows#community-meetings).
 
-Check out our curated list of awesome projects and resources related to Argo [here](https://github.com/akuity/awesome-argo)!
+Check out the curated list of awesome projects and resources related to Argo [here](https://github.com/akuity/awesome-argo)!
 
