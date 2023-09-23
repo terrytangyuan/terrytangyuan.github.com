@@ -11,18 +11,18 @@ tags:
 ---
 
 
-We are thrilled to announce that the release candidate for [Argo Workflows v3.5](https://github.com/argoproj/argo-workflows/releases/tag/v3.5.0-rc1) is now available for testing!
+We are thrilled to announce that the release candidate for [Argo Workflows v3.5](https://github.com/argoproj/argo-workflows/releases/tag/v3.5.0-rc2) is now available for testing!
 
 
 We have rolled out a long list of exciting new features, ranging from improvements to existing UI/UX, CLI, controller performance optimizations, additional fields and parameters in workflow/template spec, authentication, monitoring, and more. 
 
 Some quick statistics about this release:
 
-* 54 new features
-* 197 bug fixes
-* 145 documentation updates
-* 13 build and 16 CI improvements
-* from 37 contributors
+* 65 new features
+* 228 bug fixes
+* 171 documentation updates
+* 17 build and 21 CI improvements
+* from 39 contributors
 
 ## Overview of New Features
 
@@ -69,7 +69,13 @@ We can see additional link to the list of completed workflows and a new column "
 
 Additionally, thanks to [#10145](https://github.com/argoproj/argo-workflows/pull/10145) by [Isitha Subasinghe](https://github.com/isubasinghe), the Argo Workflows UI can parse JSON structured logs.
 
+User information in suspended nodes when resuming is also available. Thanks to [Tomoki Yamaguchi](https://github.com/toyamagu-2021) via [#11763](https://github.com/argoproj/argo-workflows/pull/11763).
+
+Search functionality has been added for WorkflowTemplates page in [#11684](https://github.com/argoproj/argo-workflows/pull/11684) by [sunyeongchoi](https://github.com/sunyeongchoi).
+
 We'll be continuously improving the UI/UX. If you are interested in contributing, please check out the [UI/UX improvements project board](https://github.com/orgs/argoproj/projects/29).
+
+
 
 ### CLI
 
@@ -108,6 +114,7 @@ time="2023-07-16T12:20:25.064Z" level=error msg="failed to get oauth2Token by us
 time="2023-07-16T12:20:25.064Z" level=info duration=9.112831ms method=GET path=/oauth2/callback size=0 status=401
 ```
 
+We also added support for filtering SSO groups based on regex. Thanks to [Basanth Jenu H B](https://github.com/basanthjenuhb) in [#11774](https://github.com/argoproj/argo-workflows/pull/11774).
 
 ### Monitoring
 
@@ -131,6 +138,18 @@ We switched to use `WorkflowTemplate` and `ClusterWorkflowTemplate` informers wh
 We also exposed a new argument `--cron-workflow-workers` to specify the number of CronWorkflows workers, which would be useful when running a large number of CronWorkflows. Thanks to [#11457](https://github.com/argoproj/argo-workflows/pull/11457) by [Saravanan Balasubramanian](https://github.com/sarabala1979).
 
 Client-side throttling logging has been improved by [@Jack-R-lantern](https://github.com/Jack-R-lantern) in [#11437](https://github.com/argoproj/argo-workflows/pull/11437).
+
+The controller has also added checks to protect users against infinite recursion for calls to templates. Thanks to [Alan Clucas](https://github.com/Joibel) in [#11646](https://github.com/argoproj/argo-workflows/pull/11646).
+
+
+### Artifacts
+
+Artifact streaming download for HTTP/Artifactory artifact driver has been added by [Yuan Tang](https://github.com/terrytangyuan) in [#11823](https://github.com/argoproj/argo-workflows/pull/11823). Previously, when a user would click the button to download an artifact in the UI, the artifact would need to be written to the Argo Server’s disk first before downloading. If many users tried to download simultaneously, they would take up disk space and fail the download. After this release, S3, Azure Blob, HTTP, and Artifactory all support streaming download so artifacts don’t need to be first saved to disk.
+
+Artifactory artifact also supports keyFormat now to be consistent with other artifact types. Thanks to [Yuan Tang](https://github.com/terrytangyuan) via [#11798](https://github.com/argoproj/argo-workflows/pull/11798).
+
+We also added custom CA support in S3 artifact repository. Thanks to [Niklas Simons](https://github.com/nsimons) via [#11161](https://github.com/argoproj/argo-workflows/pull/11161).
+
 
 ### Local Development
 
