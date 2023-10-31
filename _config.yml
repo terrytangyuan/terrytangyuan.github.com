@@ -64,8 +64,8 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Affliations
 affliations: [
     {
-        title: "Akuity",
-        href: "https://akuity.io"
+        title: "Red Hat",
+        href: "https://www.redhat.com/"
     },{
         title: "Argo",
         href: "https://github.com/argoproj"
@@ -75,9 +75,6 @@ affliations: [
     },{
         title: "TensorFlow",
         href: "https://www.tensorflow.org"
-    },{
-        title: "Apache Software Foundation",
-        href: "https://apache.org"
     },{
         title: "Georgia Institute of Technology",
         href: "https://gatech.edu"
