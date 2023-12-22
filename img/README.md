@@ -1,6 +1,6 @@
-Whenever a new favicon.ico is uploaded, do the following:
+Whenever a new avatar.jpg is uploaded, do the following:
 
 ```
-cp img/favicon.ico img/icon_wechat.png
-cp img/favicon.ico img/avatar.jpg
+cp img/avatar.jpg img/favicon.ico
+cp img/avatar.jpg img/icon_wechat.png
 ```
