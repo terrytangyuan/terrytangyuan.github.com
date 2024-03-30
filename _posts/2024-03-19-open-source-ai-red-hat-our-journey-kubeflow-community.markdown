@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Open source AI at Red Hat: Our journey in the Kubeflow community"
+title:      "Open Source AI at Red Hat: Our Journey in the Kubeflow Community"
 subtitle:   ""
 date:       2024-03-19
 author:     "Yuan Tang"
@@ -8,6 +8,7 @@ tags:
     - Open Source
     - Kubernetes
     - Kubeflow
+    - Artificial Intelligence
 ---
 
 

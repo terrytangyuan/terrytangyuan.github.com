@@ -9,6 +9,7 @@ tags:
     - Kubernetes
     - Argo
     - Machine Learning
+    - Artificial Intelligence
 ---
 
 *Originally posted on [Akuity Blog](https://akuity.io/blog/akuity-argo-ai-assistant/). Also mentioned on [Business Wire](https://www.businesswire.com/news/home/20230725088248/en/Akuity-Launches-an-AI-Assistant-for-Argo-CD-to-Help-Troubleshoot-Common-Kubernetes-Deployment-Issues) and [Venture Beat](https://venturebeat.com/business/akuity-launches-an-ai-assistant-for-argo-cd-to-help-troubleshoot-common-kubernetes-deployment-issues/).*

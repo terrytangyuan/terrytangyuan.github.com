@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Empower conversational AI at scale with KServe"
+title:      "Empower Conversational AI at Scale with KServe"
 subtitle:   ""
 date:       2024-03-15
 author:     "Yuan Tang"
@@ -8,6 +8,7 @@ tags:
     - Open Source
     - Kubernetes
     - KServe
+    - Artificial Intelligence
 ---
 
 **Authors: Saurabh Agarwal, Yuan Tang, Adam Tetelman, Rob Esker**
