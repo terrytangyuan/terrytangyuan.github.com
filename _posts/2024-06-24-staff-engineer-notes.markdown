@@ -8,6 +8,7 @@ tags:
     - Leadership
 ---
 
+*This post contains my reading notes on the book [Staff Engineer: Leadership beyond the management track](https://staffeng.com/book/).*
 
 ## Overview
 
