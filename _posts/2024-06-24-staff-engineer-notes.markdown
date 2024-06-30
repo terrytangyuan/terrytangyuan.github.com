@@ -101,13 +101,19 @@ You'll find the role surprisingly similar to that of an engineering director and
     * Gather and review together, write alone: collect input from folks with relevant perspectives, especially for those who rely on the output of the design. Gather perspectives widely but write alone.
     * Prefer good over perfect
     * Re-read your designs after you've finished implementing them and study the places where your implementation deviated from your plan.
-* Synthesize those five design docs into a strategy: look for controversial decisions that came up in multiple designs, particularly those that were hard to agree on. Good strategies guide tradeoffs and explain the rationale behind that guidance. Bad strategies state a policy without explanation and context.
+* **Synthesize those five design docs into a strategy**: look for controversial decisions that came up in multiple designs, particularly those that were hard to agree on. Good strategies guide tradeoffs and explain the rationale behind that guidance. Bad strategies state a policy without explanation and context.
 * **Recommendations for writing strategy docs**:
     * Start where you are
     * Write the specifics
     * Be opinionated
     * Show your work
-* **Extrapolate five strategies into a vision**: 
+* **Extrapolate five strategies into a vision**: extrapolate how their tradeoffs will play out over the next two to three years. A few things to focus on are:
+    * Write two to three years out
+    * Ground in your business and your users: effective visions ground themselves in serving your users and your business. The tight connection keeps the vision aligned with your leadership team's core values - users and business.
+    * Be optimistic rather than audacious: visions should be ambitious but they shouldn't be audacious. Do write what you could accomplish if every project is finished on time.
+    * Stay concrete and specific: visions get more useful as they get more specific. Generic statements are easy to agree with but don't help reconcile conflicting strategies.
+    * Keep it one to two pages long: most people don't read long documents. Write something compact and reference extra context by linking to other docs.
+    * Don't measure vision by the initial excitement it creates. Instead, measure it by reading a design doc from two years ago and then one from last week.
 
 
 
