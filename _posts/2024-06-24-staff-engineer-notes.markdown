@@ -108,12 +108,101 @@ You'll find the role surprisingly similar to that of an engineering director and
     * Be opinionated
     * Show your work
 * **Extrapolate five strategies into a vision**: extrapolate how their tradeoffs will play out over the next two to three years. A few things to focus on are:
-    * Write two to three years out
-    * Ground in your business and your users: effective visions ground themselves in serving your users and your business. The tight connection keeps the vision aligned with your leadership team's core values - users and business.
-    * Be optimistic rather than audacious: visions should be ambitious but they shouldn't be audacious. Do write what you could accomplish if every project is finished on time.
-    * Stay concrete and specific: visions get more useful as they get more specific. Generic statements are easy to agree with but don't help reconcile conflicting strategies.
-    * Keep it one to two pages long: most people don't read long documents. Write something compact and reference extra context by linking to other docs.
-    * Don't measure vision by the initial excitement it creates. Instead, measure it by reading a design doc from two years ago and then one from last week.
+    * **Write two to three years out**
+    * **Ground in your business and your users**: effective visions ground themselves in serving your users and your business. The tight connection keeps the vision aligned with your leadership team's core values - users and business.
+    * **Be optimistic rather than audacious**: visions should be ambitious but they shouldn't be audacious. Do write what you could accomplish if every project is finished on time.
+    * **Stay concrete and specific**: visions get more useful as they get more specific. Generic statements are easy to agree with but don't help reconcile conflicting strategies.
+    * **Keep it one to two pages long**: most people don't read long documents. Write something compact and reference extra context by linking to other docs.
+    * **Don't measure vision by the initial excitement it creates**. Instead, measure it by reading a design doc from two years ago and then one from last week.
+
+
+## Managing technical quality
+
+TBA
+
+## Stay aligned with authority
+
+Titles come with the sort of power called organizational authority, and that variety of authority is loaned to you by a greater organizational authority. What's bestowed can be retracted, and retaining organizational authority depends on remaining deeply aligned with the bestowing sponsor, generally your direct manager.
+
+### Beyond the safety net
+
+* Most mature tech companies succeed in creating a predictable promotion pipeline.
+* The process of getting a Staff title is more complex than preceding titles but usually navigated with the support of your manager.
+* After reaching a Staff role, your safety net will cease to exist. The support system that got you here will fade away.
+
+### Serving at the pleasure of the President
+
+It's valuable to develop your own approach to aligning upward with your manager. Some areas to focus on are:
+* Never surprise your manager: treat each surprise as an incident.
+* Don't let your sponsor surprise you: give them feedback too and ask if there are other areas you should be focused on and how your current priorities are aligned with your manager's.
+* Feed your manager's context: help your manager not get surprised by the wider organization.
+* Cultivating a deliberate partnership with your manager will go far further than practicing disappointment when they don't meet your expectations.
+
+### Influencing without too much friction
+
+* As you reach the next step of leadership, you increasingly have to merge your vision with those held by more senior organizational leaders.
+* Replacing your vision with another leader's vision.
+* Sharpening your awareness of the distinctions between the values that you hold and the values that the organization operates under and find a way to advocate for them without getting kicked out of the room.
+
+## To lead, you have to follow
+
+* Collaborating with your team's managers in adopting successful practices in hiring, onboarding, and production operations from other teams; and sharing practices with others.
+* Taking context from company-wide business/product strategy and translating that to how it impacts your team's immediate projects.
+* Leadership is an approach one can demonstrate within any profession.
+* Seeing the gap and taking action are characteristics common in folks who successfully navigate the transition into Staff-plus engineering or senior management roles.
+* The most effective leaders spend more time following than they do leading.
+* Practice the following:
+    * Be clear what your true priorities are
+    * Give your support quickly to other leaders who are working to make improvements
+    * Make your feedback explicitly non-blocking, e.g. "optional nit"
+* Continued growth requires learning to incorporate your worldview into the worldviews of those around you, accelerating overall progress around you.
+
+## Learn to never be wrong
+
+* There are folks that will continue debating until their perspective wins the day or time runs out. They are often right, but right in a way that sucks the oxygen out of the room. It's a form of persuasion characterized by the resignation of their peers.
+* Commitment to finding the best outcome for everyone, willingness to leave his starting position.
+* To become a senior tech leader, you must build a deep perspective on technology and architecture. To operate as such as a leader, you must then develop an equally deep pragmatism and agnosticism to technical religion to remain skeptical of yourself.
+
+### Listen, clarify and read the room
+
+* Go into each meeting with the goal of agreeing on the problem at hand, understanding the needs and perspectives within the room, and identifying what needs to happen to align on an approach.
+* If the room isn't ready, then don't force it to happen.
+* Listen through questions, define the purpose, and know how to read the room.
+
+### Listening through questions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
