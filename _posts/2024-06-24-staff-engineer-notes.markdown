@@ -168,13 +168,133 @@ It's valuable to develop your own approach to aligning upward with your manager.
 * Go into each meeting with the goal of agreeing on the problem at hand, understanding the needs and perspectives within the room, and identifying what needs to happen to align on an approach.
 * If the room isn't ready, then don't force it to happen.
 * Listen through questions, define the purpose, and know how to read the room.
+    * Listening through questions
+        * The act of asking good questions with good intent opens up a conversation, creating space and safety for others to ask their own questions.
+        * Good questions are asked with the desire to learn, and they are specific.
+    * Define the purpose
+        * Ask if your understanding of what the group hopes to accomplish is correct.
+        * Defining the purpose can be disruptive if used too frequently. Try avoid using it if someone else has already made an attempt.
+    * Read the room
+        * Force agreement would create a lot of pressure and unlikely to conclude well.
+        * Identify a subgroup who are able to spend more time digging into it together or identify an appropriate party to escalate to outside of the room.
+* How to practice
+    * Start each week by picking one of these skills and using in the meetings you head into.
+    * Spend time practicing in your head or with a peer.
+* Jerks: someone who withholds their consent from the group and isn't willing to compromise, or doesn't listen
+    * Give them the feedback as kindly as you can while still being honest.
+    * Document and communicate concerns to their manager.
+* How it helps
+    * More complex projects get derailed by personal conflict than by technical complexity.
+    * Longevity as a senior leader is just as much about maintaining your relationships as it is about standout successes.
+    * Learn to never be wrong and never stop practicing.
 
-### Listening through questions
+## Create space for others
 
+* One of the best measures of your long-term success as a Staff-plus engineer is that organization around you increasingly benefits from, but doesn't rely upon, your contributions.
+* Discussions: getting more folks involved and getting a good set of decisions without much of your own personal contributions.
+    * Shift your contribution towards asking questions
+    * Pull someone who isn't participating into the discussion. Pull exactly one person at a time into the discussion
+    * Be the one to take notes. This also gives you something to focus on other than speaking
+    * If someone is missing but should attend, talk with the meeting coordinator to let them know why it's valuable to include them
+* Decisions: Take an incremental approach to shift increasingly complex and important decisions to your wider team
+    * Write it down: writing down the process of finding an answer, and rationale so that folks can learn from decisions rather than simply being directed by them.
+    * Ciculate early and involve folks in the decision making process
+    * Seperate style from substance: stop giving style feedback on other folks' decisions. If a piece of feedback won't meaningfully change a project's success, then consider not giving it.
+    * Don't try to show value: some senior folks feel like they need to weigh in on everything to justify their seniority. This centers insecurity over impact and prevent others from growing as leaders.
+    * Change your mind
+* Sponsorship:
+    * Sponsoring others for the kind of work that got you to a Staff-plus role.
+    * When you identify new critical work, think about who else could be generating that work then sit down with them to have them put together the proposal you planned to write.
+    * Build support for their proposal just as you would have for your own.
+    * When the work becomes theirs, you have to let it be theirs.
+    * Keep a sponsorship journal and ensures that you are sponsoring others at least a few times a month.
+* What if you don't?
+    * Solving an urgent problem for an organizational leader is one of the surest paths to recognition
+    * You've become the technical visionary whose ideas saturate the company's architecture roadmap
+    * The only way to remain a long-term leader of a successful company is to continually create space for others to take the recognition, reward, and work that got you to where you are currently sitting.
 
+## Build a network of peers
 
+* Have conversations about career challenges and growth opportunities
+* Find peers that will still challenge you, and you can brainstorm ideas with
+* Being easy to find and networking internally
+* Be visible, e.g. speaking at conferences, share views on Staff-plus role.
+* Internal networks, too: longer-term, those folks will eventually leave and spread across the industry, bootstraping your broader network (works well at a large or prestigious company)
+* Ambient networks, e.g. via social media platforms
+* Quality over quantity:
+    * Slowly building with folks you genuinely trust, respect, and are inspired by
+    * Find someone you respect and send them a short 1-2 paragraph email or DM with a specific question asking for advice; if they reply, thank them and send another question in 6-12 months.
 
+## Present to executives
 
+* Increasingly, your impact will be constrained by your ability to influence executives effectively.
+* Why this is hard?
+    * The executive has become accustomed to consuming reality preprocessed in a particular way.
+    * Any given executive is almost always uncannily good at one way of consuming information.
+    * Some executives are good at pattern matching; they will ask questions until they can pattern match against their previous experience; if you try to give a structured, academic presentation, they will be bored.
+    * Invest ahead of the discussions to avoid lementations afterward.
+* How to communicate effectively?
+    * Get a clear understanding of why you are communicating with them, which is always one of three things: planning, reporting on status, or resolving misalignment.
+    * Your goal is to extract as much perspective from the executive as possible and understand how you can align with their priorities.
+    * Best way to extract their perspective is by writing a structured document, which would also force you to think comprehensively. Opening paragraph can follow the SCQA format:
+        * Situation: providing context
+        * Complication: why is the current situation problematic?
+        * Question: what is the core question to address?
+        * Answer: what is your best answer to the posed question?
+    * Once written the structured document, gather feedback from your peers and stakeholders. Aligning with stakeholders before your presentation (sometimes called nemawashi) can effectively reduce surprised.
+    * Have a clear agenda
+* Mistakes to avoid:
+    * Never fight feedback: if you show up as resistant to feedback, they'll start swallowing their comments and you cannot get much out of the meeting.
+    * Inject one or two pieces of relevant data that might change their mind, but afterward, let it go.
+    * Reflecting on the feedback and changing their mind later than continuing to push back within the meeting.
+    * Don't evade responsibility or problems. You will create more credibility by agreeing with their perspective and following up with more data later.
+    * Don't present a question without an answer: you cannot create alignment in the room unless you have a proposal for folks to align behind.
+    * Avoid academic-style presentations
+    * Don't fixate on your preferred outcome: almost every decision will be reconsidered multiple times over the next two years.
+* Send an early draft to an executive attending the meeting and ask them what to change.
+
+# Getting the title where you are
+
+* Sometimes folks who already have the titles are protective of diluting their prestige
+* Some organizations may be wary of having multiple Staff engineers on a single team
+* A Staff engineer isn't a better engineer, but someone who's moved into fulfilling one of the Staff archetypes
+* Sometimes you need to get your company to grant you the Staff title if the process is not clear or does not exist
+* Take more deliberate control of your progression
+* Finding your trail
+    * Transition into a self-directed career
+    * Promotion packet demystifies the Staff promotion,  prioritizes the right personal development, activates your internal sponsors and network in support of your progression
+    * Staff project: note that most Staff engineers do not have a Staff project
+    * Learn how to get into the room where decisions happen, and how to stay there
+    * Become visible internally
+* Opportunity is unevenly distributed
+    * It's easier to be rewarded for fixing an outage you cause than preventing future outages.
+    * Your work is more visible if you work in your company's headquarters than in a distributed office.
+    * Align with your approach with these unspoken currents rather than reroute the river creating them.
+* Should you try management?
+    * Some Staff-plus roles do spend time in engineering management.
+    * Try management to gain a broader perspective that helps them even when they move back into IC role.
+    * People management is bigger than simply maximizing your trajectory to a Staff engineer role. You can get to Staff sooner but people management experience helps further get promoted to Senior Staff.
+    * Staff-plus titles are leadership positions. It's challenging to gain a leadership position if the existing leadership team doesn't identify with you as a potential member. Folks with the privilege of seeming like they are already part of the existing leadership team have a much easier time making the transition.
+
+## Promotion packets
+
+TBA
+
+## Find your sponsor
+
+TBA
+
+## Staff projects
+
+TBA
+
+## Get in the room, and stay there
+
+TBA
+
+## Being visible
+
+TBA
 
 
 
