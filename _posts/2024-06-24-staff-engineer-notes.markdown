@@ -93,7 +93,7 @@ You'll find the role surprisingly similar to that of an engineering director and
 * To write an engineering strategy, write five design docs, and pull similarities out. 
 * To write an engineering vision, write five engineering strategies, and forecast their implications two years into the future.
 * Even if you are not directly responsible for that work, there are practical steps that you can take to advance your organization's strategy and vision, starting right now.
-* **When and why**: strategies are tools of proactive alighment that empower teams to move quickly and with confidence. If you realize that you've rehashed the same discussion three or four times, it's time to write a strategy.
+* **When and why**: strategies are tools of proactive alignment that empower teams to move quickly and with confidence. If you realize that you've rehashed the same discussion three or four times, it's time to write a strategy.
 * **Write five design docs**: a good design doc describes a specific problem, surveys possible solutions, and explains the selected approach's details. Write design docs for any project whose capabilities will be used by future projects and will impact your users.
 * **Recommendations for writing design docs**:
     * Start from the problem
