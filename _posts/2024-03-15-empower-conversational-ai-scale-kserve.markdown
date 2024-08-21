@@ -13,7 +13,9 @@ tags:
 
 **Authors: Saurabh Agarwal, Yuan Tang, Adam Tetelman, Rob Esker**
 
-*This blogpost was originally posted [here](https://developers.redhat.com/articles/2024/03/15/empower-conversational-ai-scale-kserve).*
+*This blogpost was originally posted [here](https://developers.redhat.com/articles/2024/03/15/empower-conversational-ai-scale-kserve). An accompanying blogpost from NVIDIA with my quote is available [here](https://blogs.nvidia.com/blog/kserve-nim-inference/) that summarizes the collaboration between Red Hat and NVIDIA.*
+
+> “Red Hat has been working with NVIDIA to make it easier than ever for enterprises to deploy AI using open source technologies,” said KServe contributor Yuan Tang, a principal software engineer at Red Hat. “By enhancing KServe and adding support for NIM in Red Hat OpenShift AI, we’re able to provide streamlined access to NVIDIA’s generative AI platform for Red Hat customers.”
 
 KServe is a standard Model Inference Platform on Kubernetes built for highly scalable use cases. It is a popular open source platform available as a community project, as well as a core component of Red Hat OpenShift AI. It provides a Kubernetes custom resource definition (CRD) for serving machine learning (ML) models on arbitrary frameworks. It aims to solve production model-serving use cases by providing performant, high-abstraction interfaces for common ML frameworks and model formats like TensorFlow, PyTorch, XGBoost, Scikit-learn, and ONNX.
 
