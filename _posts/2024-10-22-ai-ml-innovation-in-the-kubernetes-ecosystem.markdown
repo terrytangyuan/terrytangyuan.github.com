@@ -8,6 +8,9 @@ tags:
     - Open Source
     - Kubernetes
     - Artificial Intelligence
+    - Leadership
+    - KServe
+    - Kubeflow
 ---
 
 *This blogpost was originally posted [here](https://dzone.com/articles/ai-ml-innovation-in-the-kubernetes-ecosystem).*
