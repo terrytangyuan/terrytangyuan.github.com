@@ -293,7 +293,24 @@ It's valuable to develop your own approach to aligning upward with your manager.
 
 ## Find your sponsor
 
-TBA
+* Some are struggling to have the work recognized even though they have done the work, have the visibility, and have pulled together a strong promotion packet
+* Missing a sponsor willing to push for the recognition of their existing work
+* Promotions are a team activity: don't play team games alone, you'll lose
+* Most important member guiding your promotion: yourself
+* Second most important member: organizational sponsor who speaks up for your work in forums of influence and when advocating for constrained resources; this almost always needs to be your direct manager
+* Invest in establishing a relationship further along your management chain; don't need to spend much time with your skip-level manager, but if they aren't familiar enough with your work's impact, you're unlikely to get promoted
+* Activating your sponsor
+    * Explicitly share your goals
+    * Don't rely on the sponsor to do the heavy lifting, which usually fails
+    * Sponsors are folks with more organizational capital than bandwidth to deploy that capital, and they'll help you most when you align the pieces for them; ask them how you can support their sponsorship
+    * Reviewing your promotion packet with your sponsors
+    * Build a relationship over time and stay aligned with their initiatives
+    * They are pretty cognizant of folks who show up right before promotion time; don't just do it once before your promotion
+* What if it doesn't work?
+    * Your manager has too direct an influence on your impact; if you don't work together well, you are not going to get promoted into a leadership role
+    * Risk of switching teams after running into friction with your manager: lose the opportunity to develop your skill of working with folks you don't immediately click wtih
+    * Leadership always involves influencing and building relationships with those with conflicting goals and styles
+    * Developing good relationship with skip-level manager can help you find a new team
 
 ## Staff projects
 
@@ -301,7 +318,35 @@ TBA
 
 ## Get in the room, and stay there
 
-TBA
+* Get in the room where important decisions are being made
+* No single room to enter: sprint planning, quarterly planning meeting, architecture review, performance calibration, engineering leadership team, or the executive team
+* There will always be another room to enter
+* To reach senior levels, you have to become effective at not only entering but also staying in these rooms of power
+* Getting in the room
+    * Bring something useful to the room: details, context, subject matter expertise, experience in similar project, relationship with key partner or customers
+    * Bring perspectives that aren't already present within the room
+    * A sponsor in the room to sponsor your membership
+    * Your sponsor needs to know you want to be there: they are probably in different rooms and want leave most of those meetings behind them
+* Increase your value to the room by decreasing the cost of including you:
+    * Stay aligned with your manager: they are likley to yield their own seat to you and stop attending
+    * Optimize for the group
+    * Speak clearly and concisely: contribute more ideas with less time; they need to understand your proposal
+    * Be low friction: if you are known as someone who can navigate difficult conversations effectively, you are much more likely to be involved
+    * Come prepared: read the agenda and prepare for the discussion; you'll stand out if you take the timne to organize your thoughts before each meeting; following up on what you committed to
+    * Focus and be present
+    * Volunteer for low-status tasks: take notes, follow-up on action items; prioritize being useful, especially when it isn't the most exciting work
+* Staying in the room
+    * Bring important context, present a polished version of yourself, be concise, be flexible
+* Things that will get you kicked out
+    * Misunderstanding the room's purpose: take the time to understand how the room operates and integrate into it with respect for that intention
+    * Being dogmatic: as rooms get more senior, more sensitive topics will be discussed. Dogmatic participants will create friction that slows down discussion and progress
+    * Withholding consent: effective groups consist of individuals who are willing to disagree and commit; you can force a group towards your perspective but you'll likely get removed from it
+    * Sucking the oxygen out of the room: remember that you are in the room because of what got you into the room, not in the hopes that entering the room will magically transform you into someone entirely new
+    * Embarassing your sponsor: they advocated for your inclusion
+    * Being flakey or not showing up regularly: slots are limited and hosts would prioritize on people who show up
+* Exiting the room
+    * You'll be most impactful if you are selective on which rooms you stay in
+    * If any given room doesn't feel useful, exit the room; while exiting, sponsor someone else into the opportunity you are leaving behind
 
 ## Being visible
 
