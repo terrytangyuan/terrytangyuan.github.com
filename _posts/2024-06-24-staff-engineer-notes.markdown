@@ -278,7 +278,18 @@ It's valuable to develop your own approach to aligning upward with your manager.
 
 ## Promotion packets
 
-TBA
+* Your packet becomes the map to accomplishing your goal: starting to write your first promotion packet long before you think you are likely to get promoted to Staff
+* No need to rush it: spend more time relying on it as a guide than as a formal artifact for official review
+* You can only accomplish with a team of folks supporting you along the way
+* Iterate on your packet:
+    * Answer why you are doing this
+    * Temper your expectations and avoid the expectation of instant results
+    * Bring your manager into the fold: mention in your next 1-on-1 with your manager; review the packet; ask what's missing, what to emphasize, and if they'd recommend adding steps to the workflow; solicit their guidance on your approach
+    * Write the promotion packet, wait for two days, re-read and edit for content, clarity, and context
+    * Edit with peers: they are often better at identifying your strengths and contributions than you are and closer to your work than your manager
+    * Edit with your manager: ask for a particular focus on gaps to address; spend time in the following 1:1 discussing the kinds of projects and opportunities to both address gaps and make the packet stronger
+    * Periodically review the promotion packet with your manager: use it to steer towards demonstrating the promotion criteria over time; help mitigate the loss of progress towards your promotion that often occurs after a manager change
+* It won't necessarilly get there quickly, and it even might not get you there at your current company, but it will consolidate your energy on the development and work that'll move you towards your goal
 
 ## Find your sponsor
 
