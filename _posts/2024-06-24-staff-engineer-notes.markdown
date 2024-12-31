@@ -350,36 +350,58 @@ TBA
 
 ## Being visible
 
-TBA
+* Reaching Staff is a combination of luck, timing, and work
+* Get luckier by being more visible within your organization
+* Staff-plus roles are leadership roles; the existing members of that team want to be comfortable that they are expanding their ranks with folks they believe in and know
+* Less inclusive organizations inadvertently center access on folks who most aggressively self-advertise
+* Internal visibility
+    * Work on things that matter to your company and leadership
+    * Write and distribute more long-lived documents, e.g. architecture docs or technical specification
+    * Lead company forums like architecture reviews, company all hands, learning circles
+    * Be a cheerleader for your team's and peers' work on Slack or email
+    * Share weekly notes of your work to your team and stakeholders in a way that others can also access if interested
+    * Contribute to company blog
+    * Attend or host office hours for your team or org
+    * Fight the right mix of activities that leverage your strengths, aren't already overburdened with volume, and feel authentic to you
+* Executive visibility
+    * Build relationship with your manager's manager and folks who tend to be in the room that approves promotions
+* External visibility
+    * There's a lot more room to create a niche and name for yourself; internal efforts often end up competing for attention with your peers unlike external efforts
+* Should you focus on visibility?
+    * Increasing your visibility is likely reducing the opportunities for others to create visibility for themselves
+    * Identify if the lack of visibility is likely to hold you back in the promotion process; work to clear that threshold, but not much further
+    * Learning and developing yourself is a permanent one; visibility is a transient currency
 
+## Deciding to switch companies
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* Those folks stay and are rewarded for staying at a given company as long as the circumstances support their success
+* Leaving can feel like starting over from scratch
+* Even with all your internal credibility, sometimes leaving is the most effective path forward
+* Why leaving works
+    * The company that knows your strengths the best is your current company, and they are the company most likely to get you a Staff-plus role
+    * If your current team is very senior, it may be hard to justify your impact
+    * Manager may have limited budget on promoting another Staff engineer
+    * You can keep interviewing until you can find a company that grants the title
+    * Interviewing creates the opportunity to play "bias arbitrage", finding a company that disproportionately values you
+* Things to try before leaving: explore internal waters first; negotiate a paid or unpaid sabbatical if experiencing burnout
+* Access the risk of leaving without a job
+* Taking the plunge: if your internal reputation is damaged or if the title is important to you
+* Finding the right company
+* Find a place that disproportionately values you: join a company that values what you are good at; well-run organizations value you for what you are good at; less well-run companies value you for your identity
+* Meritocrats and proceduralists: variety of styles - exception-driven, pattern match, consistency drives fairness. Try explore these during the interview process
+    * Proceduralists: companies with rigid compensation at hand
+    * Meritocrats: create one-off roles for individuals to get then on board
+* Archetypes: most companies don't deliverately think about the sort of Staff engineers they support so asking rarely works well
+* Growth: fast-growing company usually organically opens up new Staff opportunities
+* Sponsorship: management chain that's willing to push through even more friction to get you the title
+* External presence and network can aim your search
+* Durability: derisk durability by ensuring you join companies with business models that actually work and work for leaders who are values-aligned with their organization's senior-most leadership
+* Pace: you will harm yourself by accepting a role that demands more pace from you than you are able to presently sustain; make sure the pace aligns with what you are able to provide
+* Rush it rarely works out
+* Dig into your whisper network for toxic issues and individuals
+* Interviewing
+    * Draw your lines
+    * Debug the process
+    * Finish well
+* Negotiating your offer
 
