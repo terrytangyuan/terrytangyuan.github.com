@@ -116,10 +116,6 @@ You'll find the role surprisingly similar to that of an engineering director and
     * **Don't measure vision by the initial excitement it creates**. Instead, measure it by reading a design doc from two years ago and then one from last week.
 
 
-## Managing technical quality
-
-TBA
-
 ## Stay aligned with authority
 
 Titles come with the sort of power called organizational authority, and that variety of authority is loaned to you by a greater organizational authority. What's bestowed can be retracted, and retaining organizational authority depends on remaining deeply aligned with the bestowing sponsor, generally your direct manager.
@@ -312,10 +308,6 @@ It's valuable to develop your own approach to aligning upward with your manager.
     * Leadership always involves influencing and building relationships with those with conflicting goals and styles
     * Developing good relationship with skip-level manager can help you find a new team
 
-## Staff projects
-
-TBA
-
 ## Get in the room, and stay there
 
 * Get in the room where important decisions are being made
@@ -372,7 +364,7 @@ TBA
     * Identify if the lack of visibility is likely to hold you back in the promotion process; work to clear that threshold, but not much further
     * Learning and developing yourself is a permanent one; visibility is a transient currency
 
-## Deciding to switch companies
+# Deciding to switch companies
 
 * Those folks stay and are rewarded for staying at a given company as long as the circumstances support their success
 * Leaving can feel like starting over from scratch
