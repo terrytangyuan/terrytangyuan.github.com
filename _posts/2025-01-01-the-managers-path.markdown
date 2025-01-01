@@ -1,14 +1,14 @@
 ---
 layout:     post
-title:      "Reading Notes: The Manager's Path"
-subtitle:   "A Guide for Tech Leaders Navigating Growth and Change"
+title:      "Reading Notes: The Manager's Path - A Guide for Tech Leaders Navigating Growth and Change"
+subtitle:   ""
 date:       2025-01-01
 author:     "Yuan Tang"
 tags:
     - Leadership
 ---
 
-*This post contains my reading notes on the book [The Manager's Path](https://www.oreilly.com/library/view/the-managers-path/9781491973882/).*
+*This post contains my reading notes on the book [The Manager's Path](https://www.oreilly.com/library/view/the-managers-path/9781491973882/). Note that I am still reading the book and this is my in-progress running notes.*
 
 # Management 101
 
