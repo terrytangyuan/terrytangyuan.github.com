@@ -74,7 +74,7 @@ tags:
     * When you are persistently unhappy, say something
     * Set your own boundaries
     * Sometimes if you want a bigger job, you will have to work more hours to get it
-    * If your manageris conscientious, she'll appreciate your candor
+    * If your manager is conscientious, she'll appreciate your candor
 * Give your manager a break
     * She may be stressed out sometimes; she'll be imperfect and say dumb things, or do things that feel unfair or harmful to you
     * Her job is to do the best thing for the company and the team; not to make you happy all the time
