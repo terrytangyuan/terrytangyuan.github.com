@@ -14,8 +14,6 @@ tags:
 We are excited to announce that vLLM inference provider is now available in Llama Stack. This article provides an introduction to this integration and a tutorial to help you get started using it.
 
 
-
-
 # What is Llama Stack?
 
 Llama Stack defines and standardizes the set of core building blocks needed to bring generative AI applications to market. These building blocks are presented in the form of interoperable APIs with a broad set of Service Providers providing their implementations.
@@ -31,29 +29,35 @@ We will cover the remote vLLM provider here.
 
 ## Prerequisites
 
-* Linux system
-* [Hugging Face CLI](https://huggingface.co/docs/huggingface_hub/main/en/guides/cli)
-* Podman or Docker by specifying `DOCKER_BINARY` environment variable.
+* Linux operating system
+* [Hugging Face CLI](https://huggingface.co/docs/huggingface_hub/main/en/guides/cli) if you'd like to download the model via CLI.
+* [Podman](https://podman.io/) or [Docker](https://www.docker.com/) (can be specified via the `DOCKER_BINARY` environment variable when running `llama stack` CLI commands).
+* [Kind](https://kind.sigs.k8s.io/) for Kubernetes deployment.
+* Python >= 3.10 if you'd like to test the [Llama Stack Python SDK](https://github.com/meta-llama/llama-stack-client-python).
 
 
 ## Get Started via Containers
 
 ### Start vLLM Server
 
+Use [Hugging Face CLI](https://huggingface.co/docs/huggingface_hub/main/en/guides/cli) to download models. 
+
+```bash
+mkdir /tmp/test-vllm-llama-stack
+huggingface-cli login --token <YOUR-HF-TOKEN>
+huggingface-cli download meta-llama/Llama-3.2-1B-Instruct --local-dir /tmp/test-vllm-llama-stack/.cache/huggingface/hub/models/Llama-3.2-1B-Instruct
+```
+
 Build images from source. Use CPU for demonstration only
 TODO: link to other builds other than cpus
 
 ```
-git clone git@github.com:vllm-project/vllm.git
+git clone git@github.com:vllm-project/vllm.git /tmp/test-vllm-llama-stack
+cd /tmp/test-vllm-llama-stack/vllm
 podman build -f Dockerfile.cpu -t vllm-cpu-env --shm-size=4g .
 ```
 
-Use [Hugging Face CLI](https://huggingface.co/docs/huggingface_hub/main/en/guides/cli) to download models. 
 
-```bash
-huggingface-cli login --token <YOUR-HF-TOKEN>
-huggingface-cli download meta-llama/Llama-3.2-1B-Instruct --local-dir /home/yutang/.cache/huggingface/hub/models/Llama-3.2-1B-Instruct
-```
 
 Start container:
 ```bash
@@ -64,7 +68,7 @@ podman run -it --network=host \
    --security-opt seccomp=unconfined \
    --device /dev/kfd \
    --device /dev/dri \
-   -v /home/yutang/.cache/huggingface/hub/models/Llama-3.2-1B-Instruct:/app/model \
+   -v /tmp/test-vllm-llama-stack/.cache/huggingface/hub/models/Llama-3.2-1B-Instruct:/app/model \
    --entrypoint='["python3", "-m", "vllm.entrypoints.openai.api_server", "--model", "/app/model", "--served-model-name", "meta-llama/Llama-3.2-1B-Instruct", "--port", "8000"]' \
     vllm-cpu-env
 ```
@@ -89,10 +93,11 @@ curl http://localhost:8000/v1/completions \
 
 Build the image with `llama stack build`:
 ```
-git clone git@github.com:meta-llama/llama-stack.git
+git clone git@github.com:meta-llama/llama-stack.git /tmp/test-vllm-llama-stack/llama-stack
+cd /tmp/test-vllm-llama-stack/llama-stack
 pip install .
 
-cat > vllm-llama-stack-build.yaml << "EOF"
+cat > /tmp/test-vllm-llama-stack/vllm-llama-stack-build.yaml << "EOF"
 name: vllm
 distribution_spec:
   description: Like local, but use vLLM for running LLM inference
@@ -111,10 +116,10 @@ image_type: docker
 EOF
 
 export DOCKER_BINARY=podman
-LLAMA_STACK_DIR=. PYTHONPATH=. python -m llama_stack.cli.llama stack build --config /home/yutang/repos/test-odh/vllm-llama-stack/vllm-llama-stack-build.yaml
+LLAMA_STACK_DIR=. PYTHONPATH=. python -m llama_stack.cli.llama stack build --config /tmp/test-vllm-llama-stack/vllm-llama-stack-build.yaml
 ```
 
-Edit the generated `vllm-run.yaml` to be `vllm-llama-stack-run.yaml` with the following change in the `models` field:
+Edit the generated `vllm-run.yaml` to be `/tmp/test-vllm-llama-stack/vllm-llama-stack-run.yaml` with the following change in the `models` field:
 
 ```
 models:
@@ -139,12 +144,12 @@ LLAMA_STACK_DIR=. PYTHONPATH=. python -m llama_stack.cli.llama stack run \
 --env VLLM_MAX_TOKENS=8192 \
 --env VLLM_API_TOKEN=fake \
 --env LLAMASTACK_PORT=$LLAMASTACK_PORT \
-~/repos/test-odh/vllm-llama-stack/vllm-llama-stack-run.yaml
+/tmp/test-vllm-llama-stack/vllm-llama-stack-run.yaml
 ```
 
 Alternatively, we can run the following `podman run` command instead:
 ```
-podman run --security-opt label=disable -it --network host -v ~/repos/test-odh/vllm-llama-stack/vllm-llama-stack-run.yaml:/app/config.yaml -v /home/yutang/repos/llama-stack:/app/llama-stack-source \
+podman run --security-opt label=disable -it --network host -v /tmp/test-vllm-llama-stack/vllm-llama-stack-run.yaml:/app/config.yaml -v /tmp/test-vllm-llama-stack/llama-stack:/app/llama-stack-source \
 --env INFERENCE_MODEL=$INFERENCE_MODEL \
 --env VLLM_URL=http://$INFERENCE_ADDR:$INFERENCE_PORT/v1 \
 --env VLLM_MAX_TOKENS=8192 \
@@ -246,7 +251,7 @@ metadata:
 spec:
   containers:
   - name: llama-stack
-    image: quay.io/terrytangyuan/vllm-cpu-env:latest
+    image: localhost/vllm-cpu-env:latest
     command:
         - bash
         - -c
@@ -296,7 +301,7 @@ INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 ```
 
-Modify previously created `vllm-llama-stack-run.yaml` to `vllm-llama-stack-run-k8s.yaml` with the following inference provider:
+Modify previously created `vllm-llama-stack-run.yaml` to `/tmp/test-vllm-llama-stack/vllm-llama-stack-run-k8s.yaml` with the following inference provider:
 
 ```
 providers:
@@ -312,7 +317,7 @@ providers:
 Build an image with LlamaStack run configuration and server source code:
 
 ```
-cat >Containerfile.llama-stack-run-k8s <<EOF
+cat >/tmp/test-vllm-llama-stack/Containerfile.llama-stack-run-k8s <<EOF
 FROM distribution-vllm:dev
 
 RUN apt-get update && apt-get install -y git
@@ -320,7 +325,7 @@ RUN git clone https://github.com/meta-llama/llama-stack.git /app/llama-stack-sou
 
 ADD ./vllm-llama-stack-run-k8s.yaml /app/config.yaml
 EOF
-podman build -f ./vllm-llama-stack/Containerfile.llama-stack-run-k8s -t llama-stack-run-k8s ./vllm-llama-stack
+podman build -f /tmp/test-vllm-llama-stack/Containerfile.llama-stack-run-k8s -t llama-stack-run-k8s /tmp/test-vllm-llama-stack
 ```
 
 
@@ -391,3 +396,5 @@ Test:
 kubectl port-forward service/llama-stack-service 5000:5000
 llama-stack-client --endpoint http://localhost:5000 inference chat-completion --message "hello, what model are you?"
 ```
+TODO: More interesting prompt to congratulate reaching the end of the article
+
