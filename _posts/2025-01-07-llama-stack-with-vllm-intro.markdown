@@ -91,10 +91,28 @@ Build the image with `llama stack build`:
 ```
 git clone git@github.com:meta-llama/llama-stack.git
 pip install .
+
+cat > vllm-llama-stack-build.yaml << "EOF"
+name: vllm
+distribution_spec:
+  description: Like local, but use vLLM for running LLM inference
+  providers:
+    inference: remote::vllm
+    safety: inline::llama-guard
+    agents: inline::meta-reference
+    memory: inline::meta-reference
+    datasetio: inline::localfs
+    scoring: inline::basic
+    eval: inline::meta-reference
+    post_training: inline::torchtune
+    tool_runtime: inline::brave-search
+    telemetry: inline::meta-reference
+image_type: docker
+EOF
+
 export DOCKER_BINARY=podman
 LLAMA_STACK_DIR=. PYTHONPATH=. python -m llama_stack.cli.llama stack build --config /home/yutang/repos/test-odh/vllm-llama-stack/vllm-llama-stack-build.yaml
 ```
-
 
 Edit the generated `vllm-run.yaml` to be `vllm-llama-stack-run.yaml` with the following change in the `models` field:
 
@@ -191,19 +209,84 @@ Tech's silent dawn rise
 
 ## Deployment on Kubernetes
 
-TODO: Download YAML files
-
 Create Kind cluster:
 ```
 kind create cluster --image kindest/node:v1.32.0 --name llama-stack-test
 ```
 
-Start vLLM server:
+Start vLLM server (remember to replace `<YOUR-HF-TOKEN>` with your actual token:
 ```
-kubectl create -f ./vllm-llama-stack/vllm-service.yaml
+cat <<EOF |kubectl apply -f -
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: vllm-models
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  resources:
+    requests:
+      storage: 50Gi
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: hf-token-secret
+type: Opaque
+data:
+  token: "<YOUR-HF-TOKEN>"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: vllm-server
+  labels:
+    app: vllm
+spec:
+  containers:
+  - name: llama-stack
+    image: quay.io/terrytangyuan/vllm-cpu-env:latest
+    command:
+        - bash
+        - -c
+        - |
+          MODEL="meta-llama/Llama-3.2-1B-Instruct"
+          MODEL_PATH=/app/model/$(basename $MODEL)
+          huggingface-cli login --token $HUGGING_FACE_HUB_TOKEN
+          huggingface-cli download $MODEL --local-dir $MODEL_PATH --cache-dir $MODEL_PATH
+          python3 -m vllm.entrypoints.openai.api_server --model $MODEL_PATH --served-model-name $MODEL --port 8000
+    ports:
+      - containerPort: 8000
+    volumeMounts:
+      - name: llama-storage
+        mountPath: /app/model
+    env:
+      - name: HUGGING_FACE_HUB_TOKEN
+        valueFrom:
+          secretKeyRef:
+            name: hf-token-secret
+            key: token
+  volumes:
+  - name: llama-storage
+    persistentVolumeClaim:
+      claimName: vllm-models
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vllm-server
+spec:
+  selector:
+    app: vllm
+  ports:
+  - port: 8000
+    targetPort: 8000
+  type: NodePort
+EOF
 ```
 
-vLLM server started:
+vLLM server started (this might take a couple of minutes to download the model):
 ```
 $ kubectl logs vllm-server
 ...
@@ -213,16 +296,83 @@ INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 ```
 
+Modify previously created `vllm-llama-stack-run.yaml` to `vllm-llama-stack-run-k8s.yaml` with the following inference provider:
+
+```
+providers:
+  inference:
+  - provider_id: vllm
+    provider_type: remote::vllm
+    config:
+      url: ${env.VLLM_URL}
+      max_tokens: ${env.VLLM_MAX_TOKENS:4096}
+      api_token: ${env.VLLM_API_TOKEN:fake}
+```
+
 Build an image with LlamaStack run configuration and server source code:
 
 ```
+cat >Containerfile.llama-stack-run-k8s <<EOF
+FROM distribution-vllm:dev
+
+RUN apt-get update && apt-get install -y git
+RUN git clone https://github.com/meta-llama/llama-stack.git /app/llama-stack-source
+
+ADD ./vllm-llama-stack-run-k8s.yaml /app/config.yaml
+EOF
 podman build -f ./vllm-llama-stack/Containerfile.llama-stack-run-k8s -t llama-stack-run-k8s ./vllm-llama-stack
 ```
 
 
 Start LlamaStack server:
 ```
-kubectl create -f ./vllm-llama-stack/llama-stack-service.yaml
+cat <<EOF |kubectl apply -f -
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: llama-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: llama-stack-pod
+  labels:
+    app: llama-stack
+spec:
+  containers:
+  - name: llama-stack
+    image: localhost/llama-stack-run-k8s:latest
+    imagePullPolicy: IfNotPresent
+    command: ["python", "-m", "llama_stack.distribution.server.server", "--yaml-config", "/app/config.yaml"]
+    ports:
+      - containerPort: 5000
+    volumeMounts:
+      - name: llama-storage
+        mountPath: /root/.llama
+  volumes:
+  - name: llama-storage
+    persistentVolumeClaim:
+      claimName: llama-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: llama-stack-service
+spec:
+  selector:
+    app: llama-stack
+  ports:
+  - protocol: TCP
+    port: 5000
+    targetPort: 5000
+  type: ClusterIP
+EOF
 ```
 
 LlamaStack server started:
