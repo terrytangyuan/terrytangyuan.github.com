@@ -26,7 +26,7 @@ Llama Stack defines and standardizes the set of core building blocks needed to b
 Llama Stack focuses on making it easy to build production applications with a variety of models - ranging from the latest Llama 3.3 model to specialized models like Llama Guard for safety and other models. The goal is to provide pre-packaged implementations (aka “distributions”) which can be run in a variety of deployment environments. The Stack can assist you in your entire app development lifecycle - start iterating on local, mobile or desktop and seamlessly transition to on-prem or public cloud deployments. At every point in this transition, the same set of APIs and the same developer experience are available.
 
 
-Each specific implementation of an API is called a "Provider" in this architecture. Users can swap providers via configuration. `vLLM` is a prominent example of a high-performance API backing the inference API.
+Each specific implementation of an API is called a "Provider" in this architecture. Users can swap providers via configuration. vLLM is a prominent example of a high-performance API backing the inference API.
 
 # vLLM Inference Provider
 
@@ -141,7 +141,7 @@ models:
   provider_model_id: null
 ```
 
-Then we can start the LlamaStack Server with the image we built via `llama stack run`:
+Then we can start the Llama Stack Server with the image we built via `llama stack run`:
 ```
 export INFERENCE_ADDR=host.containers.internal
 export INFERENCE_PORT=8000
@@ -319,12 +319,12 @@ providers:
   - provider_id: vllm
     provider_type: remote::vllm
     config:
-      url: ${env.VLLM_URL}
-      max_tokens: ${env.VLLM_MAX_TOKENS:4096}
-      api_token: ${env.VLLM_API_TOKEN:fake}
+      url: http://vllm-server.default.svc.cluster.local:8000/v1
+      max_tokens: 4096
+      api_token: fake
 ```
 
-Once we have defined the run configuration for Llama Stack, we can build an image with that configuration the server source code:
+Once we have defined the run configuration for Llama Stack, we can build an image with that configuration and the server source code:
 
 ```
 cat >/tmp/test-vllm-llama-stack/Containerfile.llama-stack-run-k8s <<EOF
@@ -339,7 +339,7 @@ podman build -f /tmp/test-vllm-llama-stack/Containerfile.llama-stack-run-k8s -t 
 ```
 
 
-We can then start the LlamaStack server by deploying a Kubernetes Pod and Service:
+We can then start the Llama Stack server by deploying a Kubernetes Pod and Service:
 ```
 cat <<EOF |kubectl apply -f -
 apiVersion: v1
@@ -390,7 +390,7 @@ spec:
 EOF
 ```
 
-We can check that the LlamaStack server has started:
+We can check that the Llama Stack server has started:
 ```
 $ kubectl logs vllm-server
 ...
