@@ -3,11 +3,29 @@ title: Yuan Tang
 SEOTitle: Yuan's Blog
 header-img: img/about-bg.png
 email: terrytangyuan@gmail.com
-description: ""
-keyword: ""
-url: "http://terrytangyuan.github.io"              # your host, for absolute URL
+description: "Personal blog of Yuan Tang"
+keyword: "AI, Machine Learning, Open Source, Kubernetes, Cloud Native"
+url: "https://terrytangyuan.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
-plugins: [jekyll-paginate]
+
+# Modern Jekyll plugins configuration (GitHub Pages compatible)
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-github-metadata
+
+# Security settings
+strict_front_matter: true
+liquid:
+  error_mode: warn
+  strict_filters: false
+  strict_variables: false
 
 # SNS settings
 weibo_username:     5681818134
@@ -19,49 +37,66 @@ email_username:  terrytangyuan@gmail.com
 linkedin_visitor_id: terrytangyuan
 RSS: true
 
-
 # Build settings
 highlighter: rouge
 permalink: pretty
 paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+exclude: 
+  - "less"
+  - "node_modules"
+  - "Gruntfile.js"
+  - "package.json"
+  - "package-lock.json"
+  - "README.md"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "vendor"
+  - ".sass-cache"
+  - ".jekyll-cache"
+  - "*.gem"
+  - "*.gemspec"
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
-
-
 # Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
+# kramdown is the default and recommended processor
 markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
 
-
+# Security headers and modern web standards
+webrick:
+  headers:
+    X-Frame-Options: SAMEORIGIN
+    X-Content-Type-Options: nosniff
+    X-XSS-Protection: "1; mode=block"
+    Referrer-Policy: strict-origin-when-cross-origin
+    Content-Security-Policy: "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'"
 
 # Disqus settings
 disqus_username: terrytangyuan
 
-# Duoshuo settings
+# Duoshuo settings (deprecated - keeping for legacy)
 duoshuo_username: terrytangyuan
 # Share component is depend on Comment so we can NOT use share only.
 duoshuo_share: true                     # set to false if you want to use Comment without Sharing
-
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Live deeply, live fully, and live with love."
 sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
-
-
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
 featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
 
-
-
-# Affliations
+# Affiliations
 affliations: [
     {
         title: "Red Hat",
@@ -80,3 +115,34 @@ affliations: [
         href: "https://gatech.edu"
     }
 ]
+
+# SEO settings
+author: Yuan Tang
+social:
+  name: Yuan Tang
+  links:
+    - https://twitter.com/terrytangyuan
+    - https://github.com/terrytangyuan
+    - https://www.linkedin.com/in/terrytangyuan
+
+# Feed settings
+feed:
+  posts_limit: 20
+  excerpt_only: true
+
+# Performance settings
+sass:
+  style: compressed
+  sourcemap: never
+
+# Development settings
+show_excerpts: true
+future: false
+unpublished: false
+plugins_dir: _plugins
+layouts_dir: _layouts
+data_dir: _data
+includes_dir: _includes
+
+# Repository information for github-metadata plugin
+repository: terrytangyuan/terrytangyuan.github.io
