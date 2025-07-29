@@ -9,6 +9,7 @@ tags:
     - Kubernetes
     - Artificial Intelligence
     - Machine Learning
+    - KServe
 ---
 
 **Authors: Alexa Griffith, Dan Sun, Yuan Tang, Johnu George, Lize Cai**
@@ -17,7 +18,7 @@ tags:
 
 We are thrilled to announce the release of **KServe v0.15**, marking a significant leap forward in serving both predictive and generative AI models. This release introduces enhanced support for generative AI workloads, including advanced features for serving large language models (LLMs), improved model and KV caching mechanisms, and integration with Envoy AI Gateway.
 
-![llama-stack](../../../../../img/inblog/kserve_generative_inference.png)
+![kserve_generative_inference](../../../../../img/inblog/kserve_generative_inference.png)
 
 ---
 
