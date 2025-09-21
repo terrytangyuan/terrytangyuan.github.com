@@ -11,12 +11,11 @@ tags:
 
 *Originally posted on [Substack](https://terrytangyuan.substack.com/p/eight-lessons-on-open-source-leadership)*.
 
-# Eight Lessons on Open Source Leadership and Community
 Over the past months, I’ve been sharing thoughts on **open source, leadership, and community building** on social media. This post provides a quick roundup of the themes so far. 
 
 I recently started my journey here on Substack and you are welcome to follow along! You can also find me on [LinkedIn](https://www.linkedin.com/in/terrytangyuan), [X](https://twitter.com/TerryTangYuan), [Bluesky](https://bsky.app/profile/terrytangyuan.xyz), [Mastodon](https://fosstodon.org/@terrytangyuan), and [GitHub](https://github.com/terrytangyuan). 
 
-# 🔑 **𝗧𝗲𝗰𝗵𝗻𝗶𝗰𝗮𝗹 𝗹𝗲𝗮𝗱𝗲𝗿𝘀𝗵𝗶𝗽 𝗶𝗻 𝗼𝗽𝗲𝗻 𝘀𝗼𝘂𝗿𝗰𝗲 𝗶𝘀𝗻’𝘁 𝗮𝗯𝗼𝘂𝘁 𝗰𝗼𝗻𝘁𝗿𝗼𝗹 - 𝗶𝘁’𝘀 𝗮𝗯𝗼𝘂𝘁 𝘀𝘁𝗲𝘄𝗮𝗿𝗱𝘀𝗵𝗶𝗽**
+# 🔑 𝗧𝗲𝗰𝗵𝗻𝗶𝗰𝗮𝗹 𝗹𝗲𝗮𝗱𝗲𝗿𝘀𝗵𝗶𝗽 𝗶𝗻 𝗼𝗽𝗲𝗻 𝘀𝗼𝘂𝗿𝗰𝗲 𝗶𝘀𝗻’𝘁 𝗮𝗯𝗼𝘂𝘁 𝗰𝗼𝗻𝘁𝗿𝗼𝗹 - 𝗶𝘁’𝘀 𝗮𝗯𝗼𝘂𝘁 𝘀𝘁𝗲𝘄𝗮𝗿𝗱𝘀𝗵𝗶𝗽
 
 In OSS, you don’t manage people. You manage trust.  
 You don’t assign work. You inspire contribution.  
@@ -37,8 +36,7 @@ Most importantly, they recognize that leadership in OSS is earned, not appointed
   
 Whether you're a maintainer, contributor, or just starting out — remember: open source runs on shared effort and mutual respect. Technical excellence matters. But how you lead matters more.
 
-#  **  
-**🌱 **𝗪𝗮𝗻𝘁 𝘁𝗼 𝗴𝗲𝘁 𝘀𝘁𝗮𝗿𝘁𝗲𝗱 𝗶𝗻 𝗼𝗽𝗲𝗻 𝘀𝗼𝘂𝗿𝗰𝗲? 𝗦𝘁𝗮𝗿𝘁 𝘀𝗺𝗮𝗹𝗹 - 𝗯𝘂𝘁 𝘀𝘁𝗮𝗿𝘁**
+#  🌱 𝗪𝗮𝗻𝘁 𝘁𝗼 𝗴𝗲𝘁 𝘀𝘁𝗮𝗿𝘁𝗲𝗱 𝗶𝗻 𝗼𝗽𝗲𝗻 𝘀𝗼𝘂𝗿𝗰𝗲? 𝗦𝘁𝗮𝗿𝘁 𝘀𝗺𝗮𝗹𝗹 - 𝗯𝘂𝘁 𝘀𝘁𝗮𝗿𝘁
 
 When people ask how I got involved in open source, they’re often surprised by the answer:  
   
@@ -69,8 +67,7 @@ Today, I contribute by:
 You don’t need permission to contribute.  
 Start with curiosity, stay consistent, and participate with empathy.
 
-#  **  
-**💙 **𝗦𝘂𝘀𝘁𝗮𝗶𝗻𝗮𝗯𝗶𝗹𝗶𝘁𝘆 𝗶𝗻 𝗼𝗽𝗲𝗻 𝘀𝗼𝘂𝗿𝗰𝗲 𝗶𝘀𝗻'𝘁 𝗮𝗯𝗼𝘂𝘁 𝗰𝗼𝗱𝗲. 𝗜𝘁'𝘀 𝗮𝗯𝗼𝘂𝘁 𝗰𝗮𝗿𝗲**
+#  💙 𝗦𝘂𝘀𝘁𝗮𝗶𝗻𝗮𝗯𝗶𝗹𝗶𝘁𝘆 𝗶𝗻 𝗼𝗽𝗲𝗻 𝘀𝗼𝘂𝗿𝗰𝗲 𝗶𝘀𝗻'𝘁 𝗮𝗯𝗼𝘂𝘁 𝗰𝗼𝗱𝗲. 𝗜𝘁'𝘀 𝗮𝗯𝗼𝘂𝘁 𝗰𝗮𝗿𝗲
 
 Open source projects don’t fail because of bad technology.  
 They fail because contributors burn out, communities fracture, or energy fades.  
@@ -94,8 +91,7 @@ The hardest part of OSS leadership isn’t scaling code. It’s scaling trust, e
   
 If we care for the people behind the code, the code will take care of itself.
 
-#  **  
-**👥 **𝗢𝗽𝗲𝗻 𝘀𝗼𝘂𝗿𝗰𝗲 𝗶𝘀 𝗽𝗼𝘄𝗲𝗿𝗲𝗱 𝗯𝘆 𝗽𝗲𝗼𝗽𝗹𝗲 - 𝗻𝗼𝘁 𝗷𝘂𝘀𝘁 𝗰𝗼𝗱𝗲**
+#  👥 𝗢𝗽𝗲𝗻 𝘀𝗼𝘂𝗿𝗰𝗲 𝗶𝘀 𝗽𝗼𝘄𝗲𝗿𝗲𝗱 𝗯𝘆 𝗽𝗲𝗼𝗽𝗹𝗲 - 𝗻𝗼𝘁 𝗷𝘂𝘀𝘁 𝗰𝗼𝗱𝗲
 
 Behind every release, every merged PR, every answered issue…  
 There’s someone who took the time to care.  
@@ -114,8 +110,7 @@ Maybe they reviewed your first PR, mentored you, or just modeled what good commu
   
 A little gratitude goes a long way.
 
-#  **  
-**🏆 **𝗜𝗻 𝗼𝗽𝗲𝗻 𝘀𝗼𝘂𝗿𝗰𝗲, 𝘀𝗺𝗮𝗹𝗹 𝘄𝗶𝗻𝘀 𝗮𝗿𝗲 𝘁𝗵𝗲 𝗯𝗶𝗴 𝘄𝗶𝗻𝘀**
+#  🏆 𝗜𝗻 𝗼𝗽𝗲𝗻 𝘀𝗼𝘂𝗿𝗰𝗲, 𝘀𝗺𝗮𝗹𝗹 𝘄𝗶𝗻𝘀 𝗮𝗿𝗲 𝘁𝗵𝗲 𝗯𝗶𝗴 𝘄𝗶𝗻𝘀
 
 It’s easy to focus only on major milestones — big releases, new features, or keynote talks.  
   
@@ -138,10 +133,7 @@ If we want OSS to thrive, we have to make celebration part of the culture — no
   
 Let’s celebrate the small wins — because in open source, they’re never really small.
 
-# 
-
-#  **  
-**🌟 **𝗢𝗽𝗲𝗻 𝘀𝗼𝘂𝗿𝗰𝗲 𝗺𝗲𝗻𝘁𝗼𝗿𝘀𝗵𝗶𝗽 𝗶𝘀𝗻’𝘁 𝗮𝗯𝗼𝘂𝘁 𝗵𝗮𝘃𝗶𝗻𝗴 𝗮𝗹𝗹 𝘁𝗵𝗲 𝗮𝗻𝘀𝘄𝗲𝗿𝘀 - 𝗶𝘁’𝘀 𝗮𝗯𝗼𝘂𝘁 𝗰𝗿𝗲𝗮𝘁𝗶𝗻𝗴 𝘀𝗽𝗮𝗰𝗲 𝗳𝗼𝗿 𝗴𝗿𝗼𝘄𝘁𝗵**
+# 🌟 𝗢𝗽𝗲𝗻 𝘀𝗼𝘂𝗿𝗰𝗲 𝗺𝗲𝗻𝘁𝗼𝗿𝘀𝗵𝗶𝗽 𝗶𝘀𝗻’𝘁 𝗮𝗯𝗼𝘂𝘁 𝗵𝗮𝘃𝗶𝗻𝗴 𝗮𝗹𝗹 𝘁𝗵𝗲 𝗮𝗻𝘀𝘄𝗲𝗿𝘀 - 𝗶𝘁’𝘀 𝗮𝗯𝗼𝘂𝘁 𝗰𝗿𝗲𝗮𝘁𝗶𝗻𝗴 𝘀𝗽𝗮𝗰𝗲 𝗳𝗼𝗿 𝗴𝗿𝗼𝘄𝘁𝗵
 
 I learned about writing good unit tests from a PR review in the pandas Python library. Thank you [Jeff Reback](https://www.linkedin.com/in/jeff-reback-3a20876/) for your guidance many years ago.  
   
@@ -169,8 +161,7 @@ And if you're earlier in your journey:
   
 Mentorship in open source is one of the most impactful — and most overlooked — forms of technical leadership.
 
-#  **  
-**🔥 **𝗜𝗻 𝗼𝗽𝗲𝗻 𝘀𝗼𝘂𝗿𝗰𝗲, 𝘆𝗼𝘂 𝗱𝗼𝗻’𝘁 𝗮𝘀𝘀𝗶𝗴𝗻 𝘁𝗮𝘀𝗸𝘀 - 𝘆𝗼𝘂 𝗶𝗻𝘀𝗽𝗶𝗿𝗲 𝗰𝗼𝗻𝘁𝗿𝗶𝗯𝘂𝘁𝗶𝗼𝗻**
+#  🔥 𝗜𝗻 𝗼𝗽𝗲𝗻 𝘀𝗼𝘂𝗿𝗰𝗲, 𝘆𝗼𝘂 𝗱𝗼𝗻’𝘁 𝗮𝘀𝘀𝗶𝗴𝗻 𝘁𝗮𝘀𝗸𝘀 - 𝘆𝗼𝘂 𝗶𝗻𝘀𝗽𝗶𝗿𝗲 𝗰𝗼𝗻𝘁𝗿𝗶𝗯𝘂𝘁𝗶𝗼𝗻
 
 𝗜 𝗺𝗲𝗻𝘁𝗶𝗼𝗻𝗲𝗱 𝘁𝗵𝗶𝘀 𝗶𝗻 𝗺𝘆 𝗽𝗿𝗲𝘃𝗶𝗼𝘂𝘀 𝗽𝗼𝘀𝘁, 𝗯𝘂𝘁 𝗵𝗼𝘄 𝗱𝗼 𝘆𝗼𝘂 𝗶𝗻𝘀𝗽𝗶𝗿𝗲 𝗰𝗼𝗻𝘁𝗿𝗶𝗯𝘂𝘁𝗶𝗼𝗻?  
   
@@ -188,7 +179,7 @@ Recognition drives retention. Gratitude is free and incredibly effective. [Andre
   
 This is how open source projects grow — and how technical leaders earn trust in public.
 
-#  🎓 **𝗔𝗱𝘃𝗶𝗰𝗲 𝗳𝗼𝗿 𝗻𝗲𝘄 𝗖𝗦 𝗴𝗿𝗮𝗱𝘂𝗮𝘁𝗲𝘀 𝗲𝗻𝘁𝗲𝗿𝗶𝗻𝗴 𝘁𝗵𝗲 𝗷𝗼𝗯 𝗺𝗮𝗿𝗸𝗲𝘁**
+#  🎓 𝗔𝗱𝘃𝗶𝗰𝗲 𝗳𝗼𝗿 𝗻𝗲𝘄 𝗖𝗦 𝗴𝗿𝗮𝗱𝘂𝗮𝘁𝗲𝘀 𝗲𝗻𝘁𝗲𝗿𝗶𝗻𝗴 𝘁𝗵𝗲 𝗷𝗼𝗯 𝗺𝗮𝗿𝗸𝗲𝘁
 
 It’s no secret that this year has been especially tough for new grads seeking software engineering roles. Many fall into the trap of endlessly polishing resumes or grinding LeetCode. But here’s the truth:  
   
