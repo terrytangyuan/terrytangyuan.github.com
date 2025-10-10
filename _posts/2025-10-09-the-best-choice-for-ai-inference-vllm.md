@@ -14,7 +14,7 @@ tags:
 
 *Originally posted on [Medium](https://medium.com/open-5g-hypercore/episode-xxx-the-best-choice-for-ai-inference-vllm-286b2af2df71)*.
 
-**Authors:** Fatih E. NAR, Greg Pereira, Yuan Tang, Robert Shaw, Anish Asthana
+**Authors:** Fatih E. Nar, Greg Pereira, Yuan Tang, Robert Shaw, Anish Asthana
 
 ![][image1]  
 
