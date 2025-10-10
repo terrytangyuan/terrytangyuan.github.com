@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Episode XXX: The Best Choice for AI Inference: vLLM"
+title:      "The Best Choice for AI Inference: vLLM"
 subtitle:   ""
 date:       2025-10-09
 author:     "Yuan Tang"
