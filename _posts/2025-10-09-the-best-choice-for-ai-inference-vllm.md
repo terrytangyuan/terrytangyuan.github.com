@@ -662,7 +662,7 @@ This enterprise-grade platform transforms vLLM from a high-performance inference
 
 **✓** \= Full Support **◐** \= Partial/Limited Support **✗** \= No Support
 
-[![][image4]](https://docs.google.com/spreadsheets/d/1Quu1PpmSPiSQvbFsCOBb8tGuUKKQ7H1yWWO4-QzA08s/edit?usp=sharing)
+[![][image4]]()
 
 ### **Key Differentiators for RHOAI with vLLM:**
 
