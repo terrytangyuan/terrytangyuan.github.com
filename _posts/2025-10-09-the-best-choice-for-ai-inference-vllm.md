@@ -12,7 +12,7 @@ tags:
     - KServe
 ---
 
-*Originally posted on [Medium](https://medium.com/open-5g-hypercore/episode-xxx-the-best-choice-for-ai-inference-vllm-286b2af2df71)*.
+*Originally posted on [Medium](https://medium.com/open-5g-hypercore/episode-xxx-the-best-choice-for-ai-inference-vllm-286b2af2df71) and on [Red Hat Blog](https://developers.redhat.com/articles/2025/10/30/why-vllm-best-choice-ai-inference-today)*.
 
 **Authors:** Fatih E. Nar, Greg Pereira, Yuan Tang, Robert Shaw, Anish Asthana
 
