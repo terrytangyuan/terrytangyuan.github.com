@@ -447,6 +447,8 @@ body {
     .cv-section-time {
         width: 100%;
         display: block;
+        float: none;
+        margin-bottom: 8px;
     }
 
 }
