@@ -444,11 +444,38 @@ body {
         padding: 5px;
     }
 
+    .cv-section-item {
+        padding: 12px 10px !important;
+        margin: 12px 0px !important;
+    }
+
+    .cv-section-body {
+        margin: 3px 3px !important;
+    }
+
     .cv-section-time {
         width: 100%;
         display: block;
         float: none;
         margin-bottom: 8px;
+        text-align: left;
+    }
+
+    .cv-section-title {
+        font-size: 1.3em;
+        margin-bottom: 8px;
+    }
+
+    .info-section-name {
+        font-size: 2.2em;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-icon img {
+        height: 20px;
     }
 
 }
