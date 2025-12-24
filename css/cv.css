@@ -1,27 +1,64 @@
 /*-------page level styling--------*/
+* {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .cv-inline-list {
     padding: 0px;
-    margin: 0px;
+    margin: 5px 0px;
+    line-height: 1.8;
 }
 
 .cv-inline-list li {
     display: inline;
+    margin-right: 2px;
 }
 
 .info-section-name {
-    font-size: 1.5em
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 5px;
 }
 
 .cv-section-title {
-    font-size: 1.5em;
-    padding: 7px 10px;
+    font-size: 1.6em;
+    font-weight: 700;
+    padding: 12px 0px;
+    margin-top: 25px;
+    margin-bottom: 15px;
     color: #820000;
-    /*border-top: 2px solid #e4c264;*/
-    border-bottom: 2px solid #8C1515;
+    border-bottom: 3px solid #8C1515;
+    letter-spacing: -0.3px;
+    position: relative;
+}
+
+.cv-section-title::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #820000, #8C1515);
 }
 
 .theme-color {
@@ -30,6 +67,14 @@ body {
 
 .cv-link, .cv-link:visited {
     color: #820000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.cv-link:hover {
+    color: #a00000;
+    border-bottom: 1px solid #820000;
 }
 
 /*---------specific styling--------*/
@@ -54,34 +99,90 @@ table thead {
 }
 
 body {
-    /*background-color: #262626;*/
-    background-color: #EFEFEF;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+    min-height: 100vh;
 }
 
 .cv-container {
     /*--------layout---------*/
-    margin: 30px auto;
-    padding: 20px;
-    box-shadow: -10px 10px 30px #9F9F9F;
+    margin: 40px auto;
+    padding: 35px 60px 50px 60px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.06);
     max-width: 70%;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+    animation: fadeInUp 0.6s ease-out;
 
     /*--------inner style---------*/
-/*    background-color: #2B2B2B;
-    color: #dfdfdf;
-*/
     background-color: #FFFFFF;
     color: #444444;
+}
+
+.cv-container:hover {
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12), 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .go-back {
     position: fixed;
     left: 3%;
     top: 30px;
+    font-size: 1.5em;
+    color: #820000;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.go-back:hover {
+    background-color: #820000;
+    color: white;
+    transform: translateX(-3px);
+    box-shadow: 0 4px 15px rgba(130, 0, 0, 0.3);
 }
 
 .info-section {
     text-align: center;
     color: #820000;
+    padding: 0px 0 15px 0;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 20px;
+}
+
+.info-section > div {
+    margin-top: 8px;
+    font-size: 1.05em;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 10px 0 5px 0;
+}
+
+.social-icon {
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.85;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px) scale(1.1);
+    opacity: 1;
+}
+
+.social-icon img {
+    display: block;
+    height: 24px;
+    width: auto;
 }
 
 .cv-section {
@@ -93,29 +194,48 @@ body {
 }
 
 .cv-section-item {
-    margin: 20px 0px;
+    margin: 25px 0px;
+    padding: 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+    border-left: 3px solid transparent;
+}
+
+.cv-section-item:hover {
+    background-color: #f5f5f5;
+    border-left: 3px solid #820000;
+    transform: translateX(5px);
 }
 
 .cv-section-item-title {
-    font-weight: bold;
-    color: #333333;
+    font-weight: 600;
+    color: #2c2c2c;
+    font-size: 1.05em;
 }
 
 .cv-section-time {
     font-size: 0.9em;
     float: right;
-    color: #9f9f9f;
+    color: #999;
+    font-weight: 500;
+    background-color: #f0f0f0;
+    padding: 3px 10px;
+    border-radius: 4px;
 }
 
 .cv-section-smaller {
-    font-size: 0.9em;
-    color: #666666;
+    font-size: 0.95em;
+    color: #555;
+    font-weight: 500;
+    margin-top: 5px;
 }
 
 .cv-section-smallest {
-    margin-top: 5px;
-    font-size: 0.8em;
-    color: #666666;
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.7;
 }
 
 
@@ -147,39 +267,90 @@ body {
 
     body {
         margin: 0in;
+        background: white !important;
+        font-family: sans-serif !important;
+        line-height: normal !important;
     }
 
     /*-----general layout----------*/
 
     .cv-container {
         max-width: 100%;
-        box-shadow: none;
-        margin: 0px;
-        padding: 0px;
+        box-shadow: none !important;
+        margin: 0px !important;
+        padding: 0px !important;
+        border-radius: 0 !important;
+        animation: none !important;
+        background-color: #FFFFFF !important;
     }
 
     .info-section {
         font-size: 12px;
+        border-bottom: none !important;
+        padding: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .info-section-name {
+        font-size: 1.5em !important;
+        font-weight: normal !important;
+        letter-spacing: normal !important;
+        margin-bottom: 0 !important;
+    }
+
+    .info-section > div {
+        margin-top: 0 !important;
+        font-size: 12px !important;
     }
 
     /*------individual section--------*/
+    .cv-section {
+        padding: 10px !important;
+    }
+
     .cv-section * {
         font-size: 12px;
     }
 
     .cv-section-title {
         page-break-inside: avoid;
-        font-size: 16px;
+        font-size: 16px !important;
+        font-weight: normal !important;
+        border-bottom: 2px solid #8C1515 !important;
+        padding: 7px 10px !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        letter-spacing: normal !important;
+    }
+
+    .cv-section-title::before {
+        display: none !important;
+    }
+
+    .social-icons {
+        display: none !important;
     }
 
     .cv-section-body {
-        margin: 0px;
+        margin: 5px 10px !important;
         color: #999999;
     }
 
     .cv-section-item {
         page-break-inside: avoid;
-        margin: 0.1in;
+        margin: 20px 0px !important;
+        background-color: transparent !important;
+        border-left: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .cv-section-item:hover {
+        background-color: transparent !important;
+        border-left: none !important;
+        transform: none !important;
     }
 
     .cv-section-item-course {
@@ -187,21 +358,43 @@ body {
     }
 
     .cv-section-item-title {
-        color: #333333;
+        color: #333333 !important;
+        font-size: 12px !important;
+        font-weight: bold !important;
+    }
+
+    .cv-section-time {
+        font-size: 0.9em !important;
+        background-color: transparent !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+        color: #9f9f9f !important;
+        font-weight: normal !important;
     }
 
     .cv-section-smaller {
-        font-size: 1em;
+        font-size: 0.9em !important;
+        color: #666666 !important;
+        font-weight: normal !important;
+        margin-top: 0 !important;
     }
 
     .cv-section-smallest {
-        font-size: 10.5px;
-        color: #AAAAAA;
+        font-size: 0.8em !important;
+        margin-top: 5px !important;
+        color: #666666 !important;
+        line-height: normal !important;
     }
 
     /*-------- section specific publication-----------*/
     .cv-publication-author, .cv-publication-venue {
         color: #AAAAAA;
+    }
+
+    .cv-link, .cv-link:visited, .cv-link:hover {
+        color: #820000 !important;
+        text-decoration: none !important;
+        border-bottom: none !important;
     }
 }
 
