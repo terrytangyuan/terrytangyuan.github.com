@@ -33,7 +33,7 @@ body {
 }
 
 .info-section-name {
-    font-size: 2.2em;
+    font-size: 2.8em;
     font-weight: 700;
     letter-spacing: -0.5px;
     margin-bottom: 3px;
@@ -43,7 +43,7 @@ body {
     font-size: 1.5em;
     font-weight: 700;
     padding: 8px 0px;
-    margin-top: 18px;
+    margin-top: 8px;
     margin-bottom: 10px;
     color: #820000;
     border-bottom: 3px solid #8C1515;
@@ -150,9 +150,9 @@ body {
 .info-section {
     text-align: center;
     color: #820000;
-    padding: 0px 0 12px 0;
+    padding: 0px 0 6px 0;
     border-bottom: 1px solid #e8e8e8;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 
 .info-section > div {
@@ -165,7 +165,7 @@ body {
     justify-content: center;
     gap: 12px;
     flex-wrap: wrap;
-    padding: 8px 0 3px 0;
+    padding: 2px 0 0 0;
 }
 
 .social-icon {
@@ -334,10 +334,6 @@ body {
     }
 
     .cv-section-title::before {
-        display: none !important;
-    }
-
-    .social-icons {
         display: none !important;
     }
 
