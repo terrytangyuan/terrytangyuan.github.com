@@ -5,7 +5,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -23,8 +23,8 @@ body {
 
 .cv-inline-list {
     padding: 0px;
-    margin: 5px 0px;
-    line-height: 1.8;
+    margin: 3px 0px;
+    line-height: 1.5;
 }
 
 .cv-inline-list li {
@@ -33,18 +33,18 @@ body {
 }
 
 .info-section-name {
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: 700;
     letter-spacing: -0.5px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 .cv-section-title {
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-weight: 700;
-    padding: 12px 0px;
-    margin-top: 25px;
-    margin-bottom: 15px;
+    padding: 8px 0px;
+    margin-top: 18px;
+    margin-bottom: 10px;
     color: #820000;
     border-bottom: 3px solid #8C1515;
     letter-spacing: -0.3px;
@@ -56,7 +56,7 @@ body {
     position: absolute;
     bottom: -3px;
     left: 0;
-    width: 80px;
+    width: 60px;
     height: 3px;
     background: linear-gradient(90deg, #820000, #8C1515);
 }
@@ -105,8 +105,8 @@ body {
 
 .cv-container {
     /*--------layout---------*/
-    margin: 40px auto;
-    padding: 35px 60px 50px 60px;
+    margin: 30px auto;
+    padding: 25px 50px 40px 50px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.06);
     max-width: 70%;
     border-radius: 8px;
@@ -150,22 +150,22 @@ body {
 .info-section {
     text-align: center;
     color: #820000;
-    padding: 0px 0 15px 0;
+    padding: 0px 0 12px 0;
     border-bottom: 1px solid #e8e8e8;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .info-section > div {
-    margin-top: 8px;
-    font-size: 1.05em;
+    margin-top: 5px;
+    font-size: 1.02em;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 12px;
     flex-wrap: wrap;
-    padding: 10px 0 5px 0;
+    padding: 8px 0 3px 0;
 }
 
 .social-icon {
@@ -181,21 +181,21 @@ body {
 
 .social-icon img {
     display: block;
-    height: 24px;
+    height: 22px;
     width: auto;
 }
 
 .cv-section {
-    padding: 10px;
+    padding: 5px;
 }
 
 .cv-section-body {
-    margin: 5px 10px;
+    margin: 3px 8px;
 }
 
 .cv-section-item {
-    margin: 25px 0px;
-    padding: 20px;
+    margin: 15px 0px;
+    padding: 15px;
     border-radius: 6px;
     transition: all 0.3s ease;
     background-color: #fafafa;
@@ -214,6 +214,16 @@ body {
     font-size: 1.05em;
 }
 
+.cv-section-item-smaller {
+    font-weight: 600;
+    color: #2c2c2c;
+    font-size: 1.05em;
+}
+
+.cv-section-item > div {
+    margin-bottom: 2px;
+}
+
 .cv-section-time {
     font-size: 0.9em;
     float: right;
@@ -228,14 +238,14 @@ body {
     font-size: 0.95em;
     color: #555;
     font-weight: 500;
-    margin-top: 5px;
+    margin-top: 3px;
 }
 
 .cv-section-smallest {
-    margin-top: 8px;
+    margin-top: 4px;
     font-size: 0.9em;
     color: #666;
-    line-height: 1.7;
+    line-height: 1.5;
 }
 
 
@@ -358,6 +368,12 @@ body {
     }
 
     .cv-section-item-title {
+        color: #333333 !important;
+        font-size: 12px !important;
+        font-weight: bold !important;
+    }
+
+    .cv-section-item-smaller {
         color: #333333 !important;
         font-size: 12px !important;
         font-weight: bold !important;
