@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(python3:*)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/cv.html)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/cv.html)",
+      "Bash(lsof:*)",
+      "Bash(xargs -r kill -9)"
     ]
   }
 }
