@@ -6,11 +6,12 @@ header-img: "img/about-bg.png"
 ---
 
 <!-- Language Selector -->
-<!-- <select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-    <option value="0"> 中文 Chinese </option>
-    <option value="1"> 英语 English </option>
-    <option value="2" selected> 简介 Brief Intro </option>
-</select> -->
+<div style="text-align: center; margin-bottom: 20px;">
+    <select onchange="onLanChange(this.options[this.options.selectedIndex].value)" style="padding: 8px 15px; font-size: 15px; border-radius: 5px; border: 2px solid #337ab7; background-color: white; cursor: pointer; font-weight: 500;">
+        <option value="0" selected>English / 英语</option>
+        <option value="1">中文 / Chinese</option>
+    </select>
+</div>
 
 <div align="left" style="margin-top: 10px;">
     <a href="https://terrytangyuan.github.io/cv.html"><img src="https://raw.githubusercontent.com/terrytangyuan/terrytangyuan/master/imgs/cv.svg" alt="Curriculum Vitae"></a>
@@ -24,12 +25,10 @@ header-img: "img/about-bg.png"
     <a href="https://github.com/sponsors/terrytangyuan"><img src="https://raw.githubusercontent.com/terrytangyuan/terrytangyuan/master/imgs/sponsors.svg" alt="Sponsors"></a>
 </div>
 
-<!-- Short Version -->
-<div class="short">
-      <br>
-             📖 Check out <a href="https://terrytangyuan.github.io/cv" style="color:green;display:inline-block">what he's working on</a> and the <a href="https://github.com/terrytangyuan/distributed-ml-patterns" style="color:green;display:inline-block">Distributed Machine Learning Patterns</a> book!
-
-    <p>Yuan is a Senior Principal Software Engineer at
+<!-- English Version -->
+<div class="en">
+    <br>
+    <p>Yuan Tang is a Senior Principal Software Engineer at
       <a href="https://ai.redhat.com" style="color:green;display:inline-block">Red Hat AI</a>.
         Previously, he has led AI infrastructure and platform teams at various companies.
 
@@ -62,6 +61,14 @@ header-img: "img/about-bg.png"
         He's a frequent <a href="../cv#talks" style="color:green;display:inline-block">conference speaker</a>, technical advisor, leader, and mentor at <a href="../cv#services" style="color:green;display:inline-block">various organizations</a>.
     </p>
 
+    <p>
+        📖 View his full <a href="https://terrytangyuan.github.io/cv" style="color:green;display:inline-block">curriculum vitae</a> for more details.
+    </p>
+</div>
+
+<!-- Chinese Version -->
+<div class="zh" style="display:none;">
+    <br>
     <p>
         唐源，现任
         <a href="https://ai.redhat.com" style="color:green;display:inline-block">
@@ -98,54 +105,46 @@ header-img: "img/about-bg.png"
         同时也是多个 <a href="../cv#services" style="color:green;display:inline-block">公司和开源组织</a> 的技术顾问、团队 Leader、以及导师。
     </p>
 
+    <p>
+        📖 查看完整的 <a href="https://terrytangyuan.github.io/cv" style="color:green;display:inline-block">简历</a> 了解更多信息。
+    </p>
 </div>
 
-
-
 <!-- Handle Language Change -->
-<!-- <script type="text/javascript">
+<script type="text/javascript">
     // get nodes
-    var $zh = document.querySelector(".en");
-    var $en = document.querySelector(".zh");
-    var $short = document.querySelector(".short");
+    var $en = document.querySelector(".en");
+    var $zh = document.querySelector(".zh");
     var $select = document.querySelector("select");
+
     // bind hashchange event
     window.addEventListener('hashchange', _render);
+
     // handle render
     function _render(){
         var _hash = window.location.hash;
-        // zh
+        // Chinese
         if (_hash == "#zh") {
+            $select.selectedIndex = 1;
+            $en.style.display = "none";
+            $zh.style.display = "block";
+        // English by default
+        } else {
             $select.selectedIndex = 0;
             $en.style.display = "block";
             $zh.style.display = "none";
-            $short.style.display = "none";
-        } else if (_hash == "#en") {
-            // not trigger onChange, otherwise cause a loop call.
-            $select.selectedIndex = 1;
-            $zh.style.display = "block";
-            $en.style.display = "none";
-            $short.style.display = "none";
-        // short by default
-        } else {
-            // not trigger onChange, otherwise cause a loop call.
-            $select.selectedIndex = 2;
-            $zh.style.display = "none";
-            $en.style.display = "none";
-            $short.style.display = "block";
         }
     }
+
     // handle select change
     function onLanChange(index){
-        if (index == 0) {
+        if (index == 1) {
             window.location.hash = "#zh"
-        } else if (index == 1) {
-            window.location.hash = "#en"
         } else {
-            window.location.hash = "#short"
+            window.location.hash = "#en"
         }
     }
 
     // init
     _render();
-</script> -->
+</script>
