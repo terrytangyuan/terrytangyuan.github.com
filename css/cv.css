@@ -453,12 +453,18 @@ body {
         margin: 3px 3px !important;
     }
 
+    .cv-section-item-title {
+        display: block;
+        width: 100%;
+    }
+
     .cv-section-time {
         width: 100%;
         display: block;
         float: none;
         margin-bottom: 8px;
         text-align: left;
+        margin-top: 5px;
     }
 
     .cv-section-title {
