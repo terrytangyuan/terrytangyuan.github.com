@@ -412,7 +412,7 @@ body {
 
 
 /*------------mobile--------------*/
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 768px) {
     .mobile-only {
         display: initial;
     }
@@ -447,10 +447,21 @@ body {
     .cv-section-item {
         padding: 12px 10px !important;
         margin: 12px 0px !important;
+        overflow: hidden;
     }
 
     .cv-section-body {
         margin: 3px 3px !important;
+    }
+
+    .cv-section-item > div {
+        overflow: hidden;
+        clear: both;
+    }
+
+    .cv-section-item-title {
+        display: block;
+        width: 100%;
     }
 
     .cv-section-time {
@@ -459,6 +470,7 @@ body {
         float: none;
         margin-bottom: 8px;
         text-align: left;
+        margin-top: 5px;
     }
 
     .cv-section-title {
