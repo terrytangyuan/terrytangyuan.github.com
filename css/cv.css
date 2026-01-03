@@ -447,6 +447,7 @@ body {
     .cv-section-item {
         padding: 12px 10px !important;
         margin: 12px 0px !important;
+        overflow: hidden;
     }
 
     .cv-section-body {
