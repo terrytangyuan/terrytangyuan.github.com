@@ -435,6 +435,10 @@ body {
         line-height: normal !important;
     }
 
+    .cv-section-smallest * {
+        font-size: inherit !important;
+    }
+
     /*-------- section specific publication-----------*/
     .cv-publication-author, .cv-publication-venue {
         color: #AAAAAA;
@@ -451,11 +455,7 @@ body {
     }
 
     .cv-details-content {
-        display: block !important;
-        border-left: none !important;
-        background: transparent !important;
-        padding: 0 !important;
-        margin-top: 5px !important;
+        display: none !important;
     }
 }
 
