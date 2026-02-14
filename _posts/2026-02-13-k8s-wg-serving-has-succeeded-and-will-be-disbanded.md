@@ -15,13 +15,11 @@ tags:
 
 We'd like to announce that Kubernetes WG Serving has succeeded and will be disbanded! Thank you everyone who have participated and contributed to the discussions and initiatives!
 
-# WG Serving Has Succeeded and Will Be Disbanded
-
 The [Kubernetes Working Group Serving](https://github.com/kubernetes/community/tree/1cd8d239089e777d0e2f70d665e7db153f040a80/wg-serving) was created to support development of AI Inference stack on Kubernetes. The goal of this working group is to ensure that the Kubernetes is an orchestration platform of choice for Inference workload. This goal was accomplished and we are disbanding the working group.
 
 The WG Serving formed workstreams to collect requirements from various model servers, hardware providers, and inference vendors. This work resulted in a common understanding of inference workload specifics and trends and laid the foundation for improvements across many SIGs in Kubernetes.
 
-The working group oversaw several key evolutions to the role of load balancing and workloads \- the inference gateway was adopted as a request scheduler, multiple groups have worked to standardize AI gateway functionality, and early inference gateway participants went on to seed agent networking in sig-network. The use cases and problem statements informed the design of [AIBrix](https://github.com/vllm-project/aibrix). And many of the unresolved problems in distributed inference \- especially benchmarking and recommended best practices \- have been picked up by the [llm-d](https://github.com/llm-d/llm-d) project which hybridizes the infrastructure and ML ecosystems and is better able to steer model server co-evolution.
+The working group oversaw several key evolutions to the role of load balancing and workloads \- the inference gateway was adopted as a request scheduler, multiple groups have worked to standardize AI gateway functionality, and early inference gateway participants went on to seed agent networking in SIG Network. The use cases and problem statements informed the design of [AIBrix](https://github.com/vllm-project/aibrix). And many of the unresolved problems in distributed inference \- especially benchmarking and recommended best practices \- have been picked up by the [llm-d](https://github.com/llm-d/llm-d) project which hybridizes the infrastructure and ML ecosystems and is better able to steer model server co-evolution.
 
 In particular, we believe llm-d and AIBrix represent more appropriate forums for driving requirements to Kubernetes SIGs than this working group. llm-d's goal is to provide well-lit paths for achieving state-of-the-art inference and aims to provide recommendations that can compose into existing inference user platforms.  AIBrix provides a complete platform solution for cost efficient LLM inference.
 
