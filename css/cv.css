@@ -428,15 +428,12 @@ body {
         margin-top: 0 !important;
     }
 
-    .cv-section-smallest {
-        font-size: 0.8em !important;
+    .cv-section-smallest,
+    .cv-section-smallest * {
+        font-size: 10px !important;
         margin-top: 5px !important;
         color: #666666 !important;
         line-height: normal !important;
-    }
-
-    .cv-section-smallest * {
-        font-size: inherit !important;
     }
 
     /*-------- section specific publication-----------*/
