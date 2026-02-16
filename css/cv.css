@@ -250,6 +250,10 @@ body {
 
 
 /*---------------details button-----------------*/
+.cv-details-print-link {
+    display: none;
+}
+
 .cv-details-btn {
     display: inline-block;
     font-size: 0.82em;
@@ -454,6 +458,11 @@ body {
 
     .cv-details-btn {
         display: none !important;
+    }
+
+    .cv-details-print-link {
+        display: inline !important;
+        font-size: 10px !important;
     }
 
     .cv-details-content {
