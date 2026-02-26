@@ -11,7 +11,7 @@ tags:
     - Machine Learning
 ---
 
-*Originally posted on [Kubernetes dev mailing list](https://groups.google.com/a/kubernetes.io/g/dev/c/nDjMph1146A/m/z-T7POJQBQAJ)*.
+*Originally posted on [Kubernetes dev mailing list](https://groups.google.com/a/kubernetes.io/g/dev/c/nDjMph1146A/m/z-T7POJQBQAJ) and on [CNCF Blog](https://www.cncf.io/blog/2026/02/26/kubernetes-wg-serving-concludes-following-successful-advancement-of-ai-inference-support/)*.
 
 We'd like to announce that Kubernetes WG Serving has succeeded and will be disbanded! Thank you everyone who have participated and contributed to the discussions and initiatives!
 
