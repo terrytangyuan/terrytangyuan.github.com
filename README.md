@@ -61,6 +61,7 @@ The site will be available at `http://localhost:4000` with live reload enabled.
 - `npm run format` - Format code with Prettier
 - `npm run lint` - Lint JavaScript with ESLint
 - `npm run validate` - Full validation (build + test)
+- `python3 check_cv_links.py` - Check for broken links in CV
 
 ### Building for Production
 
