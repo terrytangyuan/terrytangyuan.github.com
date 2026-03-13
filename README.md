@@ -2,7 +2,9 @@
 
 A modern Jekyll-based personal website with secure dependencies and automated deployment.
 
-[![Build and Deploy](https://github.com/terrytangyuan/terrytangyuan.github.io/actions/workflows/pages.yml/badge.svg)](https://github.com/terrytangyuan/terrytangyuan.github.io/actions/workflows/pages.yml)
+```
+bundle exec jekyll s
+```
 
 ## 🚀 Features
 
