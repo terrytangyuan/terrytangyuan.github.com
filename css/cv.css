@@ -256,27 +256,51 @@ body {
 
 .cv-details-btn {
     display: inline-block;
-    font-size: 0.82em;
+    font-size: 0.75em;
     color: #820000;
-    background: #f5f0f0;
-    border: 1px solid #d4c4c4;
-    border-radius: 4px;
-    padding: 0px 6px;
-    margin-top: 4px;
+    background: linear-gradient(135deg, #faf5f5, #f0e8e8);
+    border: 1px solid #d4bfbf;
+    border-radius: 12px;
+    padding: 2px 12px 2px 8px;
+    margin-left: 8px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 600;
+    vertical-align: middle;
+    letter-spacing: 0.3px;
+    text-transform: lowercase;
+    box-shadow: 0 1px 3px rgba(130, 0, 0, 0.08);
+}
+
+.cv-details-btn::before {
+    content: '\25B8 ';
+    font-size: 0.85em;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.cv-details-btn.open::before {
+    content: '\25BE ';
 }
 
 .cv-section-smallest:has(.cv-details-btn) {
-    margin-top: -2px;
-    margin-bottom: -2px;
+    margin-top: 6px;
+    margin-bottom: 4px;
 }
 
 .cv-details-btn:hover {
-    background: #820000;
+    background: linear-gradient(135deg, #8C1515, #820000);
     color: #fff;
     border-color: #820000;
+    box-shadow: 0 2px 8px rgba(130, 0, 0, 0.25);
+    transform: translateY(-1px);
+}
+
+.cv-details-btn.open {
+    background: linear-gradient(135deg, #8C1515, #820000);
+    color: #fff;
+    border-color: #820000;
+    box-shadow: 0 1px 4px rgba(130, 0, 0, 0.2);
 }
 
 .cv-details-content {
