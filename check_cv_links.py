@@ -3,12 +3,10 @@
 
 import re
 import sys
-import time
 import urllib.request
 import urllib.error
 import ssl
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from http.cookiejar import CookieJar
 
 CV_FILE = "cv.html"
 
@@ -43,36 +41,26 @@ def extract_links(filepath):
     return result
 
 
-def build_opener():
-    ctx = ssl.create_default_context()
-    ctx.check_hostname = False
-    ctx.verify_mode = ssl.CERT_NONE
-    cookie_jar = CookieJar()
-    return urllib.request.build_opener(
-        urllib.request.HTTPSHandler(context=ctx),
-        urllib.request.HTTPCookieProcessor(cookie_jar),
+_ssl_ctx = ssl.create_default_context()
+_ssl_ctx.check_hostname = False
+_ssl_ctx.verify_mode = ssl.CERT_NONE
+
+
+def check_url(url, timeout=15):
+    opener = urllib.request.build_opener(
+        urllib.request.HTTPSHandler(context=_ssl_ctx),
         urllib.request.HTTPRedirectHandler(),
-    ), ctx
-
-
-def check_url(url, timeout=20):
-    opener, ctx = build_opener()
-
-    # Try GET directly (many sites reject HEAD)
+    )
     req = urllib.request.Request(url, headers=BROWSER_HEADERS)
     try:
         resp = opener.open(req, timeout=timeout)
         code = resp.getcode()
-        # Read a small amount to ensure connection is valid
         resp.read(1024)
         resp.close()
         if code >= 400:
             return url, code, None
         return url, code, None
     except urllib.error.HTTPError as e:
-        # Treat 403 as OK for known bot-blocking sites
-        # (we already use real browser headers, so a 403 likely means
-        # the site requires JS/captcha, not that the page is missing)
         if e.code == 403:
             return url, 200, None
         return url, e.code, str(e)
@@ -87,7 +75,7 @@ def main():
     broken = []
     ok_count = 0
 
-    with ThreadPoolExecutor(max_workers=10) as pool:
+    with ThreadPoolExecutor(max_workers=30) as pool:
         futures = {pool.submit(check_url, url): url for url in links}
         for i, future in enumerate(as_completed(futures), 1):
             url, status, error = future.result()
