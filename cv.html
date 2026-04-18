@@ -827,6 +827,13 @@ permalink: /cv
 </div>
 <script type="text/javascript" src="/js/jquery.min.js"></script>
 <script>
+document.addEventListener('click', function(e) {
+    var menu = document.querySelector('.save-menu');
+    if (menu && !menu.contains(e.target)) {
+        menu.classList.remove('open');
+    }
+});
+
 function printWithDetails() {
     var contents = document.querySelectorAll('.cv-details-content');
     var btns = document.querySelectorAll('.cv-details-btn');
