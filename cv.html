@@ -16,10 +16,16 @@ permalink: /cv
 <a href="/about">
     <span class="go-back web-only cv-link">←</span>
 </a>
-<button class="save-pdf-btn web-only" onclick="window.print()" title="Save as PDF">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-    PDF
-</button>
+<div class="save-menu web-only">
+    <button class="save-menu-toggle" onclick="this.parentElement.classList.toggle('open')" title="Save CV">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Save PDF
+    </button>
+    <div class="save-menu-options">
+        <button onclick="window.print(); this.closest('.save-menu').classList.remove('open');">Simplified</button>
+        <button onclick="printWithDetails(); this.closest('.save-menu').classList.remove('open');">Detailed</button>
+    </div>
+</div>
 <div class="cv-container">
     <div class="info-section">
         <div class="info-section-name">Yuan Tang</div>
@@ -821,6 +827,20 @@ permalink: /cv
 </div>
 <script type="text/javascript" src="/js/jquery.min.js"></script>
 <script>
+function printWithDetails() {
+    var contents = document.querySelectorAll('.cv-details-content');
+    var btns = document.querySelectorAll('.cv-details-btn');
+    contents.forEach(function(el) { el.classList.add('open'); });
+    btns.forEach(function(el) { el.classList.add('open'); });
+    document.body.classList.add('print-with-details');
+    setTimeout(function() {
+        window.print();
+        contents.forEach(function(el) { el.classList.remove('open'); });
+        btns.forEach(function(el) { el.classList.remove('open'); });
+        document.body.classList.remove('print-with-details');
+    }, 100);
+}
+
 function toggleDetails(btn) {
     var el = btn.nextElementSibling;
     while (el && !el.classList.contains('cv-details-content')) {
