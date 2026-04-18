@@ -261,7 +261,7 @@ body {
     background: linear-gradient(135deg, #faf5f5, #f0e8e8);
     border: 1px solid #d4bfbf;
     border-radius: 12px;
-    padding: 2px 12px 2px 8px;
+    padding: 2px 8px 2px 10px;
     margin-left: 8px;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -272,15 +272,25 @@ body {
     box-shadow: 0 1px 3px rgba(130, 0, 0, 0.08);
 }
 
-.cv-details-btn::before {
-    content: '\25B8 ';
-    font-size: 0.85em;
+.cv-details-btn::after {
+    content: '';
     display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 4px solid currentColor;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    margin-left: 5px;
+    vertical-align: middle;
     transition: transform 0.3s ease;
 }
 
-.cv-details-btn.open::before {
-    content: '\25BE ';
+.cv-details-btn.open::after {
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 4px solid currentColor;
+    border-bottom: none;
+    margin-left: 5px;
 }
 
 .cv-section-smallest:has(.cv-details-btn) {
