@@ -424,7 +424,7 @@ body {
 
     .cv-section-item {
         page-break-inside: avoid;
-        margin: 20px 0px !important;
+        margin: 12px 0px !important;
         background-color: transparent !important;
         border-left: none !important;
         border-radius: 0 !important;
@@ -494,12 +494,21 @@ body {
         display: none !important;
     }
 
+    .cv-details-btn::after {
+        display: none !important;
+    }
+
     .cv-details-print-link {
         display: inline !important;
         font-size: 10px !important;
+        margin-left: 4px;
     }
 
     .cv-details-content {
+        display: none !important;
+    }
+
+    .social-icons {
         display: none !important;
     }
 }
