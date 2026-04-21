@@ -16,7 +16,7 @@ tags:
 * Yuan Tang: Project Lead, KServe; Senior Principal Software Engineer
 * Ran Pollak: Manager, AI Catalyst at Red Hat
 
-*Originally posted on [KServe Blog](https://kserve.github.io/website/blog/cloud-native-ai-inference-kserve-llm-d)*.
+*Originally posted on [KServe Blog](https://kserve.github.io/website/blog/cloud-native-ai-inference-kserve-llm-d). Also available on [Red Hat Developers](https://developers.redhat.com/articles/2026/04/21/kserve-llm-d-optimized-gen-ai-inference)*.
 
 Enterprises today seek to integrate generative AI (GenAI) capabilities into their applications. However, scaling large AI models introduces complexity: managing high-volume traffic from large language models (LLMs), optimizing inference performance, maintaining predictable latency, and controlling infrastructure costs.
 
