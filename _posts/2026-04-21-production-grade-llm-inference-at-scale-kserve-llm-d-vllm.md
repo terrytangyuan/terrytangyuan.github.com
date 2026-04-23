@@ -18,7 +18,7 @@ tags:
 * Robert Shaw: Director of Engineering, Red Hat
 * Sai Krishna: Staff Software Engineer, Tesla
 
-*Originally posted on [llm-d Blog](https://llm-d.ai/blog/production-grade-llm-inference-at-scale-kserve-llm-d-vllm)*.
+*Originally posted on [llm-d Blog](https://llm-d.ai/blog/production-grade-llm-inference-at-scale-kserve-llm-d-vllm) and on [KServe Blog](https://kserve.github.io/website/blog/production-grade-llm-inference-kserve-llm-d-vllm)*.
 
 ## The Problem with "Simple" LLM Deployments
 
