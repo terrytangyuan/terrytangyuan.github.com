@@ -590,6 +590,7 @@ body {
         display: none !important;
     }
 
+
     .print-with-details .cv-section-item {
         page-break-inside: auto !important;
     }
