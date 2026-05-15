@@ -6,7 +6,8 @@
       "Bash(lsof:*)",
       "Bash(xargs -r kill -9)",
       "Bash(bundle exec jekyll:*)",
-      "Bash(ln:*)"
+      "Bash(ln:*)",
+      "WebFetch(domain:arxiv.org)"
     ]
   }
 }
