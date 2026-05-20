@@ -704,7 +704,7 @@ body {
         /*--------layout---------*/
         max-width: 95%;
         padding: 20px 5px;
-        margin: 50px auto 15px auto;
+        margin: 15px auto;
     }
 
     .info-section {
@@ -766,18 +766,10 @@ body {
     }
 
     .go-back {
-        position: fixed;
-        left: 10px;
-        top: 10px;
-        font-size: 1.2em;
-        width: 34px;
-        height: 34px;
+        display: none;
     }
 
     .save-menu {
-        position: fixed;
-        left: auto;
-        right: 10px;
-        top: 10px;
+        display: none;
     }
 }
