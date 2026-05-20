@@ -138,6 +138,8 @@ body {
     border-radius: 50%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    line-height: 1;
+    padding-bottom: 2px;
 }
 
 .go-back:hover {
@@ -657,6 +659,32 @@ body {
     }
 }
 
+
+/*--------medium screens - buttons move to top--------*/
+@media only screen and (max-width: 1100px) and (min-width: 769px) {
+    .go-back {
+        position: absolute;
+        left: 15%;
+        top: 12px;
+        width: 34px;
+        height: 34px;
+        font-size: 1.2em;
+    }
+
+    .save-menu {
+        position: absolute;
+        left: calc(15% + 44px);
+        top: 12px;
+    }
+
+    .save-menu-toggle {
+        padding: 7px 14px;
+    }
+
+    .cv-container {
+        margin-top: 55px;
+    }
+}
 
 /*------------mobile--------------*/
 @media only screen and (max-width: 768px) {
