@@ -684,6 +684,22 @@ function toggleDetails(btn) {
         }
     }
     if (el) {
+        var isOpening = !el.classList.contains('open');
+        if (isOpening) {
+            document.querySelectorAll('.cv-details-content.open').forEach(function(other) {
+                if (other !== el) {
+                    other.classList.remove('open');
+                    var otherBtn = other.previousElementSibling;
+                    while (otherBtn && !otherBtn.classList.contains('cv-details-btn')) {
+                        otherBtn = otherBtn.previousElementSibling;
+                    }
+                    if (otherBtn) {
+                        otherBtn.classList.remove('open');
+                        otherBtn.textContent = 'details';
+                    }
+                }
+            });
+        }
         el.classList.toggle('open');
         btn.classList.toggle('open');
         btn.textContent = el.classList.contains('open') ? 'hide' : 'details';
