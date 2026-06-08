@@ -1002,6 +1002,38 @@ body {
 	margin-bottom: 2px;
 }
 
+// Post List Cards
+.post-card {
+	border: 1px solid @gray-light;
+	border-radius: 6px;
+	padding: 20px 25px;
+	margin-bottom: 25px;
+	transition: all 0.3s ease;
+	&:hover {
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+		transform: translateY(-3px);
+	}
+	.post-title {
+		margin-top: 0;
+	}
+	.post-meta {
+		margin-bottom: 0;
+	}
+}
+
+// Footer
+.footer-links li {
+	margin: 0 5px;
+	a {
+		color: @gray;
+		font-size: 14px;
+		&:hover {
+			color: @brand-primary;
+			text-decoration: none;
+		}
+	}
+}
+
 // About Page
 .about-link {
 	color: #337ab7;

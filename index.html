@@ -5,7 +5,7 @@ header-img: "img/about-bg.png"
 ---
 
 {% for post in paginator.posts %}
-<div class="post-preview">
+<div class="post-preview post-card">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
             {{ post.title }}
@@ -23,7 +23,6 @@ header-img: "img/about-bg.png"
         Posted on {{ post.date | date: "%B %-d, %Y" }}
     </p>
 </div>
-<hr>
 {% endfor %}
 
 
