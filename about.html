@@ -5,12 +5,15 @@ description: "Hey, this is Yuan."
 header-img: "img/about-bg.png"
 ---
 
-<!-- Language Selector -->
-<div style="text-align: center; margin-bottom: 20px;">
-    <select onchange="onLanChange(this.options[this.options.selectedIndex].value)" style="padding: 8px 15px; font-size: 15px; border-radius: 5px; border: 2px solid #337ab7; background-color: white; cursor: pointer; font-weight: 500;">
-        <option value="0" selected>English / 英语</option>
-        <option value="1">中文 / Chinese</option>
-    </select>
+<!-- Mobile Avatar -->
+<div class="about-avatar-mobile">
+    <img src="{{ site.sidebar-avatar }}" alt="Yuan Tang">
+</div>
+
+<!-- Language Toggle -->
+<div class="lang-toggle">
+    <button class="lang-btn active" onclick="onLanChange('en')">EN</button>
+    <button class="lang-btn" onclick="onLanChange('zh')">中文</button>
 </div>
 
 <div align="left" style="margin-top: 10px;">
@@ -28,126 +31,85 @@ header-img: "img/about-bg.png"
 
 <!-- English Version -->
 <div class="en">
-    <br>
     <p>Yuan Tang is a Senior Principal Software Engineer at
-      <a href="https://ai.redhat.com" style="color:green;display:inline-block">Red Hat AI</a>.
-        Previously, he has led AI infrastructure and platform teams at <a href="../cv#experience" style="color:green;display:inline-block">
-          various companies
-        </a>.
+      <a href="https://ai.redhat.com" class="about-link">Red Hat AI</a>.
+        Previously, he has led AI infrastructure and platform teams at <a href="../cv#experience" class="about-link">
+          various companies</a>.
 
-        He holds <a href="https://terrytangyuan.github.io/cv#services" style="color:green;display:inline-block">
-          leadership positions
-        </a> in open source communities, including
-        <a href="https://argoproj.github.io/" style="color:green;display:inline-block">
-          Argo
-        </a>,
-        <a href="https://github.com/kubeflow" style="color:green;display:inline-block">
-          Kubeflow
-        </a>,
-        <a href="https://github.com/kserve/kserve" style="color:green;display:inline-block">
-          KServe
-        </a>, <a href="https://github.com/kubernetes/community/tree/1cd8d239089e777d0e2f70d665e7db153f040a80/sig-list.md" style="color:green;display:inline-block">
-          Kubernetes
-        </a>, and <a href="https://contribute.cncf.io/community/tags/workloads-foundation/" style="color:green;display:inline-block">
-          CNCF
-        </a>.
+        He holds <a href="https://terrytangyuan.github.io/cv#services" class="about-link">
+          leadership positions</a> in open source communities, including
+        <a href="https://argoproj.github.io/" class="about-link">Argo</a>,
+        <a href="https://github.com/kubeflow" class="about-link">Kubeflow</a>,
+        <a href="https://github.com/kserve/kserve" class="about-link">KServe</a>,
+        <a href="https://github.com/kubernetes/community/tree/1cd8d239089e777d0e2f70d665e7db153f040a80/sig-list.md" class="about-link">Kubernetes</a>, and
+        <a href="https://contribute.cncf.io/community/tags/workloads-foundation/" class="about-link">CNCF</a>.
 
         He's also a maintainer and author of many popular
-        <a href="../cv#projects" style="color:green;display:inline-block">
-          open source projects
-        </a>.
+        <a href="../cv#projects" class="about-link">open source projects</a>.
 
-        In addition, Yuan <a href="../cv#publications" style="color:green;display:inline-block">
-          authored
-        </a> three technical books as well as numerous papers and patents with 12,000+ citations.
+        In addition, Yuan <a href="../cv#publications" class="about-link">authored</a>
+        three technical books as well as numerous papers and patents with 12,000+ citations.
 
-        He's a frequent <a href="../cv#talks" style="color:green;display:inline-block">keynote speaker</a>, technical advisor, leader, and mentor at <a href="../cv#services" style="color:green;display:inline-block">various organizations</a>.
+        He's a frequent <a href="../cv#talks" class="about-link">keynote speaker</a>,
+        technical advisor, leader, and mentor at
+        <a href="../cv#services" class="about-link">various organizations</a>.
     </p>
 
     <p>
-        📖 View his full <a href="../cv" style="color:green;display:inline-block">curriculum vitae</a> for more details.
+        View his full <a href="../cv" class="about-link">curriculum vitae</a> for more details.
     </p>
 </div>
 
 <!-- Chinese Version -->
 <div class="zh" style="display:none;">
-    <br>
     <p>
-        唐源，现任<a href="https://ai.redhat.com" style="color:green;display:inline-block">
-          红帽 AI
-        </a>资深首席软件工程师。在此之前，曾在<a href="../cv#experience" style="color:green;display:inline-block">
-          多家公司
-        </a>带领过团队建立 AI 基础架构和平台。
+        唐源，现任<a href="https://ai.redhat.com" class="about-link">红帽 AI</a>资深首席软件工程师。在此之前，曾在<a href="../cv#experience" class="about-link">多家公司</a>带领过团队建立 AI 基础架构和平台。
 
-        他在多个开源社区担任 <a href="https://terrytangyuan.github.io/cv#services" style="color:green;display:inline-block">
-          Leader
-        </a> 职位，包括
-        <a href="https://argoproj.github.io/" style="color:green;display:inline-block">
-          Argo
-        </a>、
-        <a href="https://github.com/kubeflow" style="color:green;display:inline-block">
-          Kubeflow
-        </a>、
-        <a href="https://github.com/kserve/kserve" style="color:green;display:inline-block">
-          KServe
-        </a>、
-        <a href="https://github.com/kubernetes/community/tree/1cd8d239089e777d0e2f70d665e7db153f040a80/sig-list.md" style="color:green;display:inline-block">
-          Kubernetes
-        </a>、以及 <a href="https://contribute.cncf.io/community/tags/workloads-foundation/" style="color:green;display:inline-block">
-          CNCF
-        </a>。也是<a href="../cv#projects" style="color:green;display:inline-block">
-          多个开源软件
-        </a>的作者和维护者。
+        他在多个开源社区担任 <a href="https://terrytangyuan.github.io/cv#services" class="about-link">Leader</a> 职位，包括
+        <a href="https://argoproj.github.io/" class="about-link">Argo</a>、
+        <a href="https://github.com/kubeflow" class="about-link">Kubeflow</a>、
+        <a href="https://github.com/kserve/kserve" class="about-link">KServe</a>、
+        <a href="https://github.com/kubernetes/community/tree/1cd8d239089e777d0e2f70d665e7db153f040a80/sig-list.md" class="about-link">Kubernetes</a>、以及
+        <a href="https://contribute.cncf.io/community/tags/workloads-foundation/" class="about-link">CNCF</a>。也是<a href="../cv#projects" class="about-link">多个开源软件</a>的作者和维护者。
 
-        唐源<a href="../cv#publications" style="color:green;display:inline-block">
-          著有
-        </a>三本技术书籍以及多篇论文和专利，引用量超过12,000次。
+        唐源<a href="../cv#publications" class="about-link">著有</a>三本技术书籍以及多篇论文和专利，引用量超过12,000次。
 
-        他不定期地在不同的技术会议上<a href="../cv#talks" style="color:green;display:inline-block">发表演讲</a>。
+        他不定期地在不同的技术会议上<a href="../cv#talks" class="about-link">发表演讲</a>。
 
-        同时也是多个<a href="../cv#services" style="color:green;display:inline-block">公司和开源组织</a>的技术顾问、团队 Leader、以及导师。
+        同时也是多个<a href="../cv#services" class="about-link">公司和开源组织</a>的技术顾问、团队 Leader、以及导师。
     </p>
 
     <p>
-        📖 查看完整的<a href="../cv" style="color:green;display:inline-block">简历</a>了解更多信息。
+        查看完整的<a href="../cv" class="about-link">简历</a>了解更多信息。
     </p>
 </div>
 
 <!-- Handle Language Change -->
 <script type="text/javascript">
-    // get nodes
     var $en = document.querySelector(".en");
     var $zh = document.querySelector(".zh");
-    var $select = document.querySelector("select");
+    var $btns = document.querySelectorAll(".lang-btn");
 
-    // bind hashchange event
     window.addEventListener('hashchange', _render);
 
-    // handle render
     function _render(){
         var _hash = window.location.hash;
-        // Chinese
         if (_hash == "#zh") {
-            $select.selectedIndex = 1;
+            $btns[0].classList.remove("active");
+            $btns[1].classList.add("active");
             $en.style.display = "none";
             $zh.style.display = "block";
-        // English by default
         } else {
-            $select.selectedIndex = 0;
+            $btns[0].classList.add("active");
+            $btns[1].classList.remove("active");
             $en.style.display = "block";
             $zh.style.display = "none";
         }
     }
 
-    // handle select change
-    function onLanChange(index){
-        if (index == 1) {
-            window.location.hash = "#zh"
-        } else {
-            window.location.hash = "#en"
-        }
+    function onLanChange(lang){
+        window.location.hash = "#" + lang;
     }
 
-    // init
     _render();
 </script>
