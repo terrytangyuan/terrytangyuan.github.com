@@ -721,6 +721,60 @@ form .row:first-child .floating-label-form-group {
 	}
 }
 
+// Pagination Styling
+
+.pagination-container {
+	text-align: center;
+	margin: 30px 0 0;
+}
+
+.pagination {
+	display: inline-flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	gap: 4px;
+
+	li {
+		a, span {
+			.sans-serif;
+			display: inline-block;
+			min-width: 40px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			font-size: 14px;
+			font-weight: 600;
+			color: @gray-dark;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+			text-decoration: none;
+			transition: all 0.2s ease;
+			padding: 0 8px;
+		}
+
+		a:hover, a:focus {
+			color: #fff;
+			background-color: @brand-primary;
+			border-color: @brand-primary;
+		}
+
+		&.active span {
+			color: #fff;
+			background-color: @brand-primary;
+			border-color: @brand-primary;
+		}
+
+		&.disabled span {
+			color: #ccc;
+			background-color: #f5f5f5;
+			border-color: #ddd;
+			cursor: not-allowed;
+		}
+	}
+}
+
 // -- Highlight Color Customization
 
 ::-moz-selection {
@@ -1220,6 +1274,26 @@ body {
 		background-color: var(--brand-primary);
 		border-color: var(--brand-primary);
 		color: white;
+	}
+	.pagination li a, .pagination li span {
+		background-color: var(--card-bg);
+		color: var(--text-primary);
+		border-color: var(--border-color);
+	}
+	.pagination li a:hover, .pagination li a:focus {
+		background-color: var(--brand-primary);
+		border-color: var(--brand-primary);
+		color: white;
+	}
+	.pagination li.active span {
+		background-color: var(--brand-primary);
+		border-color: var(--brand-primary);
+		color: white;
+	}
+	.pagination li.disabled span {
+		background-color: var(--bg-secondary);
+		border-color: var(--border-color);
+		color: var(--text-muted);
 	}
 	#tag_cloud a, #tag_cloud .tag {
 		background: var(--tag-bg);

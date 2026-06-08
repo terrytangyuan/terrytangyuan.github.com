@@ -33,18 +33,35 @@ header-img: "img/about-bg.png"
 
 
 
-<!-- Pager -->
+<!-- Pagination -->
 {% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
+<div class="pagination-container">
+    <ul class="pagination">
+        {% if paginator.previous_page %}
+        <li>
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Previous">&laquo;</a>
+        </li>
+        {% else %}
+        <li class="disabled"><span>&laquo;</span></li>
+        {% endif %}
+
+        {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+            <li class="active"><span>{{ page }}</span></li>
+            {% elsif page == 1 %}
+            <li><a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">1</a></li>
+            {% else %}
+            <li><a href="{{ '/page' | append: page | append: '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+            {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+        <li>
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Next">&raquo;</a>
+        </li>
+        {% else %}
+        <li class="disabled"><span>&raquo;</span></li>
+        {% endif %}
+    </ul>
+</div>
 {% endif %}
