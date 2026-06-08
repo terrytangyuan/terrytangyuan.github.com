@@ -41,24 +41,26 @@ layout: default
 
                 <hr>
 
-                <ul class="pager">
+                <div class="post-nav">
                     {% if page.previous.url %}
-                    <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
-                        Previous<br>
-                        <span>{{page.previous.title}}</span>
-                        </a>
-                    </li>
+                    <a class="post-nav-item post-nav-prev" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}">
+                        <span class="post-nav-arrow">&larr;</span>
+                        <span class="post-nav-text">
+                            <span class="post-nav-label">Previous</span>
+                            <span class="post-nav-title">{{page.previous.title}}</span>
+                        </span>
+                    </a>
                     {% endif %}
                     {% if page.next.url %}
-                    <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
-                        Next<br>
-                        <span>{{page.next.title}}</span>
-                        </a>
-                    </li>
+                    <a class="post-nav-item post-nav-next" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}">
+                        <span class="post-nav-text">
+                            <span class="post-nav-label">Next</span>
+                            <span class="post-nav-title">{{page.next.title}}</span>
+                        </span>
+                        <span class="post-nav-arrow">&rarr;</span>
+                    </a>
                     {% endif %}
-                </ul>
+                </div>
 
 
             </div>
