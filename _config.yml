@@ -27,16 +27,6 @@ liquid:
   strict_filters: false
   strict_variables: false
 
-# SNS settings
-weibo_username:     5681818134
-zhihu_username:     terrytangyuan
-github_username:    terrytangyuan
-twitter_username:  terrytangyuan
-#facebook_username:  xxx
-email_username:  terrytangyuan@gmail.com
-linkedin_visitor_id: terrytangyuan
-RSS: true
-
 # Build settings
 highlighter: rouge
 permalink: pretty
@@ -78,42 +68,12 @@ webrick:
     Referrer-Policy: strict-origin-when-cross-origin
     Content-Security-Policy: "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://api.github.com localhost:* 127.0.0.1:*; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.staticfile.org https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://ghbtns.com; connect-src 'self' https://api.github.com ws://localhost:* ws://127.0.0.1:*"
 
-# Disqus settings
-disqus_username: terrytangyuan
-
-# Duoshuo settings (deprecated - keeping for legacy)
-duoshuo_username: terrytangyuan
-# Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
-
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Live deeply, live fully, and live with love."
-sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+# Avatar
+sidebar-avatar: /img/avatar.jpg
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
 featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
-
-# Affiliations
-affliations: [
-    {
-        title: "Red Hat",
-        href: "https://www.redhat.com/"
-    },{
-        title: "Argo",
-        href: "https://github.com/argoproj"
-    },{
-        title: "Kubeflow",
-        href: "https://www.kubeflow.org"
-    },{
-        title: "TensorFlow",
-        href: "https://www.tensorflow.org"
-    },{
-        title: "Georgia Institute of Technology",
-        href: "https://gatech.edu"
-    }
-]
 
 # SEO settings
 author: Yuan Tang
