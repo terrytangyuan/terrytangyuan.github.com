@@ -152,6 +152,9 @@ pre code{
 
 // In the post.
 .post-container{
+	> *:first-child {
+		margin-top: 0;
+	}
 	a{
 		color:#337ab7;
 		// different to @brand-primary
@@ -395,24 +398,24 @@ pre code{
 	background-attachment: scroll;
 	.background-cover;
 	// NOTE: Background images are set within the HTML using inline CSS!
-	margin-bottom: 0px;  /* 0 on mobile, modify by Hux */
+	margin-bottom: 0px;
 	@media only screen and (min-width: 768px) {
-		margin-bottom: 20px;  /* response on desktop */
+		margin-bottom: 0px;
 	}
 	.site-heading,
 	.post-heading,
 	.page-heading {
-		padding: 85px 0 55px;
+		padding: 50px 0 15px;
 		color: white;
 		@media only screen and (min-width: 768px) {
-			padding: 150px 0;
+			padding: 50px 0 15px;
 		}
 	}
 	// masterialize
 	.site-heading{
-		padding: 95px 0 70px;
+		padding: 50px 0 15px;
 		@media only screen and (min-width: 768px) {
-			padding: 150px 0;
+			padding: 50px 0 15px;
 		}
 	}
 	.site-heading,
