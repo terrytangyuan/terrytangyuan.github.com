@@ -2,6 +2,7 @@
 layout:     post
 title:      "Empower Conversational AI at Scale with KServe"
 subtitle:   ""
+description: "How KServe enables scalable conversational AI deployment on Kubernetes, including integration with NVIDIA NIM for enterprise generative AI."
 date:       2024-03-15
 author:     "Yuan Tang"
 tags:

@@ -2,6 +2,7 @@
 layout:     post
 title:      "Introducing the AI Assistant for Argo CD inside Akuity Platform"
 subtitle:   "Argo CD extension to help developers quickly analyze any issues in your Argo CD Applications"
+description: "Introducing the GPT-powered AI Assistant for Argo CD in the Akuity Platform, helping developers quickly diagnose Kubernetes deployment issues."
 date:       2023-07-25
 author:     "Yuan Tang and Alexander Matyushentsev"
 tags:

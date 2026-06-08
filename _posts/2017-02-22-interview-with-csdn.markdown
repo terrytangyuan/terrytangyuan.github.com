@@ -2,6 +2,7 @@
 layout:     post
 title:      "CSDN专访：掌握 Google 深度学习框架的正确姿势"
 subtitle:   "An Interview with CSDN (www.csdn.net)"
+description: "CSDN专访：从数学到数据科学，TensorFlow贡献者唐源分享掌握深度学习框架的正确姿势。"
 date:       2017-02-22
 author:     "CSDN"
 tags:

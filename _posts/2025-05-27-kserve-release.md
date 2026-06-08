@@ -2,6 +2,7 @@
 layout:     post
 title:      "Announcing KServe v0.15: Advancing Generative AI Model Serving"
 subtitle:   ""
+description: "KServe v0.15 introduces enhanced generative AI model serving with Envoy AI Gateway integration, multi-node inference, and LLM autoscaling with KEDA."
 date:       2025-05-27
 author:     "Yuan Tang"
 tags:

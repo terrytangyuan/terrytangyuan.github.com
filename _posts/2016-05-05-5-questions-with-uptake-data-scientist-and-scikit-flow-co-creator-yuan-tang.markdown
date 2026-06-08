@@ -2,6 +2,7 @@
 layout:     post
 title:      "5 Questions with Uptake Data Scientist and Scikit Flow Co-creator Yuan Tang"
 subtitle:   "An Interview with Uptake"
+description: "Interview about co-creating Scikit Flow (now TensorFlow Estimators) — simplifying deep learning for data scientists by bridging Scikit-learn and TensorFlow."
 date:       2016-05-05
 author:     "Uptake"
 header-img: "img/inblog/tensorflow-bg.jpg"

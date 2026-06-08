@@ -2,6 +2,7 @@
 layout:     post
 title:      "KubeCon + CloudNativeCon Europe Co-located Event Deep Dive: Cloud Native AI Day"
 subtitle:   ""
+description: "A preview of Cloud Native AI Day at KubeCon Europe — exploring the intersection of cloud native technologies and AI for developers, MLOps practitioners, and researchers."
 date:       2024-02-29
 author:     "Yuan Tang"
 tags:

@@ -15,9 +15,15 @@ header-img: "img/about-bg.png"
             {{ post.subtitle }}
         </h3>
         {% endif %}
+        {% if post.description and post.description != "" %}
         <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:200 }}
+            {{ post.description }}
         </div>
+        {% elsif post.excerpt %}
+        <div class="post-content-preview">
+            {{ post.excerpt | strip_html | truncate:200 }}
+        </div>
+        {% endif %}
     </a>
     <p class="post-meta">
         Posted on {{ post.date | date: "%B %-d, %Y" }}

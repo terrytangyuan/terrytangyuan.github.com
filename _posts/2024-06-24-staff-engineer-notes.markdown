@@ -2,6 +2,7 @@
 layout:     post
 title:      "Reading Notes: Staff Engineer - Leadership beyond the Management Track"
 subtitle:   ""
+description: "Reading notes on Staff Engineer: Leadership beyond the Management Track — archetypes, operating at staff level, and navigating the career path."
 date:       2024-06-24
 author:     "Yuan Tang"
 tags:

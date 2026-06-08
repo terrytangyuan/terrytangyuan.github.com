@@ -2,6 +2,7 @@
 layout:     post
 title:      "AI/ML Innovation in the Kubernetes Ecosystem"
 subtitle:   "Recent innovations like the Model Registry, ModelCars feature, and TrustyAI are delivering manageability, speed, and accountability for AI/ML workloads"
+description: "How innovations like Model Registry, ModelCars, and TrustyAI in the Kubeflow and KServe ecosystem are making AI/ML production-ready on Kubernetes."
 date:       2024-10-22
 author:     "Yuan Tang"
 tags:

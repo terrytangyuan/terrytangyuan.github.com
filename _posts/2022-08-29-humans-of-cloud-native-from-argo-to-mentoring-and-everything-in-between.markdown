@@ -2,6 +2,7 @@
 layout:     post
 title:      "From Argo to Mentoring and Everything In Between"
 subtitle:   "Humans of Cloud Native"
+description: "A CNCF Humans of Cloud Native interview — from contributing to Argo, TensorFlow, and Kubeflow to mentoring and community building."
 date:       2022-08-29
 author:     "CNCF"
 tags:

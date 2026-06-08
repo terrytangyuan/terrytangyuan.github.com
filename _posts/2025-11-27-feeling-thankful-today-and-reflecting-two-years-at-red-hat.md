@@ -2,6 +2,7 @@
 layout:     post
 title:      "Feeling Thankful Today and Reflecting on Two Incredible Years at Red Hat"
 subtitle:   ""
+description: "Reflecting on two years at Red Hat — from promotion to Senior Principal Engineer, leading KServe and open source AI initiatives, to gratitude for mentors and community."
 date:       2025-11-28
 author:     "Yuan Tang"
 tags:

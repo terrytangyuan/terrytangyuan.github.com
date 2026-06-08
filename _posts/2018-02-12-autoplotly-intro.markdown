@@ -2,6 +2,7 @@
 layout:     post
 title:      "autoplotly - One Line of R Code to Build Interactive Visualizations for Popular Statistical Results"
 subtitle:   "Automatic Generation of Interactive Visualizations in ggplot2 and plotly Styles"
+description: "Introducing the autoplotly R package for generating interactive Plotly visualizations from popular statistical models with a single line of code."
 date:       2018-02-12
 author:     "Yuan Tang"
 tags:

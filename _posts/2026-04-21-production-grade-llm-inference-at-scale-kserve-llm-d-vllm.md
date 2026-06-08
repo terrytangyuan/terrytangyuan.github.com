@@ -2,6 +2,7 @@
 layout:     post
 title:      "Production-Grade LLM Inference at Scale with KServe, llm-d, and vLLM"
 subtitle:   ""
+description: "How KServe and llm-d solve the operational challenges of deploying hundreds of LLMs at scale, from storage performance to intelligent KV-cache-aware load balancing."
 date:       2026-04-21
 author:     "Yuan Tang"
 tags:

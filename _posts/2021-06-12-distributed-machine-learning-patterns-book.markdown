@@ -2,6 +2,7 @@
 layout:     post
 title:      "Announcing New Book: Distributed Machine Learning Patterns"
 subtitle:   "Building Large Scale Machine Learning Systems"
+description: "Announcing the book Distributed Machine Learning Patterns from Manning Publications — covering scalable ML pipelines with Kubernetes, TensorFlow, and Kubeflow."
 date:       2021-06-12
 author:     "Yuan Tang"
 tags:

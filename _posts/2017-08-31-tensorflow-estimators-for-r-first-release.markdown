@@ -2,6 +2,7 @@
 layout:     post
 title:      "tfestimators: TensorFlow Estimators in R"
 subtitle:   "R Interface to TensorFlow Estimators"
+description: "Announcing the tfestimators R package — a high-level interface to TensorFlow Estimators for linear models, deep neural networks, and custom model types."
 date:       2017-08-31
 author:     "Yuan Tang"
 header-img: "img/inblog/tensorflow-bg.jpg"

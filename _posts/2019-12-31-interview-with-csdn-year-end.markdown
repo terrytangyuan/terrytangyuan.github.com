@@ -2,6 +2,7 @@
 layout:     post
 title:      "CSDN专访：11年艺术学习“转投”数学，他出版首本TensorFlow中文教材，成为蚂蚁金服技术大军一员 "
 subtitle:   "An Interview with CSDN (www.csdn.net)"
+description: "CSDN年终专访：从11年艺术学习到数学专业，出版首本TensorFlow中文教材，加入蚂蚁金服的技术成长之路。"
 date:       2019-12-31
 author:     "CSDN"
 tags:

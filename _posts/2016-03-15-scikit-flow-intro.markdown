@@ -2,6 +2,7 @@
 layout:     post
 title:      "Introduction to Scikit Flow"
 subtitle:   "A Simplified Interface to TensorFlow"
+description: "Introduction to Scikit Flow — a simplified interface for TensorFlow that bridges the gap between Scikit-learn and deep learning."
 date:       2016-03-14
 author:     "Yuan Tang"
 header-img: "img/inblog/tensorflow-bg.jpg"

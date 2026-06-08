@@ -2,6 +2,7 @@
 layout:     post
 title:      "Kubernetes Serving Working Group Has Succeeded and Will Be Disbanded"
 subtitle:   ""
+description: "Kubernetes WG Serving accomplished its goals for AI inference on Kubernetes and is disbanding, with ongoing work continuing in llm-d, AIBrix, and relevant SIGs."
 date:       2026-02-13
 author:     "Yuan Tang"
 tags:

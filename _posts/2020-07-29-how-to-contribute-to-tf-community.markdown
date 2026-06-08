@@ -2,6 +2,7 @@
 layout:     post
 title:      "社区分享 ｜ 玩转 TensorFlow 社区开源贡献"
 subtitle:   ""
+description: "分享贡献TensorFlow社区的经历和收获，包括高阶API开发、社区管理、开源项目贡献和知识传播。"
 date:       2020-07-29
 author:     "Yuan Tang"
 tags:

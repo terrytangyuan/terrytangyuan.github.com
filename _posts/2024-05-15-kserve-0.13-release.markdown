@@ -2,6 +2,7 @@
 layout:     post
 title:      "From Serverless Predictive Inference to Generative Inference - Introducing KServe v0.13"
 subtitle:   "KServe 0.13 Release Blog Post"
+description: "KServe v0.13 evolves cloud-native model serving for generative AI with enhanced Hugging Face runtime, vLLM backend support, and OpenAI protocol integration."
 date:       2024-05-15
 author:     "Yuan Tang"
 tags:

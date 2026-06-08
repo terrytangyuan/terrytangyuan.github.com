@@ -2,6 +2,7 @@
 layout:     post
 title:      "PyTorch on Kubernetes: Kubeflow Trainer Joins PyTorch Ecosystem"
 subtitle:   ""
+description: "Kubeflow Trainer joins the PyTorch ecosystem, providing Kubernetes-native distributed training and LLM fine-tuning with simplified APIs."
 date:       2025-07-28
 author:     "Yuan Tang"
 tags:

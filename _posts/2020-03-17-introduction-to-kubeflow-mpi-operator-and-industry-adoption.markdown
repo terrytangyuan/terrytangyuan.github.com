@@ -2,6 +2,7 @@
 layout:     post
 title:      "Introduction to Kubeflow MPI Operator and Industry Adoption"
 subtitle:   ""
+description: "Introduction to Kubeflow MPI Operator for allreduce-style distributed training on Kubernetes, with industry adoption stories from Ant Group, NVIDIA, and others."
 date:       2020-03-17
 author:     "Yuan Tang"
 tags:

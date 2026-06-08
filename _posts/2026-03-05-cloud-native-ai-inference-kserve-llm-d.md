@@ -2,6 +2,7 @@
 layout:     post
 title:      "Best of Both Worlds: Cloud-Native AI Inference at Scale using KServe and llm-d"
 subtitle:   ""
+description: "How KServe and llm-d combine to deliver efficient GPU utilization, intelligent request routing, and cost-aware autoscaling for enterprise AI inference on Kubernetes."
 date:       2026-03-05
 author:     "Yuan Tang"
 tags:

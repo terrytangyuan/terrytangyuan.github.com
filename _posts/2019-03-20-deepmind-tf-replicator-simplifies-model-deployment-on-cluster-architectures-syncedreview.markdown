@@ -2,6 +2,7 @@
 layout:     post
 title:      "DeepMind TF-Replicator Simplifies Model Deployment on Cluster Architectures"
 subtitle:   "Thoughts on DeepMind TF-Replicator with Synced"
+description: "Analysis of DeepMind's TF-Replicator framework for simplified distributed TensorFlow model deployment across GPUs and Cloud TPUs."
 date:       2019-03-20
 author:     "Yuan Tang"
 tags:

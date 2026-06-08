@@ -2,6 +2,7 @@
 layout:     post
 title:      "Eight Lessons on Open Source Leadership and Community"
 subtitle:   "What contributing, mentoring, and stewarding have taught me about OSS"
+description: "Lessons on stewardship, trust, mentoring, and community building from years of contributing to and leading open source projects."
 date:       2025-09-20
 author:     "Yuan Tang"
 tags:

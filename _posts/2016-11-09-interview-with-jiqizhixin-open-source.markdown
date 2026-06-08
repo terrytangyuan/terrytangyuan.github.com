@@ -2,6 +2,7 @@
 layout:     post
 title:      "机器之心专访：关于开源，我们和谷歌开源奖获得者、DMLC成员唐源聊了聊"
 subtitle:   "An Interview with Synced (www.jiqizhixin.com) on Open-source"
+description: "机器之心专访：谷歌开源奖获得者、DMLC成员唐源谈开源贡献、TensorFlow和机器学习社区。"
 date:       2016-11-09
 author:     "Synced"
 tags:

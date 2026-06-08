@@ -2,6 +2,7 @@
 layout:     post
 title:      "KubeCon North America 2025: Red Hat AI Model Serving Highlights"
 subtitle:   ""
+description: "Highlights from KubeCon NA 2025 in Atlanta — KServe joining CNCF, K8s AI Conformance keynote, Cloud Native AI Day, and model serving demos."
 date:       2025-11-18
 author:     "Yuan Tang"
 tags:

@@ -2,6 +2,7 @@
 layout:     post
 title:      "Building Machine Learning Estimator in TensorFlow"
 subtitle:   "Understanding the Internals of TensorFlow Learn Estimators"
+description: "A guide to understanding and building custom machine learning estimators in TensorFlow's high-level API."
 date:       2016-07-08
 author:     "Yuan Tang"
 header-img: "img/inblog/tensorflow-bg.jpg"

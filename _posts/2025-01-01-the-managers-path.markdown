@@ -2,6 +2,7 @@
 layout:     post
 title:      "Reading Notes: The Manager's Path - A Guide for Tech Leaders Navigating Growth and Change"
 subtitle:   ""
+description: "Reading notes on The Manager's Path — covering management fundamentals, mentoring, tech lead roles, and engineering leadership growth."
 date:       2025-01-01
 author:     "Yuan Tang"
 tags:

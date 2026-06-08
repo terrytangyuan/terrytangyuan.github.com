@@ -2,6 +2,7 @@
 layout:     post
 title:      "ArgoCon 2021 Akuity Team Recap"
 subtitle:   "Impressive Numbers From This Conference and Recap on the 4 Sessions From the Akuity Team"
+description: "Recap of the inaugural ArgoCon 2021 — nearly 4,000 registrants, 20 sessions, and highlights from the Akuity team's presentations."
 date:       2021-12-21
 author:     "Yuan Tang"
 tags:

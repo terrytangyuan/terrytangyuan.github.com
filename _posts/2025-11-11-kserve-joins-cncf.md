@@ -2,6 +2,7 @@
 layout:     post
 title:      "KServe Joins CNCF as an Incubating Project"
 subtitle:   ""
+description: "KServe has been accepted as a CNCF incubating project, validating its maturity as the standardized AI inference platform on Kubernetes."
 date:       2025-11-11
 author:     "Yuan Tang"
 tags:

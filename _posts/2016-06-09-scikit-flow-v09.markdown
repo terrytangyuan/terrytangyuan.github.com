@@ -2,6 +2,7 @@
 layout:     post
 title:      "High-level Learn Module in TensorFlow"
 subtitle:   "Seemless Integration and Changes on Scikit Flow"
+description: "Overview of the high-level Learn module in TensorFlow, providing simplified APIs for machine learning model building and training."
 date:       2016-06-09
 author:     "Yuan Tang"
 header-img: "img/inblog/tensorflow-bg.jpg"

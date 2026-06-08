@@ -2,6 +2,7 @@
 layout:     post
 title:      "Sponsoring My Open Source Efforts through GitHub"
 subtitle:   ""
+description: "Supporting open source development of TensorFlow, Kubeflow, Argo, XGBoost, and other projects through GitHub Sponsors."
 date:       2019-11-19
 author:     "Yuan Tang"
 tags:

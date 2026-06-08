@@ -2,6 +2,7 @@
 layout:     post
 title:      "TensorFlow - Not Just for Deep Learning"
 subtitle:   "A Glance at Its Machine Learning Building Blocks and Collection of Algorithms"
+description: "Exploring TensorFlow beyond deep learning — K-means clustering, random forests, SVMs, and other general ML algorithms available in tf.contrib."
 date:       2016-08-06
 author:     "Yuan Tang"
 header-img: "img/inblog/tensorflow-bg.jpg"

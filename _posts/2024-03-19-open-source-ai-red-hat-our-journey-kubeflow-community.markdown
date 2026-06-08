@@ -2,6 +2,7 @@
 layout:     post
 title:      "Open Source AI at Red Hat: Our Journey in the Kubeflow Community"
 subtitle:   ""
+description: "Red Hat's journey contributing to the Kubeflow community — from Open Data Hub integration to KServe improvements and the Kubeflow 1.9 release."
 date:       2024-03-19
 author:     "Yuan Tang"
 tags:

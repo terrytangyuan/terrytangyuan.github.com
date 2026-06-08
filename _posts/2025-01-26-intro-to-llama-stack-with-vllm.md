@@ -2,6 +2,7 @@
 layout:     post
 title:      "Introducing vLLM Inference Provider in Llama Stack"
 subtitle:   ""
+description: "Introducing the vLLM inference provider in Meta's Llama Stack, with a tutorial for local and Kubernetes deployment."
 date:       2025-01-26
 author:     "Yuan Tang"
 tags:

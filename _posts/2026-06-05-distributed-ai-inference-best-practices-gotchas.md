@@ -2,6 +2,7 @@
 layout:     post
 title:      "Distributed AI Inference Best Practices & Gotchas"
 subtitle:   ""
+description: "A deep dive into 5D parallelism, P/D disaggregation, KV cache optimization, speculative decoding, and deployment blueprints for distributed AI inference at scale."
 date:       2026-06-05
 author:     "Yuan Tang"
 tags:

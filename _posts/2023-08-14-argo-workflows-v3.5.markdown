@@ -2,6 +2,7 @@
 layout:     post
 title:      "What's new in Argo Workflows v3.5"
 subtitle:   "Exciting New Features with Improved User Experience and Performance"
+description: "Argo Workflows v3.5 release highlights — 66 new features, 237 bug fixes, and contributions from 63 contributors."
 date:       2023-08-14
 author:     "Yuan Tang"
 tags:

@@ -2,6 +2,7 @@
 layout:     post
 title:      "《TensorFlow实战》- 掌握谷歌深度学习框架"
 subtitle:   "TensorFlow in Practice: First Book on TensorFlow in Chinese"
+description: "《TensorFlow实战》——Google TensorFlow研发团队推荐的首本中文教程，深入浅出介绍深度学习框架实践。"
 date:       2017-02-12
 author:     "Yuan Tang"
 header-img: "img/inblog/tensorflow-bg.jpg"

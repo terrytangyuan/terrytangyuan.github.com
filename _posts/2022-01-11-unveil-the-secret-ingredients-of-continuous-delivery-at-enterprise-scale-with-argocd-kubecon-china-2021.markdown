@@ -2,6 +2,7 @@
 layout:     post
 title:      "Unveil the Secret Ingredients of Continuous Delivery at Enterprise Scale with Argo CD"
 subtitle:   "Deep Dive into Argo CD and Best Practices for Operating at Enterprise-Scale"
+description: "Deep dive into scaling Argo CD for enterprise use — supporting thousands of applications, hundreds of clusters, and best practices from KubeCon China 2021."
 date:       2022-01-11
 author:     "Yuan Tang"
 tags:

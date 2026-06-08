@@ -2,6 +2,7 @@
 layout:     post
 title:      "Argo Security Automation with OSS-Fuzz"
 subtitle:   "Continuous Fuzzing Integration in Argo"
+description: "How the Argo project set up continuous fuzzing with OSS-Fuzz, developing 41 fuzzers and finding 10 bugs to improve security across the Argo ecosystem."
 date:       2022-02-28
 author:     "Yuan Tang"
 tags:
