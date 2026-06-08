@@ -10,12 +10,44 @@ permalink: /cv
     <meta name="theme-color" content="#262626">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" type="text/css" href="/css/cv.css">
+    <link href="https://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <title>Yuan Tang - CV</title>
+    <meta name="color-scheme" content="light dark">
+    <script>
+        (function() {
+            var theme = localStorage.getItem('theme');
+            if (!theme) {
+                theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            if (theme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
 </head>
 <body>
 <a href="/about">
     <span class="go-back cv-link">←</span>
 </a>
+<a href="javascript:void(0)" onclick="toggleTheme()" id="theme-toggle-btn" aria-label="Toggle dark mode">
+    <span id="theme-icon">&#x1F319;</span>
+</a>
+<script>
+    function toggleTheme() {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        updateThemeIcon(next);
+    }
+    function updateThemeIcon(theme) {
+        var icon = document.getElementById('theme-icon');
+        if (icon) {
+            icon.textContent = theme === 'dark' ? '☀️' : '🌙';
+        }
+    }
+    updateThemeIcon(document.documentElement.getAttribute('data-theme') || 'light');
+</script>
 <div class="save-menu">
     <button class="save-menu-toggle" onclick="this.parentElement.classList.toggle('open')" title="Save CV">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
