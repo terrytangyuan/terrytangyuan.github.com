@@ -967,3 +967,37 @@ body {
 .page-fullscreen footer .copyright a:hover{
 	color: #ddd;
 }
+
+// Project Cards
+.project-card {
+	border: 1px solid @gray-light;
+	border-radius: 6px;
+	padding: 20px;
+	margin-bottom: 25px;
+	min-height: 180px;
+	transition: all 0.3s ease;
+	&:hover {
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+		transform: translateY(-3px);
+	}
+}
+.project-title {
+	font-size: 1.3em;
+	margin-top: 0;
+	margin-bottom: 8px;
+	a {
+		color: @gray-dark;
+		&:hover {
+			color: @brand-primary;
+			text-decoration: none;
+		}
+	}
+}
+.project-desc {
+	font-size: 0.85em;
+	color: @gray;
+	margin: 5px 0 0;
+}
+.project-stars {
+	margin-bottom: 2px;
+}
