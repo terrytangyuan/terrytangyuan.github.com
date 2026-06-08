@@ -13,7 +13,7 @@ header-img: "img/about-bg.png"
 
 {% for tag in site.tags %}
 <div class="one-tag-list">
-    <span class="fa fa-tag listing-seperator" id="{{ tag[0] }}">
+    <span class="listing-seperator" id="{{ tag[0] }}">
         <span class="tag-text">{{ tag[0] }}</span>
     </span>
     {% for post in tag[1] %}
