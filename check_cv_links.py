@@ -11,7 +11,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 CV_FILE = "cv.html"
 
 # Skip mailto links and local anchors
-SKIP_PREFIXES = ("mailto:", "#", "/")
+SKIP_PREFIXES = ("mailto:", "#", "/", "javascript:", "https://docs.google.com/")
 
 # Realistic browser headers to avoid bot detection
 BROWSER_HEADERS = {
