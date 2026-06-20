@@ -1,7 +1,7 @@
 (function($) {
 
   $.fn.tagcloud = function(options) {
-    var opts = $.extend({}, $.fn.tagcloud.defaults, options);
+    const opts = $.extend({}, $.fn.tagcloud.defaults, options);
     tagWeights = this.map(function(){
       return $(this).attr("rel");
     });
