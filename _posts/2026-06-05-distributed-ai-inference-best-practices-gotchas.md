@@ -13,7 +13,7 @@ tags:
     - KServe
 ---
 
-*Originally posted on [Medium](https://medium.com/enterpriseai/distributed-ai-inference-best-practices-gotchas-911102c9a2ff). A companion article focusing on the advanced optimization techniques (P/D disaggregation, KV cache, and speculative decoding) is available on [Red Hat Developer](https://developers.redhat.com/articles/2026/06/24/optimizing-distributed-ai-inference-advanced-deployment-patterns).*
+*Originally posted on [Medium](https://medium.com/enterpriseai/distributed-ai-inference-best-practices-gotchas-911102c9a2ff). This article is also available as a two-part series on Red Hat Developer: [Part 1: Core Concepts and Scaling Dimensions](https://developers.redhat.com/articles/2026/06/22/designing-distributed-ai-inference-core-concepts-and-scaling-dimensions) covers prefill/decode phases and 5D parallelism, and [Part 2: Advanced Deployment Patterns](https://developers.redhat.com/articles/2026/06/24/optimizing-distributed-ai-inference-advanced-deployment-patterns) covers P/D disaggregation, KV cache, and speculative decoding.*
 
 ***Authors:** Fatih Nar, Yuchen Fama, Greg Pereira, Yuan Tang*
 
@@ -311,7 +311,8 @@ Each rung of that ladder maps to a layer of the Red Hat stack you can deploy rat
 
 To learn more, take a look at these resources:
 
-* [Optimizing Distributed AI Inference: Advanced Deployment Patterns](https://developers.redhat.com/articles/2026/06/24/optimizing-distributed-ai-inference-advanced-deployment-patterns) (companion article on Red Hat Developer focusing on P/D disaggregation, KV cache, and speculative decoding)  
+* [Designing Distributed AI Inference: Core Concepts and Scaling Dimensions](https://developers.redhat.com/articles/2026/06/22/designing-distributed-ai-inference-core-concepts-and-scaling-dimensions) (Part 1 on Red Hat Developer covering prefill/decode phases and 5D parallelism)  
+* [Optimizing Distributed AI Inference: Advanced Deployment Patterns](https://developers.redhat.com/articles/2026/06/24/optimizing-distributed-ai-inference-advanced-deployment-patterns) (Part 2 on Red Hat Developer covering P/D disaggregation, KV cache, and speculative decoding)  
 * [Why vLLM is the best choice for AI inference today](https://developers.redhat.com/articles/2025/10/30/why-vllm-best-choice-ai-inference-today) (Part-I of this series)  
 * [llm-d](https://github.com/llm-d/llm-d), the Kubernetes-native distributed inference framework (now a CNCF Sandbox project)  
 * [Combining KServe and llm-d for optimized gen-AI inference](https://developers.redhat.com/articles/2026/04/21/kserve-llm-d-optimized-gen-ai-inference)  
