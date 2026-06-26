@@ -13,7 +13,7 @@ tags:
     - KServe
 ---
 
-*Originally posted on [Medium](https://medium.com/enterpriseai/distributed-ai-inference-best-practices-gotchas-911102c9a2ff). This article is also available as a two-part series on Red Hat Developer: [Part 1: Core Concepts and Scaling Dimensions](https://developers.redhat.com/articles/2026/06/22/designing-distributed-ai-inference-core-concepts-and-scaling-dimensions) covers prefill/decode phases and 5D parallelism, and [Part 2: Advanced Deployment Patterns](https://developers.redhat.com/articles/2026/06/24/optimizing-distributed-ai-inference-advanced-deployment-patterns) covers P/D disaggregation, KV cache, and speculative decoding.*
+*Originally posted on [Medium](https://medium.com/enterpriseai/distributed-ai-inference-best-practices-gotchas-911102c9a2ff). This article is also available as a three-part series on Red Hat Developer: [Part 1: Core Concepts and Scaling Dimensions](https://developers.redhat.com/articles/2026/06/22/designing-distributed-ai-inference-core-concepts-and-scaling-dimensions) covers prefill/decode phases and 5D parallelism, [Part 2: Advanced Deployment Patterns](https://developers.redhat.com/articles/2026/06/24/optimizing-distributed-ai-inference-advanced-deployment-patterns) covers P/D disaggregation, KV cache, and speculative decoding, and [Part 3: Blueprints & Troubleshooting](https://developers.redhat.com/articles/2026/06/26/deploying-distributed-ai-inference-blueprints-troubleshooting) covers deployment blueprints and troubleshooting recipes.*
 
 ***Authors:** Fatih Nar, Yuchen Fama, Greg Pereira, Yuan Tang*
 
