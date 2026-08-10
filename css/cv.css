@@ -311,6 +311,15 @@ body {
     margin-top: 3px;
 }
 
+.cv-group-label {
+    margin-top: 8px;
+    font-size: 0.78em;
+    font-weight: 600;
+    color: #820000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 .cv-section-smallest {
     margin-top: 4px;
     font-size: 0.82em;
@@ -575,6 +584,12 @@ body {
         color: #666666 !important;
         font-weight: normal !important;
         margin-top: 0 !important;
+    }
+
+    .cv-group-label {
+        font-size: 10px !important;
+        margin-top: 6px !important;
+        color: #820000 !important;
     }
 
     .cv-section-smallest,
@@ -855,6 +870,10 @@ body {
 /* Smaller/smallest text */
 [data-theme="dark"] .cv-section-smaller {
     color: #a8a8ba;
+}
+
+[data-theme="dark"] .cv-group-label {
+    color: #7fbef7;
 }
 
 [data-theme="dark"] .cv-section-smallest {
