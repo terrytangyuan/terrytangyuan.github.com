@@ -9,7 +9,6 @@ tags:
     - Artificial Intelligence
     - Machine Learning
     - Open Source
-    - Cost Optimization
 ---
 
 *Originally posted on [Omnigent Blog](https://omnigent.ai/blog/stop-surprise-llm-bills)*.
